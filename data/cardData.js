@@ -1,6 +1,6 @@
 let cardData = [
    { Cards: [
-         {name: 'The Fool', src: '00_MajorFool.jpg'},
+         {name: 'The Fool', keywords:{Upright: 'Beginnings, innocence, spontaneity, a free spirit', Reversed: 'Naivety, foolishness, recklessness, risk-taking'}, src: '00_MajorFool.jpg'},
          {name: 'The Magician', src: '01_MajorMagician.jpg'},
          {name: 'The High Priestess', src: '02_MajorHigh_Priestess.jpg'},
          {name: 'The Empress', src: '03_MajorEmpress.jpg'},
