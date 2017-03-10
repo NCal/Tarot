@@ -9,6 +9,7 @@ class SCR extends Component {
          this.getRandomCard = this.getRandomCard.bind(this);
          this.state = {
              name: 'Card',
+             src: null,
              random_card_name: null,
              random_card_description: null,
              random_card_upright: null,
@@ -24,8 +25,9 @@ class SCR extends Component {
             let self = this;
             let cards = this.props.Cards;
             let randNum = Math.floor(Math.random() * 77) + 1;
-            let randCard = cards[2];
+            let randCard = cards[15];
             let randName = randCard.name;
+            let src = randCard.src;
             let randDes = randCard.description.basic;
             let randUpright = randCard.description.upright;
             let randReversed = randCard.description.reversed;
@@ -39,7 +41,8 @@ class SCR extends Component {
                      random_card_name: randName,
                      random_card_description: randDes,
                      random_card_upright: randUpright,
-                     random_card_reversed: randReversed
+                     random_card_reversed: randReversed,
+                     random_card_src: src
 
                   }, function(){
                   console.log('random state:', this.state);
@@ -66,7 +69,7 @@ class SCR extends Component {
                 <div className="main-content SCR">    
                      <button onClick={ this.getRandomCard}>Draw A Single Card</button>
                      <div style={{display: 'none'}} className="single_card_reading">
-                        <h3>{this.state.random_card_name}</h3>
+                        <h3>{this.state.random_card_name}</h3><img style={{float: 'right'}} src={'assets/tarot/'+this.state.random_card_src} alt=""/>
                         <p className="description">{this.state.random_card_description}</p>
                         <h3>Upright</h3>
                         <p className="upright_description">{this.state.random_card_upright}</p>
