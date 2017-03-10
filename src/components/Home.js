@@ -1,57 +1,14 @@
-import React, { Component } from 'react';
-import cardData from '../data/cardData.js';
+import React, {Component} from 'react';
 
-class Home extends Component {  
-   constructor(props, context) {
-      super(props, context);
-
-      this.getRandomCard = this.getRandomCard.bind(this);
-      this.state = {
-         name: 'Card',
-         random: null
-      };
+class Home extends Component {
+  render() {
+    return (
+      <div className="main-content">
+        <h2>{this.props.route.title}</h2>
+        <p>The front end course directory lists many of the courses we teach on HTML, CSS, JavaScript and more! Be sure to visit the Teachers section to view a list of our talented teachers. Or visit the Courses section and select a topic -- HTML, CSS, or JavaScript -- to see a list of our courses.</p>
+      </div>
+    );
   }
-  componentDidMount() {
-     console.log('Cards', this.props.Cards);
-     this.getRandomCard();
-    }
-    
-     getRandomCard(){
-        console.log('get random card');
-        let cards = this.props.Cards;
-        let randNum = Math.floor(Math.random() * 77) + 1;
-        let randCard = cards[randNum];
-        let randName = randCard.name;
-        console.log('card drawn',randCard);
-
-        this.setState({random: randName}, function(){
-          console.log(this.state);
-        });
-        
-     }
-
-     render(){
-        return (
-           <div className="main-content home">   
-              <button onClick={ this.getRandomCard}>Random Card</button>
-              <p>{this.state.random}</p>
-           </div>
-        )
-     }
 }
-
-// PROPS 
-Home.defaultProps = {
-   name:'Card',
-   kind: 'Child',
-   Cards: cardData[0].Cards,
-};
-
-Home.propTypes = {
-   name: React.PropTypes.string.isRequired,
-   kind: React.PropTypes.string
-}
-
-
 
 export default Home;

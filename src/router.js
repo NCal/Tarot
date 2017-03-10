@@ -5,15 +5,15 @@ import Featured from './components/Featured';
 
 // Components
 import App from './components/App';
+import SCR from './components/SCR';
 import Home from './components/Home';
-import About from './components/About';
 import Courses from './components/Courses';
 import Teachers from './components/Teachers';
 // import HTML from './components/courses/HTML';
 import CSS from './components/courses/CSS';
 import JavaScript from './components/courses/JavaScript';
 import NotFound from './components/notfound';
-import CourseContainer from './components/courses/CourseContainer'
+import CourseContainer from './components/courses/CourseContainer';
 // Routes
 
 import CourseList from './data/courses';
@@ -22,7 +22,8 @@ const routes = (
    <Router history={browserHistory}>
       <Route component={App}>
          <Route  path="/" component={Home}></Route>
-         <Route  path="about" component={About} title="About"></Route>
+         <Route  path="scr" component={SCR}></Route>
+         {/*<Route  path="about" component={About} title="About"></Route> */}
          <Route  path="courses"  component={Courses}>
             <IndexRedirect to="HTML"></IndexRedirect>
             <Route path="html"  component={CourseContainer} data={CourseList.HTML}></Route>
