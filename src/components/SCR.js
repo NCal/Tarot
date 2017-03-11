@@ -36,11 +36,11 @@ class SCR extends Component {
             let randDes = randCard.description.basic;
             let randUpright = randCard.description.upright;
             let randReversed = randCard.description.reversed;
-            let reading = $('.single_card_reading');
+            let reading = $('.reading_container');
             console.log('card drawn',randCard);
             $('.description').innerHTML = randDes;
             
-            reading.fadeOut('fast', function(){
+            reading.fadeOut('slow', function(){
                self.setState(
                   {
                      random_card_flipped: flipped,
@@ -61,12 +61,12 @@ class SCR extends Component {
                      $('.card_image').removeClass('card_image_reversed');
                   }
 
-                  reading.fadeIn('fast');
+                  reading.fadeIn('slow');
                });
             });
             console.groupEnd();
        }
-       
+
        replace_break(){
          console.log('replace break');
          let paras = document.getElementsByTagName('p');
@@ -82,15 +82,19 @@ class SCR extends Component {
             return (
                 <div className="main-content SCR">    
                      <button onClick={ this.getRandomCard}>Draw A Single Card</button>
+                     <div className="reading_container">
+                     <img className="card_image" style={{float: 'right'}} src={'assets/tarot/'+this.state.random_card_src} alt=""/>
                      <div style={{display: 'none'}} className="single_card_reading">
-                        <h3>{this.state.random_card_name}</h3><img className="card_image" style={{float: 'right'}} src={'assets/tarot/'+this.state.random_card_src} alt=""/>
-                        <h4>Keywords: Upright</h4>
+                        <h3 className="title">{this.state.random_card_name}</h3>
+                        <h4 className="title">Keywords:</h4>
                         <p>{this.state.random_card_keys_up}</p>
-                        <h3>Summary</h3>
+                        <h3 className="title">Summary</h3>
                         <p className="description">{this.state.random_card_description}</p>
-                        <h3>Upright</h3>
+                        <h3 className="title">Upright</h3>
                         <p className="upright_description">{this.state.random_card_upright}</p>
                      </div>
+                     </div>
+                     
                      
                 </div>
             )
@@ -98,15 +102,19 @@ class SCR extends Component {
             return (
                 <div className="main-content SCR">    
                      <button onClick={ this.getRandomCard}>Draw A Single Card</button>
+                     <div className="reading_container">
+                     <img className="card_image" style={{float: 'right'}} src={'assets/tarot/'+this.state.random_card_src} alt=""/>
                      <div style={{display: 'none'}} className="single_card_reading">
-                        <h3>{this.state.random_card_name +' Reversed'}</h3><img className="card_image" style={{float: 'right'}} src={'assets/tarot/'+this.state.random_card_src} alt=""/>
-                        <h4>Keywords: </h4>
+                        <h3 className="title">{this.state.random_card_name +' Reversed'}</h3>
+                        <h4 className="title">Keywords:</h4>
                         <p>{this.state.random_card_keys_rev}</p>
-                        <h3>Summary</h3>
+                        <h3 className="title">Summary</h3>
                         <p className="description">{this.state.random_card_description}</p>
-                        <h3>Reversed</h3>
+                        <h3 className="title">Reversed</h3>
                         <p className="upright_description">{this.state.random_card_reversed}</p>
                      </div>
+                     </div>
+                     
                      
                 </div>
             )

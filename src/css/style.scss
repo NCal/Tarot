@@ -3,6 +3,13 @@
 ==================================== */
 
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700);
+// @import "../../node_modules/foundation-sites/scss/foundation";
+
+// @include foundation-flex-grid;
+// @include foundation-flex-classes;
+// @include foundation-everything;
+
+@import url('https://fonts.googleapis.com/css?family=Abel|Dosis|VT323');
 
 /* ================================= 
   ELEMENT STYLES
@@ -15,12 +22,14 @@ html {
   height: 100%;
 }
 
+
 body {
   color: #576366;
   background: #222;
   margin: 0;
   height: 100%;
   font-family: 'Roboto', sans-serif;
+
 }
 h1,
 h2,
@@ -49,7 +58,9 @@ hr {
   margin: 2.3em 0 2em 0;
   border-top: 1px solid rgba(0, 0, 0, .1);
 }
-
+* {
+  font-family: 'Abel', sans-serif;
+}
 /* FORM & BUTTON STYLES -------- */
 
 .home a,
@@ -97,17 +108,56 @@ button {
   float: left;
   background-color: #111;
 }
+
 .right {
   height: 100%;
   position: relative;
   top: 0;
   right: 0;
-  overflow: scroll;
+  overflow-y: hidden;
   background-color: #222;
 }
 
-.card_image{
+.reading_container {
+  margin-top: 20px;
+}
 
+.single_card_reading {
+  padding-right: 30px;
+    height: 550px;
+    // width: 700px;
+    overflow-y: scroll;
+
+}
+
+.title {
+  color: #fff;
+}
+
+.upright_description {
+  // width: 688px;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+}
+
+.card_image{
+  // margin-left: 30px;
+  margin-bottom: 30px;
+  float: right;
+  position: relative;
+  top: 10px;
 }
 
 .card_image_reversed {
@@ -124,7 +174,7 @@ header {
   /* margin-bottom: 2em; */
 }
 .main-content {
-  padding: 1em 2em;
+  padding: 1em 1em;
 }
 .group:after {
   content: "";
