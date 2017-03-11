@@ -27,7 +27,7 @@ class SCR extends Component {
             let flipped =   (Math.floor(Math.random() * 2) == 0) ? true : false;
             let self = this;
             let cards = this.props.Cards;
-            let randNum = Math.floor(Math.random() * 77) + 1;
+            let randNum = Math.floor(Math.random() * (78 - 0 + 1));
             let randCard = cards[randNum];
             let randName = randCard.name;
             let randKeysUp  = randCard.keywords.upright;
@@ -84,7 +84,7 @@ class SCR extends Component {
                      <button onClick={ this.getRandomCard}>Draw A Single Card</button>
                      <div className="reading_container">
                      <img className="card_image" style={{float: 'right'}} src={'assets/tarot/'+this.state.random_card_src} alt=""/>
-                     <div style={{display: 'none'}} className="single_card_reading">
+                     <div  className="single_card_reading">
                         <h3 className="title">{this.state.random_card_name}</h3>
                         <h4 className="title">Keywords:</h4>
                         <p>{this.state.random_card_keys_up}</p>
@@ -104,7 +104,7 @@ class SCR extends Component {
                      <button onClick={ this.getRandomCard}>Draw A Single Card</button>
                      <div className="reading_container">
                      <img className="card_image" style={{float: 'right'}} src={'assets/tarot/'+this.state.random_card_src} alt=""/>
-                     <div style={{display: 'none'}} className="single_card_reading">
+                     <div  className="single_card_reading">
                         <h3 className="title">{this.state.random_card_name +' Reversed'}</h3>
                         <h4 className="title">Keywords:</h4>
                         <p>{this.state.random_card_keys_rev}</p>
