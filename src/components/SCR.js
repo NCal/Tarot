@@ -8,6 +8,7 @@ class SCR extends Component {
 
          this.getRandomCard = this.getRandomCard.bind(this);
          this.state = {
+            loading: false,
              name: 'Card',
              src: null,
              random_card_flipped: null,
@@ -43,6 +44,7 @@ class SCR extends Component {
             reading.fadeOut('slow', function(){
                self.setState(
                   {
+                     
                      random_card_flipped: flipped,
                      random_card_name: randName,
                      random_card_keys_up: randKeysUp,
@@ -60,7 +62,10 @@ class SCR extends Component {
                   } else {
                      $('.card_image').removeClass('card_image_reversed');
                   }
-
+                  
+                  setTimeout(function(){
+                     self.setState({loading: false});
+                  },2000);
                   reading.fadeIn('slow');
                });
             });
@@ -78,7 +83,31 @@ class SCR extends Component {
        }
 
        render(){
-         if (!this.state.random_card_flipped){
+         if (this.state.loading){
+            return (
+               <div className="main-content SCR">   
+            <div>ass</div> 
+               <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                 <defs>
+                   <filter id="goo">
+                     <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                     <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 35 -10" result="goo" />
+                     <feBlend in="SourceGraphic" in2="goo" operator="atop" />
+                   </filter>
+                 </defs>
+               </svg>
+               <div className="loader">
+                 <div></div>
+                 <div></div>
+                 <div></div>
+                 <div></div>
+                 <div></div>
+               </div>
+            </div>
+               )
+            
+         }
+         if (!this.state.random_card_flipped && !this.state.loading){
             return (
                 <div className="main-content SCR">    
                      <button onClick={ this.getRandomCard}>Draw A Single Card</button>
@@ -94,28 +123,24 @@ class SCR extends Component {
                         <p className="upright_description">{this.state.random_card_upright}</p>
                      </div>
                      </div>
-                     
-                     
                 </div>
             )
-         } else {
+         }  if (this.state.random_card_flipped && !this.state.loading) {
             return (
                 <div className="main-content SCR">    
                      <button onClick={ this.getRandomCard}>Draw A Single Card</button>
                      <div className="reading_container">
-                     <img className="card_image" style={{float: 'right'}} src={'assets/tarot/'+this.state.random_card_src} alt=""/>
-                     <div  className="single_card_reading">
-                        <h3 className="title">{this.state.random_card_name +' Reversed'}</h3>
-                        <h4 className="title">Keywords:</h4>
-                        <p>{this.state.random_card_keys_rev}</p>
-                        <h3 className="title">Summary</h3>
-                        <p className="description">{this.state.random_card_description}</p>
-                        <h3 className="title">Reversed</h3>
-                        <p className="upright_description">{this.state.random_card_reversed}</p>
+                        <img className="card_image" style={{float: 'right'}} src={'assets/tarot/'+this.state.random_card_src} alt=""/>
+                        <div  className="single_card_reading">
+                           <h3 className="title">{this.state.random_card_name +' Reversed'}</h3>
+                           <h4 className="title">Keywords:</h4>
+                           <p>{this.state.random_card_keys_rev}</p>
+                           <h3 className="title">Summary</h3>
+                           <p className="description">{this.state.random_card_description}</p>
+                           <h3 className="title">Reversed</h3>
+                           <p className="upright_description">{this.state.random_card_reversed}</p>
+                        </div>
                      </div>
-                     </div>
-                     
-                     
                 </div>
             )
          }
