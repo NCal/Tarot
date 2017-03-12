@@ -38,13 +38,14 @@ class SCR extends Component {
             let randUpright = randCard.description.upright;
             let randReversed = randCard.description.reversed;
             let reading = $('.reading_container');
+            let paras = document.getElementsByTagName('p');
             console.log('card drawn',randCard);
             $('.description').innerHTML = randDes;
             
-            reading.fadeOut('slow', function(){
+            reading.css({'visibility': 'hidden'});
                self.setState(
                   {
-                     
+                     loading: true,
                      random_card_flipped: flipped,
                      random_card_name: randName,
                      random_card_keys_up: randKeysUp,
@@ -55,57 +56,58 @@ class SCR extends Component {
                      random_card_src: src
 
                   }, function(){
-                  this.replace_break();
-
-                  if (this.state.random_card_flipped){
-                     $('.card_image').addClass('card_image_reversed');
-                  } else {
-                     $('.card_image').removeClass('card_image_reversed');
-                  }
+                     console.log('FLIPPED?', this.state.random_card_flipped);
+                     if (this.state.random_card_flipped){
+                        console.log('flipped AF');
+                        console.log( $('img.card_image'));
+                        $('img').addClass('card_image_reversed');
+                     } else {
+                        $('img.card_image').removeClass('card_image_reversed');
+                     }
                   
                   setTimeout(function(){
                      self.setState({loading: false});
+                     reading.css({'visibility': 'visible'});
+                     self.replace_break(paras);
                   },2000);
-                  reading.fadeIn('slow');
                });
-            });
+           
             console.groupEnd();
        }
 
-       replace_break(){
+       replace_break(paras){
          console.log('replace break');
-         let paras = document.getElementsByTagName('p');
 
          for (let i=0; i< paras.length; i++){
-            let new_p = $('p')[i].innerHTML.replace(/\r?\n/g, '<br/>');
-            $('p')[i].innerHTML = new_p;
+            let new_p = paras[i].innerHTML.replace(/\r?\n/g, '<br/>');
+            paras[i].innerHTML = new_p;
          }
        }
 
        render(){
          if (this.state.loading){
             return (
-               <div className="main-content SCR">   
-            <div>ass</div> 
-               <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
-                 <defs>
-                   <filter id="goo">
-                     <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
-                     <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 35 -10" result="goo" />
-                     <feBlend in="SourceGraphic" in2="goo" operator="atop" />
-                   </filter>
-                 </defs>
-               </svg>
-               <div className="loader">
-                 <div></div>
-                 <div></div>
-                 <div></div>
-                 <div></div>
-                 <div></div>
-               </div>
+            <div className="main-content SCR">   
+               <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                    <defs>
+                      <filter id="goo">
+                        <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 35 -10" result="goo" />
+                        <feBlend in="SourceGraphic" in2="goo" operator="atop" />
+                      </filter>
+                    </defs>
+                  </svg>
+                  <div className="loader">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                  </div>
+               </div> 
             </div>
-               )
-            
+            )
          }
          if (!this.state.random_card_flipped && !this.state.loading){
             return (

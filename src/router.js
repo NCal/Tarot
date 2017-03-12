@@ -14,6 +14,7 @@ import CSS from './components/courses/CSS';
 import JavaScript from './components/courses/JavaScript';
 import NotFound from './components/notfound';
 import CourseContainer from './components/courses/CourseContainer';
+import $ from 'jquery';
 // Routes
 
 import CourseList from './data/courses';
