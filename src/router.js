@@ -8,7 +8,7 @@ import App from './components/App';
 import SCR from './components/SCR';
 import Home from './components/Home';
 import Courses from './components/Courses';
-import Teachers from './components/Teachers';
+import FullReading from './components/FullReading';
 // import HTML from './components/courses/HTML';
 import CSS from './components/courses/CSS';
 import JavaScript from './components/courses/JavaScript';
@@ -31,7 +31,7 @@ const routes = (
             <Route path="css" component={CourseContainer}  data={CourseList.CSS}></Route>
             <Route path="javascript" component={CourseContainer}  data={CourseList.JS}></Route>
          </Route>
-         <Route  path="teachers" component={Teachers}></Route>
+         <Route  path="fullreading" component={FullReading}></Route>
          <Route path="featured/:topic/:name" data={{space:'monkey'}} component={Featured}></Route>
          <Route path="*" component={NotFound}></Route>
       </Route>

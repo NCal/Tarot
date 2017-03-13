@@ -258,7 +258,19 @@ $c3: #1b98e0;
 //   }
 
   
+.cards {
+  height: 800px;
+  overflow-y: scroll;
+}
 
+.full_card {
+  cursor: pointer;
+  opacity: .8;
+}
+
+.full_card:hover {
+  opacity: 1;
+}
 
 header {
   background: #edeff0;
@@ -267,6 +279,10 @@ header {
 .main-content {
   padding: 1em 1em;
 }
+.group {
+
+}
+
 .group:after {
   content: "";
   display: table;
