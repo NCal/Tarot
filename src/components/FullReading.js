@@ -1,19 +1,22 @@
 import React, { Component } from 'react';
 import cardData from '../data/cardData.js';
 import $ from 'jquery';
+let chosen_cards = [];
 
 class FullReading extends Component {   
     constructor(props, context) {
          super(props, context);
-
+        const self = this;
+        
         this.getRandomCard = this.getRandomCard.bind(this);
         this.testFunc = this.testFunc.bind(this);
-        const self = this;
+      
 
          this.state = {
-            chosen_cards: [],
+            
             new: true,
             loading: false,
+            reading: false,
              name: 'Card',
              src: null,
              random_card_flipped: null,
@@ -25,6 +28,7 @@ class FullReading extends Component {
    }
       
   componentWillMount() {
+    chosen_cards = [];
     console.log('der card data',cardData[0].Cards);
     for (var i=0; i<cardData[0].Cards.length; i++ ){
        cardData[0].Cards[i].back = 'back.jpg';
@@ -33,7 +37,7 @@ class FullReading extends Component {
     console.log('cards after', cardData[0].Cards);
   }
 
-  getRandomCard() {
+  getRandomCard(e) {
      console.group('get random card');
      let flipped =   (Math.floor(Math.random() * 2) === 0) ? true : false;
      let self = this;
@@ -49,11 +53,35 @@ class FullReading extends Component {
      let randReversed = randCard.description.reversed;
      let reading = $('.reading_container');
      let paras = document.getElementsByTagName('p');
+
+     if (flipped){
+      randCard.reversed = true;
+     }
      console.log('card drawn',randCard);
      // $('.description').innerHTML = randDes;
 
-     self.setState({chosen_cards: this.state.chosen_cards.push(randCard)});
-     console.log('steert',self.state);
+    chosen_cards.push(randCard);
+    console.log(chosen_cards);
+
+    if (chosen_cards.length >= 10){
+      self.setState({loading: true}, function(){
+        setTimeout(function(){
+          self.setState({
+            loading: false,
+            reading: true
+          });
+
+           self.replace_break(paras);
+        },2000);
+      });
+    }
+
+     let clickedCard = e.target;
+     // console.log($(clickedCard)[0]);
+     $(clickedCard).addClass('selected');
+
+     // self.setState({chosen_cards: this.state.chosen_cards.push(randCard)});
+     // console.log('steert',self.state);
      
      // reading.hide();
 
@@ -80,7 +108,7 @@ class FullReading extends Component {
      //          }
      //          reading.show();
      //       });
-     //       self.replace_break(paras);
+          
      //    },2000);
      // });
      console.groupEnd();
@@ -98,24 +126,95 @@ class FullReading extends Component {
        }
    }
    render(){
+    if (!this.state.loading && !this.state.reading){
+         return (
+             <div className="main-content ">    
+                  {/*<button onClick={ this.getRandomCard}>Draw A Card</button>*/}
+                  <div className="cards">
+                   {cardData[0].Cards.map(function(card, i){
+                     return (<img className="full_card" key={'card'+i} src={'assets/tarot/'+card.back} style={{width: '71px', margin: '2px'}} onClick={this.getRandomCard}/>)
+                   }.bind(this))
+                  
+                 } 
+                  </div>
+                  <div className="reading_container">
+                  </div>
+             </div>
+         )
+      }
+    if (this.state.loading){
       return (
-          <div className="main-content SCR">    
-               {/*<button onClick={ this.getRandomCard}>Draw A Card</button>*/}
-               <div className="cards">
-                {cardData[0].Cards.map(function(card, i){
-                  return <img className="full_card" key={i} src={'assets/tarot/'+card.back} style={{width: '71px', margin: '2px'}} onClick={self.testFunc}></img>
-                })} 
-
-               </div>
+        <div className="main-content ">   
+           <div>
+              <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                <defs>
+                  <filter id="goo">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 35 -10" result="goo" />
+                    <feBlend in="SourceGraphic" in2="goo" operator="atop" />
+                  </filter>
+                </defs>
+              </svg>
+              <div className="loader">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+           </div> 
+        </div>
+      )
+    }
+    if (this.state.reading) {
+      return (
+        <div className="main-content " style={{overflowY: 'scroll'}}>    
                <div className="reading_container">
+               {
+                chosen_cards.map(function(card, i){
+                  if (!card.reversed){
+                       return (
+                     <div key={i} className="fcr_container"><img className="card_image" style={{float: 'right'}} src={'assets/tarot/'+card.src} alt=""/>
+                       <div  className="single_card_reading">
+                         <h3 className="title">{card.name}</h3>
+                         <h4 className="title">Keywords:</h4>
+                         <p>{card.keywords.upright}</p>
+                         <h3 className="title">Summary</h3>
+                         <p className="description">{card.description.basic}</p>
+                         <h3 className="title">Upright</h3>
+                         <p className="upright_description">{card.description.upright}</p>
+                      </div>
+                      <br/>
+                    </div>)
+                  } else {
+                       return (
+                     <div key={i} className="fcr_container"><img className="card_image card_image_reversed" style={{float: 'right'}} src={'assets/tarot/'+card.src} alt=""/>
+                       <div  className="single_card_reading">
+                         <h3 className="title">{card.name+ ' Reversed'}</h3>
+                         <h4 className="title">Keywords:</h4>
+                         <p>{card.keywords.reversed}</p>
+                         <h3 className="title">Summary</h3>
+                         <p className="description">{card.description.basic}</p>
+                         <h3 className="title">Reversed</h3>
+                         <p className="upright_description">{card.description.reversed}</p>
+                      </div>
+                      <br/>
+                    </div>)
+                  }
+                })
+               }
+               
                </div>
           </div>
       )
-   }        
+
+    }      
+    }
 }
 
 // PROPS 
 FullReading.defaultProps = {
+    chosen_cards: [],
     name:'Card',
     kind: 'Child',
     Cards: cardData[0].Cards,

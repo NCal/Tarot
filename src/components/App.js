@@ -16,7 +16,7 @@ class App extends Component {
           </ul>       
         </header>
         </div>
-        <div className="right">
+        <div className="right" style={{overflowY:'scroll'}}>
           {this.props.children}
         </div>
       </div>
