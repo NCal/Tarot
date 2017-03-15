@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import cardData from '../data/cardData.js';
 import $ from 'jquery';
 let chosen_cards = [];
+let globalCards = cardData[0].Cards.slice();
+let cardAmount = 78;
 
 class FullReading extends Component {   
     constructor(props, context) {
@@ -10,7 +12,6 @@ class FullReading extends Component {
         
         this.getRandomCard = this.getRandomCard.bind(this);
         this.testFunc = this.testFunc.bind(this);
-      
 
          this.state = {
             
@@ -29,20 +30,23 @@ class FullReading extends Component {
       
   componentWillMount() {
     chosen_cards = [];
-    console.log('der card data',cardData[0].Cards);
+    console.log('global cards',globalCards);
+    // console.log(this.props.Cards);
+    // this.props.Cards = globalCards;
+
     for (var i=0; i<cardData[0].Cards.length; i++ ){
        cardData[0].Cards[i].back = 'back.jpg';
     }
-
     console.log('cards after', cardData[0].Cards);
   }
 
   getRandomCard(e) {
+
      console.group('get random card');
-     let flipped =   (Math.floor(Math.random() * 2) === 0) ? true : false;
+     let flipped =   Math.floor(Math.random() * 2) === 0 ? true : false;
      let self = this;
-     let cards = this.props.Cards;
-     let randNum = Math.floor(Math.random() * (78 - 0 + 1));
+     let cards = globalCards;
+     let randNum = Math.floor(Math.random() * (cardAmount - 0 + 1));
      let randCard = cards[randNum];
      let randName = randCard.name;
      let randKeysUp  = randCard.keywords.upright;
@@ -52,15 +56,22 @@ class FullReading extends Component {
      let randUpright = randCard.description.upright;
      let randReversed = randCard.description.reversed;
      let reading = $('.reading_container');
-     let paras = document.getElementsByTagName('p');
-
+     let paras = document.getElementsByTagName('p');  
+     console.log('flipped', flipped);
      if (flipped){
       randCard.reversed = true;
      }
      console.log('card drawn',randCard);
-     // $('.description').innerHTML = randDes;
+     console.log('randNum', randNum);
+
 
     chosen_cards.push(randCard);
+    cards.splice(randNum, 1);
+    console.log('cards left:',cards);
+    cardAmount --;
+    console.log('card amount',cardAmount);
+
+
     console.log(chosen_cards);
 
     if (chosen_cards.length >= 10){
@@ -70,47 +81,18 @@ class FullReading extends Component {
             loading: false,
             reading: true
           });
-
+           globalCards = cardData[0].Cards.slice();
+           cardAmount = 78;
            self.replace_break(paras);
+           console.log(globalCards);
         },2000);
       });
     }
 
      let clickedCard = e.target;
-     // console.log($(clickedCard)[0]);
+
      $(clickedCard).addClass('selected');
 
-     // self.setState({chosen_cards: this.state.chosen_cards.push(randCard)});
-     // console.log('steert',self.state);
-     
-     // reading.hide();
-
-     // self.setState(
-     //    {
-     //       new: false,
-     //       loading: true,
-     //       random_card_flipped: flipped,
-     //       random_card_name: randName,
-     //       random_card_keys_up: randKeysUp,
-     //       random_card_keys_rev: randKeysRev,
-     //       random_card_description: randDes,
-     //       random_card_upright: randUpright,
-     //       random_card_reversed: randReversed,
-     //       random_card_src: src
-
-     //    }, function(){
-     //    setTimeout(function(){
-     //       self.setState({loading: false}, function(){
-     //          if (this.state.random_card_flipped){
-     //             $('img').addClass('card_image_reversed');
-     //          } else {
-     //             $('img.card_image').removeClass('card_image_reversed');
-     //          }
-     //          reading.show();
-     //       });
-          
-     //    },2000);
-     // });
      console.groupEnd();
   }
 
@@ -217,7 +199,7 @@ FullReading.defaultProps = {
     chosen_cards: [],
     name:'Card',
     kind: 'Child',
-    Cards: cardData[0].Cards,
+    Cards: globalCards,
 };
 
 FullReading.propTypes = {

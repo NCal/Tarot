@@ -22,7 +22,7 @@ class SCR extends Component {
       
    getRandomCard() {
       console.group('get random card');
-      let flipped =   (Math.floor(Math.random() * 2) == 0) ? true : false;
+      let flipped =   Math.floor(Math.random() * 2) === 0 ? true : false;
       let self = this;
       let cards = this.props.Cards;
       let randNum = Math.floor(Math.random() * (78 - 0 + 1));
