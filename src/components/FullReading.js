@@ -6,106 +6,96 @@ let globalCards = cardData[0].Cards.slice();
 let cardAmount = 78;
 
 class FullReading extends Component {   
-    constructor(props, context) {
-         super(props, context);
-        const self = this;
-        
-        this.getRandomCard = this.getRandomCard.bind(this);
-        this.testFunc = this.testFunc.bind(this);
+   constructor(props, context) {
+   super(props, context);
+   const self = this;
 
-         this.state = {
-            
-            new: true,
-            loading: false,
-            reading: false,
-             name: 'Card',
-             src: null,
-             random_card_flipped: null,
-             random_card_name: null,
-             random_card_description: null,
-             random_card_upright: null,
-             random_card_reversed: null
-         };
-   }
-      
-  componentWillMount() {
-    chosen_cards = [];
-    console.log('global cards',globalCards);
-    // console.log(this.props.Cards);
-    // this.props.Cards = globalCards;
+   this.getRandomCard = this.getRandomCard.bind(this);
 
-    for (var i=0; i<cardData[0].Cards.length; i++ ){
-       cardData[0].Cards[i].back = 'back.jpg';
-    }
-    console.log('cards after', cardData[0].Cards);
-  }
+   this.state = {
+      new: true,
+      loading: false,
+      reading: false,
+      name: 'Card',
+      src: null,
+      random_card_flipped: null,
+      random_card_name: null,
+      random_card_description: null,
+      random_card_upright: null,
+      random_card_reversed: null
+   };
+}
+
+   componentWillMount = () => {
+      console.log('COMP WILL MOUNT');
+      chosen_cards = [];
+      console.log('global cards',globalCards);
+      // Add back to cards
+      for (let i=0; i<cardData[0].Cards.length; i++ ){
+         cardData[0].Cards[i].back = 'back.jpg';
+      }
+   };
 
   getRandomCard(e) {
-
-     console.group('get random card');
-     let flipped =   Math.floor(Math.random() * 2) === 0 ? true : false;
-     let self = this;
-     let cards = globalCards;
-     let randNum = Math.floor(Math.random() * (cardAmount - 0 + 1));
-     let randCard = cards[randNum];
-     let randName = randCard.name;
-     let randKeysUp  = randCard.keywords.upright;
-     let randKeysRev  = randCard.keywords.reversed;
-     let src = randCard.src;
-     let randDes = randCard.description.basic;
-     let randUpright = randCard.description.upright;
-     let randReversed = randCard.description.reversed;
-     let reading = $('.reading_container');
-     let paras = document.getElementsByTagName('p');  
-     console.log('flipped', flipped);
-     if (flipped){
-      randCard.reversed = true;
-     }
-     console.log('card drawn',randCard);
-     console.log('randNum', randNum);
-
-
-    chosen_cards.push(randCard);
-    cards.splice(randNum, 1);
-    console.log('cards left:',cards);
-    cardAmount --;
-    console.log('card amount',cardAmount);
+      console.group('get random card');
+      let flipped =   Math.floor(Math.random() * 2) === 0 ? true : false;
+      let self = this;
+      let cards = globalCards;
+      let randNum = Math.floor(Math.random() * (cardAmount - 0 + 1));
+      let randCard = cards[randNum];
+      let randName = randCard.name;
+      let randKeysUp  = randCard.keywords.upright;
+      let randKeysRev  = randCard.keywords.reversed;
+      let src = randCard.src;
+      let randDes = randCard.description.basic;
+      let randUpright = randCard.description.upright;
+      let randReversed = randCard.description.reversed;
+      let reading = $('.reading_container');
+      let paras = document.getElementsByTagName('p');  
+      console.log('flipped', flipped);
+      
+      if (flipped){
+         randCard.reversed = true;
+      }
+      console.log('card drawn',randCard);
+      console.log('randNum', randNum);
 
 
-    console.log(chosen_cards);
+      chosen_cards.push(randCard);
+      cards.splice(randNum, 1);
+      console.log('cards left:',cards);
+      cardAmount --;
+      console.log('card amount',cardAmount);
 
-    if (chosen_cards.length >= 10){
-      self.setState({loading: true}, function(){
-        setTimeout(function(){
-          self.setState({
-            loading: false,
-            reading: true
-          });
-           globalCards = cardData[0].Cards.slice();
-           cardAmount = 78;
-           self.replace_break(paras);
-           console.log(globalCards);
-        },2000);
-      });
-    }
 
-     let clickedCard = e.target;
+      console.log(chosen_cards);
 
-     $(clickedCard).addClass('selected');
+      if (chosen_cards.length >= 10){
+         self.setState({loading: true}, function(){
+            setTimeout(function(){
+               self.setState({
+                  loading: false,
+                  reading: true
+               });
+               globalCards = cardData[0].Cards.slice();
+               cardAmount = 78;
+               self.replace_break(paras);
+               console.log(globalCards);
+            },2000);
+         });
+      }
 
-     console.groupEnd();
-  }
-
-  testFunc(){
-    console.log('test');
+      let clickedCard = e.target;
+      $(clickedCard).addClass('selected');
+      console.groupEnd();
   }
 
    replace_break(paras) {
-       console.log('replace break');
-       for (let i = 0; i < paras.length; i++) {
-           let new_p = paras[i].innerHTML.replace(/\r?\n/g, '<br/>');
-           paras[i].innerHTML = new_p;
-       }
+      console.log('replace break');
+      for (let i = 0; i < paras.length; i++) {
+         let new_p = paras[i].innerHTML.replace(/\r?\n/g, '<br/>');
+         paras[i].innerHTML = new_p;
+      }
    }
    render(){
     if (!this.state.loading && !this.state.reading){
