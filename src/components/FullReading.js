@@ -90,7 +90,7 @@ class FullReading extends Component {
       console.groupEnd();
   }
 
-   replace_break(paras) {
+   replace_break = (paras)=> {
       console.log('replace break');
       for (let i = 0; i < paras.length; i++) {
          let new_p = paras[i].innerHTML.replace(/\r?\n/g, '<br/>');
