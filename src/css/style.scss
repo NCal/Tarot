@@ -127,6 +127,7 @@ button {
   width: 200px;
   top: 0;
   left: 0;
+  border-right: 1px solid #ccc;
   float: left;
   background-color: #111;
 }
@@ -151,6 +152,12 @@ button {
   height: 550px;
   overflow-y: scroll;
 }
+
+// .single_card_reading_fr {
+//   padding-right: 30px;
+//   // height: 550px;
+//   // overflow-y: scroll;
+// }
 
 .card_image{
   margin-bottom: 30px;
@@ -284,7 +291,7 @@ header {
 }
 
 .selected {
-  border: 4px solid red;
+  border: 4px solid #ccc;
   opacity: 1;
   pointer-events: none;
 }
@@ -316,7 +323,7 @@ header {
 .main-nav a {
   font-size: .95em;
 
-  color: #222;
+  color: #ccc;
   text-align: center;
   text-transform: uppercase;
   display: block;
@@ -331,7 +338,8 @@ header {
 
 .main-nav li {
     width: 100%;
-    background-color: #444;
+    background-color: #222;
+    cursor: pointer;
 }
 
 /* COURSE NAV -------- */

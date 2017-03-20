@@ -80,6 +80,7 @@ class FullReading extends Component {
                globalCards = cardData[0].Cards.slice();
                cardAmount = 78;
                self.replace_break(paras);
+               self.add_info();
                console.log(globalCards);
             },2000);
          });
@@ -95,6 +96,22 @@ class FullReading extends Component {
       for (let i = 0; i < paras.length; i++) {
          let new_p = paras[i].innerHTML.replace(/\r?\n/g, '<br/>');
          paras[i].innerHTML = new_p;
+      }
+   }
+
+   add_info(){
+      console.log('add info');
+      for (let i = 0; i < $('.fcr_container').length; i++) {
+         
+         console.log($('.fcr_container').get(i));
+         let container = $('.fcr_container').get(i);
+         // container.addClass('fcr_'+i);
+         // $('.fcr_container').get(i).addClass('fcr_'+i);
+
+        // if (i === 0){
+         $('.fcr_container .single_card_reading')[i].prepend('<h1>'+i+'</h1>');
+        // }
+       
       }
    }
    render(){
