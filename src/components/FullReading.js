@@ -71,8 +71,10 @@ class FullReading extends Component {
       console.log(chosen_cards);
 
       if (chosen_cards.length >= 10){
+         self.add_info();
          self.setState({loading: true}, function(){
             setTimeout(function(){
+
                self.setState({
                   loading: false,
                   reading: true
@@ -80,7 +82,7 @@ class FullReading extends Component {
                globalCards = cardData[0].Cards.slice();
                cardAmount = 78;
                self.replace_break(paras);
-               self.add_info();
+               
                console.log(globalCards);
             },2000);
          });
@@ -101,18 +103,19 @@ class FullReading extends Component {
 
    add_info(){
       console.log('add info');
-      for (let i = 0; i < $('.fcr_container').length; i++) {
-         
-         console.log($('.fcr_container').get(i));
-         let container = $('.fcr_container').get(i);
-         // container.addClass('fcr_'+i);
-         // $('.fcr_container').get(i).addClass('fcr_'+i);
-
-        // if (i === 0){
-         $('.fcr_container .single_card_reading')[i].prepend('<h1>'+i+'</h1>');
-        // }
-       
+      for (let i = 0; i < chosen_cards.length; i++) {
+         chosen_cards[0].type = "Card 1: The Present";
+         chosen_cards[1].type = "Card 2: The Challenge";
+         chosen_cards[2].type = "Card 3: The Past";
+         chosen_cards[3].type = "Card 4: The Future";
+         chosen_cards[4].type = "Card 5: Above (Best Outcome)";
+         chosen_cards[5].type = "Card 6: Below (The Subconscious)";
+         chosen_cards[6].type = "Card 7: Advice";
+         chosen_cards[7].type = "Card 8: External Influences";
+         chosen_cards[8].type = "Card 9: Hopes and Fears";
+         chosen_cards[9].type = "Card 10: Outcome";
       }
+      console.log('boogboogba',chosen_cards);
    }
    render(){
     if (!this.state.loading && !this.state.reading){
@@ -165,6 +168,7 @@ class FullReading extends Component {
                        return (
                      <div key={i} className="fcr_container"><img className="card_image" style={{float: 'right'}} src={'assets/tarot/'+card.src} alt=""/>
                        <div  className="single_card_reading">
+                         <h2 className="type">{card.type}</h2>
                          <h3 className="title">{card.name}</h3>
                          <h4 className="title">Keywords:</h4>
                          <p>{card.keywords.upright}</p>
@@ -179,6 +183,7 @@ class FullReading extends Component {
                        return (
                      <div key={i} className="fcr_container"><img className="card_image card_image_reversed" style={{float: 'right'}} src={'assets/tarot/'+card.src} alt=""/>
                        <div  className="single_card_reading">
+                         <h2 className="type">{card.type}</h2>
                          <h3 className="title">{card.name+ ' Reversed'}</h3>
                          <h4 className="title">Keywords:</h4>
                          <p>{card.keywords.reversed}</p>
