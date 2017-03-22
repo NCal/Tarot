@@ -1,15 +1,16 @@
 {
-  "name": "course-directory",
+  "name": "Tarot",
   "version": "1.0.0",
-  "description": "A project for React Router Basics",
+  "description": "A single page, react-router, Tarot app",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
+    "prod": "NODE_ENV=production webpack",
     "start": "webpack-dev-server --progress --inline --hot --history-api-fallback"
   },
   "keywords": [],
-  "author": "@guilh & Treehouse students",
+  "author": "Nathan Broaddus",
   "license": "ISC",
   "dependencies": {
     "react": "^15.3.0",
@@ -30,6 +31,7 @@
     "sass-loader": "^6.0.3",
     "style-loader": "^0.13.1",
     "webpack": "^1.13.1",
+    "webpack-cleanup-plugin": "^0.5.1",
     "webpack-dev-server": "^1.14.1"
   }
 }
