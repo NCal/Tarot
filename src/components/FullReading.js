@@ -11,7 +11,7 @@ class FullReading extends Component {
    const self = this;
 
    this.getRandomCard = this.getRandomCard.bind(this);
-
+   this.back = this.back.bind(this);
    this.state = {
       new: true,
       loading: false,
@@ -26,7 +26,7 @@ class FullReading extends Component {
    };
 }
 
-   componentWillMount = () => {
+   componentWillMount() {
       console.log('COMP WILL MOUNT');
       chosen_cards = [];
       console.log('global cards',globalCards);
@@ -93,7 +93,7 @@ class FullReading extends Component {
       console.groupEnd();
   }
 
-   replace_break = (paras)=> {
+   replace_break(paras) {
       console.log('replace break');
       for (let i = 0; i < paras.length; i++) {
          let new_p = paras[i].innerHTML.replace(/\r?\n/g, '<br/>');
@@ -117,17 +117,26 @@ class FullReading extends Component {
       }
       console.log('boogboogba',chosen_cards);
    }
+
+   back() {
+      console.log('back');
+      this.setState({
+         loading: false,
+         reading: false
+      });
+      chosen_cards = [];
+   }
+
    render(){
     if (!this.state.loading && !this.state.reading){
          return (
              <div className="main-content ">    
-                  {/*<button onClick={ this.getRandomCard}>Draw A Card</button>*/}
                   <div className="cards">
+                  <p style={{color: '#fff'}}>Select 10 cards</p>
                    {cardData[0].Cards.map(function(card, i){
-                     return (<img className="full_card" key={'card'+i} src={'assets/tarot/'+card.back} style={{width: '71px', margin: '2px'}} onClick={this.getRandomCard}/>)
+                     return (<img className="full_card" key={'card'+i} src={'assets/tarot/'+card.back} onClick={this.getRandomCard}/>)
                    }.bind(this))
-                  
-                 } 
+                  } 
                   </div>
                   <div className="reading_container">
                   </div>
@@ -162,6 +171,7 @@ class FullReading extends Component {
       return (
         <div className="main-content " style={{overflowY: 'scroll'}}>    
                <div className="reading_container">
+               <button onClick={this.back}>Back</button>
                {
                 chosen_cards.map(function(card, i){
                   if (!card.reversed){
@@ -197,7 +207,7 @@ class FullReading extends Component {
                   }
                 })
                }
-               
+               <button onClick={this.back}>Back</button>
                </div>
           </div>
       )

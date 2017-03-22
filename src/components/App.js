@@ -9,10 +9,9 @@ class App extends Component {
         <div className="left">
         <header>
           <ul className="main-nav">
-            <li><Navlink to="/">Home</Navlink></li>
+            <li><Navlink to="/">Full Reading</Navlink></li>
             <li><Navlink to="/SCR">Single Card Reading</Navlink></li>
-            <li><Navlink to="/FullReading">Full Reading</Navlink></li>
-           {/* <li><Navlink to="/courses">Courses</Navlink></li>*/}
+            <li><Navlink to="/about">About</Navlink></li>
           </ul>       
         </header>
         </div>
