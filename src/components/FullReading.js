@@ -177,16 +177,16 @@ class FullReading extends Component {
                   if (!card.reversed){
                        return (
                      <div key={i} className="fcr_container"><img className="card_image" style={{float: 'right'}} src={'assets/tarot/'+card.src} alt=""/>
-                       <div  className="single_card_reading">
-                         <h2 className="type">{card.type}</h2>
-                         <h3 className="title">{card.name}</h3>
-                         <h4 className="title">Keywords:</h4>
-                         <p>{card.keywords.upright}</p>
-                         <h3 className="title">Summary</h3>
-                         <p className="description">{card.description.basic}</p>
-                         <h3 className="title">Upright</h3>
-                         <p className="upright_description">{card.description.upright}</p>
-                      </div>
+                        <div  className="single_card_reading">
+                           <h2 className="type">{card.type}</h2>
+                           <h3 className="title">{card.name}</h3>
+                           <h4 className="title">Keywords:</h4>
+                           <p>{card.keywords.upright}</p>
+                           <h3 className="title">Summary</h3>
+                           <p className="description">{card.description.basic}</p>
+                           <h3 className="title">Upright</h3>
+                           <p className="upright_description">{card.description.upright}</p>
+                        </div>
                       <br/>
                     </div>)
                   } else {
@@ -208,12 +208,11 @@ class FullReading extends Component {
                 })
                }
                <button onClick={this.back}>Back</button>
-               </div>
-          </div>
+            </div>
+         </div>
       )
-
-    }      
-    }
+   }      
+   }
 }
 
 // PROPS 

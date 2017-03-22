@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Navlink from './Navlink';
 
-
 class App extends Component {
   render() {
     return (
