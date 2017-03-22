@@ -15,8 +15,9 @@ import $ from 'jquery';
 const routes = (
    <Router history={browserHistory}>
       <Route component={App}>
-         <Route  path="about" component={About}></Route>
-         <Route  path="scr" component={SCR}></Route>
+         <Route  path="Tarot/about" component={About}></Route>
+         <Route  path="Tarot/scr" component={SCR}></Route>
+         <Route  path="/Tarot" component={FullReading}></Route>
          <Route  path="/" component={FullReading}></Route>
          <Route path="*" component={NotFound}></Route>
       </Route>
