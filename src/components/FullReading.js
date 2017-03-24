@@ -66,8 +66,6 @@ class FullReading extends Component {
       console.log('cards left:',cards);
       cardAmount --;
       console.log('card amount',cardAmount);
-
-
       console.log(chosen_cards);
 
       if (chosen_cards.length >= 10){
@@ -115,7 +113,6 @@ class FullReading extends Component {
          chosen_cards[8].type = "Card 9: Hopes and Fears";
          chosen_cards[9].type = "Card 10: Outcome";
       }
-      console.log('boogboogba',chosen_cards);
    }
 
    back() {

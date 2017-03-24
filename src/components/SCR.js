@@ -163,5 +163,4 @@ SCR.propTypes = {
     kind: React.PropTypes.string
 }
 
-
 export default SCR;
