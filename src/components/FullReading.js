@@ -131,7 +131,7 @@ class FullReading extends Component {
                   <div className="cards">
                   <p style={{color: '#fff'}}>Select 10 cards</p>
                    {cardData[0].Cards.map(function(card, i){
-                     return (<img className="full_card" key={'card'+i} src={'assets/tarot/'+card.back} onClick={this.getRandomCard}/>)
+                     return (<img className="full_card" key={'card'+i} src={card.back} onClick={this.getRandomCard}/>)
                    }.bind(this))
                   } 
                   </div>
