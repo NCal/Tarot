@@ -131,7 +131,7 @@ class FullReading extends Component {
                   <div className="cards">
                   <p style={{color: '#fff'}}>Select 10 cards</p>
                    {cardData[0].Cards.map(function(card, i){
-                     return (<img className="full_card" key={'card'+i} src={'assets/tarot/'+card.back} onClick={this.getRandomCard}/>)
+                     return (<img className="full_card" key={'card'+i} src={'/Tarot/assets/tarot/'+card.back} onClick={this.getRandomCard}/>)
                    }.bind(this))
                   } 
                   </div>
@@ -173,7 +173,7 @@ class FullReading extends Component {
                 chosen_cards.map(function(card, i){
                   if (!card.reversed){
                        return (
-                     <div key={i} className="fcr_container"><img className="card_image" style={{float: 'right'}} src={'assets/tarot/'+card.src} alt=""/>
+                     <div key={i} className="fcr_container"><img className="card_image" style={{float: 'right'}} src={'/Tarot/assets/tarot/'+card.src} alt=""/>
                         <div  className="single_card_reading">
                            <h2 className="type">{card.type}</h2>
                            <h3 className="title">{card.name}</h3>
@@ -188,7 +188,7 @@ class FullReading extends Component {
                     </div>)
                   } else {
                        return (
-                     <div key={i} className="fcr_container"><img className="card_image card_image_reversed" style={{float: 'right'}} src={'assets/tarot/'+card.src} alt=""/>
+                     <div key={i} className="fcr_container"><img className="card_image card_image_reversed" style={{float: 'right'}} src={'/Tarot/assets/tarot/'+card.src} alt=""/>
                        <div  className="single_card_reading">
                          <h2 className="type">{card.type}</h2>
                          <h3 className="title">{card.name+ ' Reversed'}</h3>

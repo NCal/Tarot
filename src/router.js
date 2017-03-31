@@ -19,7 +19,7 @@ const routes = (
       <Route component={App}>
          <Route  path="/Tarot/about" component={About}></Route>
          <Route  path="/Tarot/scr" component={SCR}></Route>
-         <Route  path="/Tarot/" component={FullReading}></Route>
+         <Route  path="/Tarot" component={FullReading}></Route>
          <Route path="*" component={NotFound}></Route>
       </Route>
    </Router>
