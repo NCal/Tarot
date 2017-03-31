@@ -9,7 +9,7 @@ class App extends Component {
         <header>
           <ul className="main-nav">
             <li><Navlink to="/Tarot">Full Reading</Navlink></li>
-            <li><Navlink to="/Tarot/SCR">Single Card Reading</Navlink></li>
+            <li><Navlink to="/Tarot/scr">Single Card Reading</Navlink></li>
             <li><Navlink to="/Tarot/about">About</Navlink></li>
           </ul>       
         </header>
