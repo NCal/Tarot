@@ -173,7 +173,7 @@ class FullReading extends Component {
                 chosen_cards.map(function(card, i){
                   if (!card.reversed){
                        return (
-                     <div key={i} className="fcr_container"><img className="card_image" style={{float: 'right'}} src={'/Tarot/assets/tarot/'+card.src} alt=""/>
+                     <div key={i} className="fcr_container"><img className="card_image" style={{float: 'right'}} src={card.src} alt=""/>
                         <div  className="single_card_reading">
                            <h2 className="type">{card.type}</h2>
                            <h3 className="title">{card.name}</h3>
@@ -188,7 +188,7 @@ class FullReading extends Component {
                     </div>)
                   } else {
                        return (
-                     <div key={i} className="fcr_container"><img className="card_image card_image_reversed" style={{float: 'right'}} src={'/Tarot/assets/tarot/'+card.src} alt=""/>
+                     <div key={i} className="fcr_container"><img className="card_image card_image_reversed" style={{float: 'right'}} src={card.src} alt=""/>
                        <div  className="single_card_reading">
                          <h2 className="type">{card.type}</h2>
                          <h3 className="title">{card.name+ ' Reversed'}</h3>
