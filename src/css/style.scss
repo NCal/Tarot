@@ -407,8 +407,56 @@ $c3: #1b98e0;
     input,
     button {
        display: block;
-       width: 100%;
+       width: 140px;
        margin-bottom: 1em;
+    }
+
+    .left {
+      position: relative;
+      height: 160px;
+      width: 100%;
+      top: 0;
+      left: 0;
+      border-right: 1px solid #ccc;
+      float: left;
+      background-color: #111;
+    }
+
+    .right {
+      height: 100%;
+      width: 100%;
+      position: relative;
+      right: 0;
+      top: 1px;
+      overflow-y: hidden;
+      background-color: #222;
+      padding-bottom: 150px;
+    }
+
+    .main-nav {
+      border-bottom: 1px solid #ccc;
+    }
+
+    .card_image, .card_image_reversed {
+      width: 203px;
+      height: 330px;
+      float: left;
+    }
+
+    .upright_description {
+      padding-bottom: 40px;
+    }
+
+    .upright_description:last-of-type {
+      padding-bottom: 50px;
+    }
+
+    .single_card_reading {
+      clear: both;
+    }
+
+    .fcr_container {
+      margin-bottom: 0;
     }
 }
 @media (min-width: 769px) {
@@ -468,3 +516,11 @@ $c3: #1b98e0;
       float: left;
    }
 }
+
+
+
+// @media only screen and (max-width: 500px) {
+//     body {
+//         background-color: lightblue;
+//     }
+// }

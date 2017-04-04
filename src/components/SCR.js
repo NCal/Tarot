@@ -116,7 +116,7 @@ class SCR extends Component {
           <div className="main-content SCR">    
                <button onClick={ this.getRandomCard}>Draw A Single Card</button>
                <div className="reading_container">
-               <img className="card_image" style={{float: 'right'}} src={this.state.random_card_src} alt=""/>
+               <img className="card_image"  src={this.state.random_card_src} alt=""/>
                <div  className="single_card_reading">
                   <h3 className="title">{this.state.random_card_name}</h3>
                   <h4 className="title">Keywords:</h4>
@@ -134,7 +134,7 @@ class SCR extends Component {
           <div className="main-content SCR">    
                <button onClick={ this.getRandomCard}>Draw A Single Card</button>
                <div className="reading_container">
-                  <img className="card_image" style={{float: 'right'}} src={this.state.random_card_src} alt=""/>
+                  <img className="card_image" src={this.state.random_card_src} alt=""/>
                   <div  className="single_card_reading">
                      <h3 className="title">{this.state.random_card_name +' Reversed'}</h3>
                      <h4 className="title">Keywords:</h4>
