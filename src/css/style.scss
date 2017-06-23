@@ -39,7 +39,7 @@ html {
 body {
    margin: 0;
    background-color: #fffff;
-   color: #13293d;
+   color: #444;
    margin: 0;
    height: 100%;
    font-family: 'Roboto', sans-serif;
@@ -107,7 +107,7 @@ button {
 
 // ==== PAGE LAYOUT AND STYLES ====//
 .title {
-   color: #fff;
+    color: #222;
 }
 
 .container {
@@ -140,7 +140,7 @@ button {
    top: 0;
    right: 0;
    overflow-y: hidden;
-   background-color: #222;
+   background-color: #ffffff;
 }
 
 .reading_container {
@@ -218,7 +218,7 @@ header {
 }
 
 .type {
-   color: #fff;
+   color: #222;
 }
 
 // ==== IMAGES ==== //
@@ -429,7 +429,7 @@ $c3: #1b98e0;
       right: 0;
       top: 1px;
       overflow-y: hidden;
-      background-color: #222;
+      background-color: #fff;
       padding-bottom: 150px;
     }
 
