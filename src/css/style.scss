@@ -176,8 +176,13 @@ svg {
 }
    
 .cards {
+
    height: 800px;
    overflow-y: scroll;
+
+   p {
+      color: #ccc;
+   }
 }
 
 .full_card {
@@ -417,7 +422,7 @@ $c3: #1b98e0;
       width: 100%;
       top: 0;
       left: 0;
-      border-right: 1px solid #ccc;
+      border-right: 1px solid #eee;
       float: left;
       background-color: #111;
     }
