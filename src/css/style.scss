@@ -38,8 +38,8 @@ html {
 
 body {
    margin: 0;
-   background-color: #13293d;
-   color: #576366;
+   background-color: #fffff;
+   color: #13293d;
    margin: 0;
    height: 100%;
    font-family: 'Roboto', sans-serif;
@@ -129,9 +129,9 @@ button {
    width: 200px;
    top: 0;
    left: 0;
-   border-right: 1px solid #ccc;
+   border-right: 1px solid #111;
    float: left;
-   background-color: #111;
+   // background-color: #111;
 }
 // ==== RIGHT ====//
 .right {
@@ -253,7 +253,7 @@ header {
 
 .main-nav li {
       width: 100%;
-      background-color: #222;
+      background-color: #fff;
       cursor: pointer;
 }
 
