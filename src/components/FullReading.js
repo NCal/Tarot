@@ -166,7 +166,7 @@ class FullReading extends Component {
     }
     if (this.state.reading) {
       return (
-        <div className="main-content " style={{overflowY: 'scroll'}}>    
+        <div className="main-content " >    
                <div className="reading_container">
                <button onClick={this.back}>Back</button>
                {
