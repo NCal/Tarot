@@ -264,83 +264,15 @@ header {
 
 // ==== LOADER ===== //
 
-@keyframes loader {
-   50% {
-      transform: translateY(-16px);
-      background-color: #1b98e0;
-   }
-}
+      .pentacle {
+         width: 100px;
+         animation: spin linear 4s; 
+         animation-iteration-count: infinite;
+      }
 
-
-$t: 0.8s;
-$d: $t / 5;
-
-$c1: #13293d;
-$c2: #006494;
-$c3: #1b98e0;
-
-
-.loader {
-   filter: url("#goo");
-   width: 100px;
-   margin: 0 auto;
-   position: relative;
-   top: 50vh;
-   transform: translateY(-10px);
-}
-.loader > div {
-   float: left;
-   height: 20px;
-   width: 20px;
-   border-radius: 100%;
-   background-color: #006494;
-   animation: loader 0.8s infinite;
-}
-
-.loader > div:nth-child(1) {
-   animation-delay: 0.16s;
-}
-
-.loader > div:nth-child(2) {
-   animation-delay: 0.32s;
-}
-
-.loader > div:nth-child(3) {
-   animation-delay: 0.48s;
-}
-
-.loader > div:nth-child(4) {
-   animation-delay: 0.64s;
-}
-
-.loader > div:nth-child(5) {
-   animation-delay: 0.8s;
-}
-
-.loader {
-   filter: url('#goo');
-   width: 100px;
-   margin: 0 auto;
-   position: relative;
-   top: 50vh;
-   transform: translateY(-10px);
-   
-}
-   
-   .loader > div {
-      float: left;
-      height: 20px;
-      width: 20px;
-      border-radius: 100%;
-      background-color: $c2;
-      animation: loader $t infinite ;
-   }
-
-// @for $i from 1 through 5 
-//    .loader > div:nth-child(#{$i}) {
-//             animation-delay: $i * $d
-//    }
-
+      @-moz-keyframes spin { 100% { -moz-transform:rotate(360deg); transform:rotate(360deg)   ;}}
+      @-webkit-keyframes spin { 100% { -webkit-transform:rotate(360deg); transform:rotate(360deg) ;}}
+      @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg) ;}}
 
 /* COURSE NAV -------- */
 
