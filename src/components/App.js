@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import Navlink from './Navlink';
 
-class App extends Component {
-  render() {
+const App = (props) => {
     return (
       <div className="container">
         <div className="left">
@@ -15,11 +14,10 @@ class App extends Component {
         </header>
         </div>
         <div className="right" style={{overflowY:'scroll'}}>
-          {this.props.children}
+          {props.children}
         </div>
       </div>
     );
-  }
 }
 
 export default App;

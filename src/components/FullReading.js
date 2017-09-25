@@ -10,8 +10,6 @@ class FullReading extends Component {
    super(props, context);
    const self = this;
 
-   this.getRandomCard = this.getRandomCard.bind(this);
-   this.back = this.back.bind(this);
    this.state = {
       new: true,
       loading: false,
@@ -26,7 +24,7 @@ class FullReading extends Component {
    };
 }
 
-   componentWillMount() {
+   componentWillMount = () => {
       console.log('COMP WILL MOUNT');
       chosen_cards = [];
       console.log('global cards',globalCards);
@@ -36,7 +34,7 @@ class FullReading extends Component {
       }
    };
 
-  getRandomCard(e) {
+  getRandomCard = (e) => {
       console.group('get random card');
       let flipped =   Math.floor(Math.random() * 2) === 0 ? true : false;
       let self = this;
@@ -91,7 +89,7 @@ class FullReading extends Component {
       console.groupEnd();
   }
 
-   replace_break(paras) {
+   replace_break = (paras) => {
       console.log('replace break');
       for (let i = 0; i < paras.length; i++) {
          let new_p = paras[i].innerHTML.replace(/\r?\n/g, '<br/>');
@@ -99,7 +97,7 @@ class FullReading extends Component {
       }
    }
 
-   add_info(){
+   add_info = () => {
       console.log('add info');
       for (let i = 0; i < chosen_cards.length; i++) {
          chosen_cards[0].type = "Card 1: The Present";
@@ -115,7 +113,7 @@ class FullReading extends Component {
       }
    }
 
-   back() {
+   back = () => {
       console.log('back');
       this.setState({
          loading: false,
@@ -124,7 +122,7 @@ class FullReading extends Component {
       chosen_cards = [];
    }
 
-   render(){
+   render = () => {
     if (!this.state.loading && !this.state.reading){
          return (
              <div className="main-content ">    

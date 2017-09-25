@@ -6,7 +6,6 @@ class SCR extends Component {
     constructor(props, context) {
          super(props, context);
 
-         this.getRandomCard = this.getRandomCard.bind(this);
          this.state = {
             new: true,
             loading: false,
@@ -20,7 +19,7 @@ class SCR extends Component {
          };
    }
       
-   getRandomCard() {
+   getRandomCard = () => {
       console.group('get random card');
       let flipped =   Math.floor(Math.random() * 2) === 0 ? true : false;
       let self = this;
@@ -70,14 +69,14 @@ class SCR extends Component {
       console.groupEnd();
    }
 
-   replace_break(paras) {
+   replace_break = (paras) => {
        console.log('replace break');
        for (let i = 0; i < paras.length; i++) {
            let new_p = paras[i].innerHTML.replace(/\r?\n/g, '<br/>');
            paras[i].innerHTML = new_p;
        }
    }
-   render(){
+   render = () => { 
    if (this.state.loading){
       return (
       <div className="main-content SCR">   
