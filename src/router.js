@@ -5,9 +5,9 @@ import { Router, Route, browserHistory, IndexRedirect } from 'react-router';
 // Components
 import App from './components/App';
 import SCR from './components/SCR';
-import About from './components/about';
+import About from './components/About';
 import FullReading from './components/FullReading';
-import NotFound from './components/notfound';
+import NotFound from './components/NotFound';
 import $ from 'jquery';
 
 // Routes
