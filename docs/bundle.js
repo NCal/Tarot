@@ -40214,9 +40214,8 @@
 	      _react2.default.createElement(
 	        "a",
 	        { href: "http://www.nbroaddus.com" },
-	        "Nathan Broaddus "
-	      ),
-	      "\xA9 2017"
+	        "N Broaddus "
+	      )
 	    )
 	  );
 	};
