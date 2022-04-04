@@ -28325,7 +28325,7 @@
 	      }
 	   }, {
 	      name: 'The Magician',
-	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/01_Major_Magician.jpg',
+	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/01_MajorMagician.jpg',
 	      keywords: {
 	         upright: 'Power, skill, concentration, action, resourcefulness',
 	         reversed: 'Manipulation, poor planning, latent talents'
@@ -28337,7 +28337,8 @@
 	      }
 	   }, {
 	      name: 'The High Priestess',
-	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/02_Major_High_Priestess.jpg',
+	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/02_Major_HighPriestess.jpg',
+
 	      keywords: {
 	         upright: 'Intuition, Higher powers, mystery, subconscious mind',
 	         reversed: 'Hidden agendas, need to listen to inner voice'
@@ -28349,7 +28350,7 @@
 	      }
 	   }, {
 	      name: 'The Empress',
-	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/03_Major_Empress.jpg',
+	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/03_MajorEmpress.jpg',
 	      keywords: {
 	         upright: 'Fertility, femininity, beauty, nature, abundance',
 	         reversed: 'Creative block, dependence on others'
@@ -28361,7 +28362,7 @@
 	      }
 	   }, {
 	      name: 'The Emperor',
-	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/04_Major_Emperor.jpg',
+	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/04_MajorEmperor.jpg',
 	      keywords: {
 	         upright: 'Authority, father-figure, structure, solid foundation',
 	         reversed: 'excessive control, rigidity, inflexibility'
@@ -28373,7 +28374,7 @@
 	      }
 	   }, {
 	      name: 'The Heirophant',
-	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/05_Major_Hierophant.jpg',
+	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/05_MajorHierophant.jpg',
 	      keywords: {
 	         upright: 'Religion, group identification, conformity, tradition, beliefs',
 	         reversed: 'Restriction, challenging the status quo'
@@ -28385,7 +28386,7 @@
 	      }
 	   }, {
 	      name: 'The Lovers',
-	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/06_Major_Lovers.jpg',
+	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/06_MajorLovers.jpg',
 	      keywords: {
 	         upright: 'Love, union, relationships, values alignment, choices',
 	         reversed: 'Disharmony, imbalance, misalignment of values'
@@ -28397,7 +28398,7 @@
 	      }
 	   }, {
 	      name: 'The Chariot',
-	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/07_Major_Chariot.jpg',
+	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/07_MajorChariot.jpg',
 	      keywords: {
 	         upright: 'Control, will power, victory, assertion, determination',
 	         reversed: 'Lack of control and direction, aggression'
@@ -28409,7 +28410,7 @@
 	      }
 	   }, {
 	      name: 'Strength',
-	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/08_Major_Strength.jpg',
+	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/08_MajorStrength.jpg',
 	      keywords: {
 	         upright: 'Strength, courage, patience, control, compassion',
 	         reversed: 'Weakness, self-doubt, lack of self-discipline'
@@ -28421,7 +28422,7 @@
 	      }
 	   }, {
 	      name: 'The Hermit',
-	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/09_Major_Hermit.jpg',
+	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/09_MajorHermit.jpg',
 	      keywords: {
 	         upright: 'Soul-searching, introspection, being alone, inner guidance',
 	         reversed: 'Isolation, loneliness, withdrawal'
@@ -28433,7 +28434,7 @@
 	      }
 	   }, {
 	      name: 'The Wheel Of Fortune',
-	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/10_Major_Wheel_of_Fortune.jpg',
+	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/10_MajorWheel_of_Fortune.jpg',
 	      keywords: {
 	         upright: 'Good luck, karma, life cycles, destiny, a turning point',
 	         reversed: 'Bad luck, negative external forces, out of control'
@@ -28445,7 +28446,7 @@
 	      }
 	   }, {
 	      name: 'Justice',
-	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/11_Major_Justice.jpg',
+	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/11_MajorJustice.jpg',
 	      keywords: {
 	         upright: 'Justice, fairness, truth, cause and effect, law',
 	         reversed: 'Unfairness, lack of accountability, dishonesty'
@@ -28457,7 +28458,7 @@
 	      }
 	   }, {
 	      name: 'The Hanged Man',
-	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/12_Major_Hanged_Man.jpg',
+	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/12_MajorHanged_Man.jpg',
 	      keywords: {
 	         upright: 'Suspension, restriction, letting go, sacrifice',
 	         reversed: 'Martyrdom, indecision, delay'
@@ -28469,7 +28470,7 @@
 	      }
 	   }, {
 	      name: 'Death',
-	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/13_Major_Death.jpg',
+	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/13_MajorDeath.jpg',
 	      keywords: {
 	         upright: 'Endings, beginnings, change, transformation, transition',
 	         reversed: 'Resistance to change, unable to move on'
@@ -28481,7 +28482,7 @@
 	      }
 	   }, {
 	      name: 'Temperance',
-	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/14_Major_Temperance.jpg',
+	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/14_MajorTemperance.jpg',
 	      keywords: {
 	         upright: 'Balance, moderation, patience, purpose, meaning',
 	         reversed: 'Imbalance, excess, lack of long-term vision'
@@ -28493,7 +28494,7 @@
 	      }
 	   }, {
 	      name: 'The Devil',
-	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/15_Major_Devil.jpg',
+	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/15_MajorDevil.jpg',
 	      keywords: {
 	         upright: 'Bondage, addiction, sexuality, materialism',
 	         reversed: 'Detachment, breaking free, power reclaimed'
@@ -28505,7 +28506,7 @@
 	      }
 	   }, {
 	      name: 'The Tower',
-	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/16_Major_Tower.jpg',
+	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/16_MajorTower.jpg',
 	      keywords: {
 	         upright: 'Disaster, upheaval, sudden change, revelation',
 	         reversed: 'Avoidance of disaster, fear of change'
@@ -28517,7 +28518,7 @@
 	      }
 	   }, {
 	      name: 'The Star',
-	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/17_Major_Star.jpg',
+	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/17_MajorStar.jpg',
 	      keywords: {
 	         upright: 'Hope, spirituality, renewal, inspiration, serenity',
 	         reversed: 'Lack of faith, despair, discouragement'
@@ -28529,7 +28530,7 @@
 	      }
 	   }, {
 	      name: 'The Moon',
-	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/18_Major_Moon.jpg',
+	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/18_MajorMoon.jpg',
 	      keywords: {
 	         upright: 'Illusion, fear, anxiety, insecurity, subconscious',
 	         reversed: 'Release of fear, unhappiness, confusion'
@@ -28541,7 +28542,7 @@
 	      }
 	   }, {
 	      name: 'The Sun',
-	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/19_Major_Sun.jpg',
+	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/19_MajorSun.jpg',
 	      keywords: {
 	         upright: 'Fun, warmth, success, positivity, vitality',
 	         reversed: 'Temporary depression, lack of success'
@@ -28553,7 +28554,7 @@
 	      }
 	   }, {
 	      name: 'Judgement',
-	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/20_Major_Judgement.jpg',
+	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/20_MajorJudgement.jpg',
 	      keywords: {
 	         upright: 'Judgement, rebirth, inner calling, absolution',
 	         reversed: 'Self-doubt, refusal of self-examination'
@@ -28565,7 +28566,7 @@
 	      }
 	   }, {
 	      name: 'The World',
-	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/21_Major_World.jpg',
+	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/21_MajorWorld.jpg',
 	      keywords: {
 	         upright: 'Completion, integration, accomplishment, travel',
 	         reversed: 'Lack of completion, lack of closure'
@@ -28601,7 +28602,7 @@
 	      }
 	   }, {
 	      name: 'Three Of Wands',
-	      src: 'hhttps://preview.ibb.co/bv1rBF/24_Wands03.jpg',
+	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/24_Wands03.jpg',
 	      keywords: {
 	         upright: 'Preparation, foresight, enterprise, expansion',
 	         reversed: 'Lack of foresight, delays, obstacles to long-term goals'
@@ -28613,7 +28614,7 @@
 	      }
 	   }, {
 	      name: 'Four Of Wands',
-	      src: 'hhttps://preview.ibb.co/gqXL5a/25_Wands04.jpg',
+	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/25_Wands04.jpg',
 	      keywords: {
 	         upright: 'Celebration, harmony, marriage, home, community',
 	         reversed: 'Breakdown in communication, transition'
