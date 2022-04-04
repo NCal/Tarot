@@ -28337,7 +28337,7 @@
 	      }
 	   }, {
 	      name: 'The High Priestess',
-	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/02_Major_HighPriestess.jpg',
+	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/02_MajorHigh_Priestess.jpg',
 
 	      keywords: {
 	         upright: 'Intuition, Higher powers, mystery, subconscious mind',
