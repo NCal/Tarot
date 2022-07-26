@@ -132,7 +132,7 @@ button {
    width: 22%;
    top: 0;
    left: 0;
-   border-right: 1px solid #eee;
+   border-right: 1px solid #555;
    float: left;
    // background-color: #111;
 }
@@ -143,7 +143,7 @@ button {
    width: 22%;
    top: 0;
    right: 0;
-   border-left: 1px solid #eee;
+   border-left: 1px solid #555;
    float: right;
 }
 
@@ -151,7 +151,7 @@ button {
    position: relative;
    width: 100%;
    height: 270px;
-   border-bottom: 1px solid #ccc;
+   border-bottom: 1px solid #555;
 }
 
 .center {
@@ -211,7 +211,7 @@ svg {
 
 .full_card {
    cursor: pointer;
-   opacity: .5;
+   opacity: .7;
    width: 60px;
    margin: 2px;
 }
@@ -378,7 +378,7 @@ header {
       width: 100%;
       top: 0;
       left: 0;
-      border-right: 1px solid #eee !important;
+      border-right: 1px solid #555 !important;
       float: left;
       background-color: #111;
     }
