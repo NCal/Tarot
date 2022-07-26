@@ -154,34 +154,56 @@ class FullReading extends Component {
                 chosen_cards.map(function(card, i){
                   if (!card.reversed){
                        return (
-                     <div key={i} className="fcr_container"><img className="card_image"  src={card.src} alt=""/>
-                        <div  className="single_card_reading">
-                           <h2 className="type">{card.type}</h2>
-                           <h3 className="title">{card.name}</h3>
-                           <h4 className="title">Keywords:</h4>
-                           <p>{card.keywords.upright}</p>
-                           <h3 className="title">Summary</h3>
-                           <p className="description">{card.description.basic}</p>
-                           <h3 className="title">Upright</h3>
-                           <p className="upright_description">{card.description.upright}</p>
-                        </div>
-                      <br/>
-                    </div>)
+                         <div key={i} className="fcr_container">
+                           <div className="single_card_reading">
+                             <h2 className="type">{card.type}</h2>
+                             <h3 className="title">{card.name}</h3>
+                             <img
+                               className="card_image"
+                               src={card.src}
+                               alt=""
+                             />
+                             <h4 className="title">Keywords:</h4>
+                             <p>{card.keywords.upright}</p>
+                             <h3 className="title">Summary</h3>
+                             <p className="description">
+                               {card.description.basic}
+                             </p>
+                             <h3 className="title">Upright</h3>
+                             <p className="upright_description">
+                               {card.description.upright}
+                             </p>
+                           </div>
+                           <br />
+                         </div>
+                       );
                   } else {
                        return (
-                     <div key={i} className="fcr_container"><img className="card_image card_image_reversed" src={card.src} alt=""/>
-                       <div  className="single_card_reading">
-                         <h2 className="type">{card.type}</h2>
-                         <h3 className="title">{card.name+ ' Reversed'}</h3>
-                         <h4 className="title">Keywords:</h4>
-                         <p>{card.keywords.reversed}</p>
-                         <h3 className="title">Summary</h3>
-                         <p className="description">{card.description.basic}</p>
-                         <h3 className="title">Reversed</h3>
-                         <p className="upright_description">{card.description.reversed}</p>
-                      </div>
-                      <br/>
-                    </div>)
+                         <div key={i} className="fcr_container">
+                           <div className="single_card_reading">
+                             <h2 className="type">{card.type}</h2>
+                             <h3 className="title">
+                               {card.name + " Reversed"}
+                             </h3>
+                             <img
+                               className="card_image card_image_reversed"
+                               src={card.src}
+                               alt=""
+                             />
+                             <h4 className="title">Keywords:</h4>
+                             <p>{card.keywords.reversed}</p>
+                             <h3 className="title">Summary</h3>
+                             <p className="description">
+                               {card.description.basic}
+                             </p>
+                             <h3 className="title">Reversed</h3>
+                             <p className="upright_description">
+                               {card.description.reversed}
+                             </p>
+                           </div>
+                           <br />
+                         </div>
+                       );
                   }
                 })
                }

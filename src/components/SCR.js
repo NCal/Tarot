@@ -97,40 +97,58 @@ class SCR extends Component {
    }
    if (!this.state.random_card_flipped && !this.state.loading && !this.state.new){
       return (
-          <div className="main-content SCR">    
-               <button onClick={ this.getRandomCard}>Draw A Single Card</button>
-               <div className="reading_container">
-               <img className="card_image"  src={this.state.random_card_src} alt=""/>
-               <div  className="single_card_reading">
-                  <h3 className="title">{this.state.random_card_name}</h3>
-                  <h4 className="title">Keywords:</h4>
-                  <p>{this.state.random_card_keys_up}</p>
-                  <h3 className="title">Summary</h3>
-                  <p className="description">{this.state.random_card_description}</p>
-                  <h3 className="title">Upright</h3>
-                  <p className="upright_description">{this.state.random_card_upright}</p>
-               </div>
-               </div>
+        <div className="main-content SCR">
+          <button onClick={this.getRandomCard}>Draw A Single Card</button>
+          <div className="reading_container">
+            <div className="single_card_reading">
+              <h3 className="title">{this.state.random_card_name}</h3>
+              <img
+                className="card_image"
+                src={this.state.random_card_src}
+                alt=""
+              />
+              <h4 className="title">Keywords:</h4>
+              <p>{this.state.random_card_keys_up}</p>
+              <h3 className="title">Summary</h3>
+              <p className="description">
+                {this.state.random_card_description}
+              </p>
+              <h3 className="title">Upright</h3>
+              <p className="upright_description">
+                {this.state.random_card_upright}
+              </p>
+            </div>
           </div>
-      )
+        </div>
+      );
    }  if (this.state.random_card_flipped && !this.state.loading && !this.state.new) {
       return (
-          <div className="main-content SCR">    
-               <button onClick={ this.getRandomCard}>Draw A Single Card</button>
-               <div className="reading_container">
-                  <img className="card_image" src={this.state.random_card_src} alt=""/>
-                  <div  className="single_card_reading">
-                     <h3 className="title">{this.state.random_card_name +' Reversed'}</h3>
-                     <h4 className="title">Keywords:</h4>
-                     <p>{this.state.random_card_keys_rev}</p>
-                     <h3 className="title">Summary</h3>
-                     <p className="description">{this.state.random_card_description}</p>
-                     <h3 className="title">Reversed</h3>
-                     <p className="upright_description">{this.state.random_card_reversed}</p>
-                  </div>
-               </div>
+        <div className="main-content SCR">
+          <button onClick={this.getRandomCard}>Draw A Single Card</button>
+          <div className="reading_container">
+            <div className="single_card_reading">
+              <h3 className="title">
+                {this.state.random_card_name + " Reversed"}
+              </h3>
+              <img
+                className="card_image"
+                src={this.state.random_card_src}
+                alt=""
+              />
+              <h4 className="title">Keywords:</h4>
+              <p>{this.state.random_card_keys_rev}</p>
+              <h3 className="title">Summary</h3>
+              <p className="description">
+                {this.state.random_card_description}
+              </p>
+              <h3 className="title">Reversed</h3>
+              <p className="upright_description">
+                {this.state.random_card_reversed}
+              </p>
+            </div>
           </div>
-      )
+        </div>
+      );
       }   
    }        
 }

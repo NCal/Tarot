@@ -132,7 +132,7 @@ button {
    width: 22%;
    top: 0;
    left: 0;
-   border-right: 1px solid #555;
+   // border-right: 1px solid #555;
    float: left;
    // background-color: #111;
 }
@@ -143,7 +143,7 @@ button {
    width: 22%;
    top: 0;
    right: 0;
-   border-left: 1px solid #555;
+   // border-left: 1px solid #555;
    float: right;
 }
 
@@ -160,7 +160,11 @@ button {
    float: left;
    position: relative;
    // text-align: center;
+   border-right: 1px solid #222;
+   border-left: 1px solid #222;
+   min-height: 100vh;
    padding-left: 25px;
+   padding-bottom: 100px;
    top: 0;
    right: 0;
    overflow-y: hidden;
@@ -173,18 +177,19 @@ button {
 
 .single_card_reading {
    padding-right: 30px;
-   height: 550px;
-   overflow-y: scroll;
+   // height: 550px;
+   // overflow-y: scroll;
 }
 
 .card_image{
    margin-bottom: 30px;
+   margin-left: 30px;
    float: right;
    border: 2px solid #222;
    position: relative;
    top: 10px;
    width: 303px;
-   height: 530px;
+   // height: 530px;
 }
 
 .card_image_reversed {
@@ -335,6 +340,14 @@ header {
    margin-bottom: .25em;
 }
 
+
+
+@media (min-width: 0) and (max-width: 885px) {
+   .card_image{
+      width: 243px;
+   }
+}
+
 /* ===== MEDIA QUERIES ===== */
 
 @media (min-width: 0) and (max-width: 768px) { 
@@ -343,6 +356,17 @@ header {
    }
    .home a {
       border-color: transparent;
+   }
+
+
+   .left {
+      border-right: none !important;
+   }
+   .center {
+      border: none;
+   }
+   .right {
+      display: none;
    }
     .icn-logo {
        display: block;
@@ -378,13 +402,13 @@ header {
       width: 100%;
       top: 0;
       left: 0;
-      border-right: 1px solid #555 !important;
+      // border-right: 1px solid #555 !important;
       float: left;
       background-color: #111;
     }
 
     .center {
-      height: 100%;
+      // height: 100%;
       width: 100%;
       position: relative;
       right: 0;
@@ -400,7 +424,9 @@ header {
 
     .card_image, .card_image_reversed {
       width: 203px;
-      height: 330px;
+      // height: 330px;
+      margin-right: 30px;
+      margin-left: 0px;
       float: left;
     }
 
@@ -420,6 +446,7 @@ header {
       margin-bottom: 0;
     }
 }
+
 @media (min-width: 769px) {
    body {
       padding-top: 3em;
@@ -480,8 +507,10 @@ header {
 
 
 
-@media only screen and (max-width: 1065px) {
-    .cards {
-  overflow-y: scroll;
-    }
+@media only screen and (max-width: 680px) {
+.card_image {
+      margin-bottom: 30px;
+      margin-right: 30px;
+      margin-left: 0px !important;
+   }
 }

@@ -9,13 +9,13 @@ const App = (props) => {
           <header>
             <ul className="main-nav">
               <li>
-                <Navlink to="/Tarot">Full Reading</Navlink>
+                <Navlink to="/">Full Reading</Navlink>
               </li>
               <li>
-                <Navlink to="/Tarot/scr">Single Card Reading</Navlink>
+                <Navlink to="/single-card-reading">Single Card Reading</Navlink>
               </li>
               <li>
-                <Navlink to="/Tarot/about">About</Navlink>
+                <Navlink to="/about">About</Navlink>
               </li>
             </ul>
           </header>
