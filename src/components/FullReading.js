@@ -149,7 +149,7 @@ class FullReading extends Component {
       return (
         <div className="main-content " >    
                <div className="reading_container">
-               <button onClick={this.back}>Back</button>
+               <button className="back-button" onClick={this.back}>Back</button>
                {
                 chosen_cards.map(function(card, i){
                   if (!card.reversed){
