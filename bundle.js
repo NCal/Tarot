@@ -22318,7 +22318,7 @@
 	exports.push([module.id, "@import url(https://fonts.googleapis.com/css?family=Abel|Dosis|VT323);", ""]);
 
 	// module
-	exports.push([module.id, "/* ================================= \n   ELEMENT STYLES\n==================================== */\n* {\n  box-sizing: border-box;\n  font-family: 'Abel', sans-serif; }\n\nhtml {\n  height: 100%; }\n\nbody {\n  margin: 0;\n  background-color: #fffff;\n  color: #444;\n  margin: 0;\n  height: 100%;\n  font-family: 'Roboto', sans-serif; }\n\nh1, h2, ul {\n  margin: 0;\n  padding: 0; }\n\nh2 {\n  color: #404040;\n  font-size: 1.6em;\n  margin-bottom: 1.25em; }\n\nh3 {\n  margin-bottom: 1.5em; }\n\nul {\n  list-style-type: none; }\n\na {\n  text-decoration: none;\n  color: #3b80d1; }\n\nhr {\n  border: 0;\n  height: 0;\n  margin: 2.3em 0 2em 0;\n  border-top: 1px solid rgba(0, 0, 0, 0.1); }\n\n/* FORM & BUTTON STYLES -------- */\n.home a,\ninput,\nbutton {\n  padding: .5em;\n  font-size: .9em;\n  margin-right: 10px;\n  border: none;\n  border: solid 1px #ccc;\n  outline: none; }\n\nbutton {\n  color: white;\n  background: #4188dc;\n  padding-left: 1em;\n  padding-right: 1em;\n  cursor: pointer;\n  border-color: rgba(0, 0, 0, 0.1); }\n\n.back-button {\n  margin-bottom: 10px; }\n\n.title {\n  color: #222; }\n\n.container {\n  width: 100%;\n  height: 100% !important;\n  max-width: 100%;\n  position: absolute;\n  top: 0;\n  left: 0;\n  background: #fff;\n  box-shadow: 0 3px rgba(0, 0, 0, 0.1);\n  overflow: scroll; }\n\n.left {\n  position: relative;\n  height: 100%;\n  width: 22%;\n  top: 0;\n  left: 0;\n  border-right: 1px solid #555;\n  float: left; }\n\n.right {\n  position: relative;\n  height: 100%;\n  width: 22%;\n  top: 0;\n  right: 0;\n  border-left: 1px solid #555;\n  float: right; }\n\n.top {\n  position: relative;\n  width: 100%;\n  height: 270px;\n  border-bottom: 1px solid #555; }\n\n.center {\n  width: 56%;\n  float: left;\n  position: relative;\n  padding-left: 25px;\n  top: 0;\n  right: 0;\n  overflow-y: hidden;\n  background-color: #ffffff; }\n\n.reading_container {\n  margin-top: 20px; }\n\n.single_card_reading {\n  padding-right: 30px;\n  height: 550px;\n  overflow-y: scroll; }\n\n.card_image {\n  margin-bottom: 30px;\n  float: right;\n  border: 2px solid #222;\n  position: relative;\n  top: 10px;\n  width: 303px;\n  height: 530px; }\n\n.card_image_reversed {\n  -ms-transform: rotate(180deg);\n  /* IE 9 */\n  -webkit-transform: rotate(180deg);\n  /* Chrome, Safari, Opera */\n  -moz-transform: rotate(180deg);\n  transform: rotate(180deg); }\n\nsvg {\n  height: 0px;\n  width: 0px; }\n\n.cards {\n  height: 800px; }\n  .cards p {\n    color: #555 !important; }\n\n.full_card {\n  cursor: pointer;\n  opacity: .7;\n  width: 60px;\n  margin: 2px; }\n\n.full_card:hover {\n  opacity: 1; }\n\n.fcr_container {\n  margin-bottom: 100px; }\n\nheader {\n  background: #edeff0; }\n\n.main-content {\n  padding: 1em 1em; }\n\n.selected {\n  opacity: 1;\n  pointer-events: none; }\n\n.group:after {\n  content: \"\";\n  display: table;\n  clear: both; }\n\n.course {\n  margin-bottom: 1em; }\n\n.type {\n  color: #222; }\n\n.course-img {\n  width: 70px; }\n\n.teacher-img {\n  width: 100%;\n  /* border-radius: .3em; */ }\n\n.not-found {\n  text-align: center; }\n\n/* MAIN NAV -------- */\n.main-nav a {\n  font-size: .95em;\n  color: #ccc;\n  text-align: center;\n  text-transform: uppercase;\n  display: block;\n  padding: 1em;\n  transition: .2s; }\n\n.main-nav a:hover,\n.main-nav .active {\n  color: #fff;\n  background: #3b80d1; }\n\n.main-nav li {\n  width: 100%;\n  background-color: #fff;\n  cursor: pointer; }\n\n.pentacle {\n  width: 100px;\n  animation: spin linear 4s;\n  animation-iteration-count: infinite; }\n\n@-moz-keyframes spin {\n  100% {\n    -moz-transform: rotate(360deg);\n    transform: rotate(360deg); } }\n\n@-webkit-keyframes spin {\n  100% {\n    -webkit-transform: rotate(360deg);\n    transform: rotate(360deg); } }\n\n@keyframes spin {\n  100% {\n    -webkit-transform: rotate(360deg);\n    transform: rotate(360deg); } }\n\n/* COURSE NAV -------- */\n.course-nav li {\n  display: inline-block; }\n\n.course-nav li + li {\n  margin-left: .6em; }\n\n.course-nav a {\n  font-size: .85em;\n  color: #7d7d7d;\n  padding: .2em .8em;\n  background: #eaebeb;\n  transition: .2s; }\n\n.course-nav a:hover,\n.course-nav a.active {\n  color: #fff;\n  background: #39add1; }\n\n/* ICONS -------- */\n.icn-logo {\n  background: #54606b;\n  color: #fff; }\n\n.icn-logo i {\n  font-size: 2.45em;\n  line-height: 0;\n  margin-top: 30px; }\n\n.icn-error {\n  font-size: 3.2em;\n  margin-bottom: .25em; }\n\n/* ===== MEDIA QUERIES ===== */\n@media (min-width: 0) and (max-width: 768px) {\n  body {\n    padding-top: .8em; }\n  .home a {\n    border-color: transparent; }\n  .icn-logo {\n    display: block;\n    width: 100%;\n    text-align: center;\n    padding-bottom: 4px; }\n  .main-nav a {\n    border-top: 2px solid transparent;\n    border-bottom: 2px solid transparent; }\n  .main-nav a:hover {\n    border-color: rgba(0, 0, 0, 0.1); }\n  .courses h2 {\n    margin-bottom: 0; }\n  .course-nav {\n    display: block;\n    margin: 1.5em 0 3.2em; }\n  .home a,\n  input,\n  button {\n    display: block;\n    width: 140px;\n    margin-bottom: 1em; }\n  .left {\n    position: relative;\n    height: 160px;\n    width: 100%;\n    top: 0;\n    left: 0;\n    border-right: 1px solid #555 !important;\n    float: left;\n    background-color: #111; }\n  .center {\n    height: 100%;\n    width: 100%;\n    position: relative;\n    right: 0;\n    top: 1px;\n    overflow-y: hidden;\n    background-color: #fff;\n    padding-bottom: 150px; }\n  .main-nav {\n    border-bottom: 1px solid #ccc; }\n  .card_image, .card_image_reversed {\n    width: 203px;\n    height: 330px;\n    float: left; }\n  .upright_description {\n    padding-bottom: 40px; }\n  .upright_description:last-of-type {\n    padding-bottom: 50px; }\n  .single_card_reading {\n    clear: both; }\n  .fcr_container {\n    margin-bottom: 0; } }\n\n@media (min-width: 769px) {\n  body {\n    padding-top: 3em; }\n  .home a {\n    border-color: #3b80d1; }\n  .home {\n    background-color: #222; }\n  .media img,\n  .media > div,\n  .teacher {\n    float: left; }\n  .media > div {\n    width: 85.1%;\n    margin-left: 1.5em; }\n  .teacher {\n    width: 48.73%;\n    margin-bottom: 1.5em; }\n  .teacher + .teacher {\n    margin-left: 2.54%; }\n  .teacher:nth-child(2n+3) {\n    clear: left;\n    margin-left: 0; }\n  /* MAIN NAV -------- */\n  .icn-logo {\n    margin-right: auto;\n    padding: 0 2em; }\n  header,\n  .main-nav {\n    display: flex;\n    flex-wrap: wrap; }\n  .main-nav a {\n    border-left: 3px solid transparent;\n    border-right: 3px solid transparent;\n    padding: 1.25em 1.5em; }\n  .main-nav a:hover {\n    border-color: rgba(0, 0, 0, 0.1); }\n  /* COURSE NAV -------- */\n  .course-nav {\n    float: right; }\n  .courses h2 {\n    float: left; } }\n\n@media only screen and (max-width: 1065px) {\n  .cards {\n    overflow-y: scroll; } }\n", ""]);
+	exports.push([module.id, "/* ================================= \n   ELEMENT STYLES\n==================================== */\n* {\n  box-sizing: border-box;\n  font-family: 'Abel', sans-serif; }\n\nhtml {\n  height: 100%; }\n\nbody {\n  margin: 0;\n  background-color: #fffff;\n  color: #444;\n  margin: 0;\n  height: 100%;\n  font-family: 'Roboto', sans-serif; }\n\nh1, h2, ul {\n  margin: 0;\n  padding: 0; }\n\nh2 {\n  color: #404040;\n  font-size: 1.6em;\n  margin-bottom: 1.25em; }\n\nh3 {\n  margin-bottom: 1.5em; }\n\nul {\n  list-style-type: none; }\n\na {\n  text-decoration: none;\n  color: #3b80d1; }\n\nhr {\n  border: 0;\n  height: 0;\n  margin: 2.3em 0 2em 0;\n  border-top: 1px solid rgba(0, 0, 0, 0.1); }\n\n/* FORM & BUTTON STYLES -------- */\n.home a,\ninput,\nbutton {\n  padding: .5em;\n  font-size: .9em;\n  margin-right: 10px;\n  border: none;\n  border: solid 1px #ccc;\n  outline: none; }\n\nbutton {\n  color: white;\n  background: #4188dc;\n  padding-left: 1em;\n  padding-right: 1em;\n  cursor: pointer;\n  border-color: rgba(0, 0, 0, 0.1); }\n\n.back-button {\n  margin-bottom: 10px; }\n\n.title {\n  color: #222; }\n\n.container {\n  width: 100%;\n  height: 100% !important;\n  max-width: 100%;\n  position: absolute;\n  top: 0;\n  left: 0;\n  background: #fff;\n  box-shadow: 0 3px rgba(0, 0, 0, 0.1);\n  overflow: scroll; }\n\n.left {\n  position: relative;\n  height: 100%;\n  width: 22%;\n  top: 0;\n  left: 0;\n  float: left; }\n\n.right {\n  position: relative;\n  height: 100%;\n  width: 22%;\n  top: 0;\n  right: 0;\n  float: right; }\n\n.top {\n  position: relative;\n  width: 100%;\n  height: 270px;\n  border-bottom: 1px solid #555; }\n\n.center {\n  width: 56%;\n  float: left;\n  position: relative;\n  border-right: 1px solid #222;\n  border-left: 1px solid #222;\n  min-height: 100vh;\n  padding-left: 25px;\n  padding-bottom: 100px;\n  top: 0;\n  right: 0;\n  overflow-y: hidden;\n  background-color: #ffffff; }\n\n.reading_container {\n  margin-top: 20px; }\n\n.single_card_reading {\n  padding-right: 30px; }\n\n.card_image {\n  margin-bottom: 30px;\n  margin-left: 30px;\n  float: right;\n  border: 2px solid #222;\n  position: relative;\n  top: 10px;\n  width: 303px; }\n\n.card_image_reversed {\n  -ms-transform: rotate(180deg);\n  /* IE 9 */\n  -webkit-transform: rotate(180deg);\n  /* Chrome, Safari, Opera */\n  -moz-transform: rotate(180deg);\n  transform: rotate(180deg); }\n\nsvg {\n  height: 0px;\n  width: 0px; }\n\n.cards {\n  height: 800px; }\n  .cards p {\n    color: #555 !important; }\n\n.full_card {\n  cursor: pointer;\n  opacity: .7;\n  width: 60px;\n  margin: 2px; }\n\n.full_card:hover {\n  opacity: 1; }\n\n.fcr_container {\n  margin-bottom: 100px; }\n\nheader {\n  background: #edeff0; }\n\n.main-content {\n  padding: 1em 1em; }\n\n.selected {\n  opacity: 1;\n  pointer-events: none; }\n\n.group:after {\n  content: \"\";\n  display: table;\n  clear: both; }\n\n.course {\n  margin-bottom: 1em; }\n\n.type {\n  color: #222; }\n\n.course-img {\n  width: 70px; }\n\n.teacher-img {\n  width: 100%;\n  /* border-radius: .3em; */ }\n\n.not-found {\n  text-align: center; }\n\n/* MAIN NAV -------- */\n.main-nav a {\n  font-size: .95em;\n  color: #ccc;\n  text-align: center;\n  text-transform: uppercase;\n  display: block;\n  padding: 1em;\n  transition: .2s; }\n\n.main-nav a:hover,\n.main-nav .active {\n  color: #fff;\n  background: #3b80d1; }\n\n.main-nav li {\n  width: 100%;\n  background-color: #fff;\n  cursor: pointer; }\n\n.pentacle {\n  width: 100px;\n  animation: spin linear 4s;\n  animation-iteration-count: infinite; }\n\n@-moz-keyframes spin {\n  100% {\n    -moz-transform: rotate(360deg);\n    transform: rotate(360deg); } }\n\n@-webkit-keyframes spin {\n  100% {\n    -webkit-transform: rotate(360deg);\n    transform: rotate(360deg); } }\n\n@keyframes spin {\n  100% {\n    -webkit-transform: rotate(360deg);\n    transform: rotate(360deg); } }\n\n/* COURSE NAV -------- */\n.course-nav li {\n  display: inline-block; }\n\n.course-nav li + li {\n  margin-left: .6em; }\n\n.course-nav a {\n  font-size: .85em;\n  color: #7d7d7d;\n  padding: .2em .8em;\n  background: #eaebeb;\n  transition: .2s; }\n\n.course-nav a:hover,\n.course-nav a.active {\n  color: #fff;\n  background: #39add1; }\n\n/* ICONS -------- */\n.icn-logo {\n  background: #54606b;\n  color: #fff; }\n\n.icn-logo i {\n  font-size: 2.45em;\n  line-height: 0;\n  margin-top: 30px; }\n\n.icn-error {\n  font-size: 3.2em;\n  margin-bottom: .25em; }\n\n@media (min-width: 0) and (max-width: 885px) {\n  .card_image {\n    width: 243px; } }\n\n/* ===== MEDIA QUERIES ===== */\n@media (min-width: 0) and (max-width: 768px) {\n  body {\n    padding-top: .8em; }\n  .home a {\n    border-color: transparent; }\n  .left {\n    border-right: none !important; }\n  .center {\n    border: none; }\n  .right {\n    display: none; }\n  .icn-logo {\n    display: block;\n    width: 100%;\n    text-align: center;\n    padding-bottom: 4px; }\n  .main-nav a {\n    border-top: 2px solid transparent;\n    border-bottom: 2px solid transparent; }\n  .main-nav a:hover {\n    border-color: rgba(0, 0, 0, 0.1); }\n  .courses h2 {\n    margin-bottom: 0; }\n  .course-nav {\n    display: block;\n    margin: 1.5em 0 3.2em; }\n  .home a,\n  input,\n  button {\n    display: block;\n    width: 140px;\n    margin-bottom: 1em; }\n  .left {\n    position: relative;\n    height: 160px;\n    width: 100%;\n    top: 0;\n    left: 0;\n    float: left;\n    background-color: #111; }\n  .center {\n    width: 100%;\n    position: relative;\n    right: 0;\n    top: 1px;\n    overflow-y: hidden;\n    background-color: #fff;\n    padding-bottom: 150px; }\n  .main-nav {\n    border-bottom: 1px solid #ccc; }\n  .card_image, .card_image_reversed {\n    width: 203px;\n    margin-right: 30px;\n    margin-left: 0px;\n    float: left; }\n  .upright_description {\n    padding-bottom: 40px; }\n  .upright_description:last-of-type {\n    padding-bottom: 50px; }\n  .single_card_reading {\n    clear: both; }\n  .fcr_container {\n    margin-bottom: 0; } }\n\n@media (min-width: 769px) {\n  body {\n    padding-top: 3em; }\n  .home a {\n    border-color: #3b80d1; }\n  .home {\n    background-color: #222; }\n  .media img,\n  .media > div,\n  .teacher {\n    float: left; }\n  .media > div {\n    width: 85.1%;\n    margin-left: 1.5em; }\n  .teacher {\n    width: 48.73%;\n    margin-bottom: 1.5em; }\n  .teacher + .teacher {\n    margin-left: 2.54%; }\n  .teacher:nth-child(2n+3) {\n    clear: left;\n    margin-left: 0; }\n  /* MAIN NAV -------- */\n  .icn-logo {\n    margin-right: auto;\n    padding: 0 2em; }\n  header,\n  .main-nav {\n    display: flex;\n    flex-wrap: wrap; }\n  .main-nav a {\n    border-left: 3px solid transparent;\n    border-right: 3px solid transparent;\n    padding: 1.25em 1.5em; }\n  .main-nav a:hover {\n    border-color: rgba(0, 0, 0, 0.1); }\n  /* COURSE NAV -------- */\n  .course-nav {\n    float: right; }\n  .courses h2 {\n    float: left; } }\n\n@media only screen and (max-width: 680px) {\n  .card_image {\n    margin-bottom: 30px;\n    margin-right: 30px;\n    margin-left: 0px !important; } }\n", ""]);
 
 	// exports
 
@@ -28044,7 +28044,7 @@
 	'use strict';
 
 	Object.defineProperty(exports, "__esModule", {
-	   value: true
+	  value: true
 	});
 
 	var _react = __webpack_require__(1);
@@ -28068,234 +28068,242 @@
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 	var SCR = function (_Component) {
-	   _inherits(SCR, _Component);
+	  _inherits(SCR, _Component);
 
-	   function SCR(props, context) {
-	      _classCallCheck(this, SCR);
+	  function SCR(props, context) {
+	    _classCallCheck(this, SCR);
 
-	      var _this = _possibleConstructorReturn(this, (SCR.__proto__ || Object.getPrototypeOf(SCR)).call(this, props, context));
+	    var _this = _possibleConstructorReturn(this, (SCR.__proto__ || Object.getPrototypeOf(SCR)).call(this, props, context));
 
-	      _this.getRandomCard = function () {
-	         console.group('get random card');
-	         var flipped = Math.floor(Math.random() * 2) === 0 ? true : false;
-	         var self = _this;
-	         var cards = _this.props.Cards;
-	         var randNum = Math.floor(Math.random() * (78 - 0 + 1));
-	         var randCard = cards[randNum];
-	         var randName = randCard.name;
-	         var randKeysUp = randCard.keywords.upright;
-	         var randKeysRev = randCard.keywords.reversed;
-	         var src = randCard.src;
-	         var randDes = randCard.description.basic;
-	         var randUpright = randCard.description.upright;
-	         var randReversed = randCard.description.reversed;
-	         var reading = (0, _jquery2.default)('.reading_container');
-	         var paras = document.getElementsByTagName('p');
-	         console.log('card drawn', randCard);
-	         (0, _jquery2.default)('.description').innerHTML = randDes;
+	    _this.getRandomCard = function () {
+	      console.group('get random card');
+	      var flipped = Math.floor(Math.random() * 2) === 0 ? true : false;
+	      var self = _this;
+	      var cards = _this.props.Cards;
+	      var randNum = Math.floor(Math.random() * (78 - 0 + 1));
+	      var randCard = cards[randNum];
+	      var randName = randCard.name;
+	      var randKeysUp = randCard.keywords.upright;
+	      var randKeysRev = randCard.keywords.reversed;
+	      var src = randCard.src;
+	      var randDes = randCard.description.basic;
+	      var randUpright = randCard.description.upright;
+	      var randReversed = randCard.description.reversed;
+	      var reading = (0, _jquery2.default)('.reading_container');
+	      var paras = document.getElementsByTagName('p');
+	      console.log('card drawn', randCard);
+	      (0, _jquery2.default)('.description').innerHTML = randDes;
 
-	         reading.hide();
+	      reading.hide();
 
-	         self.setState({
-	            new: false,
-	            loading: true,
-	            random_card_flipped: flipped,
-	            random_card_name: randName,
-	            random_card_keys_up: randKeysUp,
-	            random_card_keys_rev: randKeysRev,
-	            random_card_description: randDes,
-	            random_card_upright: randUpright,
-	            random_card_reversed: randReversed,
-	            random_card_src: src
+	      self.setState({
+	        new: false,
+	        loading: true,
+	        random_card_flipped: flipped,
+	        random_card_name: randName,
+	        random_card_keys_up: randKeysUp,
+	        random_card_keys_rev: randKeysRev,
+	        random_card_description: randDes,
+	        random_card_upright: randUpright,
+	        random_card_reversed: randReversed,
+	        random_card_src: src
 
-	         }, function () {
-	            setTimeout(function () {
-	               self.setState({ loading: false }, function () {
-	                  if (this.state.random_card_flipped) {
-	                     (0, _jquery2.default)('img').addClass('card_image_reversed');
-	                  } else {
-	                     (0, _jquery2.default)('img.card_image').removeClass('card_image_reversed');
-	                  }
-	                  reading.show();
-	               });
-	               self.replace_break(paras);
-	            }, 2000);
-	         });
-	         console.groupEnd();
-	      };
+	      }, function () {
+	        setTimeout(function () {
+	          self.setState({ loading: false }, function () {
+	            if (this.state.random_card_flipped) {
+	              (0, _jquery2.default)('img').addClass('card_image_reversed');
+	            } else {
+	              (0, _jquery2.default)('img.card_image').removeClass('card_image_reversed');
+	            }
+	            reading.show();
+	          });
+	          self.replace_break(paras);
+	        }, 2000);
+	      });
+	      console.groupEnd();
+	    };
 
-	      _this.replace_break = function (paras) {
-	         console.log('replace break');
-	         for (var i = 0; i < paras.length; i++) {
-	            var new_p = paras[i].innerHTML.replace(/\r?\n/g, '<br/>');
-	            paras[i].innerHTML = new_p;
-	         }
-	      };
+	    _this.replace_break = function (paras) {
+	      console.log('replace break');
+	      for (var i = 0; i < paras.length; i++) {
+	        var new_p = paras[i].innerHTML.replace(/\r?\n/g, '<br/>');
+	        paras[i].innerHTML = new_p;
+	      }
+	    };
 
-	      _this.render = function () {
-	         if (_this.state.loading) {
-	            return _react2.default.createElement(
-	               'div',
-	               { className: 'main-content SCR' },
-	               _react2.default.createElement(
-	                  'div',
-	                  { className: 'main-content ' },
-	                  _react2.default.createElement('img', { className: 'pentacle', src: 'https://upload.wikimedia.org/wikipedia/commons/9/97/Pentacle_2.svg' })
-	               )
-	            );
-	         }
-	         if (_this.state.new && !_this.state.loading) {
-	            return _react2.default.createElement(
-	               'div',
-	               { className: 'main-content SCR' },
-	               _react2.default.createElement(
-	                  'button',
-	                  { onClick: _this.getRandomCard },
-	                  'Draw A Single Card'
-	               ),
-	               _react2.default.createElement('div', { className: 'reading_container' })
-	            );
-	         }
-	         if (!_this.state.random_card_flipped && !_this.state.loading && !_this.state.new) {
-	            return _react2.default.createElement(
-	               'div',
-	               { className: 'main-content SCR' },
-	               _react2.default.createElement(
-	                  'button',
-	                  { onClick: _this.getRandomCard },
-	                  'Draw A Single Card'
-	               ),
-	               _react2.default.createElement(
-	                  'div',
-	                  { className: 'reading_container' },
-	                  _react2.default.createElement('img', { className: 'card_image', src: _this.state.random_card_src, alt: '' }),
-	                  _react2.default.createElement(
-	                     'div',
-	                     { className: 'single_card_reading' },
-	                     _react2.default.createElement(
-	                        'h3',
-	                        { className: 'title' },
-	                        _this.state.random_card_name
-	                     ),
-	                     _react2.default.createElement(
-	                        'h4',
-	                        { className: 'title' },
-	                        'Keywords:'
-	                     ),
-	                     _react2.default.createElement(
-	                        'p',
-	                        null,
-	                        _this.state.random_card_keys_up
-	                     ),
-	                     _react2.default.createElement(
-	                        'h3',
-	                        { className: 'title' },
-	                        'Summary'
-	                     ),
-	                     _react2.default.createElement(
-	                        'p',
-	                        { className: 'description' },
-	                        _this.state.random_card_description
-	                     ),
-	                     _react2.default.createElement(
-	                        'h3',
-	                        { className: 'title' },
-	                        'Upright'
-	                     ),
-	                     _react2.default.createElement(
-	                        'p',
-	                        { className: 'upright_description' },
-	                        _this.state.random_card_upright
-	                     )
-	                  )
-	               )
-	            );
-	         }if (_this.state.random_card_flipped && !_this.state.loading && !_this.state.new) {
-	            return _react2.default.createElement(
-	               'div',
-	               { className: 'main-content SCR' },
-	               _react2.default.createElement(
-	                  'button',
-	                  { onClick: _this.getRandomCard },
-	                  'Draw A Single Card'
-	               ),
-	               _react2.default.createElement(
-	                  'div',
-	                  { className: 'reading_container' },
-	                  _react2.default.createElement('img', { className: 'card_image', src: _this.state.random_card_src, alt: '' }),
-	                  _react2.default.createElement(
-	                     'div',
-	                     { className: 'single_card_reading' },
-	                     _react2.default.createElement(
-	                        'h3',
-	                        { className: 'title' },
-	                        _this.state.random_card_name + ' Reversed'
-	                     ),
-	                     _react2.default.createElement(
-	                        'h4',
-	                        { className: 'title' },
-	                        'Keywords:'
-	                     ),
-	                     _react2.default.createElement(
-	                        'p',
-	                        null,
-	                        _this.state.random_card_keys_rev
-	                     ),
-	                     _react2.default.createElement(
-	                        'h3',
-	                        { className: 'title' },
-	                        'Summary'
-	                     ),
-	                     _react2.default.createElement(
-	                        'p',
-	                        { className: 'description' },
-	                        _this.state.random_card_description
-	                     ),
-	                     _react2.default.createElement(
-	                        'h3',
-	                        { className: 'title' },
-	                        'Reversed'
-	                     ),
-	                     _react2.default.createElement(
-	                        'p',
-	                        { className: 'upright_description' },
-	                        _this.state.random_card_reversed
-	                     )
-	                  )
-	               )
-	            );
-	         }
-	      };
+	    _this.render = function () {
+	      if (_this.state.loading) {
+	        return _react2.default.createElement(
+	          'div',
+	          { className: 'main-content SCR' },
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'main-content ' },
+	            _react2.default.createElement('img', { className: 'pentacle', src: 'https://upload.wikimedia.org/wikipedia/commons/9/97/Pentacle_2.svg' })
+	          )
+	        );
+	      }
+	      if (_this.state.new && !_this.state.loading) {
+	        return _react2.default.createElement(
+	          'div',
+	          { className: 'main-content SCR' },
+	          _react2.default.createElement(
+	            'button',
+	            { onClick: _this.getRandomCard },
+	            'Draw A Single Card'
+	          ),
+	          _react2.default.createElement('div', { className: 'reading_container' })
+	        );
+	      }
+	      if (!_this.state.random_card_flipped && !_this.state.loading && !_this.state.new) {
+	        return _react2.default.createElement(
+	          'div',
+	          { className: 'main-content SCR' },
+	          _react2.default.createElement(
+	            'button',
+	            { onClick: _this.getRandomCard },
+	            'Draw A Single Card'
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'reading_container' },
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'single_card_reading' },
+	              _react2.default.createElement(
+	                'h3',
+	                { className: 'title' },
+	                _this.state.random_card_name
+	              ),
+	              _react2.default.createElement('img', {
+	                className: 'card_image',
+	                src: _this.state.random_card_src,
+	                alt: ''
+	              }),
+	              _react2.default.createElement(
+	                'h4',
+	                { className: 'title' },
+	                'Keywords:'
+	              ),
+	              _react2.default.createElement(
+	                'p',
+	                null,
+	                _this.state.random_card_keys_up
+	              ),
+	              _react2.default.createElement(
+	                'h3',
+	                { className: 'title' },
+	                'Summary'
+	              ),
+	              _react2.default.createElement(
+	                'p',
+	                { className: 'description' },
+	                _this.state.random_card_description
+	              ),
+	              _react2.default.createElement(
+	                'h3',
+	                { className: 'title' },
+	                'Upright'
+	              ),
+	              _react2.default.createElement(
+	                'p',
+	                { className: 'upright_description' },
+	                _this.state.random_card_upright
+	              )
+	            )
+	          )
+	        );
+	      }if (_this.state.random_card_flipped && !_this.state.loading && !_this.state.new) {
+	        return _react2.default.createElement(
+	          'div',
+	          { className: 'main-content SCR' },
+	          _react2.default.createElement(
+	            'button',
+	            { onClick: _this.getRandomCard },
+	            'Draw A Single Card'
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'reading_container' },
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'single_card_reading' },
+	              _react2.default.createElement(
+	                'h3',
+	                { className: 'title' },
+	                _this.state.random_card_name + " Reversed"
+	              ),
+	              _react2.default.createElement('img', {
+	                className: 'card_image',
+	                src: _this.state.random_card_src,
+	                alt: ''
+	              }),
+	              _react2.default.createElement(
+	                'h4',
+	                { className: 'title' },
+	                'Keywords:'
+	              ),
+	              _react2.default.createElement(
+	                'p',
+	                null,
+	                _this.state.random_card_keys_rev
+	              ),
+	              _react2.default.createElement(
+	                'h3',
+	                { className: 'title' },
+	                'Summary'
+	              ),
+	              _react2.default.createElement(
+	                'p',
+	                { className: 'description' },
+	                _this.state.random_card_description
+	              ),
+	              _react2.default.createElement(
+	                'h3',
+	                { className: 'title' },
+	                'Reversed'
+	              ),
+	              _react2.default.createElement(
+	                'p',
+	                { className: 'upright_description' },
+	                _this.state.random_card_reversed
+	              )
+	            )
+	          )
+	        );
+	      }
+	    };
 
-	      _this.state = {
-	         new: true,
-	         loading: false,
-	         name: 'Card',
-	         src: null,
-	         random_card_flipped: null,
-	         random_card_name: null,
-	         random_card_description: null,
-	         random_card_upright: null,
-	         random_card_reversed: null
-	      };
-	      return _this;
-	   }
+	    _this.state = {
+	      new: true,
+	      loading: false,
+	      name: 'Card',
+	      src: null,
+	      random_card_flipped: null,
+	      random_card_name: null,
+	      random_card_description: null,
+	      random_card_upright: null,
+	      random_card_reversed: null
+	    };
+	    return _this;
+	  }
 
-	   return SCR;
+	  return SCR;
 	}(_react.Component);
 
 	// PROPS 
 
 
 	SCR.defaultProps = {
-	   name: 'Card',
-	   kind: 'Child',
-	   Cards: _cardData2.default[0].Cards
+	  name: 'Card',
+	  kind: 'Child',
+	  Cards: _cardData2.default[0].Cards
 	};
 
 	SCR.propTypes = {
-	   name: _react2.default.PropTypes.string.isRequired,
-	   kind: _react2.default.PropTypes.string
+	  name: _react2.default.PropTypes.string.isRequired,
+	  kind: _react2.default.PropTypes.string
 	};
 
 	exports.default = SCR;
@@ -40201,13 +40209,7 @@
 	    _react2.default.createElement(
 	      "p",
 	      null,
-	      "All descriptions and readings are taken from ",
-	      _react2.default.createElement(
-	        "a",
-	        { href: "https://www.biddytarot.com" },
-	        "Biddy Tarot"
-	      ),
-	      " \xA9 2017 Biddy Tarot."
+	      "\xA9 2022 tarot.lol"
 	    ),
 	    _react2.default.createElement(
 	      "p",
@@ -40235,7 +40237,7 @@
 	'use strict';
 
 	Object.defineProperty(exports, "__esModule", {
-	   value: true
+	  value: true
 	});
 
 	var _react = __webpack_require__(1);
@@ -40263,303 +40265,311 @@
 	var cardAmount = 78;
 
 	var FullReading = function (_Component) {
-	   _inherits(FullReading, _Component);
+	  _inherits(FullReading, _Component);
 
-	   function FullReading(props, context) {
-	      _classCallCheck(this, FullReading);
+	  function FullReading(props, context) {
+	    _classCallCheck(this, FullReading);
 
-	      var _this = _possibleConstructorReturn(this, (FullReading.__proto__ || Object.getPrototypeOf(FullReading)).call(this, props, context));
+	    var _this = _possibleConstructorReturn(this, (FullReading.__proto__ || Object.getPrototypeOf(FullReading)).call(this, props, context));
 
-	      _initialiseProps.call(_this);
+	    _initialiseProps.call(_this);
 
-	      var self = _this;
+	    var self = _this;
 
-	      _this.state = {
-	         new: true,
-	         loading: false,
-	         reading: false,
-	         name: 'Card',
-	         src: null,
-	         random_card_flipped: null,
-	         random_card_name: null,
-	         random_card_description: null,
-	         random_card_upright: null,
-	         random_card_reversed: null
-	      };
-	      return _this;
-	   }
+	    _this.state = {
+	      new: true,
+	      loading: false,
+	      reading: false,
+	      name: 'Card',
+	      src: null,
+	      random_card_flipped: null,
+	      random_card_name: null,
+	      random_card_description: null,
+	      random_card_upright: null,
+	      random_card_reversed: null
+	    };
+	    return _this;
+	  }
 
-	   return FullReading;
+	  return FullReading;
 	}(_react.Component);
 
 	// PROPS 
 
 
 	var _initialiseProps = function _initialiseProps() {
-	   var _this2 = this;
+	  var _this2 = this;
 
-	   this.componentWillMount = function () {
-	      console.log('COMP WILL MOUNT');
-	      chosen_cards = [];
-	      console.log('global cards', globalCards);
-	      // Add back to cards
-	      for (var i = 0; i < _cardData2.default[0].Cards.length; i++) {
-	         _cardData2.default[0].Cards[i].back = 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/back.jpg';
-	      }
-	   };
+	  this.componentWillMount = function () {
+	    console.log('COMP WILL MOUNT');
+	    chosen_cards = [];
+	    console.log('global cards', globalCards);
+	    // Add back to cards
+	    for (var i = 0; i < _cardData2.default[0].Cards.length; i++) {
+	      _cardData2.default[0].Cards[i].back = 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/back.jpg';
+	    }
+	  };
 
-	   this.getRandomCard = function (e) {
-	      console.group('get random card');
-	      var flipped = Math.floor(Math.random() * 2) === 0 ? true : false;
-	      var self = _this2;
-	      var cards = globalCards;
-	      var randNum = Math.floor(Math.random() * (cardAmount - 0 + 1));
-	      var randCard = cards[randNum];
-	      var randName = randCard.name;
-	      var randKeysUp = randCard.keywords.upright;
-	      var randKeysRev = randCard.keywords.reversed;
-	      var src = randCard.src;
-	      var randDes = randCard.description.basic;
-	      var randUpright = randCard.description.upright;
-	      var randReversed = randCard.description.reversed;
-	      var reading = (0, _jquery2.default)('.reading_container');
-	      var paras = document.getElementsByTagName('p');
-	      console.log('flipped', flipped);
+	  this.getRandomCard = function (e) {
+	    console.group('get random card');
+	    var flipped = Math.floor(Math.random() * 2) === 0 ? true : false;
+	    var self = _this2;
+	    var cards = globalCards;
+	    var randNum = Math.floor(Math.random() * (cardAmount - 0 + 1));
+	    var randCard = cards[randNum];
+	    var randName = randCard.name;
+	    var randKeysUp = randCard.keywords.upright;
+	    var randKeysRev = randCard.keywords.reversed;
+	    var src = randCard.src;
+	    var randDes = randCard.description.basic;
+	    var randUpright = randCard.description.upright;
+	    var randReversed = randCard.description.reversed;
+	    var reading = (0, _jquery2.default)('.reading_container');
+	    var paras = document.getElementsByTagName('p');
+	    console.log('flipped', flipped);
 
-	      if (flipped) {
-	         randCard.reversed = true;
-	      }
-	      console.log('card drawn', randCard);
-	      console.log('randNum', randNum);
+	    if (flipped) {
+	      randCard.reversed = true;
+	    }
+	    console.log('card drawn', randCard);
+	    console.log('randNum', randNum);
 
-	      chosen_cards.push(randCard);
-	      cards.splice(randNum, 1);
-	      console.log('cards left:', cards);
-	      cardAmount--;
-	      console.log('card amount', cardAmount);
-	      console.log(chosen_cards);
+	    chosen_cards.push(randCard);
+	    cards.splice(randNum, 1);
+	    console.log('cards left:', cards);
+	    cardAmount--;
+	    console.log('card amount', cardAmount);
+	    console.log(chosen_cards);
 
-	      if (chosen_cards.length >= 10) {
-	         self.add_info();
-	         self.setState({ loading: true }, function () {
-	            setTimeout(function () {
+	    if (chosen_cards.length >= 10) {
+	      self.add_info();
+	      self.setState({ loading: true }, function () {
+	        setTimeout(function () {
 
-	               self.setState({
-	                  loading: false,
-	                  reading: true
-	               });
-	               globalCards = _cardData2.default[0].Cards.slice();
-	               cardAmount = 78;
-	               self.replace_break(paras);
+	          self.setState({
+	            loading: false,
+	            reading: true
+	          });
+	          globalCards = _cardData2.default[0].Cards.slice();
+	          cardAmount = 78;
+	          self.replace_break(paras);
 
-	               console.log(globalCards);
-	            }, 2000);
-	         });
-	      }
-
-	      var clickedCard = e.target;
-	      (0, _jquery2.default)(clickedCard).addClass('selected');
-	      console.groupEnd();
-	   };
-
-	   this.replace_break = function (paras) {
-	      console.log('replace break');
-	      for (var i = 0; i < paras.length; i++) {
-	         var new_p = paras[i].innerHTML.replace(/\r?\n/g, '<br/>');
-	         paras[i].innerHTML = new_p;
-	      }
-	   };
-
-	   this.add_info = function () {
-	      console.log('add info');
-	      for (var i = 0; i < chosen_cards.length; i++) {
-	         chosen_cards[0].type = "Card 1: The Present";
-	         chosen_cards[1].type = "Card 2: The Challenge";
-	         chosen_cards[2].type = "Card 3: The Past";
-	         chosen_cards[3].type = "Card 4: The Future";
-	         chosen_cards[4].type = "Card 5: Above (Best Outcome)";
-	         chosen_cards[5].type = "Card 6: Below (The Subconscious)";
-	         chosen_cards[6].type = "Card 7: Advice";
-	         chosen_cards[7].type = "Card 8: External Influences";
-	         chosen_cards[8].type = "Card 9: Hopes and Fears";
-	         chosen_cards[9].type = "Card 10: Outcome";
-	      }
-	   };
-
-	   this.back = function () {
-	      console.log('back');
-	      _this2.setState({
-	         loading: false,
-	         reading: false
+	          console.log(globalCards);
+	        }, 2000);
 	      });
-	      chosen_cards = [];
-	   };
+	    }
 
-	   this.render = function () {
-	      if (!_this2.state.loading && !_this2.state.reading) {
-	         return _react2.default.createElement(
-	            'div',
-	            { className: 'main-content ' },
-	            _react2.default.createElement(
-	               'div',
-	               { className: 'cards' },
-	               _react2.default.createElement(
-	                  'p',
-	                  { style: { color: '#fff' } },
-	                  'Select 10 cards'
-	               ),
-	               _cardData2.default[0].Cards.map(function (card, i) {
-	                  return _react2.default.createElement('img', { className: 'full_card', key: 'card' + i, src: card.back, onClick: this.getRandomCard });
-	               }.bind(_this2))
-	            ),
-	            _react2.default.createElement('div', { className: 'reading_container' })
-	         );
-	      }
-	      if (_this2.state.loading) {
-	         return _react2.default.createElement(
-	            'div',
-	            { className: 'main-content ' },
-	            _react2.default.createElement('img', { className: 'pentacle', src: 'https://upload.wikimedia.org/wikipedia/commons/9/97/Pentacle_2.svg' })
-	         );
-	      }
-	      if (_this2.state.reading) {
-	         return _react2.default.createElement(
-	            'div',
-	            { className: 'main-content ' },
-	            _react2.default.createElement(
-	               'div',
-	               { className: 'reading_container' },
-	               _react2.default.createElement(
-	                  'button',
-	                  { className: 'back-button', onClick: _this2.back },
-	                  'Back'
-	               ),
-	               chosen_cards.map(function (card, i) {
-	                  if (!card.reversed) {
-	                     return _react2.default.createElement(
-	                        'div',
-	                        { key: i, className: 'fcr_container' },
-	                        _react2.default.createElement('img', { className: 'card_image', src: card.src, alt: '' }),
-	                        _react2.default.createElement(
-	                           'div',
-	                           { className: 'single_card_reading' },
-	                           _react2.default.createElement(
-	                              'h2',
-	                              { className: 'type' },
-	                              card.type
-	                           ),
-	                           _react2.default.createElement(
-	                              'h3',
-	                              { className: 'title' },
-	                              card.name
-	                           ),
-	                           _react2.default.createElement(
-	                              'h4',
-	                              { className: 'title' },
-	                              'Keywords:'
-	                           ),
-	                           _react2.default.createElement(
-	                              'p',
-	                              null,
-	                              card.keywords.upright
-	                           ),
-	                           _react2.default.createElement(
-	                              'h3',
-	                              { className: 'title' },
-	                              'Summary'
-	                           ),
-	                           _react2.default.createElement(
-	                              'p',
-	                              { className: 'description' },
-	                              card.description.basic
-	                           ),
-	                           _react2.default.createElement(
-	                              'h3',
-	                              { className: 'title' },
-	                              'Upright'
-	                           ),
-	                           _react2.default.createElement(
-	                              'p',
-	                              { className: 'upright_description' },
-	                              card.description.upright
-	                           )
-	                        ),
-	                        _react2.default.createElement('br', null)
-	                     );
-	                  } else {
-	                     return _react2.default.createElement(
-	                        'div',
-	                        { key: i, className: 'fcr_container' },
-	                        _react2.default.createElement('img', { className: 'card_image card_image_reversed', src: card.src, alt: '' }),
-	                        _react2.default.createElement(
-	                           'div',
-	                           { className: 'single_card_reading' },
-	                           _react2.default.createElement(
-	                              'h2',
-	                              { className: 'type' },
-	                              card.type
-	                           ),
-	                           _react2.default.createElement(
-	                              'h3',
-	                              { className: 'title' },
-	                              card.name + ' Reversed'
-	                           ),
-	                           _react2.default.createElement(
-	                              'h4',
-	                              { className: 'title' },
-	                              'Keywords:'
-	                           ),
-	                           _react2.default.createElement(
-	                              'p',
-	                              null,
-	                              card.keywords.reversed
-	                           ),
-	                           _react2.default.createElement(
-	                              'h3',
-	                              { className: 'title' },
-	                              'Summary'
-	                           ),
-	                           _react2.default.createElement(
-	                              'p',
-	                              { className: 'description' },
-	                              card.description.basic
-	                           ),
-	                           _react2.default.createElement(
-	                              'h3',
-	                              { className: 'title' },
-	                              'Reversed'
-	                           ),
-	                           _react2.default.createElement(
-	                              'p',
-	                              { className: 'upright_description' },
-	                              card.description.reversed
-	                           )
-	                        ),
-	                        _react2.default.createElement('br', null)
-	                     );
-	                  }
-	               }),
-	               _react2.default.createElement(
-	                  'button',
-	                  { onClick: _this2.back },
-	                  'Back'
-	               )
-	            )
-	         );
-	      }
-	   };
+	    var clickedCard = e.target;
+	    (0, _jquery2.default)(clickedCard).addClass('selected');
+	    console.groupEnd();
+	  };
+
+	  this.replace_break = function (paras) {
+	    console.log('replace break');
+	    for (var i = 0; i < paras.length; i++) {
+	      var new_p = paras[i].innerHTML.replace(/\r?\n/g, '<br/>');
+	      paras[i].innerHTML = new_p;
+	    }
+	  };
+
+	  this.add_info = function () {
+	    console.log('add info');
+	    for (var i = 0; i < chosen_cards.length; i++) {
+	      chosen_cards[0].type = "Card 1: The Present";
+	      chosen_cards[1].type = "Card 2: The Challenge";
+	      chosen_cards[2].type = "Card 3: The Past";
+	      chosen_cards[3].type = "Card 4: The Future";
+	      chosen_cards[4].type = "Card 5: Above (Best Outcome)";
+	      chosen_cards[5].type = "Card 6: Below (The Subconscious)";
+	      chosen_cards[6].type = "Card 7: Advice";
+	      chosen_cards[7].type = "Card 8: External Influences";
+	      chosen_cards[8].type = "Card 9: Hopes and Fears";
+	      chosen_cards[9].type = "Card 10: Outcome";
+	    }
+	  };
+
+	  this.back = function () {
+	    console.log('back');
+	    _this2.setState({
+	      loading: false,
+	      reading: false
+	    });
+	    chosen_cards = [];
+	  };
+
+	  this.render = function () {
+	    if (!_this2.state.loading && !_this2.state.reading) {
+	      return _react2.default.createElement(
+	        'div',
+	        { className: 'main-content ' },
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'cards' },
+	          _react2.default.createElement(
+	            'p',
+	            { style: { color: '#fff' } },
+	            'Select 10 cards'
+	          ),
+	          _cardData2.default[0].Cards.map(function (card, i) {
+	            return _react2.default.createElement('img', { className: 'full_card', key: 'card' + i, src: card.back, onClick: this.getRandomCard });
+	          }.bind(_this2))
+	        ),
+	        _react2.default.createElement('div', { className: 'reading_container' })
+	      );
+	    }
+	    if (_this2.state.loading) {
+	      return _react2.default.createElement(
+	        'div',
+	        { className: 'main-content ' },
+	        _react2.default.createElement('img', { className: 'pentacle', src: 'https://upload.wikimedia.org/wikipedia/commons/9/97/Pentacle_2.svg' })
+	      );
+	    }
+	    if (_this2.state.reading) {
+	      return _react2.default.createElement(
+	        'div',
+	        { className: 'main-content ' },
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'reading_container' },
+	          _react2.default.createElement(
+	            'button',
+	            { className: 'back-button', onClick: _this2.back },
+	            'Back'
+	          ),
+	          chosen_cards.map(function (card, i) {
+	            if (!card.reversed) {
+	              return _react2.default.createElement(
+	                'div',
+	                { key: i, className: 'fcr_container' },
+	                _react2.default.createElement(
+	                  'div',
+	                  { className: 'single_card_reading' },
+	                  _react2.default.createElement(
+	                    'h2',
+	                    { className: 'type' },
+	                    card.type
+	                  ),
+	                  _react2.default.createElement(
+	                    'h3',
+	                    { className: 'title' },
+	                    card.name
+	                  ),
+	                  _react2.default.createElement('img', {
+	                    className: 'card_image',
+	                    src: card.src,
+	                    alt: ''
+	                  }),
+	                  _react2.default.createElement(
+	                    'h4',
+	                    { className: 'title' },
+	                    'Keywords:'
+	                  ),
+	                  _react2.default.createElement(
+	                    'p',
+	                    null,
+	                    card.keywords.upright
+	                  ),
+	                  _react2.default.createElement(
+	                    'h3',
+	                    { className: 'title' },
+	                    'Summary'
+	                  ),
+	                  _react2.default.createElement(
+	                    'p',
+	                    { className: 'description' },
+	                    card.description.basic
+	                  ),
+	                  _react2.default.createElement(
+	                    'h3',
+	                    { className: 'title' },
+	                    'Upright'
+	                  ),
+	                  _react2.default.createElement(
+	                    'p',
+	                    { className: 'upright_description' },
+	                    card.description.upright
+	                  )
+	                ),
+	                _react2.default.createElement('br', null)
+	              );
+	            } else {
+	              return _react2.default.createElement(
+	                'div',
+	                { key: i, className: 'fcr_container' },
+	                _react2.default.createElement(
+	                  'div',
+	                  { className: 'single_card_reading' },
+	                  _react2.default.createElement(
+	                    'h2',
+	                    { className: 'type' },
+	                    card.type
+	                  ),
+	                  _react2.default.createElement(
+	                    'h3',
+	                    { className: 'title' },
+	                    card.name + " Reversed"
+	                  ),
+	                  _react2.default.createElement('img', {
+	                    className: 'card_image card_image_reversed',
+	                    src: card.src,
+	                    alt: ''
+	                  }),
+	                  _react2.default.createElement(
+	                    'h4',
+	                    { className: 'title' },
+	                    'Keywords:'
+	                  ),
+	                  _react2.default.createElement(
+	                    'p',
+	                    null,
+	                    card.keywords.reversed
+	                  ),
+	                  _react2.default.createElement(
+	                    'h3',
+	                    { className: 'title' },
+	                    'Summary'
+	                  ),
+	                  _react2.default.createElement(
+	                    'p',
+	                    { className: 'description' },
+	                    card.description.basic
+	                  ),
+	                  _react2.default.createElement(
+	                    'h3',
+	                    { className: 'title' },
+	                    'Reversed'
+	                  ),
+	                  _react2.default.createElement(
+	                    'p',
+	                    { className: 'upright_description' },
+	                    card.description.reversed
+	                  )
+	                ),
+	                _react2.default.createElement('br', null)
+	              );
+	            }
+	          }),
+	          _react2.default.createElement(
+	            'button',
+	            { onClick: _this2.back },
+	            'Back'
+	          )
+	        )
+	      );
+	    }
+	  };
 	};
 
 	FullReading.defaultProps = {
-	   chosen_cards: [],
-	   name: 'Card',
-	   kind: 'Child',
-	   Cards: globalCards
+	  chosen_cards: [],
+	  name: 'Card',
+	  kind: 'Child',
+	  Cards: globalCards
 	};
 
 	FullReading.propTypes = {
-	   name: _react2.default.PropTypes.string.isRequired,
-	   kind: _react2.default.PropTypes.string
+	  name: _react2.default.PropTypes.string.isRequired,
+	  kind: _react2.default.PropTypes.string
 	};
 
 	exports.default = FullReading;
