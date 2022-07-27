@@ -40608,7 +40608,7 @@
 	    console.log('global cards', globalCards);
 	    // Add back to cards
 	    for (var i = 0; i < _cardData2.default[0].Cards.length; i++) {
-	      _cardData2.default[0].Cards[i].back = 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/back.jpg';
+	      _cardData2.default[0].Cards[i].back = 'https://raw.githubusercontent.com/NCal/Tarot/31f457d9857a687922def232dbb21014ea838eca/back_sm.jpg';
 	    }
 	  };
 
