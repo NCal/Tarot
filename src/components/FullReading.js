@@ -25,7 +25,7 @@ class FullReading extends Component {
 }
 
    componentWillMount = () => {
-      console.log('COMP WILL MOUNT');
+      console.log('COMP WILL MOUNT', this.props);
       chosen_cards = [];
       console.log('global cards',globalCards);
       // Add back to cards
@@ -127,7 +127,7 @@ class FullReading extends Component {
          return (
              <div className="main-content ">    
                   <div className="cards">
-                  <p style={{color: '#fff'}}>Select 10 cards</p>
+                  <p>Select 10 cards</p>
                    {cardData[0].Cards.map(function(card, i){
                      return (<img className="full_card" key={'card'+i} src={card.back} onClick={this.getRandomCard}/>)
                    }.bind(this))
