@@ -3,8 +3,6 @@ import React, {Component} from 'react';
 const About = (props) => {
     return (
       <div className="main-content">
-        <h2>{props.route.title}</h2>
-        <p><a href="https://en.wikipedia.org/wiki/Tarot#Occult_tarot_decks">Tarot cards</a> are one of many forms of divination. They are commonly used to measure potential outcomes and evaluate influences surrounding a person, event, or both.</p> <p>The Full Reading section uses the <a href="http://www.tarotpedia.com/wiki/Celtic_Cross_Spread">Celtic Cross</a> Spread. The Deck used is the <a href="https://en.wikipedia.org/wiki/Rider-Waite_tarot_deck">Rider Waite.</a></p>
         <p>© 2022 tarot.lol</p>
         <p>App by <a href="http://www.nbroaddus.com">N Broaddus </a></p>
       </div>

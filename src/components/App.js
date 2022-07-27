@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Navlink from './Navlink';
+import TitleBar from './TitleBar';
 
 class App extends Component {   
     constructor(props, context) {
@@ -23,13 +24,44 @@ class App extends Component {
               this.state.darkMode ? "darkMode" : "lightMode"
             }`}
           >
-            <div className="top"></div>
+            <TitleBar />
+            <div
+              className={`top ${
+                this.state.darkMode ? "darkMode" : "lightMode"
+              }`}
+            >
+              <script
+                async
+                src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6248178765033726"
+                crossOrigin="anonymous"
+              ></script>
+              {/* <!-- horizontal-top --> */}
+              <ins
+                className="adsbygoogle"
+                style={{ display: "block" }}
+                data-ad-client="ca-pub-6248178765033726"
+                data-ad-slot="9286392459"
+                data-ad-format="auto"
+                data-full-width-responsive="true"
+              ></ins>
+              <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>
+            </div>
             <div className="left">
               <header>
                 <ul className="main-nav">
                   <li>
                     <Navlink
                       to="/"
+                      className={this.state.darkMode ? "darkMode" : "lightMode"}
+                    >
+                      Tarot.lol
+                    </Navlink>
+                  </li>
+                  <li>
+                    <Navlink
+                      to="/full-reading"
                       className={this.state.darkMode ? "darkMode" : "lightMode"}
                     >
                       Full Reading
@@ -43,14 +75,14 @@ class App extends Component {
                       Single Card Reading
                     </Navlink>
                   </li>
-                  <li>
+                  {/* <li>
                     <Navlink
                       to="/about"
                       className={this.state.darkMode ? "darkMode" : "lightMode"}
                     >
                       About
                     </Navlink>
-                  </li>
+                  </li> */}
                 </ul>
               </header>
             </div>
@@ -61,7 +93,25 @@ class App extends Component {
             >
               {this.props.children}
             </div>
-            <div className="right"></div>
+            <div className="right">
+              <script
+                async
+                src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6248178765033726"
+                crossOrigin="anonymous"
+              ></script>
+              {/* <!-- rail-long --> */}
+              <ins
+                className="adsbygoogle"
+                style={{ display: "block" }}
+                data-ad-client="ca-pub-6248178765033726"
+                data-ad-slot="1190897128"
+                data-ad-format="auto"
+                data-full-width-responsive="true"
+              ></ins>
+              <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>
+            </div>
             <div
               className="mode-btn"
               onClick={() => {

@@ -22318,7 +22318,7 @@
 	exports.push([module.id, "@import url(https://fonts.googleapis.com/css?family=Abel|Dosis|VT323);", ""]);
 
 	// module
-	exports.push([module.id, "/* ================================= \n   ELEMENT STYLES\n==================================== */\n* {\n  box-sizing: border-box;\n  font-family: 'Abel', sans-serif; }\n\nhtml {\n  height: 100%; }\n\nbody {\n  margin: 0;\n  background-color: #fffff;\n  color: #444;\n  margin: 0;\n  height: 100%;\n  font-family: 'Roboto', sans-serif; }\n\nh1, h2, ul {\n  margin: 0;\n  padding: 0; }\n\nh2 {\n  color: #404040;\n  font-size: 1.6em;\n  margin-bottom: 1.25em; }\n\nh3 {\n  margin-bottom: 1.5em; }\n\nul {\n  list-style-type: none; }\n\na {\n  text-decoration: none;\n  color: #3b80d1; }\n\nhr {\n  border: 0;\n  height: 0;\n  margin: 2.3em 0 2em 0;\n  border-top: 1px solid rgba(0, 0, 0, 0.1); }\n\n/* FORM & BUTTON STYLES -------- */\n.home a,\ninput,\nbutton {\n  padding: .5em;\n  font-size: .9em;\n  margin-right: 10px;\n  border: none;\n  border: solid 1px #ccc;\n  outline: none; }\n\nbutton {\n  color: white;\n  background: #4188dc;\n  padding-left: 1em;\n  padding-right: 1em;\n  cursor: pointer;\n  border-color: rgba(0, 0, 0, 0.1); }\n\n.back-button {\n  margin-bottom: 10px; }\n\n.title {\n  color: #222; }\n\n.container {\n  width: 100%;\n  height: 100% !important;\n  max-width: 100%;\n  position: absolute;\n  top: 0;\n  left: 0;\n  background: #fff;\n  box-shadow: 0 3px rgba(0, 0, 0, 0.1);\n  overflow: scroll; }\n\n.left {\n  position: relative;\n  height: 100%;\n  width: 22%;\n  top: 0;\n  left: 0;\n  float: left; }\n\n.right {\n  position: relative;\n  height: 100%;\n  width: 22%;\n  top: 0;\n  right: 0;\n  float: right; }\n\n.top {\n  position: relative;\n  width: 100%;\n  height: 270px;\n  border-bottom: 1px solid #555; }\n\n.center {\n  width: 56%;\n  float: left;\n  position: relative;\n  border-right: 1px solid #222;\n  border-left: 1px solid #222;\n  min-height: 100vh;\n  padding-left: 25px;\n  padding-bottom: 100px;\n  top: 0;\n  right: 0;\n  overflow-y: hidden;\n  background-color: #ffffff; }\n\n.reading_container {\n  margin-top: 20px; }\n\n.single_card_reading {\n  padding-right: 30px; }\n\n.card_image {\n  margin-bottom: 30px;\n  margin-left: 30px;\n  float: right;\n  border: 2px solid #222;\n  position: relative;\n  top: 10px;\n  width: 303px; }\n\n.card_image_reversed {\n  -ms-transform: rotate(180deg);\n  /* IE 9 */\n  -webkit-transform: rotate(180deg);\n  /* Chrome, Safari, Opera */\n  -moz-transform: rotate(180deg);\n  transform: rotate(180deg); }\n\nsvg {\n  height: 0px;\n  width: 0px; }\n\n.cards {\n  height: 800px; }\n  .cards p {\n    color: #555 !important; }\n\n.full_card {\n  cursor: pointer;\n  opacity: .7;\n  width: 60px;\n  margin: 2px; }\n\n.full_card:hover {\n  opacity: 1; }\n\n.fcr_container {\n  margin-bottom: 100px; }\n\nheader {\n  background: #edeff0; }\n\n.main-content {\n  padding: 1em 1em; }\n\n.selected {\n  opacity: 1;\n  pointer-events: none; }\n\n.group:after {\n  content: \"\";\n  display: table;\n  clear: both; }\n\n.course {\n  margin-bottom: 1em; }\n\n.type {\n  color: #222; }\n\n.course-img {\n  width: 70px; }\n\n.teacher-img {\n  width: 100%;\n  /* border-radius: .3em; */ }\n\n.not-found {\n  text-align: center; }\n\n/* MAIN NAV -------- */\n.main-nav a {\n  font-size: .95em;\n  color: #ccc;\n  text-align: center;\n  text-transform: uppercase;\n  display: block;\n  padding: 1em;\n  transition: .2s; }\n\n.main-nav a:hover,\n.main-nav .active {\n  color: #fff;\n  background: #3b80d1; }\n\n.main-nav li {\n  width: 100%;\n  background-color: #fff;\n  cursor: pointer; }\n\n.pentacle {\n  width: 100px;\n  animation: spin linear 4s;\n  animation-iteration-count: infinite; }\n\n@-moz-keyframes spin {\n  100% {\n    -moz-transform: rotate(360deg);\n    transform: rotate(360deg); } }\n\n@-webkit-keyframes spin {\n  100% {\n    -webkit-transform: rotate(360deg);\n    transform: rotate(360deg); } }\n\n@keyframes spin {\n  100% {\n    -webkit-transform: rotate(360deg);\n    transform: rotate(360deg); } }\n\n/* COURSE NAV -------- */\n.course-nav li {\n  display: inline-block; }\n\n.course-nav li + li {\n  margin-left: .6em; }\n\n.course-nav a {\n  font-size: .85em;\n  color: #7d7d7d;\n  padding: .2em .8em;\n  background: #eaebeb;\n  transition: .2s; }\n\n.course-nav a:hover,\n.course-nav a.active {\n  color: #fff;\n  background: #39add1; }\n\n/* ICONS -------- */\n.icn-logo {\n  background: #54606b;\n  color: #fff; }\n\n.icn-logo i {\n  font-size: 2.45em;\n  line-height: 0;\n  margin-top: 30px; }\n\n.icn-error {\n  font-size: 3.2em;\n  margin-bottom: .25em; }\n\n@media (min-width: 0) and (max-width: 885px) {\n  .card_image {\n    width: 243px; } }\n\n/* ===== MEDIA QUERIES ===== */\n@media (min-width: 0) and (max-width: 768px) {\n  body {\n    padding-top: .8em; }\n  .home a {\n    border-color: transparent; }\n  .left {\n    border-right: none !important; }\n  .center {\n    border: none; }\n  .right {\n    display: none; }\n  .icn-logo {\n    display: block;\n    width: 100%;\n    text-align: center;\n    padding-bottom: 4px; }\n  .main-nav a {\n    border-top: 2px solid transparent;\n    border-bottom: 2px solid transparent; }\n  .main-nav a:hover {\n    border-color: rgba(0, 0, 0, 0.1); }\n  .courses h2 {\n    margin-bottom: 0; }\n  .course-nav {\n    display: block;\n    margin: 1.5em 0 3.2em; }\n  .home a,\n  input,\n  button {\n    display: block;\n    width: 140px;\n    margin-bottom: 1em; }\n  .left {\n    position: relative;\n    height: 160px;\n    width: 100%;\n    top: 0;\n    left: 0;\n    float: left;\n    background-color: #111; }\n  .center {\n    width: 100%;\n    position: relative;\n    right: 0;\n    top: 1px;\n    overflow-y: hidden;\n    background-color: #fff;\n    padding-bottom: 150px; }\n  .main-nav {\n    border-bottom: 1px solid #ccc; }\n  .card_image, .card_image_reversed {\n    width: 203px;\n    margin-right: 30px;\n    margin-left: 0px;\n    float: left; }\n  .upright_description {\n    padding-bottom: 40px; }\n  .upright_description:last-of-type {\n    padding-bottom: 50px; }\n  .single_card_reading {\n    clear: both; }\n  .fcr_container {\n    margin-bottom: 0; } }\n\n@media (min-width: 769px) {\n  body {\n    padding-top: 3em; }\n  .home a {\n    border-color: #3b80d1; }\n  .home {\n    background-color: #222; }\n  .media img,\n  .media > div,\n  .teacher {\n    float: left; }\n  .media > div {\n    width: 85.1%;\n    margin-left: 1.5em; }\n  .teacher {\n    width: 48.73%;\n    margin-bottom: 1.5em; }\n  .teacher + .teacher {\n    margin-left: 2.54%; }\n  .teacher:nth-child(2n+3) {\n    clear: left;\n    margin-left: 0; }\n  /* MAIN NAV -------- */\n  .icn-logo {\n    margin-right: auto;\n    padding: 0 2em; }\n  header,\n  .main-nav {\n    display: flex;\n    flex-wrap: wrap; }\n  .main-nav a {\n    border-left: 3px solid transparent;\n    border-right: 3px solid transparent;\n    padding: 1.25em 1.5em; }\n  .main-nav a:hover {\n    border-color: rgba(0, 0, 0, 0.1); }\n  /* COURSE NAV -------- */\n  .course-nav {\n    float: right; }\n  .courses h2 {\n    float: left; } }\n\n@media only screen and (max-width: 680px) {\n  .card_image {\n    margin-bottom: 30px;\n    margin-right: 30px;\n    margin-left: 0px !important; } }\n", ""]);
+	exports.push([module.id, "/* ================================= \n   ELEMENT STYLES\n==================================== */\n* {\n  box-sizing: border-box;\n  font-family: 'Abel', sans-serif; }\n\nhtml {\n  height: 100%; }\n\nbody {\n  margin: 0;\n  background-color: #222;\n  color: #ccc;\n  margin: 0;\n  height: 100%;\n  font-family: 'Roboto', sans-serif; }\n\nh1, h2, ul {\n  margin: 0;\n  padding: 0; }\n\nh2 {\n  color: #404040;\n  font-size: 1.6em;\n  margin-bottom: 1.25em; }\n\nh3 {\n  margin-bottom: 1.5em; }\n\nul {\n  list-style-type: none; }\n\na {\n  text-decoration: none;\n  color: #455cef; }\n\nhr {\n  border: 0;\n  height: 0;\n  margin: 2.3em 0 2em 0;\n  border-top: 1px solid rgba(0, 0, 0, 0.1); }\n\n/* FORM & BUTTON STYLES -------- */\n.home a,\ninput,\nbutton {\n  padding: .5em;\n  font-size: .9em;\n  margin-right: 10px;\n  border: none;\n  border: solid 1px #ccc;\n  outline: none; }\n\nbutton {\n  color: white;\n  background: #455cef;\n  padding-left: 1em;\n  padding-right: 1em;\n  cursor: pointer;\n  border-color: rgba(0, 0, 0, 0.1); }\n\n.back-button {\n  margin-bottom: 10px;\n  float: right;\n  right: 20px;\n  position: relative; }\n\n.title {\n  color: #ccc; }\n\n.container {\n  width: 100%;\n  height: 100% !important;\n  max-width: 100%;\n  position: absolute;\n  top: 0;\n  left: 0;\n  overflow-x: hidden;\n  background: #222;\n  box-shadow: 0 3px rgba(0, 0, 0, 0.1);\n  overflow-y: scroll; }\n  .container .mode-btn {\n    width: 40px;\n    height: 40px;\n    position: fixed;\n    bottom: 0px;\n    right: 10px;\n    cursor: pointer; }\n  .container .titleBar .bar {\n    position: absolute;\n    top: 0;\n    right: 0;\n    height: 20px;\n    color: #fff;\n    width: 100%;\n    background-color: #455cef;\n    text-align: center;\n    z-index: 100;\n    cursor: pointer;\n    box-shadow: 0px 0px 13px 9px rgba(0, 0, 0, 0.13); }\n\n.left {\n  position: relative;\n  height: 100%;\n  width: 22%;\n  top: 0;\n  box-shadow: 9px 0px 15px rgba(0, 0, 0, 0.13);\n  z-index: 3;\n  left: 0;\n  float: left; }\n\n.right {\n  position: relative;\n  height: 100%;\n  width: 22%;\n  top: 0;\n  right: 0;\n  float: right; }\n\n.top {\n  position: relative;\n  width: 100%;\n  z-index: 5;\n  background-color: #222;\n  height: 270px;\n  border-bottom: 1px solid #555; }\n\n.center {\n  width: 56%;\n  float: left;\n  position: relative;\n  box-shadow: 9px 0px 15px rgba(0, 0, 0, 0.13);\n  border-right: 1px solid #555;\n  border-left: 1px solid #555;\n  min-height: 100vh;\n  padding-left: 25px;\n  padding-bottom: 100px;\n  top: 0;\n  right: 0;\n  overflow-y: hidden; }\n\n.reading_container {\n  margin-top: 20px; }\n\n.single_card_reading {\n  padding-right: 30px; }\n\n.card_image {\n  margin-bottom: 30px;\n  margin-left: 30px;\n  float: right;\n  border: 2px solid #ccc;\n  position: relative;\n  top: 10px;\n  width: 303px;\n  filter: saturate(2) !important; }\n\n.card_image_reversed {\n  -ms-transform: rotate(180deg);\n  /* IE 9 */\n  -webkit-transform: rotate(180deg);\n  /* Chrome, Safari, Opera */\n  -moz-transform: rotate(180deg);\n  transform: rotate(180deg);\n  filter: saturate(2) !important; }\n\nsvg {\n  height: 0px;\n  width: 0px; }\n\n.full_card {\n  cursor: pointer;\n  opacity: .7;\n  width: 60px;\n  margin: 2px; }\n\n.full_card:hover {\n  opacity: 1; }\n\n.fcr_container {\n  margin-bottom: 100px; }\n\n.main-content {\n  padding: 1em 1em; }\n\n.selected {\n  opacity: 1;\n  pointer-events: none; }\n\n.group:after {\n  content: \"\";\n  display: table;\n  clear: both; }\n\n.course {\n  margin-bottom: 1em; }\n\n.type {\n  color: #ccc; }\n\n.course-img {\n  width: 70px; }\n\n.teacher-img {\n  width: 100%;\n  /* border-radius: .3em; */ }\n\n.not-found {\n  text-align: center; }\n\n/* MAIN NAV -------- */\n.main-nav a {\n  font-size: .95em;\n  text-transform: uppercase;\n  display: block;\n  padding: 1em;\n  transition: .2s; }\n\n.main-nav .active {\n  color: #fff;\n  background: #455cef; }\n\n.main-nav a:hover {\n  background-color: #455cef;\n  color: #fff; }\n\n.main-nav li {\n  width: 100%;\n  background-color: #222;\n  cursor: pointer; }\n\n.darkMode {\n  background-color: #222; }\n\n.lightMode {\n  background-color: #fff; }\n  .lightMode .main-content, .lightMode .cards p {\n    color: #444; }\n    .lightMode .main-content .title, .lightMode .main-content .type, .lightMode .cards p .title, .lightMode .cards p .type {\n      color: #222; }\n\n.pentacle {\n  width: 100px;\n  animation: spin linear 4s;\n  animation-iteration-count: infinite; }\n\n@-moz-keyframes spin {\n  100% {\n    -moz-transform: rotate(360deg);\n    transform: rotate(360deg); } }\n\n@-webkit-keyframes spin {\n  100% {\n    -webkit-transform: rotate(360deg);\n    transform: rotate(360deg); } }\n\n@keyframes spin {\n  100% {\n    -webkit-transform: rotate(360deg);\n    transform: rotate(360deg); } }\n\n/* COURSE NAV -------- */\n.course-nav li {\n  display: inline-block; }\n\n.course-nav li + li {\n  margin-left: .6em; }\n\n.course-nav a {\n  font-size: .85em;\n  color: #7d7d7d;\n  padding: .2em .8em;\n  background: #eaebeb;\n  transition: .2s; }\n\n.course-nav a:hover,\n.course-nav a.active {\n  color: #fff;\n  background: #39add1; }\n\n/* ICONS -------- */\n.icn-logo {\n  background: #54606b;\n  color: #fff; }\n\n.icn-logo i {\n  font-size: 2.45em;\n  line-height: 0;\n  margin-top: 30px; }\n\n.icn-error {\n  font-size: 3.2em;\n  margin-bottom: .25em; }\n\n@media (min-width: 0) and (max-width: 885px) {\n  .card_image {\n    width: 243px; } }\n\n/* ===== MEDIA QUERIES ===== */\n@media (min-width: 0) and (max-width: 768px) {\n  body {\n    padding-top: .8em; }\n  .home a {\n    border-color: transparent; }\n  .left {\n    border-right: none !important; }\n  .center {\n    border: none; }\n  .right {\n    display: none; }\n  .icn-logo {\n    display: block;\n    width: 100%;\n    text-align: center;\n    padding-bottom: 4px; }\n  .main-nav a:hover {\n    border-color: rgba(0, 0, 0, 0.1); }\n  .courses h2 {\n    margin-bottom: 0; }\n  .course-nav {\n    display: block;\n    margin: 1.5em 0 3.2em; }\n  .home a,\n  input,\n  button {\n    display: block;\n    width: 140px;\n    margin-bottom: 1em; }\n  .left {\n    position: relative;\n    height: 148px;\n    width: 100%;\n    top: 0;\n    left: 0;\n    float: left;\n    background-color: #111; }\n  .center {\n    width: 100%;\n    position: relative;\n    right: 0;\n    top: 1px;\n    overflow-y: hidden;\n    padding-bottom: 150px; }\n  .card_image, .card_image_reversed {\n    width: 203px;\n    margin-right: 30px;\n    margin-left: 0px;\n    float: left; }\n  .upright_description {\n    padding-bottom: 40px; }\n  .upright_description:last-of-type {\n    padding-bottom: 50px; }\n  .single_card_reading {\n    clear: both; }\n  .fcr_container {\n    margin-bottom: 0; } }\n\n@media (min-width: 769px) {\n  body {\n    padding-top: 3em; }\n  .home a {\n    border-color: #455cef; }\n  .home {\n    background-color: #222; }\n  .media img,\n  .media > div,\n  .teacher {\n    float: left; }\n  .media > div {\n    width: 85.1%;\n    margin-left: 1.5em; }\n  .teacher {\n    width: 48.73%;\n    margin-bottom: 1.5em; }\n  .teacher + .teacher {\n    margin-left: 2.54%; }\n  .teacher:nth-child(2n+3) {\n    clear: left;\n    margin-left: 0; }\n  /* MAIN NAV -------- */\n  .icn-logo {\n    margin-right: auto;\n    padding: 0 2em; }\n  header,\n  .main-nav {\n    display: flex;\n    flex-wrap: wrap; }\n  .main-nav a {\n    padding: 1.25em 1.5em; }\n  .main-nav a:hover {\n    border-color: rgba(0, 0, 0, 0.1); }\n  /* COURSE NAV -------- */\n  .course-nav {\n    float: right; }\n  .courses h2 {\n    float: left; } }\n\n@media only screen and (max-width: 680px) {\n  .top {\n    height: 320px; }\n  .card_image {\n    margin-bottom: 30px;\n    margin-right: 30px;\n    margin-left: 0px !important; } }\n", ""]);
 
 	// exports
 
@@ -22640,7 +22640,7 @@
 	'use strict';
 
 	Object.defineProperty(exports, "__esModule", {
-	   value: true
+	  value: true
 	});
 
 	var _react = __webpack_require__(1);
@@ -22653,46 +22653,49 @@
 
 	var _App2 = _interopRequireDefault(_App);
 
-	var _SCR = __webpack_require__(253);
+	var _Home = __webpack_require__(254);
+
+	var _Home2 = _interopRequireDefault(_Home);
+
+	var _SCR = __webpack_require__(257);
 
 	var _SCR2 = _interopRequireDefault(_SCR);
 
-	var _About = __webpack_require__(256);
+	var _About = __webpack_require__(258);
 
 	var _About2 = _interopRequireDefault(_About);
 
-	var _FullReading = __webpack_require__(257);
+	var _FullReading = __webpack_require__(259);
 
 	var _FullReading2 = _interopRequireDefault(_FullReading);
 
-	var _NotFound = __webpack_require__(258);
+	var _NotFound = __webpack_require__(260);
 
 	var _NotFound2 = _interopRequireDefault(_NotFound);
 
-	var _jquery = __webpack_require__(255);
+	var _jquery = __webpack_require__(256);
 
 	var _jquery2 = _interopRequireDefault(_jquery);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	// Routes
-
+	var routes = _react2.default.createElement(
+	  _reactRouter.Router,
+	  { history: _reactRouter.browserHistory },
+	  _react2.default.createElement(
+	    _reactRouter.Route,
+	    { component: _App2.default },
+	    _react2.default.createElement(_reactRouter.Route, { path: '/', component: _Home2.default }),
+	    _react2.default.createElement(_reactRouter.Route, { path: '/about', component: _About2.default }),
+	    _react2.default.createElement(_reactRouter.Route, { path: '/single-card-reading', component: _SCR2.default }),
+	    _react2.default.createElement(_reactRouter.Route, { path: '/full-reading', component: _FullReading2.default }),
+	    _react2.default.createElement(_reactRouter.Route, { path: '*', component: _NotFound2.default })
+	  )
+	);
 
 	// Components
 	// Libs
-	var routes = _react2.default.createElement(
-	   _reactRouter.Router,
-	   { history: _reactRouter.browserHistory },
-	   _react2.default.createElement(
-	      _reactRouter.Route,
-	      { component: _App2.default },
-	      _react2.default.createElement(_reactRouter.Route, { path: '/about', component: _About2.default }),
-	      _react2.default.createElement(_reactRouter.Route, { path: '/single-card-reading', component: _SCR2.default }),
-	      _react2.default.createElement(_reactRouter.Route, { path: '/', component: _FullReading2.default }),
-	      _react2.default.createElement(_reactRouter.Route, { path: '*', component: _NotFound2.default })
-	   )
-	);
-
 	exports.default = routes;
 
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/home/ncal/Documents/Tarot/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "router.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
@@ -27946,60 +27949,167 @@
 
 	var _Navlink2 = _interopRequireDefault(_Navlink);
 
+	var _TitleBar = __webpack_require__(253);
+
+	var _TitleBar2 = _interopRequireDefault(_TitleBar);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	var App = function App(props) {
-	  return _react2.default.createElement(
-	    'div',
-	    { className: 'container' },
-	    _react2.default.createElement('div', { className: 'top' }),
-	    _react2.default.createElement(
-	      'div',
-	      { className: 'left' },
-	      _react2.default.createElement(
-	        'header',
-	        null,
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var App = function (_Component) {
+	  _inherits(App, _Component);
+
+	  function App(props, context) {
+	    _classCallCheck(this, App);
+
+	    var _this = _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).call(this, props, context));
+
+	    _this.changeMode = function () {
+	      console.log('change mode');
+	      _this.setState({ darkMode: !_this.state.darkMode });
+	    };
+
+	    _this.render = function () {
+	      console.log('props', _this.props);
+	      return _react2.default.createElement(
+	        'div',
+	        {
+	          className: 'container ' + (_this.state.darkMode ? "darkMode" : "lightMode")
+	        },
+	        _react2.default.createElement(_TitleBar2.default, null),
 	        _react2.default.createElement(
-	          'ul',
-	          { className: 'main-nav' },
+	          'div',
+	          {
+	            className: 'top ' + (_this.state.darkMode ? "darkMode" : "lightMode")
+	          },
+	          _react2.default.createElement('script', {
+	            async: true,
+	            src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6248178765033726',
+	            crossOrigin: 'anonymous'
+	          }),
+	          _react2.default.createElement('ins', {
+	            className: 'adsbygoogle',
+	            style: { display: "block" },
+	            'data-ad-client': 'ca-pub-6248178765033726',
+	            'data-ad-slot': '9286392459',
+	            'data-ad-format': 'auto',
+	            'data-full-width-responsive': 'true'
+	          }),
 	          _react2.default.createElement(
-	            'li',
+	            'script',
+	            null,
+	            '(adsbygoogle = window.adsbygoogle || []).push(',
+	            ');'
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'left' },
+	          _react2.default.createElement(
+	            'header',
 	            null,
 	            _react2.default.createElement(
-	              _Navlink2.default,
-	              { to: '/' },
-	              'Full Reading'
-	            )
-	          ),
-	          _react2.default.createElement(
-	            'li',
-	            null,
-	            _react2.default.createElement(
-	              _Navlink2.default,
-	              { to: '/single-card-reading' },
-	              'Single Card Reading'
-	            )
-	          ),
-	          _react2.default.createElement(
-	            'li',
-	            null,
-	            _react2.default.createElement(
-	              _Navlink2.default,
-	              { to: '/about' },
-	              'About'
+	              'ul',
+	              { className: 'main-nav' },
+	              _react2.default.createElement(
+	                'li',
+	                null,
+	                _react2.default.createElement(
+	                  _Navlink2.default,
+	                  {
+	                    to: '/',
+	                    className: _this.state.darkMode ? "darkMode" : "lightMode"
+	                  },
+	                  'Tarot.lol'
+	                )
+	              ),
+	              _react2.default.createElement(
+	                'li',
+	                null,
+	                _react2.default.createElement(
+	                  _Navlink2.default,
+	                  {
+	                    to: '/full-reading',
+	                    className: _this.state.darkMode ? "darkMode" : "lightMode"
+	                  },
+	                  'Full Reading'
+	                )
+	              ),
+	              _react2.default.createElement(
+	                'li',
+	                null,
+	                _react2.default.createElement(
+	                  _Navlink2.default,
+	                  {
+	                    to: '/single-card-reading',
+	                    className: _this.state.darkMode ? "darkMode" : "lightMode"
+	                  },
+	                  'Single Card Reading'
+	                )
+	              )
 	            )
 	          )
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          {
+	            className: 'center ' + (_this.state.darkMode ? "darkMode" : "lightMode")
+	          },
+	          _this.props.children
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'right' },
+	          _react2.default.createElement('script', {
+	            async: true,
+	            src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6248178765033726',
+	            crossOrigin: 'anonymous'
+	          }),
+	          _react2.default.createElement('ins', {
+	            className: 'adsbygoogle',
+	            style: { display: "block" },
+	            'data-ad-client': 'ca-pub-6248178765033726',
+	            'data-ad-slot': '1190897128',
+	            'data-ad-format': 'auto',
+	            'data-full-width-responsive': 'true'
+	          }),
+	          _react2.default.createElement(
+	            'script',
+	            null,
+	            '(adsbygoogle = window.adsbygoogle || []).push(',
+	            ');'
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          {
+	            className: 'mode-btn',
+	            onClick: function onClick() {
+	              _this.changeMode();
+	            }
+	          },
+	          _react2.default.createElement(
+	            'span',
+	            { className: 'material-symbols-outlined' },
+	            'wb_sunny'
+	          )
 	        )
-	      )
-	    ),
-	    _react2.default.createElement(
-	      'div',
-	      { className: 'center' },
-	      props.children
-	    ),
-	    _react2.default.createElement('div', { className: 'right' })
-	  );
-	};
+	      );
+	    };
+
+	    _this.state = {
+	      darkMode: true
+	    };
+	    return _this;
+	  }
+
+	  return App;
+	}(_react.Component);
 
 	exports.default = App;
 
@@ -28047,15 +28157,53 @@
 	  value: true
 	});
 
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
 	var _react = __webpack_require__(1);
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _cardData = __webpack_require__(254);
+	var _reactRouter = __webpack_require__(193);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var TitleBar = function TitleBar(props) {
+	  return _react2.default.createElement(
+	    _reactRouter.Link,
+	    { to: "/", className: 'titleBar' },
+	    _react2.default.createElement(
+	      'div',
+	      _extends({ className: 'bar' }, props),
+	      '\uD83D\uDD2E tarot.lol'
+	    )
+	  );
+	};
+
+	exports.default = TitleBar;
+
+	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/home/ncal/Documents/Tarot/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "TitleBar.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+
+/***/ }),
+/* 254 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/home/ncal/Documents/Tarot/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/home/ncal/Documents/Tarot/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _cardData = __webpack_require__(255);
 
 	var _cardData2 = _interopRequireDefault(_cardData);
 
-	var _jquery = __webpack_require__(255);
+	var _jquery = __webpack_require__(256);
 
 	var _jquery2 = _interopRequireDefault(_jquery);
 
@@ -28067,17 +28215,21 @@
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-	var SCR = function (_Component) {
-	  _inherits(SCR, _Component);
+	var Home = function (_Component) {
+	  _inherits(Home, _Component);
 
-	  function SCR(props, context) {
-	    _classCallCheck(this, SCR);
+	  function Home(props, context) {
+	    _classCallCheck(this, Home);
 
-	    var _this = _possibleConstructorReturn(this, (SCR.__proto__ || Object.getPrototypeOf(SCR)).call(this, props, context));
+	    var _this = _possibleConstructorReturn(this, (Home.__proto__ || Object.getPrototypeOf(Home)).call(this, props, context));
+
+	    _this.componentDidMount = function () {
+	      _this.getRandomCard();
+	    };
 
 	    _this.getRandomCard = function () {
-	      console.group('get random card');
-	      var flipped = Math.floor(Math.random() * 2) === 0 ? true : false;
+	      console.group("get random card");
+	      var flipped = false;
 	      var self = _this;
 	      var cards = _this.props.Cards;
 	      var randNum = Math.floor(Math.random() * (78 - 0 + 1));
@@ -28089,10 +28241,10 @@
 	      var randDes = randCard.description.basic;
 	      var randUpright = randCard.description.upright;
 	      var randReversed = randCard.description.reversed;
-	      var reading = (0, _jquery2.default)('.reading_container');
-	      var paras = document.getElementsByTagName('p');
-	      console.log('card drawn', randCard);
-	      (0, _jquery2.default)('.description').innerHTML = randDes;
+	      var reading = (0, _jquery2.default)(".reading_container");
+	      var paras = document.getElementsByTagName("p");
+	      console.log("card drawn", randCard);
+	      (0, _jquery2.default)(".description").innerHTML = randDes;
 
 	      reading.hide();
 
@@ -28107,178 +28259,85 @@
 	        random_card_upright: randUpright,
 	        random_card_reversed: randReversed,
 	        random_card_src: src
-
 	      }, function () {
-	        setTimeout(function () {
-	          self.setState({ loading: false }, function () {
-	            if (this.state.random_card_flipped) {
-	              (0, _jquery2.default)('img').addClass('card_image_reversed');
-	            } else {
-	              (0, _jquery2.default)('img.card_image').removeClass('card_image_reversed');
-	            }
-	            reading.show();
-	          });
-	          self.replace_break(paras);
-	        }, 2000);
+	        // setTimeout(function () {
+	        self.setState({ loading: false }, function () {
+	          if (this.state.random_card_flipped) {
+	            (0, _jquery2.default)("img").addClass("card_image_reversed");
+	          } else {
+	            (0, _jquery2.default)("img.card_image").removeClass("card_image_reversed");
+	          }
+	          reading.show();
+	        });
+	        self.replace_break(paras);
+	        // }, 2000);
 	      });
 	      console.groupEnd();
 	    };
 
 	    _this.replace_break = function (paras) {
-	      console.log('replace break');
+	      console.log("replace break");
 	      for (var i = 0; i < paras.length; i++) {
-	        var new_p = paras[i].innerHTML.replace(/\r?\n/g, '<br/>');
+	        var new_p = paras[i].innerHTML.replace(/\r?\n/g, "<br/>");
 	        paras[i].innerHTML = new_p;
 	      }
 	    };
 
 	    _this.render = function () {
-	      if (_this.state.loading) {
-	        return _react2.default.createElement(
-	          'div',
-	          { className: 'main-content SCR' },
+	      return _react2.default.createElement(
+	        "div",
+	        { className: "main-content SCR" },
+	        _react2.default.createElement(
+	          "div",
+	          { className: "reading_container" },
 	          _react2.default.createElement(
-	            'div',
-	            { className: 'main-content ' },
-	            _react2.default.createElement('img', { className: 'pentacle', src: 'https://upload.wikimedia.org/wikipedia/commons/9/97/Pentacle_2.svg' })
-	          )
-	        );
-	      }
-	      if (_this.state.new && !_this.state.loading) {
-	        return _react2.default.createElement(
-	          'div',
-	          { className: 'main-content SCR' },
-	          _react2.default.createElement(
-	            'button',
-	            { onClick: _this.getRandomCard },
-	            'Draw A Single Card'
-	          ),
-	          _react2.default.createElement('div', { className: 'reading_container' })
-	        );
-	      }
-	      if (!_this.state.random_card_flipped && !_this.state.loading && !_this.state.new) {
-	        return _react2.default.createElement(
-	          'div',
-	          { className: 'main-content SCR' },
-	          _react2.default.createElement(
-	            'button',
-	            { onClick: _this.getRandomCard },
-	            'Draw A Single Card'
-	          ),
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'reading_container' },
+	            "div",
+	            { className: "single_card_reading" },
 	            _react2.default.createElement(
-	              'div',
-	              { className: 'single_card_reading' },
-	              _react2.default.createElement(
-	                'h3',
-	                { className: 'title' },
-	                _this.state.random_card_name
-	              ),
-	              _react2.default.createElement('img', {
-	                className: 'card_image',
-	                src: _this.state.random_card_src,
-	                alt: ''
-	              }),
-	              _react2.default.createElement(
-	                'h4',
-	                { className: 'title' },
-	                'Keywords:'
-	              ),
-	              _react2.default.createElement(
-	                'p',
-	                null,
-	                _this.state.random_card_keys_up
-	              ),
-	              _react2.default.createElement(
-	                'h3',
-	                { className: 'title' },
-	                'Summary'
-	              ),
-	              _react2.default.createElement(
-	                'p',
-	                { className: 'description' },
-	                _this.state.random_card_description
-	              ),
-	              _react2.default.createElement(
-	                'h3',
-	                { className: 'title' },
-	                'Upright'
-	              ),
-	              _react2.default.createElement(
-	                'p',
-	                { className: 'upright_description' },
-	                _this.state.random_card_upright
-	              )
+	              "h2",
+	              { className: "title" },
+	              "\uD83D\uDD2E tarot.lol"
+	            ),
+	            _react2.default.createElement("img", {
+	              className: "card_image",
+	              src: _this.state.random_card_src,
+	              alt: ""
+	            }),
+	            _react2.default.createElement(
+	              "h3",
+	              { className: "title" },
+	              "The tarot is a pack of playing cards used from at least the mid-15th century.",
+	              _react2.default.createElement("br", null)
+	            ),
+	            _react2.default.createElement(
+	              "h3",
+	              null,
+	              "Tarot cards are one of many forms of divination."
+	            ),
+	            _react2.default.createElement(
+	              "h3",
+	              null,
+	              "They are commonly used to measure potential outcomes and evaluate influences surrounding a person, event, or both."
+	            ),
+	            _react2.default.createElement(
+	              "h4",
+	              { className: "description" },
+	              "The Full Reading section uses the Celtic Cross layout. The deck used is the Rider Waite."
+	            ),
+	            _react2.default.createElement(
+	              "p",
+	              null,
+	              "\xA9 2022 tarot.lol"
 	            )
 	          )
-	        );
-	      }if (_this.state.random_card_flipped && !_this.state.loading && !_this.state.new) {
-	        return _react2.default.createElement(
-	          'div',
-	          { className: 'main-content SCR' },
-	          _react2.default.createElement(
-	            'button',
-	            { onClick: _this.getRandomCard },
-	            'Draw A Single Card'
-	          ),
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'reading_container' },
-	            _react2.default.createElement(
-	              'div',
-	              { className: 'single_card_reading' },
-	              _react2.default.createElement(
-	                'h3',
-	                { className: 'title' },
-	                _this.state.random_card_name + " Reversed"
-	              ),
-	              _react2.default.createElement('img', {
-	                className: 'card_image',
-	                src: _this.state.random_card_src,
-	                alt: ''
-	              }),
-	              _react2.default.createElement(
-	                'h4',
-	                { className: 'title' },
-	                'Keywords:'
-	              ),
-	              _react2.default.createElement(
-	                'p',
-	                null,
-	                _this.state.random_card_keys_rev
-	              ),
-	              _react2.default.createElement(
-	                'h3',
-	                { className: 'title' },
-	                'Summary'
-	              ),
-	              _react2.default.createElement(
-	                'p',
-	                { className: 'description' },
-	                _this.state.random_card_description
-	              ),
-	              _react2.default.createElement(
-	                'h3',
-	                { className: 'title' },
-	                'Reversed'
-	              ),
-	              _react2.default.createElement(
-	                'p',
-	                { className: 'upright_description' },
-	                _this.state.random_card_reversed
-	              )
-	            )
-	          )
-	        );
-	      }
+	        )
+	      );
 	    };
 
 	    _this.state = {
 	      new: true,
 	      loading: false,
-	      name: 'Card',
+	      name: "Card",
 	      src: null,
 	      random_card_flipped: null,
 	      random_card_name: null,
@@ -28289,29 +28348,29 @@
 	    return _this;
 	  }
 
-	  return SCR;
+	  return Home;
 	}(_react.Component);
 
-	// PROPS 
+	// PROPS
 
 
-	SCR.defaultProps = {
-	  name: 'Card',
-	  kind: 'Child',
+	Home.defaultProps = {
+	  name: "Card",
+	  kind: "Child",
 	  Cards: _cardData2.default[0].Cards
 	};
 
-	SCR.propTypes = {
+	Home.propTypes = {
 	  name: _react2.default.PropTypes.string.isRequired,
 	  kind: _react2.default.PropTypes.string
 	};
 
-	exports.default = SCR;
+	exports.default = Home;
 
-	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/home/ncal/Documents/Tarot/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "SCR.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/home/ncal/Documents/Tarot/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "Home.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ }),
-/* 254 */
+/* 255 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/home/ncal/Documents/Tarot/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/home/ncal/Documents/Tarot/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -28991,7 +29050,7 @@
 	      },
 	      description: {
 	         basic: 'On the Six of Cups, there are six cups filled with white, five-pointed flowers. A young boy seems to smell one flower, offering this filled cup to another young child. The small child symbolises the past and the taller child symbolises the future, and together they symbolise happy reunions with past friends or lovers. They share old pleasures with lots of nostalgia. In the background, there is an older figure walking away, symbolising our worries leaving us to be locked in the turret. The house symbolises comfort and security but the barren garden symbolises the lost happier times of the past. Everything is bright yellow which indicates great happiness in this overall scene.',
-	         upright: 'The Six of Cups is a card of childhood, nostalgia, naïve happiness, and generosity. You want to return to the happy memories of your past, whether as a child, teenager or adult. Oftentimes, though, these memories are indeed a thing of the past and reflect aspects of your life that have since vanished. You may feel that the only way to connect to this happiness is to escape into the past where you can reflect on your happy and beautiful memories, instead of dealing with current challenges. This is fine if you are simply taking a walk down memory lane but it is important that you live in the present and accept your current circumstances rather than always living in the past.Oftentimes, there is nothing wrong with looking back at the good times for inspiration when things are not going so well. In the midst of change and crisis, the Six of Cups suggests that looking back at what you have endured is a good way to assure yourself that, whatever trials lay ahead, you will meet them and you will overcome them as you overcame others. After losses such as those on the Fives, the Six of Cups suggests that you need to take time out to heal, look back on the past and all the good that lies there. During this period of reflection, there is no need to focus on the negative. Instead, bring all of the positive energy from the past into your present and your future. The fallen cups are now full and upright again but with blooming flowers that cannot be spilled or washed away. Now that you have looked back, the way forward will be clear and enlightening.The Six of Cups can represent a return to a familiar environment or to a childhood place. You may return to your home town, to your parents’ house, to your high school or even kindergarten. You could be going to a high school reunion or reconnecting with a childhood acquaintance. A teenage sweetheart or past lover may turn up again. Allow yourself positive, nostalgic memories of childhood, friends and family. If you can, spend time with younger people.The Six of Cups can also point to your inner child and suggests a need to experience child-like joy. The child you were still lives within you and must be cared for. This is often referred to as working with your inner child. People with persistent problems such as addiction, depression, troubled relationships and chronic dissatisfaction can transform their lives with inner child work and find a new joy and energy in living. The source of your problems may be in past events that are triggered in the present. We are made up of many parts and inside we still have the little child and adolescent we were with all of its experiences and feelings. This can lead to the inner child reacting strongly to certain experiences, situations and feelings in the present, based on experiences of the past. Working with your inner child and getting to know where these feelings come from can change that and enhance your choices in miraculous ways. When we are being playful, spontaneous, creative, intuitive and surrendering to the spiritual self, our genuine authentic Self, who we know deep within us, our real Self is being welcomed and encouraged to be present.The Six of Cups can also refer to children in your life. It can denote a pregnancy, birth or adoption, depending on the other cards in the reading. Or, it may indicate that you are about to spend more time with young children, playing, laughing and learning together. Children play a significant role in your present life, and can serve as great advisors. Children are good role models to follow when this card is present. They see the world as a completely perfect place and their hearts are open to experience the myriad pleasures of the world around them.The Six of Cups almost radiates an aura of joy, because it represents the past with all its memories, the present with all its gifts, and the future with all its wondrous opportunities. The Six of Cups can thus signal a gift given or received, or some other similar gesture. You may be inspired to act kindly or charitably, or to do a good turn for another person. You are more open to sharing what you have and being well-intentioned.',
+	         upright: 'The Six of Cups is a card of childhood, nostalgia, naïve happiness, and generosity. You want to return to the happy memories of your past, whether as a child, teenager or adult.\n\nOftentimes, though, these memories are indeed a thing of the past and reflect aspects of your life that have since vanished. You may feel that the only way to connect to this happiness is to escape into the past where you can reflect on your happy and beautiful memories, instead of dealing with current challenges.\n\nThis is fine if you are simply taking a walk down memory lane but it is important that you live in the present and accept your current circumstances rather than always living in the past.Oftentimes, there is nothing wrong with looking back at the good times for inspiration when things are not going so well. In the midst of change and crisis, the Six of Cups suggests that looking back at what you have endured is a good way to assure yourself that, whatever trials lay ahead, you will meet them and you will overcome them as you overcame others.\n\nAfter losses such as those on the Fives, the Six of Cups suggests that you need to take time out to heal, look back on the past and all the good that lies there. During this period of reflection, there is no need to focus on the negative. Instead, bring all of the positive energy from the past into your present and your future. The fallen cups are now full and upright again but with blooming flowers that cannot be spilled or washed away. Now that you have looked back, the way forward will be clear and enlightening.The Six of Cups can represent a return to a familiar environment or to a childhood place. You may return to your home town, to your parents’ house, to your high school or even kindergarten. You could be going to a high school reunion or reconnecting with a childhood acquaintance. A teenage sweetheart or past lover may turn up again. Allow yourself positive, nostalgic memories of childhood, friends and family. If you can, spend time with younger people.\n\nThe Six of Cups can also point to your inner child and suggests a need to experience child-like joy. The child you were still lives within you and must be cared for. This is often referred to as working with your inner child. People with persistent problems such as addiction, depression, troubled relationships and chronic dissatisfaction can transform their lives with inner child work and find a new joy and energy in living. The source of your problems may be in past events that are triggered in the present. We are made up of many parts and inside we still have the little child and adolescent we were with all of its experiences and feelings. This can lead to the inner child reacting strongly to certain experiences, situations and feelings in the present, based on experiences of the past. \n\nWorking with your inner child and getting to know where these feelings come from can change that and enhance your choices in miraculous ways. When we are being playful, spontaneous, creative, intuitive and surrendering to the spiritual self, our genuine authentic Self, who we know deep within us, our real Self is being welcomed and encouraged to be present.The Six of Cups can also refer to children in your life. It can denote a pregnancy, birth or adoption, depending on the other cards in the reading. Or, it may indicate that you are about to spend more time with young children, playing, laughing and learning together. \n\nChildren play a significant role in your present life, and can serve as great advisors. Children are good role models to follow when this card is present. They see the world as a completely perfect place and their hearts are open to experience the myriad pleasures of the world around them.The Six of Cups almost radiates an aura of joy, because it represents the past with all its memories, the present with all its gifts, and the future with all its wondrous opportunities. The Six of Cups can thus signal a gift given or received, or some other similar gesture. You may be inspired to act kindly or charitably, or to do a good turn for another person. You are more open to sharing what you have and being well-intentioned.',
 	         reversed: 'The Six of Cups reversed may indicate that you are clinging on to your past. There may be issues from your past that you have not yet fully processed. It is important to explore the memories of your past but do not get stuck there. Your ideas and beliefs that were established in the past may be prohibiting your progress. Use your past as a guide for your future, and focus on living in the present.\n\nThe Six of Cups is a card of nostalgia, childlike love and generosity, and a carefree, naïve outlook on life. Reversed, it suggests that you may have had unrealistically rosy ideas about a particular stage of life, based on your dreams and ideals from when you were younger. For example, you may have always pictured yourself as married with children by 25, only to realise that once you hit 25, you had other goals in mind. Or you may be disappointed that you have reached a particular age but have not fulfilled your childhood dreams just yet.\n\nThe Six of Cups reversed can indicate fertility issues and problems with bearing children. If you already have children, there may be disciplinary issues that you are trying to get under control.\n\nSometimes, the reversed Six of Cups can indicate child abuse or sexual abuse sustained as a young person. You may still be working through these issues and trying to release yourself from the harmful memories. Alternatively, you may be working with others who have repressed memories from their childhood and who need your support.'
 	      }
 	   }, {
@@ -29266,7 +29325,7 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/home/ncal/Documents/Tarot/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "cardData.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ }),
-/* 255 */
+/* 256 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -40153,7 +40212,282 @@
 
 
 /***/ }),
-/* 256 */
+/* 257 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/home/ncal/Documents/Tarot/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/home/ncal/Documents/Tarot/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _cardData = __webpack_require__(255);
+
+	var _cardData2 = _interopRequireDefault(_cardData);
+
+	var _jquery = __webpack_require__(256);
+
+	var _jquery2 = _interopRequireDefault(_jquery);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var SCR = function (_Component) {
+	  _inherits(SCR, _Component);
+
+	  function SCR(props, context) {
+	    _classCallCheck(this, SCR);
+
+	    var _this = _possibleConstructorReturn(this, (SCR.__proto__ || Object.getPrototypeOf(SCR)).call(this, props, context));
+
+	    _this.getRandomCard = function () {
+	      console.group('get random card');
+	      var flipped = Math.floor(Math.random() * 2) === 0 ? true : false;
+	      var self = _this;
+	      var cards = _this.props.Cards;
+	      var randNum = Math.floor(Math.random() * (78 - 0 + 1));
+	      var randCard = cards[randNum];
+	      var randName = randCard.name;
+	      var randKeysUp = randCard.keywords.upright;
+	      var randKeysRev = randCard.keywords.reversed;
+	      var src = randCard.src;
+	      var randDes = randCard.description.basic;
+	      var randUpright = randCard.description.upright;
+	      var randReversed = randCard.description.reversed;
+	      var reading = (0, _jquery2.default)('.reading_container');
+	      var paras = document.getElementsByTagName('p');
+	      console.log('card drawn', randCard);
+	      (0, _jquery2.default)('.description').innerHTML = randDes;
+
+	      reading.hide();
+
+	      self.setState({
+	        new: false,
+	        loading: true,
+	        random_card_flipped: flipped,
+	        random_card_name: randName,
+	        random_card_keys_up: randKeysUp,
+	        random_card_keys_rev: randKeysRev,
+	        random_card_description: randDes,
+	        random_card_upright: randUpright,
+	        random_card_reversed: randReversed,
+	        random_card_src: src
+
+	      }, function () {
+	        setTimeout(function () {
+	          self.setState({ loading: false }, function () {
+	            if (this.state.random_card_flipped) {
+	              (0, _jquery2.default)('img').addClass('card_image_reversed');
+	            } else {
+	              (0, _jquery2.default)('img.card_image').removeClass('card_image_reversed');
+	            }
+	            reading.show();
+	          });
+	          self.replace_break(paras);
+	        }, 2000);
+	      });
+	      console.groupEnd();
+	    };
+
+	    _this.replace_break = function (paras) {
+	      console.log('replace break');
+	      for (var i = 0; i < paras.length; i++) {
+	        var new_p = paras[i].innerHTML.replace(/\r?\n/g, '<br/>');
+	        paras[i].innerHTML = new_p;
+	      }
+	    };
+
+	    _this.render = function () {
+	      if (_this.state.loading) {
+	        return _react2.default.createElement(
+	          'div',
+	          { className: 'main-content SCR' },
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'main-content ' },
+	            _react2.default.createElement('img', { className: 'pentacle', src: 'https://upload.wikimedia.org/wikipedia/commons/9/97/Pentacle_2.svg' })
+	          )
+	        );
+	      }
+	      if (_this.state.new && !_this.state.loading) {
+	        return _react2.default.createElement(
+	          'div',
+	          { className: 'main-content SCR' },
+	          _react2.default.createElement(
+	            'button',
+	            { onClick: _this.getRandomCard },
+	            'Draw A Single Card'
+	          ),
+	          _react2.default.createElement('div', { className: 'reading_container' })
+	        );
+	      }
+	      if (!_this.state.random_card_flipped && !_this.state.loading && !_this.state.new) {
+	        return _react2.default.createElement(
+	          'div',
+	          { className: 'main-content SCR' },
+	          _react2.default.createElement(
+	            'button',
+	            { onClick: _this.getRandomCard },
+	            'Draw A Single Card'
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'reading_container' },
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'single_card_reading' },
+	              _react2.default.createElement(
+	                'h2',
+	                { className: 'title' },
+	                _this.state.random_card_name
+	              ),
+	              _react2.default.createElement('img', {
+	                className: 'card_image',
+	                src: _this.state.random_card_src,
+	                alt: ''
+	              }),
+	              _react2.default.createElement(
+	                'h4',
+	                { className: 'title' },
+	                'Keywords:'
+	              ),
+	              _react2.default.createElement(
+	                'p',
+	                null,
+	                _this.state.random_card_keys_up
+	              ),
+	              _react2.default.createElement(
+	                'h3',
+	                { className: 'title' },
+	                'Summary'
+	              ),
+	              _react2.default.createElement(
+	                'p',
+	                { className: 'description' },
+	                _this.state.random_card_description
+	              ),
+	              _react2.default.createElement(
+	                'h3',
+	                { className: 'title' },
+	                'Upright'
+	              ),
+	              _react2.default.createElement(
+	                'p',
+	                { className: 'upright_description' },
+	                _this.state.random_card_upright
+	              )
+	            )
+	          )
+	        );
+	      }if (_this.state.random_card_flipped && !_this.state.loading && !_this.state.new) {
+	        return _react2.default.createElement(
+	          'div',
+	          { className: 'main-content SCR' },
+	          _react2.default.createElement(
+	            'button',
+	            { onClick: _this.getRandomCard },
+	            'Draw A Single Card'
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'reading_container' },
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'single_card_reading' },
+	              _react2.default.createElement(
+	                'h2',
+	                { className: 'title' },
+	                _this.state.random_card_name + " Reversed"
+	              ),
+	              _react2.default.createElement('img', {
+	                className: 'card_image',
+	                src: _this.state.random_card_src,
+	                alt: ''
+	              }),
+	              _react2.default.createElement(
+	                'h4',
+	                { className: 'title' },
+	                'Keywords:'
+	              ),
+	              _react2.default.createElement(
+	                'p',
+	                null,
+	                _this.state.random_card_keys_rev
+	              ),
+	              _react2.default.createElement(
+	                'h3',
+	                { className: 'title' },
+	                'Summary'
+	              ),
+	              _react2.default.createElement(
+	                'p',
+	                { className: 'description' },
+	                _this.state.random_card_description
+	              ),
+	              _react2.default.createElement(
+	                'h3',
+	                { className: 'title' },
+	                'Reversed'
+	              ),
+	              _react2.default.createElement(
+	                'p',
+	                { className: 'upright_description' },
+	                _this.state.random_card_reversed
+	              )
+	            )
+	          )
+	        );
+	      }
+	    };
+
+	    _this.state = {
+	      new: true,
+	      loading: false,
+	      name: 'Card',
+	      src: null,
+	      random_card_flipped: null,
+	      random_card_name: null,
+	      random_card_description: null,
+	      random_card_upright: null,
+	      random_card_reversed: null
+	    };
+	    return _this;
+	  }
+
+	  return SCR;
+	}(_react.Component);
+
+	// PROPS 
+
+
+	SCR.defaultProps = {
+	  name: 'Card',
+	  kind: 'Child',
+	  Cards: _cardData2.default[0].Cards
+	};
+
+	SCR.propTypes = {
+	  name: _react2.default.PropTypes.string.isRequired,
+	  kind: _react2.default.PropTypes.string
+	};
+
+	exports.default = SCR;
+
+	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/home/ncal/Documents/Tarot/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "SCR.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+
+/***/ }),
+/* 258 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/home/ncal/Documents/Tarot/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/home/ncal/Documents/Tarot/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -40174,38 +40508,6 @@
 	  return _react2.default.createElement(
 	    "div",
 	    { className: "main-content" },
-	    _react2.default.createElement(
-	      "h2",
-	      null,
-	      props.route.title
-	    ),
-	    _react2.default.createElement(
-	      "p",
-	      null,
-	      _react2.default.createElement(
-	        "a",
-	        { href: "https://en.wikipedia.org/wiki/Tarot#Occult_tarot_decks" },
-	        "Tarot cards"
-	      ),
-	      " are one of many forms of divination. They are commonly used to measure potential outcomes and evaluate influences surrounding a person, event, or both."
-	    ),
-	    " ",
-	    _react2.default.createElement(
-	      "p",
-	      null,
-	      "The Full Reading section uses the ",
-	      _react2.default.createElement(
-	        "a",
-	        { href: "http://www.tarotpedia.com/wiki/Celtic_Cross_Spread" },
-	        "Celtic Cross"
-	      ),
-	      " Spread. The Deck used is the ",
-	      _react2.default.createElement(
-	        "a",
-	        { href: "https://en.wikipedia.org/wiki/Rider-Waite_tarot_deck" },
-	        "Rider Waite."
-	      )
-	    ),
 	    _react2.default.createElement(
 	      "p",
 	      null,
@@ -40229,7 +40531,7 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/home/ncal/Documents/Tarot/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "About.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ }),
-/* 257 */
+/* 259 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/home/ncal/Documents/Tarot/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/home/ncal/Documents/Tarot/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -40244,11 +40546,11 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _cardData = __webpack_require__(254);
+	var _cardData = __webpack_require__(255);
 
 	var _cardData2 = _interopRequireDefault(_cardData);
 
-	var _jquery = __webpack_require__(255);
+	var _jquery = __webpack_require__(256);
 
 	var _jquery2 = _interopRequireDefault(_jquery);
 
@@ -40301,7 +40603,7 @@
 	  var _this2 = this;
 
 	  this.componentWillMount = function () {
-	    console.log('COMP WILL MOUNT');
+	    console.log('COMP WILL MOUNT', _this2.props);
 	    chosen_cards = [];
 	    console.log('global cards', globalCards);
 	    // Add back to cards
@@ -40407,7 +40709,7 @@
 	          { className: 'cards' },
 	          _react2.default.createElement(
 	            'p',
-	            { style: { color: '#fff' } },
+	            null,
 	            'Select 10 cards'
 	          ),
 	          _cardData2.default[0].Cards.map(function (card, i) {
@@ -40577,7 +40879,7 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/home/ncal/Documents/Tarot/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "FullReading.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ }),
-/* 258 */
+/* 260 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/home/ncal/Documents/Tarot/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/home/ncal/Documents/Tarot/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {

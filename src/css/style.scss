@@ -28,6 +28,9 @@
 //    @include app($blue, $red);
 // }
 
+$purple: rgb(69, 92, 239);
+$lighterP: rgb(137, 152, 251);
+
 * {
    box-sizing: border-box;
    font-family: 'Abel', sans-serif;
@@ -64,7 +67,7 @@ ul {
 }
 a {
    text-decoration: none;
-   color: #3b80d1;
+   color: $purple;
 }
 hr {
    border: 0;
@@ -100,7 +103,7 @@ button {
 }
 button {
    color: white;
-   background: #4188dc;
+   background: $purple;
    padding-left: 1em;
    padding-right: 1em;
    cursor: pointer;
@@ -141,6 +144,20 @@ button {
       right: 10px;
       cursor: pointer;
    }
+
+   .titleBar .bar {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 20px;
+      color: #fff;
+      width: 100%;
+      background-color: $purple;
+      text-align: center;
+      z-index: 100;
+      cursor: pointer;
+      box-shadow:0px 0px 13px 9px rgba(0, 0, 0, 0.13);
+   }
 }
 
 
@@ -151,6 +168,8 @@ button {
    height: 100%;
    width: 22%;
    top: 0;
+   box-shadow: 9px 0px 15px rgba(0, 0, 0, 0.13);
+   z-index: 3;
    left: 0;
    // border-right: 1px solid #555;
    float: left;
@@ -170,6 +189,9 @@ button {
 .top {
    position: relative;
    width: 100%;
+   z-index: 5;
+   // mode
+   background-color: #222;
    height: 270px;
    border-bottom: 1px solid #555;
 }
@@ -180,6 +202,7 @@ button {
    float: left;
    position: relative;
    // text-align: center;
+   box-shadow:9px 0px 15px rgba(0, 0, 0, 0.13);
    border-right: 1px solid #555;
    border-left: 1px solid #555;
    min-height: 100vh;
@@ -302,7 +325,7 @@ header {
 .main-nav a {
    font-size: .95em;
    // color: #555;
-   text-align: center;
+   // text-align: center;
    text-transform: uppercase;
    display: block;
    padding: 1em;
@@ -311,11 +334,11 @@ header {
 
 .main-nav .active {
    color: #fff;
-   background: #3b80d1;
+   background:$purple;
 }
 
 .main-nav a:hover {
-   background-color: rgb(69, 92, 239);
+   background-color: $purple;
    color: #fff;
 }
 
@@ -506,7 +529,7 @@ header {
       padding-top: 3em;
    }
    .home a {
-      border-color: #3b80d1;
+      border-color: $purple;
    }
 
    .home {
