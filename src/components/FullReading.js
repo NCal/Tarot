@@ -30,7 +30,8 @@ class FullReading extends Component {
       console.log('global cards',globalCards);
       // Add back to cards
       for (let i=0; i<cardData[0].Cards.length; i++ ){
-         cardData[0].Cards[i].back = 'https://raw.githubusercontent.com/NCal/Tarot/31f457d9857a687922def232dbb21014ea838eca/back_sm.jpg';
+         cardData[0].Cards[i].back =
+           "https://raw.githubusercontent.com/NCal/Tarot/ads/back_sm.jpg";
       }
    };
 
