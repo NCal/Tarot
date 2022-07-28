@@ -126,18 +126,27 @@ class FullReading extends Component {
    render = () => {
     if (!this.state.loading && !this.state.reading){
          return (
-             <div className="main-content ">    
-                  <div className="cards">
-                  <p>Select 10 cards</p>
-                   {cardData[0].Cards.map(function(card, i){
-                     return (<img className="full_card" key={'card'+i} src={card.back} onClick={this.getRandomCard}/>)
-                   }.bind(this))
-                  } 
-                  </div>
-                  <div className="reading_container">
-                  </div>
+           <div className="main-content ">
+             <h2 className="title">Full Reading</h2>
+
+             <div className="cards">
+               <p>Select 10 cards</p>
+               {cardData[0].Cards.map(
+                 function (card, i) {
+                   return (
+                     <img
+                       className="full_card"
+                       key={"card" + i}
+                       src={card.back}
+                       onClick={this.getRandomCard}
+                     />
+                   );
+                 }.bind(this)
+               )}
              </div>
-         )
+             <div className="reading_container"></div>
+           </div>
+         );
       }
     if (this.state.loading){
       return (

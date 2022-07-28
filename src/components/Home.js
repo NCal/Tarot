@@ -91,7 +91,7 @@ class Home extends Component {
                 {/* <span className="material-symbols-outlined">
                   sentiment_satisfied
                 </span> */}
-                🔮 tarot.lol
+                🔮 Tarot.lol
               </h2>
               <img
                 className="card_image"

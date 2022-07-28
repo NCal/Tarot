@@ -79,21 +79,25 @@ class SCR extends Component {
    render = () => { 
    if (this.state.loading){
       return (
-      <div className="main-content SCR">   
-          <div className="main-content ">   
-          <img className="pentacle" src="https://upload.wikimedia.org/wikipedia/commons/9/97/Pentacle_2.svg"/>
+        <div className="main-content SCR">
+          <div className="main-content ">
+            <img
+              className="pentacle"
+              src="https://upload.wikimedia.org/wikipedia/commons/9/97/Pentacle_2.svg"
+            />
+          </div>
         </div>
-      </div>
-      )
+      );
    }
    if (this.state.new && !this.state.loading){
       return (
-          <div className="main-content SCR">    
-               <button onClick={ this.getRandomCard}>Draw A Single Card</button>
-               <div className="reading_container">
-               </div>
-          </div>
-      )
+        <div className="main-content SCR">
+          <h2 className="title">Single Card Reading</h2>
+
+          <button onClick={this.getRandomCard}>Draw A Single Card</button>
+          <div className="reading_container"></div>
+        </div>
+      );
    }
    if (!this.state.random_card_flipped && !this.state.loading && !this.state.new){
       return (
