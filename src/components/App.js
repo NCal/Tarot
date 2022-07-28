@@ -30,6 +30,16 @@ class App extends Component {
                 this.state.darkMode ? "darkMode" : "lightMode"
               }`}
             >
+              <div
+                className={`icon_strip ${
+                  this.state.darkMode ? "iconDarkMode" : "iconLightMode"
+                }`}
+                // style={{
+                //   // filter:`invert(${this.state.darkMode ? 1 : 2})`,
+                //   backgroundImage:
+                //     "url(https://raw.githubusercontent.com/NCal/Tarot/1aa9f8a56ff2219912169de7488ca4041c69021d/assets/tarot_icons_m/row_icons.png)",
+                // }}
+              ></div>
               <script
                 async
                 src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6248178765033726"

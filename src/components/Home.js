@@ -110,12 +110,23 @@ class Home extends Component {
                 They are commonly used to measure potential outcomes and
                 evaluate influences surrounding a person, event, or both.
               </h3>
-              <h4 className="description">
-                The Full Reading section uses the Celtic Cross layout. The deck
-                used is the Rider Waite.
+              <h3 className="description">
+                The Full Reading section uses the Celtic Cross layout.
+                {/* The deck used is the Rider Waite. */}
                 {/* {this.state.random_card_description} */}
-              </h4>
-              <p>© 2022 tarot.lol</p>
+              </h3>
+
+              <h3>
+                {/* This well known 10 card tarot spread is flexible while also
+                providing comprehensive answers to so many questions and topics.
+                <br /> <br />
+                It is also one of the rare tarot spreads that you can use even
+                when you don’t have a particular question to ask.
+                <br /> <br /> */}
+                Using this layout, one can examine all the
+                different aspects of a given situation for a true analysis of any event.
+              </h3>
+              {/* <p>© 2022 tarot.lol</p> */}
               {/* <h3 className="title">Reversed</h3> */}
               {/* <p className="upright_description">
                 {this.state.random_card_reversed}

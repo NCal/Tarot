@@ -4,7 +4,7 @@ import { Link } from 'react-router';
 const TitleBar = (props) => (
   <Link to={"/"} className="titleBar">
     <div className="bar" {...props}>
-      🔮 tarot.lol
+      tarot.lol 2022 🔮
     </div>
   </Link>
 );

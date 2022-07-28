@@ -140,14 +140,14 @@ button {
       height: 40px;
       // background-color: red;
       position: fixed;
-      bottom: 0px;
+      bottom: 10px;
       right: 10px;
       cursor: pointer;
    }
 
    .titleBar .bar {
-      position: absolute;
-      top: 0;
+      position: fixed;
+      bottom: 0;
       right: 0;
       height: 20px;
       color: #fff;
@@ -160,7 +160,23 @@ button {
    }
 }
 
+.icon_strip {
+   height: 32px;
+   width: 100%;
+   background-size: contain;
+   // background-repeat: no-repeat;
+   position: absolute;
+   bottom: 0;
+   // background-image: url('https: //raw.githubusercontent.com/NCal/Tarot/1aa9f8a56ff2219912169de7488ca4041c69021d/assets/tarot_icons_m/row_icons.png');
+}
 
+.iconDarkMode {
+   filter: invert(0.5);
+}
+
+.iconLightMode {
+   filter: invert(0.3);
+}
 
 // ==== LEFT ====//
 .left {
