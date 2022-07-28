@@ -71,6 +71,14 @@ class App extends Component {
                   </li>
                   <li>
                     <Navlink
+                      to="/instructions"
+                      className={this.state.darkMode ? "darkMode" : "lightMode"}
+                    >
+                      Instructions
+                    </Navlink>
+                  </li>
+                  <li>
+                    <Navlink
                       to="/full-reading"
                       className={this.state.darkMode ? "darkMode" : "lightMode"}
                     >

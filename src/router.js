@@ -9,6 +9,7 @@ import SCR from './components/SCR';
 import About from './components/About';
 import Links from "./components/Links";
 import FullReading from './components/FullReading';
+import Instructions from "./components/Instructions";
 import NotFound from './components/NotFound';
 import $ from 'jquery';
 
@@ -17,6 +18,7 @@ const routes = (
   <Router history={browserHistory}>
     <Route component={App}>
       <Route path="/" component={Home}></Route>
+      <Route path="/instructions" component={Instructions}></Route>
       <Route path="/about" component={About}></Route>
       <Route path="/links" component={Links}></Route>
       <Route path="/single-card-reading" component={SCR}></Route>

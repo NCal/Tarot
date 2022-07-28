@@ -4,7 +4,7 @@ const About = (props) => {
     return (
       <div className="main-content">
       <h2 className='title'>About</h2>
-        <p>The idea for Tarot.lol is very simple.</p>
+        <p>The thought behind Tarot.lol is simple.</p>
         <img
           className="card_image"
           src={
@@ -13,9 +13,9 @@ const About = (props) => {
           alt=""
         />
         <p>
-          Say you didn't have access to a deck of tarot cards, but were
-          still able to consult the tarot as long as there was a computer,
-          tablet or smart-phone nearby.
+          Say you don't have access to a deck of cards, but
+          still want to able to consult the tarot. As long as there is a computer,
+          tablet, or smart-phone nearby, you can. 
         </p>
         {/* <div
           className="break-image"
@@ -31,7 +31,6 @@ const About = (props) => {
           }
           alt=""
         />
-        <p>I decided to build a simple app that did just that.</p>
         <p>
           With this app anyone can get a complete tarot reading with in-depth
           situational alaysis in seconds.
