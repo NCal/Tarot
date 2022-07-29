@@ -36,17 +36,17 @@ const Instructions = (props) => {
         <p>Focus intently on your question, then choose your cards.</p>
 
         <p>There are two options for a reading : </p>
-        <h3>
+        <h4>
           <Link to={"/full-reading"}> Full Reading </Link>(which will go into
           much more detail)
-        </h3>
+        </h4>
         <i>
           Or
         </i>
-        <h3>
+        <h4>
           <Link to={"/single-card-reading"}> Single Card Reading </Link>
           (which returns one card only).
-        </h3>
+        </h4>
         {/* <p>
           In the opening screen, enter your question in the text-box. You don't
           NEED to enter a question. Writing it down is optional, but it helps

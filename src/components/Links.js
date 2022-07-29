@@ -13,6 +13,7 @@ const Links = (props) => {
         <h3>Tarot on Wikipedia</h3>
 
         <img
+        style={{maxWidth: '330px'}}
           className=""
           src={
             "https://raw.githubusercontent.com/NCal/Tarot/ads/assets/wikipedia_logo.svg.png"

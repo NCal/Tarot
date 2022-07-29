@@ -17,13 +17,6 @@ const About = (props) => {
           to consult the tarot. As long as there is a computer, tablet, or
           smart-phone nearby, you can.
         </p>
-        {/* <div
-          className="break-image"
-          style={{
-            backgroundImage:
-              "url(https://raw.githubusercontent.com/NCal/Tarot/ads/assets/tarot_icons_m/2.png)",
-          }}
-        ></div> */}
         <p>
           With this app anyone can get a complete tarot reading with in-depth
           situational alaysis in seconds.

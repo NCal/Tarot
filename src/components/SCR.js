@@ -18,6 +18,22 @@ class SCR extends Component {
             random_card_reversed: null
          };
    }
+
+   back = () => {
+    this.setState({
+
+            new: true,
+            loading: false,
+            name: 'Card',
+            src: null,
+            random_card_flipped: null,
+            random_card_name: null,
+            random_card_description: null,
+            random_card_upright: null,
+            random_card_reversed: null
+
+    })
+   }
       
    getRandomCard = () => {
       console.group('get random card');
@@ -93,8 +109,19 @@ class SCR extends Component {
       return (
         <div className="main-content SCR">
           <h2 className="title">Single Card Reading</h2>
-          <img className="card_image" src={this.state.random_card_src} alt="" />
-          <button onClick={this.getRandomCard}>Draw A Single Card</button>
+          <button onClick={this.getRandomCard}>
+            Draw A Single Card
+          </button>
+          <br />
+          <br />
+          <img
+            onClick={this.getRandomCard}
+            className="sevenCards"
+            src={
+              "https://raw.githubusercontent.com/NCal/Tarot/ads/assets/seven_small.png"
+            }
+            alt=""
+          />
           <div className="reading_container"></div>
         </div>
       );
@@ -102,7 +129,7 @@ class SCR extends Component {
    if (!this.state.random_card_flipped && !this.state.loading && !this.state.new){
       return (
         <div className="main-content SCR">
-          <button onClick={this.getRandomCard}>Draw A Single Card</button>
+          <button style={{float: 'right'}} onClick={this.back}>Back</button>
           <div className="reading_container">
             <div className="single_card_reading">
               <h2 className="title">{this.state.random_card_name}</h2>
@@ -128,7 +155,9 @@ class SCR extends Component {
    }  if (this.state.random_card_flipped && !this.state.loading && !this.state.new) {
       return (
         <div className="main-content SCR">
-          <button onClick={this.getRandomCard}>Draw A Single Card</button>
+          <button style={{ float: "right" }} onClick={this.back}>
+            Back
+          </button>
           <div className="reading_container">
             <div className="single_card_reading">
               <h2 className="title">

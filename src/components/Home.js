@@ -110,21 +110,31 @@ class Home extends Component {
                 They are commonly used to measure potential outcomes and
                 evaluate influences surrounding a person, event, or both.
               </p>
-              <p className="description">
+              <p>
+                One can examine all the different aspects of a given situation
+                for a true analysis of any event.
+              </p>
+              {/* <p className="description">
                 The Full Reading section uses the Celtic Cross layout.
-                {/* The deck used is the Rider Waite. */}
-                {/* {this.state.random_card_description} */}
+              </p> */}
+              <p>The thought behind Tarot.lol is simple.</p>
+
+              <p>
+                With this app anyone can get a complete tarot reading with
+                in-depth situational alaysis in seconds.
               </p>
 
               <p>
-                {/* This well known 10 card tarot spread is flexible while also
-                providing comprehensive answers to so many questions and topics.
-                <br /> <br />
-                It is also one of the rare tarot spreads that you can use even
-                when you don’t have a particular question to ask.
-                <br /> <br /> */}
-                Using this layout, one can examine all the different aspects of
-                a given situation for a true analysis of any event.
+                Say you don't have access to a deck of cards, but still want to
+                able to consult the tarot. As long as there is a computer,
+                tablet, or smart-phone nearby, you can.
+              </p>
+              <p>
+                No matter one's feelings about the capacity of Tarot to solve
+                any problems, the advice within the readings is often universal
+                - and due the the sheer amount of card combinations, whether you
+                choose to do a reading once a month or every day, the readings
+                are always interesting.
               </p>
               {/* <p>© 2022 tarot.lol</p> */}
               {/* <h3 className="title">Reversed</h3> */}

@@ -93,14 +93,14 @@ class App extends Component {
                       Single Card Reading
                     </Navlink>
                   </li>
-                  <li>
+                  {/* <li>
                     <Navlink
                       to="/about"
                       className={this.state.darkMode ? "darkMode" : "lightMode"}
                     >
                       About
                     </Navlink>
-                  </li>
+                  </li> */}
                   <li>
                     <Navlink
                       to="/links"
