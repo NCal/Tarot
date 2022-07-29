@@ -13,10 +13,10 @@ const Links = (props) => {
         <h3>Tarot on Wikipedia</h3>
 
         <img
-        style={{maxWidth: '330px'}}
+          style={{ maxWidth: "330px" }}
           className=""
           src={
-            "https://raw.githubusercontent.com/NCal/Tarot/ads/assets/wikipedia_logo.svg.png"
+            "https://s3.amazonaws.com/tarot.lol/assets/wikipedia_logo.svg.png"
           }
           alt=""
         />
@@ -36,9 +36,7 @@ const Links = (props) => {
       </p>
       <img
         className="break-image"
-        src={
-          " https://raw.githubusercontent.com/NCal/Tarot/ads/assets/tarot_icons_m/2.png"
-        }
+        src={"https://s3.amazonaws.com/tarot.lol/assets/2.png"}
         alt=""
       />
     </div>

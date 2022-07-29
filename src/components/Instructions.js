@@ -7,9 +7,7 @@ const Instructions = (props) => {
         <h2 className="title">Instructions</h2>
         <img
           className="card_image"
-          src={
-            "https://raw.githubusercontent.com/NCal/Tarot/ads/assets/Tarot/45_Pents10.jpg"
-          }
+          src={"https://s3.amazonaws.com/tarot.lol/assets/45_Pents10.jpg"}
           alt=""
         />
         <h3>Step 1</h3>
@@ -28,8 +26,8 @@ const Instructions = (props) => {
         </p>
 
         <p>
-          However, the more detailed the question, the more accurate the answer. A vague
-          question will invite a vague answer.
+          However, the more detailed the question, the more accurate the answer.
+          A vague question will invite a vague answer.
         </p>
 
         <h3>Step 2</h3>
@@ -40,9 +38,7 @@ const Instructions = (props) => {
           <Link to={"/full-reading"}> Full Reading </Link>(which will go into
           much more detail)
         </h4>
-        <i>
-          Or
-        </i>
+        <i>Or</i>
         <h4>
           <Link to={"/single-card-reading"}> Single Card Reading </Link>
           (which returns one card only).
@@ -62,9 +58,7 @@ const Instructions = (props) => {
 
         <img
           className="break-image"
-          src={
-            " https://raw.githubusercontent.com/NCal/Tarot/ads/assets/tarot_icons_m/2.png"
-          }
+          src={" https://s3.amazonaws.com/tarot.lol/assets/tarot_icons_m/2.png"}
           alt=""
         />
 

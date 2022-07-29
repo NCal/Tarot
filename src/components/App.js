@@ -34,11 +34,6 @@ class App extends Component {
                 className={`icon_strip ${
                   this.state.darkMode ? "iconDarkMode" : "iconLightMode"
                 }`}
-                // style={{
-                //   // filter:`invert(${this.state.darkMode ? 1 : 2})`,
-                //   backgroundImage:
-                //     "url(https://raw.githubusercontent.com/NCal/Tarot/1aa9f8a56ff2219912169de7488ca4041c69021d/assets/tarot_icons_m/row_icons.png)",
-                // }}
               ></div>
               <script
                 async

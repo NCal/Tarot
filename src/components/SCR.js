@@ -109,17 +109,13 @@ class SCR extends Component {
       return (
         <div className="main-content SCR">
           <h2 className="title">Single Card Reading</h2>
-          <button onClick={this.getRandomCard}>
-            Draw A Single Card
-          </button>
+          <button onClick={this.getRandomCard}>Draw A Single Card</button>
           <br />
           <br />
           <img
             onClick={this.getRandomCard}
             className="sevenCards"
-            src={
-              "https://raw.githubusercontent.com/NCal/Tarot/ads/assets/seven_small.png"
-            }
+            src={" https://s3.amazonaws.com/tarot.lol/assets/seven_small.jpg"}
             alt=""
           />
           <div className="reading_container"></div>

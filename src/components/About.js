@@ -7,9 +7,7 @@ const About = (props) => {
         <p>The thought behind Tarot.lol is simple.</p>
         <img
           className="card_image"
-          src={
-            " https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/23_Wands02.jpg"
-          }
+          src={"https://s3.amazonaws.com/tarot.lol/assets/23_Wands02.jpg"}
           alt=""
         />
         <p>
@@ -31,7 +29,7 @@ const About = (props) => {
         <img
           className="break-image"
           src={
-            " https://raw.githubusercontent.com/NCal/Tarot/ads/assets/tarot_icons_m/2.png"
+            " https://s3.amazonaws.com/tarot.lol/assets/2.png"
           }
           alt=""
         />

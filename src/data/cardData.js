@@ -2,7 +2,7 @@ let cardData = [
    { Cards: [
          {
             name: 'The Fool', 
-            src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/00_MajorFool.jpg',
+            src: 'https://s3.amazonaws.com/tarot.lol/assets/00_MajorFool.jpg',
             keywords:{
                upright: 'Beginnings, innocence, spontaneity, a free spirit', 
                reversed: 'Naivety, foolishness, recklessness, risk-taking'
@@ -15,7 +15,7 @@ let cardData = [
          },
          {
             name: 'The Magician',
-            src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/01_MajorMagician.jpg',
+            src: 'https://s3.amazonaws.com/tarot.lol/assets/01_MajorMagician.jpg',
             keywords:{
                upright: 'Power, skill, concentration, action, resourcefulness', 
                reversed: 'Manipulation, poor planning, latent talents'
@@ -28,7 +28,7 @@ let cardData = [
          },
          {
             name: 'The High Priestess',
-            src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/02_MajorHigh_Priestess.jpg',
+            src: 'https://s3.amazonaws.com/tarot.lol/assets/02_MajorHigh_Priestess.jpg',
             
             keywords:{
                upright: 'Intuition, Higher powers, mystery, subconscious mind', 
@@ -42,7 +42,7 @@ let cardData = [
          },
          {
             name: 'The Empress',
-            src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/03_MajorEmpress.jpg',
+            src: 'https://s3.amazonaws.com/tarot.lol/assets/03_MajorEmpress.jpg',
             keywords:{
                upright: 'Fertility, femininity, beauty, nature, abundance', 
                reversed: 'Creative block, dependence on others'
@@ -55,7 +55,7 @@ let cardData = [
          },
          {
             name: 'The Emperor',
-            src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/04_MajorEmperor.jpg',
+            src: 'https://s3.amazonaws.com/tarot.lol/assets/04_MajorEmperor.jpg',
             keywords:{
                upright: 'Authority, father-figure, structure, solid foundation', 
                reversed: 'excessive control, rigidity, inflexibility'
@@ -68,7 +68,7 @@ let cardData = [
          },
          {
             name: 'The Heirophant',
-            src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/05_MajorHierophant.jpg',
+            src: 'https://s3.amazonaws.com/tarot.lol/assets/05_MajorHierophant.jpg',
             keywords:{
                upright: 'Religion, group identification, conformity, tradition, beliefs', 
                reversed: 'Restriction, challenging the status quo'
@@ -81,7 +81,7 @@ let cardData = [
          },
          {
             name: 'The Lovers',
-            src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/06_MajorLovers.jpg',
+            src: 'https://s3.amazonaws.com/tarot.lol/assets/06_MajorLovers.jpg',
             keywords:{
                upright: 'Love, union, relationships, values alignment, choices', 
                reversed: 'Disharmony, imbalance, misalignment of values'
@@ -94,7 +94,7 @@ let cardData = [
          },
          {
             name: 'The Chariot',
-            src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/07_MajorChariot.jpg',
+            src: 'https://s3.amazonaws.com/tarot.lol/assets/07_MajorChariot.jpg',
             keywords:{
                upright: 'Control, will power, victory, assertion, determination', 
                reversed: 'Lack of control and direction, aggression'
@@ -107,7 +107,7 @@ let cardData = [
          },
          {
             name: 'Strength',
-            src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/08_MajorStrength.jpg',
+            src: 'https://s3.amazonaws.com/tarot.lol/assets/08_MajorStrength.jpg',
             keywords:{
                upright: 'Strength, courage, patience, control, compassion', 
                reversed: 'Weakness, self-doubt, lack of self-discipline'
@@ -120,7 +120,7 @@ let cardData = [
          },
          {
             name: 'The Hermit',
-            src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/09_MajorHermit.jpg',
+            src: 'https://s3.amazonaws.com/tarot.lol/assets/09_MajorHermit.jpg',
             keywords:{
                upright: 'Soul-searching, introspection, being alone, inner guidance', 
                reversed: 'Isolation, loneliness, withdrawal'
@@ -133,7 +133,7 @@ let cardData = [
          },
          {
             name: 'The Wheel Of Fortune',
-            src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/10_MajorWheel_of_Fortune.jpg',
+            src: 'https://s3.amazonaws.com/tarot.lol/assets/10_MajorWheel_of_Fortune.jpg',
             keywords:{
                upright: 'Good luck, karma, life cycles, destiny, a turning point', 
                reversed: 'Bad luck, negative external forces, out of control'
@@ -146,7 +146,7 @@ let cardData = [
          },
          {
             name: 'Justice',
-            src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/11_MajorJustice.jpg',
+            src: 'https://s3.amazonaws.com/tarot.lol/assets/11_MajorJustice.jpg',
             keywords:{
                upright: 'Justice, fairness, truth, cause and effect, law', 
                reversed: 'Unfairness, lack of accountability, dishonesty'
@@ -159,7 +159,7 @@ let cardData = [
          },
          {
             name: 'The Hanged Man',
-            src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/12_MajorHanged_Man.jpg',
+            src: 'https://s3.amazonaws.com/tarot.lol/assets/12_MajorHanged_Man.jpg',
             keywords:{
                upright: 'Suspension, restriction, letting go, sacrifice', 
                reversed: 'Martyrdom, indecision, delay'
@@ -172,7 +172,7 @@ let cardData = [
          },
          {
             name: 'Death',
-            src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/13_MajorDeath.jpg',
+            src: 'https://s3.amazonaws.com/tarot.lol/assets/13_MajorDeath.jpg',
             keywords:{
                upright: 'Endings, beginnings, change, transformation, transition', 
                reversed: 'Resistance to change, unable to move on'
@@ -185,7 +185,7 @@ let cardData = [
          },
          {
             name: 'Temperance',
-            src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/14_MajorTemperance.jpg',
+            src: 'https://s3.amazonaws.com/tarot.lol/assets/14_MajorTemperance.jpg',
             keywords:{
                upright: 'Balance, moderation, patience, purpose, meaning', 
                reversed: 'Imbalance, excess, lack of long-term vision'
@@ -198,7 +198,7 @@ let cardData = [
          },
          {
             name: 'The Devil',
-            src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/15_MajorDevil.jpg',
+            src: 'https://s3.amazonaws.com/tarot.lol/assets/15_MajorDevil.jpg',
             keywords:{
                upright: 'Bondage, addiction, sexuality, materialism', 
                reversed: 'Detachment, breaking free, power reclaimed'
@@ -211,7 +211,7 @@ let cardData = [
          },
          {
             name: 'The Tower',
-            src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/16_MajorTower.jpg',
+            src: 'https://s3.amazonaws.com/tarot.lol/assets/16_MajorTower.jpg',
             keywords:{
                upright: 'Disaster, upheaval, sudden change, revelation', 
                reversed: 'Avoidance of disaster, fear of change'
@@ -224,7 +224,7 @@ let cardData = [
          },
          {
             name: 'The Star',
-            src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/17_MajorStar.jpg',
+            src: 'https://s3.amazonaws.com/tarot.lol/assets/17_MajorStar.jpg',
             keywords:{
                upright: 'Hope, spirituality, renewal, inspiration, serenity', 
                reversed: 'Lack of faith, despair, discouragement'
@@ -237,7 +237,7 @@ let cardData = [
          },
          {
             name: 'The Moon',
-            src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/18_MajorMoon.jpg',
+            src: 'https://s3.amazonaws.com/tarot.lol/assets/18_MajorMoon.jpg',
             keywords:{
                upright: 'Illusion, fear, anxiety, insecurity, subconscious', 
                reversed: 'Release of fear, unhappiness, confusion'
@@ -250,7 +250,7 @@ let cardData = [
          },
          {
             name: 'The Sun',
-            src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/19_MajorSun.jpg',
+            src: 'https://s3.amazonaws.com/tarot.lol/assets/19_MajorSun.jpg',
             keywords:{
                upright: 'Fun, warmth, success, positivity, vitality', 
                reversed: 'Temporary depression, lack of success'
@@ -263,7 +263,7 @@ let cardData = [
          },
          {
             name: 'Judgement',
-            src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/20_MajorJudgement.jpg',
+            src: 'https://s3.amazonaws.com/tarot.lol/assets/20_MajorJudgement.jpg',
             keywords:{
                upright: 'Judgement, rebirth, inner calling, absolution', 
                reversed: 'Self-doubt, refusal of self-examination'
@@ -276,7 +276,7 @@ let cardData = [
          },
          {
             name: 'The World',
-            src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/21_MajorWorld.jpg',
+            src: 'https://s3.amazonaws.com/tarot.lol/assets/21_MajorWorld.jpg',
             keywords:{
                upright: 'Completion, integration, accomplishment, travel', 
                reversed: 'Lack of completion, lack of closure'
@@ -289,7 +289,7 @@ let cardData = [
          },
          {
             name: 'Ace Of Wands',
-            src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/22_Wands01.jpg',
+            src: 'https://s3.amazonaws.com/tarot.lol/assets/22_Wands01.jpg',
             keywords:{
                upright: 'Inspiration, power, creation, beginnings, potential', 
                reversed: 'Delays, lack of motivation, weighed down'
@@ -302,7 +302,7 @@ let cardData = [
          },
          {
             name: 'Two Of Wands',
-            src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/23_Wands02.jpg',
+            src: 'https://s3.amazonaws.com/tarot.lol/assets/23_Wands02.jpg',
             keywords:{
                upright: 'Future planning, progress, decisions, discovery', 
                reversed: 'Fear of unknown, lack of planning'
@@ -315,7 +315,7 @@ let cardData = [
          },
          {
             name: 'Three Of Wands',
-            src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/24_Wands03.jpg',
+            src: 'https://s3.amazonaws.com/tarot.lol/assets/24_Wands03.jpg',
             keywords:{
                upright: 'Preparation, foresight, enterprise, expansion', 
                reversed: 'Lack of foresight, delays, obstacles to long-term goals'
@@ -328,7 +328,7 @@ let cardData = [
          },
          {
             name: 'Four Of Wands',
-            src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/25_Wands04.jpg',
+            src: 'https://s3.amazonaws.com/tarot.lol/assets/25_Wands04.jpg',
             keywords:{
                upright: 'Celebration, harmony, marriage, home, community', 
                reversed: 'Breakdown in communication, transition'
@@ -341,7 +341,7 @@ let cardData = [
          },
          {
             name: 'Five Of Wands',
-            src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/26_Wands05.jpg',
+            src: 'https://s3.amazonaws.com/tarot.lol/assets/26_Wands05.jpg',
             keywords:{
                upright: 'Disagreement, competition, strife, tension, conflict', 
                reversed: 'Conflict avoidance, increased focus on goals'
@@ -354,7 +354,7 @@ let cardData = [
          },
          {
             name: 'Six Of Wands',
-            src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/27_Wands06.jpg',
+            src: 'https://s3.amazonaws.com/tarot.lol/assets/27_Wands06.jpg',
             keywords:{
                upright: 'Public recognition, victory, progress, self-confidence', 
                reversed: 'Egotism, disrepute, lack of confidence, fall from grace'
@@ -367,7 +367,7 @@ let cardData = [
          },
          {
             name: 'Seven Of Wands',
-            src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/28_Wands07.jpg',
+            src: 'https://s3.amazonaws.com/tarot.lol/assets/28_Wands07.jpg',
             keywords:{
                upright: 'Challenge, competition, perseverance', 
                reversed: 'Giving up, overwhelmed, overly protective'
@@ -380,7 +380,7 @@ let cardData = [
          },
          {
             name: 'Eight Of Wands',
-            src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/29_Wands08.jpg',
+            src: 'https://s3.amazonaws.com/tarot.lol/assets/29_Wands08.jpg',
             keywords:{
                upright: 'Speed, action, air travel, movement, swift change', 
                reversed: 'Delays, frustration, holding off'
@@ -393,7 +393,7 @@ let cardData = [
          },
          {
             name: 'Nine Of Wands',
-            src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/30_Wands09.jpg',
+            src: 'https://s3.amazonaws.com/tarot.lol/assets/30_Wands09.jpg',
             keywords:{
                upright: 'Courage, persistence, test of faith, resilience', 
                reversed: 'On edge, defensive, hesitant, paranoia'
@@ -406,7 +406,7 @@ let cardData = [
          },
          {
             name: 'Ten Of Wands',
-            src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/31_Wands10.jpg',
+            src: 'https://s3.amazonaws.com/tarot.lol/assets/31_Wands10.jpg',
             keywords:{
                upright: 'Burden, responsibility, hard work, stress, achievement', 
                reversed: 'Taking on too much, avoiding responsibility'
@@ -419,7 +419,7 @@ let cardData = [
          },
          {
             name: 'Page Of Wands',
-            src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/32_Wands11.jpg',
+            src: 'https://s3.amazonaws.com/tarot.lol/assets/32_Wands11.jpg',
             keywords:{
                upright: 'Enthusiasm, exploration, discovery, free spirit', 
                reversed: 'Setbacks to new ideas, pessimism, lack of direction'
@@ -432,7 +432,7 @@ let cardData = [
          },
          {
             name: 'Knight Of Wands',
-            src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/33_Wands12.jpg',
+            src: 'https://s3.amazonaws.com/tarot.lol/assets/33_Wands12.jpg',
             keywords:{
                upright: 'Energy, passion, lust, action, adventure, impulsiveness', 
                reversed: 'Haste, scattered energy, delays, frustration'
@@ -445,7 +445,7 @@ let cardData = [
          },
          {
             name: 'Queen Of Wands',
-            src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/34_Wands13.jpg',
+            src: 'https://s3.amazonaws.com/tarot.lol/assets/34_Wands13.jpg',
             keywords:{
                upright: 'Exuberance, warmth, vibrancy, determination', 
                reversed: 'Shrinking violet, aggressive, demanding'
@@ -458,7 +458,7 @@ let cardData = [
          },
          {
             name: 'King Of Wands',
-            src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/35_Wands14.jpg',
+            src: 'https://s3.amazonaws.com/tarot.lol/assets/35_Wands14.jpg',
             keywords:{
                upright: 'Natural-born leader, vision, entrepreneur, honour', 
                reversed: 'Impulsiveness, haste, ruthless, high expectations'
@@ -471,7 +471,7 @@ let cardData = [
          },
          {
             name: 'Ace Of Pentacles',
-            src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/36_Pents01.jpg',
+            src: 'https://s3.amazonaws.com/tarot.lol/assets/36_Pents01.jpg',
             keywords:{
                upright: 'Manifestation, new financial opportunity, prosperity', 
                reversed: 'Lost opportunity, lack of planning and foresight'
@@ -484,7 +484,7 @@ let cardData = [
          },
          {
             name: 'Two Of Pentacles',
-            src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/37_Pents02.jpg',
+            src: 'https://s3.amazonaws.com/tarot.lol/assets/37_Pents02.jpg',
             keywords:{
                upright: 'Balance, adaptability, time management, prioritisation', 
                reversed: 'Disorganisation, financial disarray'
@@ -497,7 +497,7 @@ let cardData = [
          },
          {
             name: 'Three Of Pentacles',
-            src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/38_Pents03.jpg',
+            src: 'https://s3.amazonaws.com/tarot.lol/assets/38_Pents03.jpg',
             keywords:{
                upright: 'Teamwork, initial fulfilment, collaboration, learning', 
                reversed: 'Lack of teamwork, disregard for skills'
@@ -510,7 +510,7 @@ let cardData = [
          },
          {
             name: 'Four Of Pentacles',
-            src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/39_Pents04.jpg',
+            src: 'https://s3.amazonaws.com/tarot.lol/assets/39_Pents04.jpg',
             keywords:{
                upright: 'Control, stability, security, possession, conservatism', 
                reversed: 'Greed, materialism, self-protection'
@@ -523,7 +523,7 @@ let cardData = [
          },
          {
             name: 'Five Of Pentacles',
-            src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/40_Pents05.jpg',
+            src: 'https://s3.amazonaws.com/tarot.lol/assets/40_Pents05.jpg',
             keywords:{
                upright: 'Isolation, insecurity, worry, financial loss, poverty', 
                reversed: 'Recovery from financial loss, spiritual poverty'
@@ -536,7 +536,7 @@ let cardData = [
          },
          {
             name: 'Six Of Pentacles',
-            src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/41_Pents06.jpg',
+            src: 'https://s3.amazonaws.com/tarot.lol/assets/41_Pents06.jpg',
             keywords:{
                upright: 'Generosity, charity, giving, prosperity, sharing wealth', 
                reversed: 'Debt, selfishness, one-sided charity'
@@ -549,7 +549,7 @@ let cardData = [
          },
          {
             name: 'Seven Of Pentacles',
-            src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/42_Pents07.jpg',
+            src: 'https://s3.amazonaws.com/tarot.lol/assets/42_Pents07.jpg',
             keywords:{
                upright: 'Vision, perseverance, profit, reward, investment', 
                reversed: 'Lack of long-term vision, limited success or reward'
@@ -562,7 +562,7 @@ let cardData = [
          },
          {
             name: 'Eight Of Pentacles',
-            src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/43_Pents08.jpg',
+            src: 'https://s3.amazonaws.com/tarot.lol/assets/43_Pents08.jpg',
             keywords:{
                upright: 'Apprenticeship, education, quality, engagement', 
                reversed: 'Perfectionism, lacking ambition or focus'
@@ -575,7 +575,7 @@ let cardData = [
          },
          {
             name: 'Nine Of Pentacles',
-            src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/44_Pents09.jpg',
+            src: 'https://s3.amazonaws.com/tarot.lol/assets/44_Pents09.jpg',
             keywords:{
                upright: 'Gratitude, luxury, self-sufficiency, culmination', 
                reversed: 'Over-investment in work, financial setbacks'
@@ -588,7 +588,7 @@ let cardData = [
          },
          {
             name: 'Ten Of Pentacles',
-            src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/45_Pents10.jpg',
+            src: 'https://s3.amazonaws.com/tarot.lol/assets/45_Pents10.jpg',
             keywords:{
                upright: 'Wealth, inheritance, family, establishment, retirement', 
                reversed: 'Financial failure, loneliness, loss'
@@ -601,7 +601,7 @@ let cardData = [
          },
          {
             name: 'Page Of Pentacles',
-            src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/46_Pents11.jpg',
+            src: 'https://s3.amazonaws.com/tarot.lol/assets/46_Pents11.jpg',
             keywords:{
                upright: 'Manifestation, financial opportunity, new job', 
                reversed: 'Lack of progress and planning, short-term focus'
@@ -614,7 +614,7 @@ let cardData = [
          },
          {
             name: 'Knight Of Pentacles',
-            src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/47_Pents12.jpg',
+            src: 'https://s3.amazonaws.com/tarot.lol/assets/47_Pents12.jpg',
             keywords:{
                upright: 'Efficiency, routine, conservatism, methodical', 
                reversed: 'Laziness, boredom, feeling stuck'
@@ -627,7 +627,7 @@ let cardData = [
          },
          {
             name: 'Queen Of Pentacles',
-            src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/48_Pents13.jpg',
+            src: 'https://s3.amazonaws.com/tarot.lol/assets/48_Pents13.jpg',
             keywords:{
                upright: 'Practical, homely, motherly, down-to-earth, security', 
                reversed: 'Imbalance in work/ family commitments'
@@ -640,7 +640,7 @@ let cardData = [
          },
          {
             name: 'King Of Pentacles',
-            src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/49_Pents14.jpg',
+            src: 'https://s3.amazonaws.com/tarot.lol/assets/49_Pents14.jpg',
             keywords:{
                upright: 'Security, control, power, discipline, abundance', 
                reversed: 'Authoritative, domineering, controlling'
@@ -653,7 +653,7 @@ let cardData = [
          },
          {
             name: 'Ace Of Cups',
-            src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/50_Cups01.jpg',
+            src: 'https://s3.amazonaws.com/tarot.lol/assets/50_Cups01.jpg',
             keywords:{
                upright: 'Love, compassion, creativity, overwhelming emotion', 
                reversed: 'Blocked or repressed emotions'
@@ -666,7 +666,7 @@ let cardData = [
          },
          {
             name: 'Two Of Cups',
-            src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/51_Cups02.jpg',
+            src: 'https://s3.amazonaws.com/tarot.lol/assets/51_Cups02.jpg',
             keywords:{
                upright: 'Unified love, partnership, attraction, relationships', 
                reversed: 'Break-up, imbalance in a relationship, lack of harmony'
@@ -679,7 +679,7 @@ let cardData = [
          },
          {
             name: 'Three Of Cups',
-            src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/52_Cups03.jpg',
+            src: 'https://s3.amazonaws.com/tarot.lol/assets/52_Cups03.jpg',
             keywords:{
                upright: 'Celebration, friendship, creativity, community', 
                reversed: 'An affair, “three’s a crowd”, stifled creativity'
@@ -692,7 +692,7 @@ let cardData = [
          },
          {
             name: 'Four Of Cups',
-            src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/53_Cups04.jpg',
+            src: 'https://s3.amazonaws.com/tarot.lol/assets/53_Cups04.jpg',
             keywords:{
                upright: 'Meditation, contemplation, apathy, re-evaluation', 
                reversed: 'Boredom, missed opportunity, being aloof'
@@ -705,7 +705,7 @@ let cardData = [
          },
          {
             name: 'Five Of Cups' ,
-            src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/54_Cups05.jpg',
+            src: 'https://s3.amazonaws.com/tarot.lol/assets/54_Cups05.jpg',
             keywords:{
                upright: 'Loss, regret, disappointment, despair, bereavement', 
                reversed: 'Moving on, acceptance, forgiveness'
@@ -718,7 +718,7 @@ let cardData = [
          },
          {
             name: 'Six Of Cups',
-            src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/55_Cups06.jpg',
+            src: 'https://s3.amazonaws.com/tarot.lol/assets/55_Cups06.jpg',
             keywords:{
                upright: 'Reunion, nostalgia, childhood memories, innocence', 
                reversed: 'Stuck in the past, naivety, unrealisticOn the Six of Cups, there are six cups filled with white, five-pointed flowers. A young boy seems to smell one flower, offering this filled cup to another young child. The small child symbolises the past and the taller child symbolises the future, and together they symbolise happy reunions with past friends or lovers. They share old pleasures with lots of nostalgia. In the background, there is an older figure walking away, symbolising our worries leaving us to be locked in the turret. The house symbolises comfort and security but the barren garden symbolises the lost happier times of the past. Everything is bright yellow which indicates great happiness in this overall scene.'
@@ -731,7 +731,7 @@ let cardData = [
          },
          {
             name: 'Seven Of Cups',
-            src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/56_Cups07.jpg',
+            src: 'https://s3.amazonaws.com/tarot.lol/assets/56_Cups07.jpg',
             keywords:{
                upright: 'Fantasy, illusion, wishful thinking, choices, imagination', 
                reversed: 'Temptation, illusion, diversionary tactics'
@@ -744,7 +744,7 @@ let cardData = [
          },
          {
             name: 'Eight Of Cups',
-            src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/57_Cups08.jpg',
+            src: 'https://s3.amazonaws.com/tarot.lol/assets/57_Cups08.jpg',
             keywords:{
                upright: 'Escapism, disappointment, abandonment, withdrawal', 
                reversed: 'Hopelessness, aimless drifting, walking away'
@@ -757,7 +757,7 @@ let cardData = [
          },
          {
             name: 'Nine Of Cups',
-            src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/58_Cups09.jpg',
+            src: 'https://s3.amazonaws.com/tarot.lol/assets/58_Cups09.jpg',
             keywords:{
                upright: 'Wishes fulfilled, comfort, happiness, satisfaction', 
                reversed: 'Greed, dissatisfaction, materialism'
@@ -770,7 +770,7 @@ let cardData = [
          },
          {
             name: 'Ten Of Cups',
-            src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/59_Cups10.jpg',
+            src: 'https://s3.amazonaws.com/tarot.lol/assets/59_Cups10.jpg',
             keywords:{
                upright: 'Harmony, marriage, happiness, alignment', 
                reversed: 'Misalignment of values, broken home or marriage'
@@ -783,7 +783,7 @@ let cardData = [
          },
          {
             name: 'Page Of Cups',
-            src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/60_Cups11.jpg',
+            src: 'https://s3.amazonaws.com/tarot.lol/assets/60_Cups11.jpg',
             keywords:{
                upright: 'A messenger, creative beginnings, synchronicity', 
                reversed: 'Emotional immaturity, creative block'
@@ -796,7 +796,7 @@ let cardData = [
          },
          {
             name: 'Knight Of Cups',
-            src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/61_Cups12.jpg',
+            src: 'https://s3.amazonaws.com/tarot.lol/assets/61_Cups12.jpg',
             keywords:{
                upright: 'Romance, charm, ‘Knight in shining armour’, imagination', 
                reversed: 'Unrealistic, jealousy, moodiness'
@@ -809,7 +809,7 @@ let cardData = [
          },
          {
             name: 'Queen Of Cups',
-            src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/62_Cups13.jpg',
+            src: 'https://s3.amazonaws.com/tarot.lol/assets/62_Cups13.jpg',
             keywords:{
                upright: 'Emotional security, calm, intuitive, compassionate', 
                reversed: 'Emotional insecurity, co-dependency'
@@ -822,7 +822,7 @@ let cardData = [
          },
          {
             name: 'King Of Cups',
-            src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/63_Cups14.jpg',
+            src: 'https://s3.amazonaws.com/tarot.lol/assets/63_Cups14.jpg',
             keywords:{
                upright: 'Emotional balance and control, generosity', 
                reversed: 'Emotional manipulation, moodiness, volatility'
@@ -835,7 +835,7 @@ let cardData = [
          },
          {
             name: 'Ace Of Swords',
-            src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/64_Swords01.jpg',
+            src: 'https://s3.amazonaws.com/tarot.lol/assets/64_Swords01.jpg',
             keywords:{
                upright: 'Raw power, victory, break-throughs, mental clarity', 
                reversed: 'Confusion, chaos, lack of clarity'
@@ -848,7 +848,7 @@ let cardData = [
          },
          {
             name: 'Two Of Swords',
-            src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/65_Swords02.jpg',
+            src: 'https://s3.amazonaws.com/tarot.lol/assets/65_Swords02.jpg',
             keywords:{
                upright: 'Indecision, choices, truce, stalemate, blocked emotions', 
                reversed: 'Indecision, confusion, information overload'
@@ -861,7 +861,7 @@ let cardData = [
          },
          {
             name: 'Three Of Swords',
-            src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/66_Swords03.jpg',
+            src: 'https://s3.amazonaws.com/tarot.lol/assets/66_Swords03.jpg',
             keywords:{
                upright: 'Painful separation, sorrow heartbreak, grief, rejection', 
                reversed: 'Releasing pain, optimism, forgiveness'
@@ -874,7 +874,7 @@ let cardData = [
          },
          {
             name: 'Four Of Swords',
-            src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/67_Swords04.jpg',
+            src: 'https://s3.amazonaws.com/tarot.lol/assets/67_Swords04.jpg',
             keywords:{
                upright: 'Contemplation, recuperation, passivity, relaxation, rest', 
                reversed: 'Restlessness, burn-out, lack of progress'
@@ -887,7 +887,7 @@ let cardData = [
          },
          {
             name: 'Five Of Swords',
-            src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/68_Swords05.jpg',
+            src: 'https://s3.amazonaws.com/tarot.lol/assets/68_Swords05.jpg',
             keywords:{
                upright: 'Conflict, tension, loss, defeat, win at all costs, betrayal', 
                reversed: 'Open to change, past resentment'
@@ -900,7 +900,7 @@ let cardData = [
          },
          {
             name: 'Six Of Swords',
-            src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/69_Swords06.jpg',
+            src: 'https://s3.amazonaws.com/tarot.lol/assets/69_Swords06.jpg',
             keywords:{
                upright: 'Regretful but necessary transition, rite of passage', 
                reversed: 'Cannot move on, carrying baggage'
@@ -913,7 +913,7 @@ let cardData = [
          },
          {
             name: 'Seven Of Swords',
-            src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/70_Swords07.jpg',
+            src: 'https://s3.amazonaws.com/tarot.lol/assets/70_Swords07.jpg',
             keywords:{
                upright: 'Betrayal, deception, getting away with something, stealth', 
                reversed: 'Mental challenges, breaking free'
@@ -926,7 +926,7 @@ let cardData = [
          },
          {
             name: 'Eight Of Swords',
-            src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/71_Swords08.jpg',
+            src: 'https://s3.amazonaws.com/tarot.lol/assets/71_Swords08.jpg',
             keywords:{
                upright: 'Isolation, self-imposed restriction, imprisonment', 
                reversed: 'Open to new perspectives, release'
@@ -939,7 +939,7 @@ let cardData = [
          },
          {
             name: 'Nine Of Swords',
-            src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/72_Swords09.jpg',
+            src: 'https://s3.amazonaws.com/tarot.lol/assets/72_Swords09.jpg',
             keywords:{
                upright: 'Depression, nightmares, intense anxiety, despair', 
                reversed: 'Hopelessness, severe depression, torment'
@@ -952,7 +952,7 @@ let cardData = [
          },
          {
             name: 'Ten Of Swords',
-            src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/73_Swords10.jpg',
+            src: 'https://s3.amazonaws.com/tarot.lol/assets/73_Swords10.jpg',
             keywords:{
                upright: 'Back-stabbed, defeat, crisis, betrayal, endings, loss', 
                reversed: 'Recovery, regeneration, fear of ruin, inevitable end'
@@ -965,7 +965,7 @@ let cardData = [
          },
          {
             name: 'Page Of Swords',
-            src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/74_Swords11.jpg',
+            src: 'https://s3.amazonaws.com/tarot.lol/assets/74_Swords11.jpg',
             keywords:{
                upright: 'Talkative, curious, mentally restless, energetic', 
                reversed: 'All talk and no action, haste, undelivered promises'
@@ -978,7 +978,7 @@ let cardData = [
          },
          {
             name: 'Knight Of Swords',
-            src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/75_Swords12.jpg',
+            src: 'https://s3.amazonaws.com/tarot.lol/assets/75_Swords12.jpg',
             keywords:{
                upright: 'Opinionated, hasty, action-oriented, communicative', 
                reversed: 'Scattered thought, disregard for consequences'
@@ -991,7 +991,7 @@ let cardData = [
          },
          {
             name: 'Queen Of Swords',
-            src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/76_Swords13.jpg',
+            src: 'https://s3.amazonaws.com/tarot.lol/assets/76_Swords13.jpg',
             keywords:{
                upright: 'Quick thinker, organised, perceptive, independent', 
                reversed: 'Overly-emotional, bitchy, cold-hearted'
@@ -1004,7 +1004,7 @@ let cardData = [
          },
          {
             name: 'King Of Swords',
-            src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/77_Swords14.jpg',
+            src: 'https://s3.amazonaws.com/tarot.lol/assets/77_Swords14.jpg',
             keywords:{
                upright: 'Clear thinking, intellectual power, authority, truth', 
                reversed: 'Manipulative, tyrannical, abusive'
