@@ -22318,7 +22318,7 @@
 	exports.push([module.id, "@import url(https://fonts.googleapis.com/css?family=Abel|Dosis|VT323);", ""]);
 
 	// module
-	exports.push([module.id, "/* ================================= \n   ELEMENT STYLES\n==================================== */\n* {\n  box-sizing: border-box;\n  font-family: 'Abel', sans-serif; }\n\nhtml {\n  height: 100%; }\n\nbody {\n  margin: 0;\n  background-color: #222;\n  color: #ccc;\n  margin: 0;\n  height: 100%;\n  font-family: 'Roboto', sans-serif; }\n\nh1, h2, ul {\n  margin: 0;\n  padding: 0; }\n\nh2 {\n  color: #404040;\n  font-size: 1.6em;\n  margin-bottom: 1.25em; }\n\nh3 {\n  margin-bottom: 1.5em; }\n\nul {\n  list-style-type: none; }\n\na {\n  text-decoration: none;\n  color: #455cef; }\n\nhr {\n  border: 0;\n  height: 0;\n  margin: 2.3em 0 2em 0;\n  border-top: 1px solid rgba(0, 0, 0, 0.1); }\n\n/* FORM & BUTTON STYLES -------- */\n.home a,\ninput,\nbutton {\n  padding: .5em;\n  font-size: .9em;\n  margin-right: 10px;\n  border: none;\n  border: solid 1px #ccc;\n  outline: none; }\n\nbutton {\n  color: white;\n  background: #455cef;\n  padding-left: 1em;\n  padding-right: 1em;\n  cursor: pointer;\n  border-color: rgba(0, 0, 0, 0.1); }\n\n.back-button {\n  margin-bottom: 10px;\n  float: right;\n  right: 20px;\n  position: relative; }\n\n.title {\n  color: #ccc; }\n\n.container {\n  width: 100%;\n  height: 100% !important;\n  max-width: 100%;\n  position: absolute;\n  top: 0;\n  left: 0;\n  overflow-x: hidden;\n  background: #222;\n  box-shadow: 0 3px rgba(0, 0, 0, 0.1);\n  overflow-y: scroll; }\n  .container .mode-btn {\n    width: 40px;\n    height: 40px;\n    position: fixed;\n    bottom: 0px;\n    right: 10px;\n    cursor: pointer; }\n  .container .titleBar .bar {\n    position: absolute;\n    top: 0;\n    right: 0;\n    height: 20px;\n    color: #fff;\n    width: 100%;\n    background-color: #455cef;\n    text-align: center;\n    z-index: 100;\n    cursor: pointer;\n    box-shadow: 0px 0px 13px 9px rgba(0, 0, 0, 0.13); }\n\n.left {\n  position: relative;\n  height: 100%;\n  width: 22%;\n  top: 0;\n  box-shadow: 9px 0px 15px rgba(0, 0, 0, 0.13);\n  z-index: 3;\n  left: 0;\n  float: left; }\n\n.right {\n  position: relative;\n  height: 100%;\n  width: 22%;\n  top: 0;\n  right: 0;\n  float: right; }\n\n.top {\n  position: relative;\n  width: 100%;\n  z-index: 5;\n  background-color: #222;\n  height: 270px;\n  border-bottom: 1px solid #555; }\n\n.center {\n  width: 56%;\n  float: left;\n  position: relative;\n  box-shadow: 9px 0px 15px rgba(0, 0, 0, 0.13);\n  border-right: 1px solid #555;\n  border-left: 1px solid #555;\n  min-height: 100vh;\n  padding-left: 25px;\n  padding-bottom: 100px;\n  top: 0;\n  right: 0;\n  overflow-y: hidden; }\n\n.reading_container {\n  margin-top: 20px; }\n\n.single_card_reading {\n  padding-right: 30px; }\n\n.card_image {\n  margin-bottom: 30px;\n  margin-left: 30px;\n  float: right;\n  border: 2px solid #ccc;\n  position: relative;\n  top: 10px;\n  width: 303px;\n  filter: saturate(2) !important; }\n\n.card_image_reversed {\n  -ms-transform: rotate(180deg);\n  /* IE 9 */\n  -webkit-transform: rotate(180deg);\n  /* Chrome, Safari, Opera */\n  -moz-transform: rotate(180deg);\n  transform: rotate(180deg);\n  filter: saturate(2) !important; }\n\nsvg {\n  height: 0px;\n  width: 0px; }\n\n.full_card {\n  cursor: pointer;\n  opacity: .7;\n  width: 60px;\n  margin: 2px; }\n\n.full_card:hover {\n  opacity: 1; }\n\n.fcr_container {\n  margin-bottom: 100px; }\n\n.main-content {\n  padding: 1em 1em; }\n\n.selected {\n  opacity: 1;\n  pointer-events: none; }\n\n.group:after {\n  content: \"\";\n  display: table;\n  clear: both; }\n\n.course {\n  margin-bottom: 1em; }\n\n.type {\n  color: #ccc; }\n\n.course-img {\n  width: 70px; }\n\n.teacher-img {\n  width: 100%;\n  /* border-radius: .3em; */ }\n\n.not-found {\n  text-align: center; }\n\n/* MAIN NAV -------- */\n.main-nav a {\n  font-size: .95em;\n  text-transform: uppercase;\n  display: block;\n  padding: 1em;\n  transition: .2s; }\n\n.main-nav .active {\n  color: #fff;\n  background: #455cef; }\n\n.main-nav a:hover {\n  background-color: #455cef;\n  color: #fff; }\n\n.main-nav li {\n  width: 100%;\n  background-color: #222;\n  cursor: pointer; }\n\n.darkMode {\n  background-color: #222; }\n\n.lightMode {\n  background-color: #fff; }\n  .lightMode .main-content, .lightMode .cards p {\n    color: #444; }\n    .lightMode .main-content .title, .lightMode .main-content .type, .lightMode .cards p .title, .lightMode .cards p .type {\n      color: #222; }\n\n.pentacle {\n  width: 100px;\n  animation: spin linear 4s;\n  animation-iteration-count: infinite; }\n\n@-moz-keyframes spin {\n  100% {\n    -moz-transform: rotate(360deg);\n    transform: rotate(360deg); } }\n\n@-webkit-keyframes spin {\n  100% {\n    -webkit-transform: rotate(360deg);\n    transform: rotate(360deg); } }\n\n@keyframes spin {\n  100% {\n    -webkit-transform: rotate(360deg);\n    transform: rotate(360deg); } }\n\n/* COURSE NAV -------- */\n.course-nav li {\n  display: inline-block; }\n\n.course-nav li + li {\n  margin-left: .6em; }\n\n.course-nav a {\n  font-size: .85em;\n  color: #7d7d7d;\n  padding: .2em .8em;\n  background: #eaebeb;\n  transition: .2s; }\n\n.course-nav a:hover,\n.course-nav a.active {\n  color: #fff;\n  background: #39add1; }\n\n/* ICONS -------- */\n.icn-logo {\n  background: #54606b;\n  color: #fff; }\n\n.icn-logo i {\n  font-size: 2.45em;\n  line-height: 0;\n  margin-top: 30px; }\n\n.icn-error {\n  font-size: 3.2em;\n  margin-bottom: .25em; }\n\n@media (min-width: 0) and (max-width: 885px) {\n  .card_image {\n    width: 243px; } }\n\n/* ===== MEDIA QUERIES ===== */\n@media (min-width: 0) and (max-width: 768px) {\n  body {\n    padding-top: .8em; }\n  .home a {\n    border-color: transparent; }\n  .left {\n    border-right: none !important; }\n  .center {\n    border: none; }\n  .right {\n    display: none; }\n  .icn-logo {\n    display: block;\n    width: 100%;\n    text-align: center;\n    padding-bottom: 4px; }\n  .main-nav a:hover {\n    border-color: rgba(0, 0, 0, 0.1); }\n  .courses h2 {\n    margin-bottom: 0; }\n  .course-nav {\n    display: block;\n    margin: 1.5em 0 3.2em; }\n  .home a,\n  input,\n  button {\n    display: block;\n    width: 140px;\n    margin-bottom: 1em; }\n  .left {\n    position: relative;\n    height: 148px;\n    width: 100%;\n    top: 0;\n    left: 0;\n    float: left;\n    background-color: #111; }\n  .center {\n    width: 100%;\n    position: relative;\n    right: 0;\n    top: 1px;\n    overflow-y: hidden;\n    padding-bottom: 150px; }\n  .card_image, .card_image_reversed {\n    width: 203px;\n    margin-right: 30px;\n    margin-left: 0px;\n    float: left; }\n  .upright_description {\n    padding-bottom: 40px; }\n  .upright_description:last-of-type {\n    padding-bottom: 50px; }\n  .single_card_reading {\n    clear: both; }\n  .fcr_container {\n    margin-bottom: 0; } }\n\n@media (min-width: 769px) {\n  body {\n    padding-top: 3em; }\n  .home a {\n    border-color: #455cef; }\n  .home {\n    background-color: #222; }\n  .media img,\n  .media > div,\n  .teacher {\n    float: left; }\n  .media > div {\n    width: 85.1%;\n    margin-left: 1.5em; }\n  .teacher {\n    width: 48.73%;\n    margin-bottom: 1.5em; }\n  .teacher + .teacher {\n    margin-left: 2.54%; }\n  .teacher:nth-child(2n+3) {\n    clear: left;\n    margin-left: 0; }\n  /* MAIN NAV -------- */\n  .icn-logo {\n    margin-right: auto;\n    padding: 0 2em; }\n  header,\n  .main-nav {\n    display: flex;\n    flex-wrap: wrap; }\n  .main-nav a {\n    padding: 1.25em 1.5em; }\n  .main-nav a:hover {\n    border-color: rgba(0, 0, 0, 0.1); }\n  /* COURSE NAV -------- */\n  .course-nav {\n    float: right; }\n  .courses h2 {\n    float: left; } }\n\n@media only screen and (max-width: 680px) {\n  .top {\n    height: 320px; }\n  .card_image {\n    margin-bottom: 30px;\n    margin-right: 30px;\n    margin-left: 0px !important; } }\n", ""]);
+	exports.push([module.id, "/* ================================= \n   ELEMENT STYLES\n==================================== */\n* {\n  box-sizing: border-box;\n  font-family: 'Abel', sans-serif; }\n\nhtml {\n  height: 100%; }\n\nbody {\n  margin: 0;\n  background-color: #222;\n  color: #ccc;\n  margin: 0;\n  height: 100%;\n  font-family: 'Roboto', sans-serif; }\n\nh1, h2, ul {\n  margin: 0;\n  padding: 0; }\n\nh2 {\n  color: #404040;\n  font-size: 1.6em;\n  margin-bottom: 1.25em; }\n\nh3 {\n  margin-bottom: 1.5em; }\n\nul {\n  list-style-type: none; }\n\na {\n  text-decoration: none;\n  color: #455cef; }\n\nhr {\n  border: 0;\n  height: 0;\n  margin: 2.3em 0 2em 0;\n  border-top: 1px solid rgba(0, 0, 0, 0.1); }\n\n/* FORM & BUTTON STYLES -------- */\na {\n  color: #6f94fa; }\n\n.home a,\ninput,\nbutton {\n  padding: .5em;\n  font-size: .9em;\n  margin-right: 10px;\n  border: none;\n  border: solid 1px #ccc;\n  outline: none; }\n\nbutton {\n  color: white;\n  background: #455cef;\n  padding-left: 1em;\n  padding-right: 1em;\n  cursor: pointer;\n  border-color: rgba(0, 0, 0, 0.1); }\n\n.back-button {\n  margin-bottom: 10px;\n  float: right;\n  right: 20px;\n  position: relative; }\n\n.title {\n  color: #ccc; }\n\n.container {\n  width: 100%;\n  height: 100% !important;\n  max-width: 100%;\n  position: absolute;\n  top: 0;\n  left: 0;\n  overflow-x: hidden;\n  background: #222;\n  box-shadow: 0 3px rgba(0, 0, 0, 0.1);\n  overflow-y: scroll; }\n  .container .break-image {\n    filter: invert(1);\n    height: 30px;\n    background-size: contain; }\n  .container .mode-btn {\n    width: 40px;\n    height: 40px;\n    position: fixed;\n    display: none;\n    bottom: 10px;\n    right: 10px;\n    cursor: pointer; }\n  .container .titleBar .bar {\n    position: fixed;\n    bottom: 0;\n    right: 0;\n    height: 20px;\n    color: #fff;\n    width: 100%;\n    background-color: #455cef;\n    text-align: center;\n    z-index: 100;\n    cursor: pointer;\n    box-shadow: 0px 0px 13px 9px rgba(0, 0, 0, 0.13); }\n\n.icon_strip {\n  height: 32px;\n  width: 100%;\n  background-size: contain;\n  position: absolute;\n  bottom: 0; }\n\n.iconDarkMode {\n  filter: invert(0.5); }\n\n.iconLightMode {\n  filter: invert(0.3); }\n\n.left {\n  position: relative;\n  height: 100%;\n  width: 22%;\n  top: 0;\n  box-shadow: 9px 10px 15px rgba(0, 0, 0, 0.13);\n  z-index: 3;\n  left: 0;\n  float: left; }\n\n.right {\n  position: relative;\n  height: 100%;\n  width: 22%;\n  top: 0;\n  right: 0;\n  float: right; }\n\n.top {\n  position: relative;\n  width: 100%;\n  z-index: 5;\n  background-color: #222;\n  border-bottom: 1px solid #555; }\n\n.center {\n  width: 56%;\n  float: left;\n  position: relative;\n  box-shadow: 9px 0px 15px rgba(0, 0, 0, 0.13);\n  border-right: 1px solid #555;\n  border-left: 1px solid #555;\n  min-height: 100vh;\n  padding-left: 25px;\n  padding-bottom: 100px;\n  top: 0;\n  right: 0;\n  overflow-y: hidden; }\n\n.reading_container {\n  margin-top: 20px; }\n\n.single_card_reading {\n  padding-right: 30px; }\n\n.card_image {\n  margin-bottom: 30px;\n  margin-left: 30px;\n  float: right;\n  border: 2px solid #ccc;\n  position: relative;\n  top: 10px;\n  width: 303px;\n  filter: saturate(2) !important; }\n\n.card_image_reversed {\n  -ms-transform: rotate(180deg);\n  /* IE 9 */\n  -webkit-transform: rotate(180deg);\n  /* Chrome, Safari, Opera */\n  -moz-transform: rotate(180deg);\n  transform: rotate(180deg);\n  filter: saturate(2) !important; }\n\nsvg {\n  height: 0px;\n  width: 0px; }\n\n.sevenCards {\n  cursor: pointer;\n  max-width: 400px;\n  opacity: 0.7; }\n\n.sevenCards:hover {\n  opacity: 1;\n  transition: 0.3s; }\n\n.full_card {\n  cursor: pointer;\n  opacity: .7;\n  width: 60px;\n  margin: 2px; }\n\n.full_card:hover {\n  opacity: 1; }\n\n.fcr_container {\n  margin-bottom: 100px; }\n\n.main-content {\n  padding: 1em 1em; }\n\n.selected {\n  opacity: 1;\n  pointer-events: none;\n  border: 1px solid #ccc; }\n\n.group:after {\n  content: \"\";\n  display: table;\n  clear: both; }\n\n.course {\n  margin-bottom: 1em; }\n\n.type {\n  color: #ccc; }\n\n.course-img {\n  width: 70px; }\n\n.teacher-img {\n  width: 100%;\n  /* border-radius: .3em; */ }\n\n.not-found {\n  text-align: center; }\n\n/* MAIN NAV -------- */\n.main-nav a {\n  font-size: .95em;\n  text-transform: uppercase;\n  display: block;\n  padding: 1em;\n  transition: .2s; }\n\n.main-nav .active {\n  color: #fff;\n  background: #455cef; }\n\n.main-nav a:hover {\n  background-color: #455cef;\n  opacity: 0.7;\n  color: #fff; }\n\n.main-nav li {\n  width: 100%;\n  border-bottom: 1px solid #333;\n  background-color: #222;\n  cursor: pointer; }\n\n.darkMode {\n  background-color: #222; }\n\n.lightMode {\n  background-color: #fff; }\n  .lightMode .main-content, .lightMode .cards p {\n    color: #444; }\n    .lightMode .main-content .title, .lightMode .main-content .type, .lightMode .cards p .title, .lightMode .cards p .type {\n      color: #222; }\n\n.pentacle {\n  width: 100px;\n  animation: spin linear 4s;\n  animation-iteration-count: infinite;\n  filter: invert(1); }\n\n@-moz-keyframes spin {\n  100% {\n    -moz-transform: rotate(360deg);\n    transform: rotate(360deg); } }\n\n@-webkit-keyframes spin {\n  100% {\n    -webkit-transform: rotate(360deg);\n    transform: rotate(360deg); } }\n\n@keyframes spin {\n  100% {\n    -webkit-transform: rotate(360deg);\n    transform: rotate(360deg); } }\n\n/* COURSE NAV -------- */\n.course-nav li {\n  display: inline-block; }\n\n.course-nav li + li {\n  margin-left: .6em; }\n\n.course-nav a {\n  font-size: .85em;\n  color: #7d7d7d;\n  padding: .2em .8em;\n  background: #eaebeb;\n  transition: .2s; }\n\n.course-nav a:hover,\n.course-nav a.active {\n  color: #fff;\n  background: #39add1; }\n\n/* ICONS -------- */\n.icn-logo {\n  background: #54606b;\n  color: #fff; }\n\n.icn-logo i {\n  font-size: 2.45em;\n  line-height: 0;\n  margin-top: 30px; }\n\n.icn-error {\n  font-size: 3.2em;\n  margin-bottom: .25em; }\n\n@media (min-width: 0) and (max-width: 885px) {\n  .card_image {\n    width: 243px; } }\n\n/* ===== MEDIA QUERIES ===== */\n@media (min-width: 0) and (max-width: 768px) {\n  body {\n    padding-top: .8em; }\n  .home a {\n    border-color: transparent; }\n  .left {\n    border-right: none !important; }\n  .center {\n    border: none; }\n  .right {\n    display: none; }\n  .icn-logo {\n    display: block;\n    width: 100%;\n    text-align: center;\n    padding-bottom: 4px; }\n  .main-nav a:hover {\n    border-color: rgba(0, 0, 0, 0.1); }\n  .courses h2 {\n    margin-bottom: 0; }\n  .course-nav {\n    display: block;\n    margin: 1.5em 0 3.2em; }\n  .home a,\n  input,\n  button {\n    display: block;\n    width: 140px;\n    margin-bottom: 1em; }\n  .left {\n    position: relative;\n    height: 251px;\n    width: 100%;\n    top: 0;\n    left: 0;\n    float: left;\n    background-color: #111; }\n  .center {\n    width: 100%;\n    position: relative;\n    right: 0;\n    top: 1px;\n    overflow-y: hidden;\n    padding-bottom: 150px; }\n  .card_image, .card_image_reversed {\n    width: 203px;\n    margin-right: 30px;\n    float: right; }\n  .upright_description {\n    padding-bottom: 40px; }\n  .upright_description:last-of-type {\n    padding-bottom: 50px; }\n  .single_card_reading {\n    clear: both; }\n  .fcr_container {\n    margin-bottom: 0; } }\n\n@media (min-width: 769px) {\n  body {\n    padding-top: 3em; }\n  .home a {\n    border-color: #455cef; }\n  .home {\n    background-color: #222; }\n  .media img,\n  .media > div,\n  .teacher {\n    float: left; }\n  .media > div {\n    width: 85.1%;\n    margin-left: 1.5em; }\n  .teacher {\n    width: 48.73%;\n    margin-bottom: 1.5em; }\n  .teacher + .teacher {\n    margin-left: 2.54%; }\n  .teacher:nth-child(2n+3) {\n    clear: left;\n    margin-left: 0; }\n  /* MAIN NAV -------- */\n  .icn-logo {\n    margin-right: auto;\n    padding: 0 2em; }\n  header,\n  .main-nav {\n    display: flex;\n    flex-wrap: wrap; }\n  .main-nav a {\n    padding: 1.25em 1.5em; }\n  .main-nav a:hover {\n    border-color: rgba(0, 0, 0, 0.1); }\n  /* COURSE NAV -------- */\n  .course-nav {\n    float: right; }\n  .courses h2 {\n    float: left; } }\n\n@media only screen and (max-width: 680px) {\n  .card_image {\n    margin-bottom: 30px;\n    margin-right: 30px; } }\n", ""]);
 
 	// exports
 
@@ -22665,11 +22665,19 @@
 
 	var _About2 = _interopRequireDefault(_About);
 
-	var _FullReading = __webpack_require__(259);
+	var _Links = __webpack_require__(259);
+
+	var _Links2 = _interopRequireDefault(_Links);
+
+	var _FullReading = __webpack_require__(260);
 
 	var _FullReading2 = _interopRequireDefault(_FullReading);
 
-	var _NotFound = __webpack_require__(260);
+	var _Instructions = __webpack_require__(261);
+
+	var _Instructions2 = _interopRequireDefault(_Instructions);
+
+	var _NotFound = __webpack_require__(262);
 
 	var _NotFound2 = _interopRequireDefault(_NotFound);
 
@@ -22687,7 +22695,9 @@
 	    _reactRouter.Route,
 	    { component: _App2.default },
 	    _react2.default.createElement(_reactRouter.Route, { path: '/', component: _Home2.default }),
+	    _react2.default.createElement(_reactRouter.Route, { path: '/instructions', component: _Instructions2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: '/about', component: _About2.default }),
+	    _react2.default.createElement(_reactRouter.Route, { path: '/links', component: _Links2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: '/single-card-reading', component: _SCR2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: '/full-reading', component: _FullReading2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: '*', component: _NotFound2.default })
@@ -27987,6 +27997,9 @@
 	          {
 	            className: 'top ' + (_this.state.darkMode ? "darkMode" : "lightMode")
 	          },
+	          _react2.default.createElement('div', {
+	            className: 'icon_strip ' + (_this.state.darkMode ? "iconDarkMode" : "iconLightMode")
+	          }),
 	          _react2.default.createElement('script', {
 	            async: true,
 	            src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6248178765033726',
@@ -28034,6 +28047,18 @@
 	                _react2.default.createElement(
 	                  _Navlink2.default,
 	                  {
+	                    to: '/instructions',
+	                    className: _this.state.darkMode ? "darkMode" : "lightMode"
+	                  },
+	                  'Instructions'
+	                )
+	              ),
+	              _react2.default.createElement(
+	                'li',
+	                null,
+	                _react2.default.createElement(
+	                  _Navlink2.default,
+	                  {
 	                    to: '/full-reading',
 	                    className: _this.state.darkMode ? "darkMode" : "lightMode"
 	                  },
@@ -28050,6 +28075,18 @@
 	                    className: _this.state.darkMode ? "darkMode" : "lightMode"
 	                  },
 	                  'Single Card Reading'
+	                )
+	              ),
+	              _react2.default.createElement(
+	                'li',
+	                null,
+	                _react2.default.createElement(
+	                  _Navlink2.default,
+	                  {
+	                    to: '/links',
+	                    className: _this.state.darkMode ? "darkMode" : "lightMode"
+	                  },
+	                  'Links'
 	                )
 	              )
 	            )
@@ -28174,7 +28211,7 @@
 	    _react2.default.createElement(
 	      'div',
 	      _extends({ className: 'bar' }, props),
-	      '\uD83D\uDD2E tarot.lol'
+	      'tarot.lol 2022 \uD83D\uDD2E'
 	    )
 	  );
 	};
@@ -28288,46 +28325,61 @@
 	        "div",
 	        { className: "main-content SCR" },
 	        _react2.default.createElement(
+	          "h2",
+	          { className: "title" },
+	          "Tarot.lol \uD83D\uDD2E"
+	        ),
+	        _react2.default.createElement(
 	          "div",
 	          { className: "reading_container" },
 	          _react2.default.createElement(
 	            "div",
 	            { className: "single_card_reading" },
-	            _react2.default.createElement(
-	              "h2",
-	              { className: "title" },
-	              "\uD83D\uDD2E tarot.lol"
-	            ),
 	            _react2.default.createElement("img", {
 	              className: "card_image",
 	              src: _this.state.random_card_src,
 	              alt: ""
 	            }),
 	            _react2.default.createElement(
-	              "h3",
+	              "p",
 	              { className: "title" },
 	              "The tarot is a pack of playing cards used from at least the mid-15th century.",
 	              _react2.default.createElement("br", null)
 	            ),
 	            _react2.default.createElement(
-	              "h3",
+	              "p",
 	              null,
 	              "Tarot cards are one of many forms of divination."
 	            ),
 	            _react2.default.createElement(
-	              "h3",
+	              "p",
 	              null,
 	              "They are commonly used to measure potential outcomes and evaluate influences surrounding a person, event, or both."
 	            ),
 	            _react2.default.createElement(
-	              "h4",
-	              { className: "description" },
-	              "The Full Reading section uses the Celtic Cross layout. The deck used is the Rider Waite."
+	              "p",
+	              null,
+	              "One can examine all the different aspects of a given situation for a true analysis of any event."
 	            ),
 	            _react2.default.createElement(
 	              "p",
 	              null,
-	              "\xA9 2022 tarot.lol"
+	              "The thought behind Tarot.lol is simple."
+	            ),
+	            _react2.default.createElement(
+	              "p",
+	              null,
+	              "With this app anyone can get a complete tarot reading with in-depth situational alaysis in seconds."
+	            ),
+	            _react2.default.createElement(
+	              "p",
+	              null,
+	              "Say you don't have access to a deck of cards, but still want to able to consult the tarot. As long as there is a computer, tablet, or smart-phone nearby, you can."
+	            ),
+	            _react2.default.createElement(
+	              "p",
+	              null,
+	              "No matter one's feelings about the capacity of Tarot to solve any problems, the advice within the readings is often universal - and due the the sheer amount of card combinations, whether you choose to do a reading once a month or every day, the readings are always interesting."
 	            )
 	          )
 	        )
@@ -28382,7 +28434,7 @@
 	});
 	var cardData = [{ Cards: [{
 	      name: 'The Fool',
-	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/00_MajorFool.jpg',
+	      src: 'https://s3.amazonaws.com/tarot.lol/assets/00_MajorFool.jpg',
 	      keywords: {
 	         upright: 'Beginnings, innocence, spontaneity, a free spirit',
 	         reversed: 'Naivety, foolishness, recklessness, risk-taking'
@@ -28394,7 +28446,7 @@
 	      }
 	   }, {
 	      name: 'The Magician',
-	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/01_MajorMagician.jpg',
+	      src: 'https://s3.amazonaws.com/tarot.lol/assets/01_MajorMagician.jpg',
 	      keywords: {
 	         upright: 'Power, skill, concentration, action, resourcefulness',
 	         reversed: 'Manipulation, poor planning, latent talents'
@@ -28406,7 +28458,7 @@
 	      }
 	   }, {
 	      name: 'The High Priestess',
-	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/02_MajorHigh_Priestess.jpg',
+	      src: 'https://s3.amazonaws.com/tarot.lol/assets/02_MajorHigh_Priestess.jpg',
 
 	      keywords: {
 	         upright: 'Intuition, Higher powers, mystery, subconscious mind',
@@ -28419,7 +28471,7 @@
 	      }
 	   }, {
 	      name: 'The Empress',
-	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/03_MajorEmpress.jpg',
+	      src: 'https://s3.amazonaws.com/tarot.lol/assets/03_MajorEmpress.jpg',
 	      keywords: {
 	         upright: 'Fertility, femininity, beauty, nature, abundance',
 	         reversed: 'Creative block, dependence on others'
@@ -28431,7 +28483,7 @@
 	      }
 	   }, {
 	      name: 'The Emperor',
-	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/04_MajorEmperor.jpg',
+	      src: 'https://s3.amazonaws.com/tarot.lol/assets/04_MajorEmperor.jpg',
 	      keywords: {
 	         upright: 'Authority, father-figure, structure, solid foundation',
 	         reversed: 'excessive control, rigidity, inflexibility'
@@ -28443,7 +28495,7 @@
 	      }
 	   }, {
 	      name: 'The Heirophant',
-	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/05_MajorHierophant.jpg',
+	      src: 'https://s3.amazonaws.com/tarot.lol/assets/05_MajorHierophant.jpg',
 	      keywords: {
 	         upright: 'Religion, group identification, conformity, tradition, beliefs',
 	         reversed: 'Restriction, challenging the status quo'
@@ -28455,7 +28507,7 @@
 	      }
 	   }, {
 	      name: 'The Lovers',
-	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/06_MajorLovers.jpg',
+	      src: 'https://s3.amazonaws.com/tarot.lol/assets/06_MajorLovers.jpg',
 	      keywords: {
 	         upright: 'Love, union, relationships, values alignment, choices',
 	         reversed: 'Disharmony, imbalance, misalignment of values'
@@ -28467,7 +28519,7 @@
 	      }
 	   }, {
 	      name: 'The Chariot',
-	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/07_MajorChariot.jpg',
+	      src: 'https://s3.amazonaws.com/tarot.lol/assets/07_MajorChariot.jpg',
 	      keywords: {
 	         upright: 'Control, will power, victory, assertion, determination',
 	         reversed: 'Lack of control and direction, aggression'
@@ -28479,7 +28531,7 @@
 	      }
 	   }, {
 	      name: 'Strength',
-	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/08_MajorStrength.jpg',
+	      src: 'https://s3.amazonaws.com/tarot.lol/assets/08_MajorStrength.jpg',
 	      keywords: {
 	         upright: 'Strength, courage, patience, control, compassion',
 	         reversed: 'Weakness, self-doubt, lack of self-discipline'
@@ -28491,7 +28543,7 @@
 	      }
 	   }, {
 	      name: 'The Hermit',
-	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/09_MajorHermit.jpg',
+	      src: 'https://s3.amazonaws.com/tarot.lol/assets/09_MajorHermit.jpg',
 	      keywords: {
 	         upright: 'Soul-searching, introspection, being alone, inner guidance',
 	         reversed: 'Isolation, loneliness, withdrawal'
@@ -28503,7 +28555,7 @@
 	      }
 	   }, {
 	      name: 'The Wheel Of Fortune',
-	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/10_MajorWheel_of_Fortune.jpg',
+	      src: 'https://s3.amazonaws.com/tarot.lol/assets/10_MajorWheel_of_Fortune.jpg',
 	      keywords: {
 	         upright: 'Good luck, karma, life cycles, destiny, a turning point',
 	         reversed: 'Bad luck, negative external forces, out of control'
@@ -28515,7 +28567,7 @@
 	      }
 	   }, {
 	      name: 'Justice',
-	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/11_MajorJustice.jpg',
+	      src: 'https://s3.amazonaws.com/tarot.lol/assets/11_MajorJustice.jpg',
 	      keywords: {
 	         upright: 'Justice, fairness, truth, cause and effect, law',
 	         reversed: 'Unfairness, lack of accountability, dishonesty'
@@ -28527,7 +28579,7 @@
 	      }
 	   }, {
 	      name: 'The Hanged Man',
-	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/12_MajorHanged_Man.jpg',
+	      src: 'https://s3.amazonaws.com/tarot.lol/assets/12_MajorHanged_Man.jpg',
 	      keywords: {
 	         upright: 'Suspension, restriction, letting go, sacrifice',
 	         reversed: 'Martyrdom, indecision, delay'
@@ -28539,7 +28591,7 @@
 	      }
 	   }, {
 	      name: 'Death',
-	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/13_MajorDeath.jpg',
+	      src: 'https://s3.amazonaws.com/tarot.lol/assets/13_MajorDeath.jpg',
 	      keywords: {
 	         upright: 'Endings, beginnings, change, transformation, transition',
 	         reversed: 'Resistance to change, unable to move on'
@@ -28551,7 +28603,7 @@
 	      }
 	   }, {
 	      name: 'Temperance',
-	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/14_MajorTemperance.jpg',
+	      src: 'https://s3.amazonaws.com/tarot.lol/assets/14_MajorTemperance.jpg',
 	      keywords: {
 	         upright: 'Balance, moderation, patience, purpose, meaning',
 	         reversed: 'Imbalance, excess, lack of long-term vision'
@@ -28563,7 +28615,7 @@
 	      }
 	   }, {
 	      name: 'The Devil',
-	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/15_MajorDevil.jpg',
+	      src: 'https://s3.amazonaws.com/tarot.lol/assets/15_MajorDevil.jpg',
 	      keywords: {
 	         upright: 'Bondage, addiction, sexuality, materialism',
 	         reversed: 'Detachment, breaking free, power reclaimed'
@@ -28575,7 +28627,7 @@
 	      }
 	   }, {
 	      name: 'The Tower',
-	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/16_MajorTower.jpg',
+	      src: 'https://s3.amazonaws.com/tarot.lol/assets/16_MajorTower.jpg',
 	      keywords: {
 	         upright: 'Disaster, upheaval, sudden change, revelation',
 	         reversed: 'Avoidance of disaster, fear of change'
@@ -28587,7 +28639,7 @@
 	      }
 	   }, {
 	      name: 'The Star',
-	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/17_MajorStar.jpg',
+	      src: 'https://s3.amazonaws.com/tarot.lol/assets/17_MajorStar.jpg',
 	      keywords: {
 	         upright: 'Hope, spirituality, renewal, inspiration, serenity',
 	         reversed: 'Lack of faith, despair, discouragement'
@@ -28599,7 +28651,7 @@
 	      }
 	   }, {
 	      name: 'The Moon',
-	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/18_MajorMoon.jpg',
+	      src: 'https://s3.amazonaws.com/tarot.lol/assets/18_MajorMoon.jpg',
 	      keywords: {
 	         upright: 'Illusion, fear, anxiety, insecurity, subconscious',
 	         reversed: 'Release of fear, unhappiness, confusion'
@@ -28611,7 +28663,7 @@
 	      }
 	   }, {
 	      name: 'The Sun',
-	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/19_MajorSun.jpg',
+	      src: 'https://s3.amazonaws.com/tarot.lol/assets/19_MajorSun.jpg',
 	      keywords: {
 	         upright: 'Fun, warmth, success, positivity, vitality',
 	         reversed: 'Temporary depression, lack of success'
@@ -28623,7 +28675,7 @@
 	      }
 	   }, {
 	      name: 'Judgement',
-	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/20_MajorJudgement.jpg',
+	      src: 'https://s3.amazonaws.com/tarot.lol/assets/20_MajorJudgement.jpg',
 	      keywords: {
 	         upright: 'Judgement, rebirth, inner calling, absolution',
 	         reversed: 'Self-doubt, refusal of self-examination'
@@ -28635,7 +28687,7 @@
 	      }
 	   }, {
 	      name: 'The World',
-	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/21_MajorWorld.jpg',
+	      src: 'https://s3.amazonaws.com/tarot.lol/assets/21_MajorWorld.jpg',
 	      keywords: {
 	         upright: 'Completion, integration, accomplishment, travel',
 	         reversed: 'Lack of completion, lack of closure'
@@ -28647,7 +28699,7 @@
 	      }
 	   }, {
 	      name: 'Ace Of Wands',
-	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/22_Wands01.jpg',
+	      src: 'https://s3.amazonaws.com/tarot.lol/assets/22_Wands01.jpg',
 	      keywords: {
 	         upright: 'Inspiration, power, creation, beginnings, potential',
 	         reversed: 'Delays, lack of motivation, weighed down'
@@ -28659,7 +28711,7 @@
 	      }
 	   }, {
 	      name: 'Two Of Wands',
-	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/23_Wands02.jpg',
+	      src: 'https://s3.amazonaws.com/tarot.lol/assets/23_Wands02.jpg',
 	      keywords: {
 	         upright: 'Future planning, progress, decisions, discovery',
 	         reversed: 'Fear of unknown, lack of planning'
@@ -28671,7 +28723,7 @@
 	      }
 	   }, {
 	      name: 'Three Of Wands',
-	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/24_Wands03.jpg',
+	      src: 'https://s3.amazonaws.com/tarot.lol/assets/24_Wands03.jpg',
 	      keywords: {
 	         upright: 'Preparation, foresight, enterprise, expansion',
 	         reversed: 'Lack of foresight, delays, obstacles to long-term goals'
@@ -28683,7 +28735,7 @@
 	      }
 	   }, {
 	      name: 'Four Of Wands',
-	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/25_Wands04.jpg',
+	      src: 'https://s3.amazonaws.com/tarot.lol/assets/25_Wands04.jpg',
 	      keywords: {
 	         upright: 'Celebration, harmony, marriage, home, community',
 	         reversed: 'Breakdown in communication, transition'
@@ -28695,7 +28747,7 @@
 	      }
 	   }, {
 	      name: 'Five Of Wands',
-	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/26_Wands05.jpg',
+	      src: 'https://s3.amazonaws.com/tarot.lol/assets/26_Wands05.jpg',
 	      keywords: {
 	         upright: 'Disagreement, competition, strife, tension, conflict',
 	         reversed: 'Conflict avoidance, increased focus on goals'
@@ -28707,7 +28759,7 @@
 	      }
 	   }, {
 	      name: 'Six Of Wands',
-	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/27_Wands06.jpg',
+	      src: 'https://s3.amazonaws.com/tarot.lol/assets/27_Wands06.jpg',
 	      keywords: {
 	         upright: 'Public recognition, victory, progress, self-confidence',
 	         reversed: 'Egotism, disrepute, lack of confidence, fall from grace'
@@ -28719,7 +28771,7 @@
 	      }
 	   }, {
 	      name: 'Seven Of Wands',
-	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/28_Wands07.jpg',
+	      src: 'https://s3.amazonaws.com/tarot.lol/assets/28_Wands07.jpg',
 	      keywords: {
 	         upright: 'Challenge, competition, perseverance',
 	         reversed: 'Giving up, overwhelmed, overly protective'
@@ -28731,7 +28783,7 @@
 	      }
 	   }, {
 	      name: 'Eight Of Wands',
-	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/29_Wands08.jpg',
+	      src: 'https://s3.amazonaws.com/tarot.lol/assets/29_Wands08.jpg',
 	      keywords: {
 	         upright: 'Speed, action, air travel, movement, swift change',
 	         reversed: 'Delays, frustration, holding off'
@@ -28743,7 +28795,7 @@
 	      }
 	   }, {
 	      name: 'Nine Of Wands',
-	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/30_Wands09.jpg',
+	      src: 'https://s3.amazonaws.com/tarot.lol/assets/30_Wands09.jpg',
 	      keywords: {
 	         upright: 'Courage, persistence, test of faith, resilience',
 	         reversed: 'On edge, defensive, hesitant, paranoia'
@@ -28755,7 +28807,7 @@
 	      }
 	   }, {
 	      name: 'Ten Of Wands',
-	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/31_Wands10.jpg',
+	      src: 'https://s3.amazonaws.com/tarot.lol/assets/31_Wands10.jpg',
 	      keywords: {
 	         upright: 'Burden, responsibility, hard work, stress, achievement',
 	         reversed: 'Taking on too much, avoiding responsibility'
@@ -28767,7 +28819,7 @@
 	      }
 	   }, {
 	      name: 'Page Of Wands',
-	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/32_Wands11.jpg',
+	      src: 'https://s3.amazonaws.com/tarot.lol/assets/32_Wands11.jpg',
 	      keywords: {
 	         upright: 'Enthusiasm, exploration, discovery, free spirit',
 	         reversed: 'Setbacks to new ideas, pessimism, lack of direction'
@@ -28779,7 +28831,7 @@
 	      }
 	   }, {
 	      name: 'Knight Of Wands',
-	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/33_Wands12.jpg',
+	      src: 'https://s3.amazonaws.com/tarot.lol/assets/33_Wands12.jpg',
 	      keywords: {
 	         upright: 'Energy, passion, lust, action, adventure, impulsiveness',
 	         reversed: 'Haste, scattered energy, delays, frustration'
@@ -28791,7 +28843,7 @@
 	      }
 	   }, {
 	      name: 'Queen Of Wands',
-	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/34_Wands13.jpg',
+	      src: 'https://s3.amazonaws.com/tarot.lol/assets/34_Wands13.jpg',
 	      keywords: {
 	         upright: 'Exuberance, warmth, vibrancy, determination',
 	         reversed: 'Shrinking violet, aggressive, demanding'
@@ -28803,7 +28855,7 @@
 	      }
 	   }, {
 	      name: 'King Of Wands',
-	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/35_Wands14.jpg',
+	      src: 'https://s3.amazonaws.com/tarot.lol/assets/35_Wands14.jpg',
 	      keywords: {
 	         upright: 'Natural-born leader, vision, entrepreneur, honour',
 	         reversed: 'Impulsiveness, haste, ruthless, high expectations'
@@ -28815,7 +28867,7 @@
 	      }
 	   }, {
 	      name: 'Ace Of Pentacles',
-	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/36_Pents01.jpg',
+	      src: 'https://s3.amazonaws.com/tarot.lol/assets/36_Pents01.jpg',
 	      keywords: {
 	         upright: 'Manifestation, new financial opportunity, prosperity',
 	         reversed: 'Lost opportunity, lack of planning and foresight'
@@ -28827,7 +28879,7 @@
 	      }
 	   }, {
 	      name: 'Two Of Pentacles',
-	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/37_Pents02.jpg',
+	      src: 'https://s3.amazonaws.com/tarot.lol/assets/37_Pents02.jpg',
 	      keywords: {
 	         upright: 'Balance, adaptability, time management, prioritisation',
 	         reversed: 'Disorganisation, financial disarray'
@@ -28839,7 +28891,7 @@
 	      }
 	   }, {
 	      name: 'Three Of Pentacles',
-	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/38_Pents03.jpg',
+	      src: 'https://s3.amazonaws.com/tarot.lol/assets/38_Pents03.jpg',
 	      keywords: {
 	         upright: 'Teamwork, initial fulfilment, collaboration, learning',
 	         reversed: 'Lack of teamwork, disregard for skills'
@@ -28851,7 +28903,7 @@
 	      }
 	   }, {
 	      name: 'Four Of Pentacles',
-	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/39_Pents04.jpg',
+	      src: 'https://s3.amazonaws.com/tarot.lol/assets/39_Pents04.jpg',
 	      keywords: {
 	         upright: 'Control, stability, security, possession, conservatism',
 	         reversed: 'Greed, materialism, self-protection'
@@ -28863,7 +28915,7 @@
 	      }
 	   }, {
 	      name: 'Five Of Pentacles',
-	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/40_Pents05.jpg',
+	      src: 'https://s3.amazonaws.com/tarot.lol/assets/40_Pents05.jpg',
 	      keywords: {
 	         upright: 'Isolation, insecurity, worry, financial loss, poverty',
 	         reversed: 'Recovery from financial loss, spiritual poverty'
@@ -28875,7 +28927,7 @@
 	      }
 	   }, {
 	      name: 'Six Of Pentacles',
-	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/41_Pents06.jpg',
+	      src: 'https://s3.amazonaws.com/tarot.lol/assets/41_Pents06.jpg',
 	      keywords: {
 	         upright: 'Generosity, charity, giving, prosperity, sharing wealth',
 	         reversed: 'Debt, selfishness, one-sided charity'
@@ -28887,7 +28939,7 @@
 	      }
 	   }, {
 	      name: 'Seven Of Pentacles',
-	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/42_Pents07.jpg',
+	      src: 'https://s3.amazonaws.com/tarot.lol/assets/42_Pents07.jpg',
 	      keywords: {
 	         upright: 'Vision, perseverance, profit, reward, investment',
 	         reversed: 'Lack of long-term vision, limited success or reward'
@@ -28899,7 +28951,7 @@
 	      }
 	   }, {
 	      name: 'Eight Of Pentacles',
-	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/43_Pents08.jpg',
+	      src: 'https://s3.amazonaws.com/tarot.lol/assets/43_Pents08.jpg',
 	      keywords: {
 	         upright: 'Apprenticeship, education, quality, engagement',
 	         reversed: 'Perfectionism, lacking ambition or focus'
@@ -28911,7 +28963,7 @@
 	      }
 	   }, {
 	      name: 'Nine Of Pentacles',
-	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/44_Pents09.jpg',
+	      src: 'https://s3.amazonaws.com/tarot.lol/assets/44_Pents09.jpg',
 	      keywords: {
 	         upright: 'Gratitude, luxury, self-sufficiency, culmination',
 	         reversed: 'Over-investment in work, financial setbacks'
@@ -28923,7 +28975,7 @@
 	      }
 	   }, {
 	      name: 'Ten Of Pentacles',
-	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/45_Pents10.jpg',
+	      src: 'https://s3.amazonaws.com/tarot.lol/assets/45_Pents10.jpg',
 	      keywords: {
 	         upright: 'Wealth, inheritance, family, establishment, retirement',
 	         reversed: 'Financial failure, loneliness, loss'
@@ -28935,7 +28987,7 @@
 	      }
 	   }, {
 	      name: 'Page Of Pentacles',
-	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/46_Pents11.jpg',
+	      src: 'https://s3.amazonaws.com/tarot.lol/assets/46_Pents11.jpg',
 	      keywords: {
 	         upright: 'Manifestation, financial opportunity, new job',
 	         reversed: 'Lack of progress and planning, short-term focus'
@@ -28947,7 +28999,7 @@
 	      }
 	   }, {
 	      name: 'Knight Of Pentacles',
-	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/47_Pents12.jpg',
+	      src: 'https://s3.amazonaws.com/tarot.lol/assets/47_Pents12.jpg',
 	      keywords: {
 	         upright: 'Efficiency, routine, conservatism, methodical',
 	         reversed: 'Laziness, boredom, feeling stuck'
@@ -28959,7 +29011,7 @@
 	      }
 	   }, {
 	      name: 'Queen Of Pentacles',
-	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/48_Pents13.jpg',
+	      src: 'https://s3.amazonaws.com/tarot.lol/assets/48_Pents13.jpg',
 	      keywords: {
 	         upright: 'Practical, homely, motherly, down-to-earth, security',
 	         reversed: 'Imbalance in work/ family commitments'
@@ -28971,7 +29023,7 @@
 	      }
 	   }, {
 	      name: 'King Of Pentacles',
-	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/49_Pents14.jpg',
+	      src: 'https://s3.amazonaws.com/tarot.lol/assets/49_Pents14.jpg',
 	      keywords: {
 	         upright: 'Security, control, power, discipline, abundance',
 	         reversed: 'Authoritative, domineering, controlling'
@@ -28983,7 +29035,7 @@
 	      }
 	   }, {
 	      name: 'Ace Of Cups',
-	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/50_Cups01.jpg',
+	      src: 'https://s3.amazonaws.com/tarot.lol/assets/50_Cups01.jpg',
 	      keywords: {
 	         upright: 'Love, compassion, creativity, overwhelming emotion',
 	         reversed: 'Blocked or repressed emotions'
@@ -28995,7 +29047,7 @@
 	      }
 	   }, {
 	      name: 'Two Of Cups',
-	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/51_Cups02.jpg',
+	      src: 'https://s3.amazonaws.com/tarot.lol/assets/51_Cups02.jpg',
 	      keywords: {
 	         upright: 'Unified love, partnership, attraction, relationships',
 	         reversed: 'Break-up, imbalance in a relationship, lack of harmony'
@@ -29007,7 +29059,7 @@
 	      }
 	   }, {
 	      name: 'Three Of Cups',
-	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/52_Cups03.jpg',
+	      src: 'https://s3.amazonaws.com/tarot.lol/assets/52_Cups03.jpg',
 	      keywords: {
 	         upright: 'Celebration, friendship, creativity, community',
 	         reversed: 'An affair, “three’s a crowd”, stifled creativity'
@@ -29019,7 +29071,7 @@
 	      }
 	   }, {
 	      name: 'Four Of Cups',
-	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/53_Cups04.jpg',
+	      src: 'https://s3.amazonaws.com/tarot.lol/assets/53_Cups04.jpg',
 	      keywords: {
 	         upright: 'Meditation, contemplation, apathy, re-evaluation',
 	         reversed: 'Boredom, missed opportunity, being aloof'
@@ -29031,7 +29083,7 @@
 	      }
 	   }, {
 	      name: 'Five Of Cups',
-	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/54_Cups05.jpg',
+	      src: 'https://s3.amazonaws.com/tarot.lol/assets/54_Cups05.jpg',
 	      keywords: {
 	         upright: 'Loss, regret, disappointment, despair, bereavement',
 	         reversed: 'Moving on, acceptance, forgiveness'
@@ -29043,7 +29095,7 @@
 	      }
 	   }, {
 	      name: 'Six Of Cups',
-	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/55_Cups06.jpg',
+	      src: 'https://s3.amazonaws.com/tarot.lol/assets/55_Cups06.jpg',
 	      keywords: {
 	         upright: 'Reunion, nostalgia, childhood memories, innocence',
 	         reversed: 'Stuck in the past, naivety, unrealisticOn the Six of Cups, there are six cups filled with white, five-pointed flowers. A young boy seems to smell one flower, offering this filled cup to another young child. The small child symbolises the past and the taller child symbolises the future, and together they symbolise happy reunions with past friends or lovers. They share old pleasures with lots of nostalgia. In the background, there is an older figure walking away, symbolising our worries leaving us to be locked in the turret. The house symbolises comfort and security but the barren garden symbolises the lost happier times of the past. Everything is bright yellow which indicates great happiness in this overall scene.'
@@ -29055,7 +29107,7 @@
 	      }
 	   }, {
 	      name: 'Seven Of Cups',
-	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/56_Cups07.jpg',
+	      src: 'https://s3.amazonaws.com/tarot.lol/assets/56_Cups07.jpg',
 	      keywords: {
 	         upright: 'Fantasy, illusion, wishful thinking, choices, imagination',
 	         reversed: 'Temptation, illusion, diversionary tactics'
@@ -29067,7 +29119,7 @@
 	      }
 	   }, {
 	      name: 'Eight Of Cups',
-	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/57_Cups08.jpg',
+	      src: 'https://s3.amazonaws.com/tarot.lol/assets/57_Cups08.jpg',
 	      keywords: {
 	         upright: 'Escapism, disappointment, abandonment, withdrawal',
 	         reversed: 'Hopelessness, aimless drifting, walking away'
@@ -29079,7 +29131,7 @@
 	      }
 	   }, {
 	      name: 'Nine Of Cups',
-	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/58_Cups09.jpg',
+	      src: 'https://s3.amazonaws.com/tarot.lol/assets/58_Cups09.jpg',
 	      keywords: {
 	         upright: 'Wishes fulfilled, comfort, happiness, satisfaction',
 	         reversed: 'Greed, dissatisfaction, materialism'
@@ -29091,7 +29143,7 @@
 	      }
 	   }, {
 	      name: 'Ten Of Cups',
-	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/59_Cups10.jpg',
+	      src: 'https://s3.amazonaws.com/tarot.lol/assets/59_Cups10.jpg',
 	      keywords: {
 	         upright: 'Harmony, marriage, happiness, alignment',
 	         reversed: 'Misalignment of values, broken home or marriage'
@@ -29103,7 +29155,7 @@
 	      }
 	   }, {
 	      name: 'Page Of Cups',
-	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/60_Cups11.jpg',
+	      src: 'https://s3.amazonaws.com/tarot.lol/assets/60_Cups11.jpg',
 	      keywords: {
 	         upright: 'A messenger, creative beginnings, synchronicity',
 	         reversed: 'Emotional immaturity, creative block'
@@ -29115,7 +29167,7 @@
 	      }
 	   }, {
 	      name: 'Knight Of Cups',
-	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/61_Cups12.jpg',
+	      src: 'https://s3.amazonaws.com/tarot.lol/assets/61_Cups12.jpg',
 	      keywords: {
 	         upright: 'Romance, charm, ‘Knight in shining armour’, imagination',
 	         reversed: 'Unrealistic, jealousy, moodiness'
@@ -29127,7 +29179,7 @@
 	      }
 	   }, {
 	      name: 'Queen Of Cups',
-	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/62_Cups13.jpg',
+	      src: 'https://s3.amazonaws.com/tarot.lol/assets/62_Cups13.jpg',
 	      keywords: {
 	         upright: 'Emotional security, calm, intuitive, compassionate',
 	         reversed: 'Emotional insecurity, co-dependency'
@@ -29139,7 +29191,7 @@
 	      }
 	   }, {
 	      name: 'King Of Cups',
-	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/63_Cups14.jpg',
+	      src: 'https://s3.amazonaws.com/tarot.lol/assets/63_Cups14.jpg',
 	      keywords: {
 	         upright: 'Emotional balance and control, generosity',
 	         reversed: 'Emotional manipulation, moodiness, volatility'
@@ -29151,7 +29203,7 @@
 	      }
 	   }, {
 	      name: 'Ace Of Swords',
-	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/64_Swords01.jpg',
+	      src: 'https://s3.amazonaws.com/tarot.lol/assets/64_Swords01.jpg',
 	      keywords: {
 	         upright: 'Raw power, victory, break-throughs, mental clarity',
 	         reversed: 'Confusion, chaos, lack of clarity'
@@ -29163,7 +29215,7 @@
 	      }
 	   }, {
 	      name: 'Two Of Swords',
-	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/65_Swords02.jpg',
+	      src: 'https://s3.amazonaws.com/tarot.lol/assets/65_Swords02.jpg',
 	      keywords: {
 	         upright: 'Indecision, choices, truce, stalemate, blocked emotions',
 	         reversed: 'Indecision, confusion, information overload'
@@ -29175,7 +29227,7 @@
 	      }
 	   }, {
 	      name: 'Three Of Swords',
-	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/66_Swords03.jpg',
+	      src: 'https://s3.amazonaws.com/tarot.lol/assets/66_Swords03.jpg',
 	      keywords: {
 	         upright: 'Painful separation, sorrow heartbreak, grief, rejection',
 	         reversed: 'Releasing pain, optimism, forgiveness'
@@ -29187,7 +29239,7 @@
 	      }
 	   }, {
 	      name: 'Four Of Swords',
-	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/67_Swords04.jpg',
+	      src: 'https://s3.amazonaws.com/tarot.lol/assets/67_Swords04.jpg',
 	      keywords: {
 	         upright: 'Contemplation, recuperation, passivity, relaxation, rest',
 	         reversed: 'Restlessness, burn-out, lack of progress'
@@ -29199,7 +29251,7 @@
 	      }
 	   }, {
 	      name: 'Five Of Swords',
-	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/68_Swords05.jpg',
+	      src: 'https://s3.amazonaws.com/tarot.lol/assets/68_Swords05.jpg',
 	      keywords: {
 	         upright: 'Conflict, tension, loss, defeat, win at all costs, betrayal',
 	         reversed: 'Open to change, past resentment'
@@ -29211,7 +29263,7 @@
 	      }
 	   }, {
 	      name: 'Six Of Swords',
-	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/69_Swords06.jpg',
+	      src: 'https://s3.amazonaws.com/tarot.lol/assets/69_Swords06.jpg',
 	      keywords: {
 	         upright: 'Regretful but necessary transition, rite of passage',
 	         reversed: 'Cannot move on, carrying baggage'
@@ -29223,7 +29275,7 @@
 	      }
 	   }, {
 	      name: 'Seven Of Swords',
-	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/70_Swords07.jpg',
+	      src: 'https://s3.amazonaws.com/tarot.lol/assets/70_Swords07.jpg',
 	      keywords: {
 	         upright: 'Betrayal, deception, getting away with something, stealth',
 	         reversed: 'Mental challenges, breaking free'
@@ -29235,7 +29287,7 @@
 	      }
 	   }, {
 	      name: 'Eight Of Swords',
-	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/71_Swords08.jpg',
+	      src: 'https://s3.amazonaws.com/tarot.lol/assets/71_Swords08.jpg',
 	      keywords: {
 	         upright: 'Isolation, self-imposed restriction, imprisonment',
 	         reversed: 'Open to new perspectives, release'
@@ -29247,7 +29299,7 @@
 	      }
 	   }, {
 	      name: 'Nine Of Swords',
-	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/72_Swords09.jpg',
+	      src: 'https://s3.amazonaws.com/tarot.lol/assets/72_Swords09.jpg',
 	      keywords: {
 	         upright: 'Depression, nightmares, intense anxiety, despair',
 	         reversed: 'Hopelessness, severe depression, torment'
@@ -29259,7 +29311,7 @@
 	      }
 	   }, {
 	      name: 'Ten Of Swords',
-	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/73_Swords10.jpg',
+	      src: 'https://s3.amazonaws.com/tarot.lol/assets/73_Swords10.jpg',
 	      keywords: {
 	         upright: 'Back-stabbed, defeat, crisis, betrayal, endings, loss',
 	         reversed: 'Recovery, regeneration, fear of ruin, inevitable end'
@@ -29271,7 +29323,7 @@
 	      }
 	   }, {
 	      name: 'Page Of Swords',
-	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/74_Swords11.jpg',
+	      src: 'https://s3.amazonaws.com/tarot.lol/assets/74_Swords11.jpg',
 	      keywords: {
 	         upright: 'Talkative, curious, mentally restless, energetic',
 	         reversed: 'All talk and no action, haste, undelivered promises'
@@ -29283,7 +29335,7 @@
 	      }
 	   }, {
 	      name: 'Knight Of Swords',
-	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/75_Swords12.jpg',
+	      src: 'https://s3.amazonaws.com/tarot.lol/assets/75_Swords12.jpg',
 	      keywords: {
 	         upright: 'Opinionated, hasty, action-oriented, communicative',
 	         reversed: 'Scattered thought, disregard for consequences'
@@ -29295,7 +29347,7 @@
 	      }
 	   }, {
 	      name: 'Queen Of Swords',
-	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/76_Swords13.jpg',
+	      src: 'https://s3.amazonaws.com/tarot.lol/assets/76_Swords13.jpg',
 	      keywords: {
 	         upright: 'Quick thinker, organised, perceptive, independent',
 	         reversed: 'Overly-emotional, bitchy, cold-hearted'
@@ -29307,7 +29359,7 @@
 	      }
 	   }, {
 	      name: 'King Of Swords',
-	      src: 'https://raw.githubusercontent.com/NCal/Tarot/master/assets/Tarot/77_Swords14.jpg',
+	      src: 'https://s3.amazonaws.com/tarot.lol/assets/77_Swords14.jpg',
 	      keywords: {
 	         upright: 'Clear thinking, intellectual power, authority, truth',
 	         reversed: 'Manipulative, tyrannical, abusive'
@@ -40251,6 +40303,22 @@
 
 	    var _this = _possibleConstructorReturn(this, (SCR.__proto__ || Object.getPrototypeOf(SCR)).call(this, props, context));
 
+	    _this.back = function () {
+	      _this.setState({
+
+	        new: true,
+	        loading: false,
+	        name: 'Card',
+	        src: null,
+	        random_card_flipped: null,
+	        random_card_name: null,
+	        random_card_description: null,
+	        random_card_upright: null,
+	        random_card_reversed: null
+
+	      });
+	    };
+
 	    _this.getRandomCard = function () {
 	      console.group('get random card');
 	      var flipped = Math.floor(Math.random() * 2) === 0 ? true : false;
@@ -40316,7 +40384,10 @@
 	          _react2.default.createElement(
 	            'div',
 	            { className: 'main-content ' },
-	            _react2.default.createElement('img', { className: 'pentacle', src: 'https://upload.wikimedia.org/wikipedia/commons/9/97/Pentacle_2.svg' })
+	            _react2.default.createElement('img', {
+	              className: 'pentacle',
+	              src: 'https://upload.wikimedia.org/wikipedia/commons/9/97/Pentacle_2.svg'
+	            })
 	          )
 	        );
 	      }
@@ -40325,10 +40396,23 @@
 	          'div',
 	          { className: 'main-content SCR' },
 	          _react2.default.createElement(
+	            'h2',
+	            { className: 'title' },
+	            'Single Card Reading'
+	          ),
+	          _react2.default.createElement(
 	            'button',
 	            { onClick: _this.getRandomCard },
 	            'Draw A Single Card'
 	          ),
+	          _react2.default.createElement('br', null),
+	          _react2.default.createElement('br', null),
+	          _react2.default.createElement('img', {
+	            onClick: _this.getRandomCard,
+	            className: 'sevenCards',
+	            src: " https://s3.amazonaws.com/tarot.lol/assets/seven_small.jpg",
+	            alt: ''
+	          }),
 	          _react2.default.createElement('div', { className: 'reading_container' })
 	        );
 	      }
@@ -40338,8 +40422,8 @@
 	          { className: 'main-content SCR' },
 	          _react2.default.createElement(
 	            'button',
-	            { onClick: _this.getRandomCard },
-	            'Draw A Single Card'
+	            { style: { float: 'right' }, onClick: _this.back },
+	            'Back'
 	          ),
 	          _react2.default.createElement(
 	            'div',
@@ -40396,8 +40480,8 @@
 	          { className: 'main-content SCR' },
 	          _react2.default.createElement(
 	            'button',
-	            { onClick: _this.getRandomCard },
-	            'Draw A Single Card'
+	            { style: { float: "right" }, onClick: _this.back },
+	            'Back'
 	          ),
 	          _react2.default.createElement(
 	            'div',
@@ -40509,20 +40593,40 @@
 	    "div",
 	    { className: "main-content" },
 	    _react2.default.createElement(
-	      "p",
-	      null,
-	      "\xA9 2022 tarot.lol"
+	      "h2",
+	      { className: "title" },
+	      "About"
 	    ),
 	    _react2.default.createElement(
 	      "p",
 	      null,
-	      "App by ",
-	      _react2.default.createElement(
-	        "a",
-	        { href: "http://www.nbroaddus.com" },
-	        "N Broaddus "
-	      )
-	    )
+	      "The thought behind Tarot.lol is simple."
+	    ),
+	    _react2.default.createElement("img", {
+	      className: "card_image",
+	      src: "https://s3.amazonaws.com/tarot.lol/assets/23_Wands02.jpg",
+	      alt: ""
+	    }),
+	    _react2.default.createElement(
+	      "p",
+	      null,
+	      "Say you don't have access to a deck of cards, but still want to able to consult the tarot. As long as there is a computer, tablet, or smart-phone nearby, you can."
+	    ),
+	    _react2.default.createElement(
+	      "p",
+	      null,
+	      "With this app anyone can get a complete tarot reading with in-depth situational alaysis in seconds."
+	    ),
+	    _react2.default.createElement(
+	      "p",
+	      null,
+	      "No matter one's feelings about the capacity of Tarot to solve any problems, the advice within the readings is often universal - and due the the sheer amount of card combinations, whether you choose to do a reading once a month or every day, the readings are always interesting."
+	    ),
+	    _react2.default.createElement("img", {
+	      className: "break-image",
+	      src: " https://s3.amazonaws.com/tarot.lol/assets/2.png",
+	      alt: ""
+	    })
 	  );
 	};
 
@@ -40532,6 +40636,93 @@
 
 /***/ }),
 /* 259 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/home/ncal/Documents/Tarot/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/home/ncal/Documents/Tarot/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var Links = function Links(props) {
+	  return _react2.default.createElement(
+	    "div",
+	    { className: "main-content" },
+	    _react2.default.createElement(
+	      "h2",
+	      { className: "title" },
+	      "Links"
+	    ),
+	    _react2.default.createElement(
+	      "p",
+	      null,
+	      "Often the Tarot is attributed magical qualities, able to predict the future. Though, there is a lot one can find out about Tarot on the internet, it is really hard to find honest information."
+	    ),
+	    _react2.default.createElement(
+	      "a",
+	      { href: "https://en.wikipedia.org/wiki/Tarot", target: "_blank" },
+	      _react2.default.createElement(
+	        "h3",
+	        null,
+	        "Tarot on Wikipedia"
+	      ),
+	      _react2.default.createElement("img", {
+	        style: { maxWidth: "330px" },
+	        className: "",
+	        src: "https://s3.amazonaws.com/tarot.lol/assets/wikipedia_logo.svg.png",
+	        alt: ""
+	      })
+	    ),
+	    _react2.default.createElement(
+	      "a",
+	      { href: "https://en.wikipedia.org/wiki/Cartomancy", target: "_blank" },
+	      _react2.default.createElement(
+	        "h3",
+	        null,
+	        "Cartomancy on Wikipedia"
+	      )
+	    ),
+	    _react2.default.createElement(
+	      "p",
+	      null,
+	      "Cartomancy is fortune-telling or divination using a deck of cards."
+	    ),
+	    _react2.default.createElement(
+	      "a",
+	      { href: "https://en.wikipedia.org/wiki/Divination", target: "_blank" },
+	      _react2.default.createElement(
+	        "h3",
+	        null,
+	        "Divination on Wikipedia"
+	      )
+	    ),
+	    _react2.default.createElement(
+	      "p",
+	      null,
+	      "Divination is the attempt to gain insight into a question or situation by way of standardized process or ritual."
+	    ),
+	    _react2.default.createElement("img", {
+	      className: "break-image",
+	      src: "https://s3.amazonaws.com/tarot.lol/assets/2.png",
+	      alt: ""
+	    })
+	  );
+	};
+
+	exports.default = Links;
+
+	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/home/ncal/Documents/Tarot/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "Links.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+
+/***/ }),
+/* 260 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/home/ncal/Documents/Tarot/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/home/ncal/Documents/Tarot/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -40608,7 +40799,7 @@
 	    console.log('global cards', globalCards);
 	    // Add back to cards
 	    for (var i = 0; i < _cardData2.default[0].Cards.length; i++) {
-	      _cardData2.default[0].Cards[i].back = 'https://raw.githubusercontent.com/NCal/Tarot/31f457d9857a687922def232dbb21014ea838eca/back_sm.jpg';
+	      _cardData2.default[0].Cards[i].back = "https://s3.amazonaws.com/tarot.lol/assets/back_sm.jpg";
 	    }
 	  };
 
@@ -40705,6 +40896,11 @@
 	        'div',
 	        { className: 'main-content ' },
 	        _react2.default.createElement(
+	          'h2',
+	          { className: 'title' },
+	          'Full Reading'
+	        ),
+	        _react2.default.createElement(
 	          'div',
 	          { className: 'cards' },
 	          _react2.default.createElement(
@@ -40713,7 +40909,12 @@
 	            'Select 10 cards'
 	          ),
 	          _cardData2.default[0].Cards.map(function (card, i) {
-	            return _react2.default.createElement('img', { className: 'full_card', key: 'card' + i, src: card.back, onClick: this.getRandomCard });
+	            return _react2.default.createElement('img', {
+	              className: 'full_card',
+	              key: "card" + i,
+	              src: card.back,
+	              onClick: this.getRandomCard
+	            });
 	          }.bind(_this2))
 	        ),
 	        _react2.default.createElement('div', { className: 'reading_container' })
@@ -40879,7 +41080,118 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/home/ncal/Documents/Tarot/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "FullReading.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ }),
-/* 260 */
+/* 261 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/home/ncal/Documents/Tarot/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/home/ncal/Documents/Tarot/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactRouter = __webpack_require__(193);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var Instructions = function Instructions(props) {
+	  return _react2.default.createElement(
+	    "div",
+	    { className: "main-content" },
+	    _react2.default.createElement(
+	      "h2",
+	      { className: "title" },
+	      "Instructions"
+	    ),
+	    _react2.default.createElement("img", {
+	      className: "card_image",
+	      src: "https://s3.amazonaws.com/tarot.lol/assets/45_Pents10.jpg",
+	      alt: ""
+	    }),
+	    _react2.default.createElement(
+	      "h3",
+	      null,
+	      "Step 1"
+	    ),
+	    _react2.default.createElement(
+	      "p",
+	      null,
+	      "The first step in a tarot reading is deciding whether or not to ask a question."
+	    ),
+	    _react2.default.createElement(
+	      "p",
+	      null,
+	      "If you decide to, you can ask your question silently in your mind or out loud."
+	    ),
+	    _react2.default.createElement(
+	      "p",
+	      null,
+	      "If you don\u2019t have a specific question, you may simply ask \u201Cwhat do I need to know right now?\u201D or \u201CWhat messages do you have for me today?\u201D"
+	    ),
+	    _react2.default.createElement(
+	      "p",
+	      null,
+	      "However, the more detailed the question, the more accurate the answer. A vague question will invite a vague answer."
+	    ),
+	    _react2.default.createElement(
+	      "h3",
+	      null,
+	      "Step 2"
+	    ),
+	    _react2.default.createElement(
+	      "p",
+	      null,
+	      "Focus intently on your question, then choose your cards."
+	    ),
+	    _react2.default.createElement(
+	      "p",
+	      null,
+	      "There are two options for a reading : "
+	    ),
+	    _react2.default.createElement(
+	      "h4",
+	      null,
+	      _react2.default.createElement(
+	        _reactRouter.Link,
+	        { to: "/full-reading" },
+	        " Full Reading "
+	      ),
+	      "(which will go into much more detail)"
+	    ),
+	    _react2.default.createElement(
+	      "i",
+	      null,
+	      "Or"
+	    ),
+	    _react2.default.createElement(
+	      "h4",
+	      null,
+	      _react2.default.createElement(
+	        _reactRouter.Link,
+	        { to: "/single-card-reading" },
+	        " Single Card Reading "
+	      ),
+	      "(which returns one card only)."
+	    ),
+	    _react2.default.createElement("img", {
+	      className: "break-image",
+	      src: " https://s3.amazonaws.com/tarot.lol/assets/tarot_icons_m/2.png",
+	      alt: ""
+	    })
+	  );
+	};
+
+	exports.default = Instructions;
+
+	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/home/ncal/Documents/Tarot/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "Instructions.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+
+/***/ }),
+/* 262 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/home/ncal/Documents/Tarot/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/home/ncal/Documents/Tarot/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {

@@ -127,9 +127,13 @@ class FullReading extends Component {
     if (!this.state.loading && !this.state.reading){
          return (
            <div className="main-content ">
+             <br />
              <h2 className="title">Full Reading</h2>
 
-             <div className="cards">
+             <div
+               className="cards"
+               style={{ borderBottom: "1px solid #555", paddingBottom: "20px" }}
+             >
                <p>Select 10 cards</p>
                {cardData[0].Cards.map(
                  function (card, i) {
@@ -144,83 +148,83 @@ class FullReading extends Component {
                  }.bind(this)
                )}
              </div>
+             <img
+               className="break-image"
+               src={"https://s3.amazonaws.com/tarot.lol/assets/2.png"}
+               alt=""
+             />
              <div className="reading_container"></div>
            </div>
          );
       }
     if (this.state.loading){
       return (
-        <div className="main-content ">   
-          <img className="pentacle" src="https://upload.wikimedia.org/wikipedia/commons/9/97/Pentacle_2.svg"/>
+        <div className="main-content ">
+          <br />
+          <img
+            className="pentacle"
+            src="https://upload.wikimedia.org/wikipedia/commons/9/97/Pentacle_2.svg"
+          />
         </div>
-      )
+      );
     }
     if (this.state.reading) {
       return (
-        <div className="main-content " >    
-               <div className="reading_container">
-               <button className="back-button" onClick={this.back}>Back</button>
-               {
-                chosen_cards.map(function(card, i){
-                  if (!card.reversed){
-                       return (
-                         <div key={i} className="fcr_container">
-                           <div className="single_card_reading">
-                             <h2 className="type">{card.type}</h2>
-                             <h3 className="title">{card.name}</h3>
-                             <img
-                               className="card_image"
-                               src={card.src}
-                               alt=""
-                             />
-                             <h4 className="title">Keywords:</h4>
-                             <p>{card.keywords.upright}</p>
-                             <h3 className="title">Summary</h3>
-                             <p className="description">
-                               {card.description.basic}
-                             </p>
-                             <h3 className="title">Upright</h3>
-                             <p className="upright_description">
-                               {card.description.upright}
-                             </p>
-                           </div>
-                           <br />
-                         </div>
-                       );
-                  } else {
-                       return (
-                         <div key={i} className="fcr_container">
-                           <div className="single_card_reading">
-                             <h2 className="type">{card.type}</h2>
-                             <h3 className="title">
-                               {card.name + " Reversed"}
-                             </h3>
-                             <img
-                               className="card_image card_image_reversed"
-                               src={card.src}
-                               alt=""
-                             />
-                             <h4 className="title">Keywords:</h4>
-                             <p>{card.keywords.reversed}</p>
-                             <h3 className="title">Summary</h3>
-                             <p className="description">
-                               {card.description.basic}
-                             </p>
-                             <h3 className="title">Reversed</h3>
-                             <p className="upright_description">
-                               {card.description.reversed}
-                             </p>
-                           </div>
-                           <br />
-                         </div>
-                       );
-                  }
-                })
-               }
-               <button onClick={this.back}>Back</button>
-            </div>
-         </div>
-      )
+        <div className="main-content ">
+          <br />
+          <div className="reading_container">
+            <button className="back-button" onClick={this.back}>
+              Back
+            </button>
+            {chosen_cards.map(function (card, i) {
+              if (!card.reversed) {
+                return (
+                  <div key={i} className="fcr_container">
+                    <div className="single_card_reading">
+                      <h2 className="type">{card.type}</h2>
+                      <h3 className="title">{card.name}</h3>
+                      <img className="card_image" src={card.src} alt="" />
+                      <h4 className="title">Keywords:</h4>
+                      <p>{card.keywords.upright}</p>
+                      <h3 className="title">Summary</h3>
+                      <p className="description">{card.description.basic}</p>
+                      <h3 className="title">Upright</h3>
+                      <p className="upright_description">
+                        {card.description.upright}
+                      </p>
+                    </div>
+                    <br />
+                  </div>
+                );
+              } else {
+                return (
+                  <div key={i} className="fcr_container">
+                    <div className="single_card_reading">
+                      <h2 className="type">{card.type}</h2>
+                      <h3 className="title">{card.name + " Reversed"}</h3>
+                      <img
+                        className="card_image card_image_reversed"
+                        src={card.src}
+                        alt=""
+                      />
+                      <h4 className="title">Keywords:</h4>
+                      <p>{card.keywords.reversed}</p>
+                      <h3 className="title">Summary</h3>
+                      <p className="description">{card.description.basic}</p>
+                      <h3 className="title">Reversed</h3>
+                      <p className="upright_description">
+                        {card.description.reversed}
+                      </p>
+                    </div>
+                    <br />
+                  </div>
+                );
+              }
+            })}
+            <button onClick={this.back}>Back</button>
+          </div>
+        </div>
+      );
    }      
    }
 }

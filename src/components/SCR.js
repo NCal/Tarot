@@ -73,7 +73,7 @@ class SCR extends Component {
          setTimeout(function(){
             self.setState({loading: false}, function(){
                if (this.state.random_card_flipped){
-                  $('img').addClass('card_image_reversed');
+                  $("img.card_image").addClass("card_image_reversed");
                } else {
                   $('img.card_image').removeClass('card_image_reversed');
                }
@@ -96,6 +96,7 @@ class SCR extends Component {
    if (this.state.loading){
       return (
         <div className="main-content SCR">
+          <br />
           <div className="main-content ">
             <img
               className="pentacle"
@@ -108,6 +109,7 @@ class SCR extends Component {
    if (this.state.new && !this.state.loading){
       return (
         <div className="main-content SCR">
+          <br />
           <h2 className="title">Single Card Reading</h2>
           <button onClick={this.getRandomCard}>Draw A Single Card</button>
           <br />
@@ -125,7 +127,10 @@ class SCR extends Component {
    if (!this.state.random_card_flipped && !this.state.loading && !this.state.new){
       return (
         <div className="main-content SCR">
-          <button style={{float: 'right'}} onClick={this.back}>Back</button>
+          <br />
+          <button style={{ float: "right" }} onClick={this.back}>
+            Back
+          </button>
           <div className="reading_container">
             <div className="single_card_reading">
               <h2 className="title">{this.state.random_card_name}</h2>
@@ -146,11 +151,17 @@ class SCR extends Component {
               </p>
             </div>
           </div>
+          <img
+            className="break-image"
+            src={"https://s3.amazonaws.com/tarot.lol/assets/2.png"}
+            alt=""
+          />
         </div>
       );
    }  if (this.state.random_card_flipped && !this.state.loading && !this.state.new) {
       return (
         <div className="main-content SCR">
+          <br />
           <button style={{ float: "right" }} onClick={this.back}>
             Back
           </button>
@@ -176,6 +187,11 @@ class SCR extends Component {
               </p>
             </div>
           </div>
+          <img
+            className="break-image"
+            src={"https://s3.amazonaws.com/tarot.lol/assets/2.png"}
+            alt=""
+          />
         </div>
       );
       }   

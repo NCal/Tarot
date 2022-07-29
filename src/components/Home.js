@@ -84,24 +84,27 @@ class Home extends Component {
   render = () => {
       return (
         <div className="main-content SCR">
+          <br />
           <h2 className="title">
             {/* <span className="material-symbols-outlined">
                   sentiment_satisfied
                 </span> */}
-            Tarot.lol 🔮
+            🔮 Tarot.lol
           </h2>
-          <div className="reading_container">
+          <div className="reading_container home">
+            <img
+              className="card_image"
+              src={"https://s3.amazonaws.com/tarot.lol/assets/59_Cups10.jpg"}
+              alt=""
+            />
             <div className="single_card_reading">
-              <img
-                className="card_image"
-                src={"https://s3.amazonaws.com/tarot.lol/assets/59_Cups10.jpg"}
-                alt=""
-              />
-              <p className="title">
+              {/* <br /> */}
+              {/* <br /> */}
+              <p className="">
                 The tarot is a pack of playing cards used from at least the
                 mid-15th century.
-                <br />
               </p>
+              {/* <br /> */}
               <p>Tarot cards are one of many forms of divination.</p>
               <p>
                 They are commonly used to measure potential outcomes and
@@ -132,6 +135,11 @@ class Home extends Component {
               </p>
             </div>
           </div>
+          <img
+            className="break-image"
+            src={"https://s3.amazonaws.com/tarot.lol/assets/2.png"}
+            alt=""
+          />
         </div>
       );
   };

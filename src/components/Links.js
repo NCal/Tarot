@@ -3,6 +3,7 @@ import React, { Component } from "react";
 const Links = (props) => {
   return (
     <div className="main-content">
+      <br />
       <h2 className="title">Links</h2>
       <p>
         Often the Tarot is attributed magical qualities, able to predict the
@@ -30,7 +31,7 @@ const Links = (props) => {
       <a href="https://en.wikipedia.org/wiki/Divination" target={"_blank"}>
         <h3>Divination on Wikipedia</h3>
       </a>
-      <p>
+      <p style={{ borderBottom: "1px solid #555", paddingBottom: "20px" }}>
         Divination is the attempt to gain insight into a question or situation
         by way of standardized process or ritual.
       </p>

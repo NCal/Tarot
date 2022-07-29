@@ -3,6 +3,7 @@ import React, {Component} from 'react';
 const About = (props) => {
     return (
       <div className="main-content">
+      <br/>
         <h2 className="title">About</h2>
         <p>The thought behind Tarot.lol is simple.</p>
         <img

@@ -4,12 +4,14 @@ import { Link } from "react-router";
 const Instructions = (props) => {
     return (
       <div className="main-content">
+        <br />
         <h2 className="title">Instructions</h2>
         <img
           className="card_image"
           src={"https://s3.amazonaws.com/tarot.lol/assets/45_Pents10.jpg"}
           alt=""
         />
+        <br />
         <h3>Step 1</h3>
         <p>
           The first step in a tarot reading is deciding whether or not to ask a
@@ -39,7 +41,7 @@ const Instructions = (props) => {
           much more detail)
         </h4>
         <i>Or</i>
-        <h4>
+        <h4 style={{ borderBottom: "1px solid #555", paddingBottom: "20px" }}>
           <Link to={"/single-card-reading"}> Single Card Reading </Link>
           (which returns one card only).
         </h4>
@@ -58,7 +60,7 @@ const Instructions = (props) => {
 
         <img
           className="break-image"
-          src={" https://s3.amazonaws.com/tarot.lol/assets/tarot_icons_m/2.png"}
+          src={"https://s3.amazonaws.com/tarot.lol/assets/2.png"}
           alt=""
         />
       </div>

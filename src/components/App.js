@@ -61,8 +61,10 @@ class App extends Component {
                       to="/"
                       className={this.state.darkMode ? "darkMode" : "lightMode"}
                     >
-                      {/* <span className="material-symbols-outlined">home</span> */}
-                      {/* &nbsp; */}
+                      <span className="material-symbols-outlined">
+                        auto_awesome
+                      </span>
+                      &nbsp;
                       Tarot.lol
                     </Navlink>
                   </li>
