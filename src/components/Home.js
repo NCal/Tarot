@@ -90,16 +90,13 @@ class Home extends Component {
                 </span> */}
             Tarot.lol 🔮
           </h2>
-          {/* <button onClick={this.getRandomCard}>Draw A Single Card</button> */}
           <div className="reading_container">
             <div className="single_card_reading">
               <img
                 className="card_image"
-                src={this.state.random_card_src}
+                src={"https://s3.amazonaws.com/tarot.lol/assets/59_Cups10.jpg"}
                 alt=""
               />
-              {/* <h4 className="title">Keywords:</h4>
-              <p>{this.state.random_card_keys_rev}</p> */}
               <p className="title">
                 The tarot is a pack of playing cards used from at least the
                 mid-15th century.
@@ -114,9 +111,6 @@ class Home extends Component {
                 One can examine all the different aspects of a given situation
                 for a true analysis of any event.
               </p>
-              {/* <p className="description">
-                The Full Reading section uses the Celtic Cross layout.
-              </p> */}
               <p>The thought behind Tarot.lol is simple.</p>
 
               <p>
@@ -136,11 +130,6 @@ class Home extends Component {
                 choose to do a reading once a month or every day, the readings
                 are always interesting.
               </p>
-              {/* <p>© 2022 tarot.lol</p> */}
-              {/* <h3 className="title">Reversed</h3> */}
-              {/* <p className="upright_description">
-                {this.state.random_card_reversed}
-              </p> */}
             </div>
           </div>
         </div>

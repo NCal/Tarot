@@ -61,19 +61,6 @@ const Instructions = (props) => {
           src={" https://s3.amazonaws.com/tarot.lol/assets/tarot_icons_m/2.png"}
           alt=""
         />
-
-        {/* <p>
-          Only ask serious questions; don't test the I Ching. If you don't take
-          the I Ching seriously, it will not work.
-        </p> */}
-
-        {/* <p>
-          Do not ask yes/no-questions like "Should I quit my job NOW?" or
-          either/or-questions like "Should I quit my job NOW, or should I
-          stay?", because either way you ask two questions in one. Better pose
-          the question as: "What will happen if I quit my job NOW?".
-        </p> */}
-        {/* <p>App by <a href="http://www.nbroaddus.com">N Broaddus </a></p> */}
       </div>
     );
 }
