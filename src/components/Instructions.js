@@ -12,6 +12,7 @@ const Instructions = (props) => {
           }
           alt=""
         />
+        <h3>Step 1</h3>
         <p>
           The first step in a tarot reading is deciding whether or not to ask a
           question.
@@ -30,18 +31,18 @@ const Instructions = (props) => {
           However, the more detailed the question, the more accurate the answer. A vague
           question will invite a vague answer.
         </p>
+
+        <h3>Step 2</h3>
         <p>Focus intently on your question, then choose your cards.</p>
 
-        <p>There are two options in terms of a reading</p>
+        <p>There are two options for a reading : </p>
         <h3>
           <Link to={"/full-reading"}> Full Reading </Link>(which will go into
           much more detail)
         </h3>
-        <h3>
+        <i>
           Or
-          <br />
-          <br />
-        </h3>
+        </i>
         <h3>
           <Link to={"/single-card-reading"}> Single Card Reading </Link>
           (which returns one card only).

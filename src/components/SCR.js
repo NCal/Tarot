@@ -93,7 +93,7 @@ class SCR extends Component {
       return (
         <div className="main-content SCR">
           <h2 className="title">Single Card Reading</h2>
-
+          <img className="card_image" src={this.state.random_card_src} alt="" />
           <button onClick={this.getRandomCard}>Draw A Single Card</button>
           <div className="reading_container"></div>
         </div>

@@ -84,15 +84,15 @@ class Home extends Component {
   render = () => {
       return (
         <div className="main-content SCR">
+          <h2 className="title">
+            {/* <span className="material-symbols-outlined">
+                  sentiment_satisfied
+                </span> */}
+            Tarot.lol 🔮
+          </h2>
           {/* <button onClick={this.getRandomCard}>Draw A Single Card</button> */}
           <div className="reading_container">
             <div className="single_card_reading">
-              <h2 className="title">
-                {/* <span className="material-symbols-outlined">
-                  sentiment_satisfied
-                </span> */}
-                🔮 Tarot.lol
-              </h2>
               <img
                 className="card_image"
                 src={this.state.random_card_src}
@@ -100,32 +100,32 @@ class Home extends Component {
               />
               {/* <h4 className="title">Keywords:</h4>
               <p>{this.state.random_card_keys_rev}</p> */}
-              <h3 className="title">
+              <p className="title">
                 The tarot is a pack of playing cards used from at least the
                 mid-15th century.
                 <br />
-              </h3>
-              <h3>Tarot cards are one of many forms of divination.</h3>
-              <h3>
+              </p>
+              <p>Tarot cards are one of many forms of divination.</p>
+              <p>
                 They are commonly used to measure potential outcomes and
                 evaluate influences surrounding a person, event, or both.
-              </h3>
-              <h3 className="description">
+              </p>
+              <p className="description">
                 The Full Reading section uses the Celtic Cross layout.
                 {/* The deck used is the Rider Waite. */}
                 {/* {this.state.random_card_description} */}
-              </h3>
+              </p>
 
-              <h3>
+              <p>
                 {/* This well known 10 card tarot spread is flexible while also
                 providing comprehensive answers to so many questions and topics.
                 <br /> <br />
                 It is also one of the rare tarot spreads that you can use even
                 when you don’t have a particular question to ask.
                 <br /> <br /> */}
-                Using this layout, one can examine all the
-                different aspects of a given situation for a true analysis of any event.
-              </h3>
+                Using this layout, one can examine all the different aspects of
+                a given situation for a true analysis of any event.
+              </p>
               {/* <p>© 2022 tarot.lol</p> */}
               {/* <h3 className="title">Reversed</h3> */}
               {/* <p className="upright_description">
