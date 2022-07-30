@@ -111,6 +111,9 @@ class SCR extends Component {
         <div className="main-content SCR">
           <br />
           <h2 className="title">Single Card Reading</h2>
+          <p>
+            The single card reading is a short reading resulting from drawing one card.
+          </p>
           <button onClick={this.getRandomCard}>Draw A Single Card</button>
           <br />
           <br />

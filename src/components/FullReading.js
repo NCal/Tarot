@@ -134,7 +134,8 @@ class FullReading extends Component {
                className="cards"
                style={{ borderBottom: "1px solid #555", paddingBottom: "20px" }}
              >
-               <p>Select 10 cards</p>
+             <p>The full reading is more in-depth. <br/><br/>The reading returns 10 sections which correspond directly to the question at hand.</p>
+               <p>Select 10 cards:</p>
                {cardData[0].Cards.map(
                  function (card, i) {
                    return (

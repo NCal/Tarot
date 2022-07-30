@@ -127,8 +127,7 @@ class Home extends Component {
                 tablet, or smart-phone nearby, you can.
               </p>
               <p>
-                No matter one's feelings about the capacity of Tarot to solve
-                any problems, the advice within the readings is often universal
+                The advice within the readings is often universal
                 - and due the the sheer amount of card combinations, whether you
                 choose to do a reading once a month or every day, the readings
                 are always interesting.
