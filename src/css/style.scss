@@ -129,6 +129,23 @@ button {
    right: 20px;
    position: relative;
 }
+
+.learnSection {
+   cursor: pointer;
+   border-top: 1px solid #555;
+   padding: 20px;
+   height: 80px;
+   width: 100%;
+   position: fixed;
+   bottom: 0px;
+}
+
+.learnSection:hover {
+   background-color: $purple;
+      filter: saturate(2);
+      color: #fff !important;
+}
+
 // ==== PAGE LAYOUT AND STYLES ====//
 .title {
    // mode

@@ -64,8 +64,7 @@ class App extends Component {
                       <span className="material-symbols-outlined">
                         auto_awesome
                       </span>
-                      &nbsp;
-                      Tarot.lol
+                      &nbsp; Tarot.lol
                     </Navlink>
                   </li>
                   <li>
@@ -136,6 +135,14 @@ class App extends Component {
               <script>
                 (adsbygoogle = window.adsbygoogle || []).push({});
               </script>
+              <Navlink
+                to="/links"
+                // className={this.state.darkMode ? "darkMode" : "lightMode"}
+              >
+                <ul className="learnSection">
+                  <li>Learn More</li>
+                </ul>
+              </Navlink>
             </div>
             <div
               className="mode-btn"

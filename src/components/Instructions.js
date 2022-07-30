@@ -11,7 +11,6 @@ const Instructions = (props) => {
           src={"https://s3.amazonaws.com/tarot.lol/assets/45_Pents10.jpg"}
           alt=""
         />
-        <br />
         <h3>Step 1</h3>
         <p>
           The first step in a tarot reading is deciding whether or not to ask a
@@ -31,6 +30,7 @@ const Instructions = (props) => {
           However, the more detailed the question, the more accurate the answer.
           A vague question will invite a vague answer.
         </p>
+        <br />
 
         <h3>Step 2</h3>
         <p>Focus intently on your question, then choose your cards.</p>
