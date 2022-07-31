@@ -3,37 +3,21 @@ import { Link } from 'react-router';
 import Navlink from './Navlink';
 
 const TitleBar = (props) => (
-  <Link to={"/"} className="titleBar">
-    <div className="bar" {...props}>
+  <div className=" titleBar " {...props}>
+    <div className="bar">
       <ul className="bottom-nav">
-        <li>
-          <Navlink
-            to="/"
-          >
-          Tarot.lol
-          </Navlink>
-        </li>
-        <li>
-          <Navlink
-            to="/instructions"
-          >
-            Instructions
-          </Navlink>
-        </li>
-        <li>
-          <Navlink
-            to="/full-reading"
-          >
-            Full Reading
-          </Navlink>
-        </li>
-        <li>
-          <Navlink
-            to="/single-card-reading"
-          >
-            Single Card Reading
-          </Navlink>
-        </li>
+        <Navlink to="/">
+          <li>Tarot.lol</li>
+        </Navlink>
+        <Navlink to="/instructions">
+          <li>Instructions</li>
+        </Navlink>
+        <Navlink to="/full-reading">
+          <li>Full Reading</li>
+        </Navlink>
+        <Navlink to="/single-card-reading">
+          <li>Single Card Reading</li>
+        </Navlink>
         {/* <li>
                     <Navlink
                       to="/about"
@@ -41,16 +25,12 @@ const TitleBar = (props) => (
                       About
                     </Navlink>
                   </li> */}
-        <li>
-          <Navlink
-            to="/links"
-          >
-            Learn More
-          </Navlink>
-        </li>
+        <Navlink to="/links">
+          <li>Learn More</li>
+        </Navlink>
       </ul>
     </div>
-  </Link>
+  </div>
 );
 
 export default TitleBar;
