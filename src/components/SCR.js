@@ -112,7 +112,8 @@ class SCR extends Component {
           <br />
           <h2 className="title">Single Card Reading</h2>
           <p>
-            The single card reading is a short reading resulting from drawing one card.
+            The single card reading is a short reading resulting from drawing
+            one card.
           </p>
           <button onClick={this.getRandomCard}>Draw A Single Card</button>
           <br />
@@ -124,6 +125,11 @@ class SCR extends Component {
             alt=""
           />
           <div className="reading_container"></div>
+          <img
+            className="break-image"
+            src={"https://s3.amazonaws.com/tarot.lol/assets/2.png"}
+            alt=""
+          />
         </div>
       );
    }

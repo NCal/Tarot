@@ -6,9 +6,11 @@ const Links = (props) => {
       <br />
       <h2 className="title">Links</h2>
       <p>
-        Often the Tarot is attributed magical qualities, able to predict the
-        future. Though, there is a lot one can find out about Tarot on the
-        internet, it is really hard to find honest information.
+        Though there is a lot one can find out about Tarot on the
+        internet, it can be difficult to find unbiased information.
+      </p>
+      <p>
+        Here are some links to get started.
       </p>
       <a href="https://en.wikipedia.org/wiki/Tarot" target={"_blank"}>
         <h3>Tarot on Wikipedia</h3>

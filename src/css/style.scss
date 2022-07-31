@@ -105,6 +105,7 @@ button {
    border: solid 1px #ccc;
    outline: none;
 }
+
 button {
    color: white;
    background: $purple;
@@ -114,11 +115,16 @@ button {
    border-color: rgba(0,0,0, .1);
 }
 
+button:hover {
+   filter:saturate(2)
+}
+
    .break-image {
       // width: 100%;
       // background-position: center;
       // background-repeat: no-repeat;
       filter: invert(1);
+      margin-top: 20px;
       height: 30px;
       background-size: contain;
    }
@@ -141,8 +147,8 @@ button {
 }
 
 .learnSection:hover {
-   background-color: $purple;
-      filter: saturate(2);
+   background-color:rgb(52, 78, 242);
+      // filter: saturate(2);
       color: #fff !important;
 }
 
@@ -152,8 +158,8 @@ button {
     color: #fff;
 }
 
-.home {
-   padding-bottom: 80px;
+.home_content {
+   padding-bottom: 100px;
    border-bottom: 1px solid #555;
 }
 
@@ -168,9 +174,15 @@ button {
    // mode
    background: #222;
    box-shadow: 0 3px rgba(0,0,0, .1);
-   overflow-y: scroll;
+   // overflow-y: scroll;
 
-
+   .pent {
+      position: fixed;
+      bottom: 30px;
+      width: 40px;
+      right: 20px;
+      z-index: 300;
+   }
 
    .mode-btn {
       width: 40px;
@@ -194,7 +206,7 @@ button {
       text-align: center;
       z-index: 100;
       cursor: pointer;
-      box-shadow:0px 0px 13px 9px rgba(0, 0, 0, 0.13);
+      box-shadow:0px -10px 23px 5px rgba(0, 0, 0, 0.33);
    }
 }
 
@@ -234,7 +246,9 @@ button {
    height: 100%;
    width: 22%;
    top: 0;
+   padding: 20px;
    right: 0;
+   color: #777;
    // border-left: 1px solid #555;
    float: right;
 }
@@ -255,7 +269,7 @@ button {
    float: left;
    position: relative;
    // text-align: center;
-   box-shadow:9px 0px 15px rgba(0, 0, 0, 0.13);
+   box-shadow:9px 0px 15px rgba(0, 0, 0, 0.40);
    // border-right: 1px solid #555;
    border-left: 1px solid #555;
    min-height: 100vh;
@@ -281,6 +295,11 @@ button {
    padding-bottom: 10px;
    // height: 550px;
    // overflow-y: scroll;
+}
+
+.SCR .reading_container{
+      padding-bottom: 40px;
+         border-bottom: 1px solid #555;
 }
 
 .card_image{
@@ -425,6 +444,35 @@ header {
       cursor: pointer;
 }
 
+.bottom-nav {
+   ul {
+      display: inline-block;
+
+
+        
+   }
+ li {
+   background-color: none;
+    display: inline-block;
+    width: 20% !important;
+    
+      border-right: 1px solid #999;
+
+      a {
+            color: #fff !important;
+      }
+ }
+}
+
+
+.bottom-nav li:hover {
+   background-color: $purple;
+   // opacity: 0.7;
+   filter: saturate(2);
+
+   a {
+   }
+}
 .darkMode {
    background-color: #222;
 }
@@ -510,6 +558,10 @@ header {
       border-color: transparent;
    }
 
+
+.pent {
+   display: none;
+}
 .sevenCards {
    max-width: 300px;
 }
@@ -670,6 +722,9 @@ header {
 
 
 @media only screen and (max-width: 680px) {
+      .titleBar .bar {
+         display: none;
+      }
 
 .top {
    // height: 320px;

@@ -17,7 +17,7 @@ const About = (props) => {
           smart-phone nearby, you can.
         </p>
         <p>
-          With this app anyone can get a complete tarot reading with in-depth
+          With this site anyone can get a complete tarot reading with in-depth
           situational alaysis in seconds.
         </p>
         <p>

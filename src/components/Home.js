@@ -83,7 +83,7 @@ class Home extends Component {
   };
   render = () => {
       return (
-        <div className="main-content SCR">
+        <div className="main-content">
           <br />
           <h2 className="title">
             {/* <span className="material-symbols-outlined">
@@ -91,20 +91,18 @@ class Home extends Component {
                 </span> */}
             🔮 Tarot.lol
           </h2>
-          <div className="reading_container home">
+          {/* <div className="reading_container home"> */}
             <img
               className="card_image"
               src={"https://s3.amazonaws.com/tarot.lol/assets/59_Cups10.jpg"}
               alt=""
             />
-            <div className="single_card_reading">
-              {/* <br /> */}
-              {/* <br /> */}
-              <p className="">
+            <div className="home_content">
+
+              {/* <p className="">
                 The tarot is a pack of playing cards used from at least the
                 mid-15th century.
               </p>
-              {/* <br /> */}
               <p>Tarot cards are one of many forms of divination.</p>
               <p>
                 They are commonly used to measure potential outcomes and
@@ -113,11 +111,12 @@ class Home extends Component {
               <p>
                 One can examine all the different aspects of a given situation
                 for a true analysis of any event.
-              </p>
-              <p>The thought behind Tarot.lol is simple.</p>
+              </p> */}
+              <p>Welcome to Tarot.lol </p>
+              {/* <p>The thought behind this site is simple.</p> */}
 
               <p>
-                With this app anyone can get a complete tarot reading with
+                With this site anyone can get a complete tarot reading with
                 in-depth situational alaysis in seconds.
               </p>
 
@@ -133,7 +132,7 @@ class Home extends Component {
                 are always interesting.
               </p>
             </div>
-          </div>
+          {/* </div> */}
           <img
             className="break-image"
             src={"https://s3.amazonaws.com/tarot.lol/assets/2.png"}

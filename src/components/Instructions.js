@@ -41,7 +41,7 @@ const Instructions = (props) => {
           much more detail)
         </h4>
         <i>Or</i>
-        <h4 style={{ borderBottom: "1px solid #555", paddingBottom: "20px" }}>
+        <h4 style={{ borderBottom: "1px solid #555", paddingBottom: "20px", marginBottom:0 }}>
           <Link to={"/single-card-reading"}> Single Card Reading </Link>
           (which returns one card only).
         </h4>

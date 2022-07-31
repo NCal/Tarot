@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Navlink from './Navlink';
 import TitleBar from './TitleBar';
-
+import Pent from './Pent'
 class App extends Component {   
     constructor(props, context) {
          super(props, context);
@@ -104,7 +104,7 @@ class App extends Component {
                       to="/links"
                       className={this.state.darkMode ? "darkMode" : "lightMode"}
                     >
-                      Links
+                      Learn More
                     </Navlink>
                   </li>
                 </ul>
@@ -118,6 +118,38 @@ class App extends Component {
               {this.props.children}
             </div>
             <div className="right">
+              <p className="">
+                The tarot is a pack of playing cards that's been used since at least the
+                mid-15th century.
+              </p>
+              {/* <br /> */}
+              <p>Tarot cards are one of many forms of divination.</p>
+              <p>
+                They are commonly used to measure potential outcomes and
+                evaluate influences surrounding a person, event, or both.
+              </p>
+              <p>
+                Using Tarot cards one can examine all the different aspects of a given situation
+                for a true analysis of any event.
+              </p>
+              {/* <p>The thought behind Tarot.lol is simple.</p>
+
+              <p>
+                With this site anyone can get a complete tarot reading with
+                in-depth situational alaysis in seconds.
+              </p>
+
+              <p>
+                Say you don't have access to a deck of cards, but still want to
+                able to consult the tarot. As long as there is a computer,
+                tablet, or smart-phone nearby, you can.
+              </p>
+              <p>
+                The advice within the readings is often universal - and due the
+                the sheer amount of card combinations, whether you choose to do
+                a reading once a month or every day, the readings are always
+                interesting.
+              </p> */}
               <script
                 async
                 src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6248178765033726"
@@ -141,6 +173,7 @@ class App extends Component {
               >
                 <ul className="learnSection">
                   <li>Learn More</li>
+                  <Pent />
                 </ul>
               </Navlink>
             </div>
