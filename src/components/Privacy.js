@@ -25,8 +25,8 @@ const Privacy = (props) => {
         <p>
           If you would like more information about this practice and to know
           your choices about not having this information used by these
-          companies, read How Google uses information from sites or apps that
-          use Google services. We, at Tarot.lol and our advertising partners
+          companies, read <a href='https://policies.google.com/technologies/partner-sites?hl=en' target="-blank">How Google uses information from sites or apps that
+          use Google services</a>. We, at Tarot.lol and our advertising partners
           collect personal information (such as the cookies stored on your
           browser, or the IP address of your device) when you visit our site.
           We, and our partners, use this information to tailor and deliver ads

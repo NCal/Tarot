@@ -22318,7 +22318,7 @@
 	exports.push([module.id, "@import url(https://fonts.googleapis.com/css?family=Abel|Dosis|VT323);", ""]);
 
 	// module
-	exports.push([module.id, "/* ================================= \n   ELEMENT STYLES\n==================================== */\n* {\n  box-sizing: border-box;\n  font-family: 'Abel', sans-serif; }\n\nhtml {\n  height: 100%; }\n\nbody {\n  margin: 0;\n  background-color: #222;\n  color: #ccc;\n  margin: 0;\n  height: 100%;\n  font-family: 'Roboto', sans-serif; }\n\nh1, h2, ul {\n  margin: 0;\n  padding: 0; }\n\nh2 {\n  color: #404040;\n  font-size: 1.6em;\n  margin-bottom: 1.25em; }\n\nh3 {\n  margin-bottom: 1.5em; }\n\nul {\n  list-style-type: none; }\n\na {\n  text-decoration: none;\n  color: #455cef; }\n\nhr {\n  border: 0;\n  height: 0;\n  margin: 2.3em 0 2em 0;\n  border-top: 1px solid rgba(0, 0, 0, 0.1); }\n\n/* FORM & BUTTON STYLES -------- */\na {\n  color: #6f94fa; }\n\n.home a,\ninput,\nbutton {\n  padding: .5em;\n  font-size: .9em;\n  margin-right: 10px;\n  border: none;\n  border: solid 1px #ccc;\n  outline: none; }\n\nbutton {\n  color: white;\n  background: #455cef;\n  padding-left: 1em;\n  padding-right: 1em;\n  cursor: pointer;\n  border-color: rgba(0, 0, 0, 0.1); }\n\n.back-button {\n  margin-bottom: 10px;\n  float: right;\n  right: 20px;\n  position: relative; }\n\n.title {\n  color: #ccc; }\n\n.container {\n  width: 100%;\n  height: 100% !important;\n  max-width: 100%;\n  position: absolute;\n  top: 0;\n  left: 0;\n  overflow-x: hidden;\n  background: #222;\n  box-shadow: 0 3px rgba(0, 0, 0, 0.1);\n  overflow-y: scroll; }\n  .container .break-image {\n    filter: invert(1);\n    height: 30px;\n    background-size: contain; }\n  .container .mode-btn {\n    width: 40px;\n    height: 40px;\n    position: fixed;\n    display: none;\n    bottom: 10px;\n    right: 10px;\n    cursor: pointer; }\n  .container .titleBar .bar {\n    position: fixed;\n    bottom: 0;\n    right: 0;\n    height: 20px;\n    color: #fff;\n    width: 100%;\n    background-color: #455cef;\n    text-align: center;\n    z-index: 100;\n    cursor: pointer;\n    box-shadow: 0px 0px 13px 9px rgba(0, 0, 0, 0.13); }\n\n.icon_strip {\n  height: 32px;\n  width: 100%;\n  background-size: contain;\n  position: absolute;\n  bottom: 0; }\n\n.iconDarkMode {\n  filter: invert(0.5); }\n\n.iconLightMode {\n  filter: invert(0.3); }\n\n.left {\n  position: relative;\n  height: 100%;\n  width: 22%;\n  top: 0;\n  box-shadow: 9px 10px 15px rgba(0, 0, 0, 0.13);\n  z-index: 3;\n  left: 0;\n  float: left; }\n\n.right {\n  position: relative;\n  height: 100%;\n  width: 22%;\n  top: 0;\n  right: 0;\n  float: right; }\n\n.top {\n  position: relative;\n  width: 100%;\n  z-index: 5;\n  background-color: #222;\n  border-bottom: 1px solid #555; }\n\n.center {\n  width: 56%;\n  float: left;\n  position: relative;\n  box-shadow: 9px 0px 15px rgba(0, 0, 0, 0.13);\n  border-right: 1px solid #555;\n  border-left: 1px solid #555;\n  min-height: 100vh;\n  padding-left: 25px;\n  padding-bottom: 100px;\n  top: 0;\n  right: 0;\n  overflow-y: hidden; }\n\n.reading_container {\n  margin-top: 20px; }\n\n.single_card_reading {\n  padding-right: 30px; }\n\n.card_image {\n  margin-bottom: 30px;\n  margin-left: 30px;\n  float: right;\n  border: 2px solid #ccc;\n  position: relative;\n  top: 10px;\n  width: 303px;\n  filter: saturate(2) !important; }\n\n.card_image_reversed {\n  -ms-transform: rotate(180deg);\n  /* IE 9 */\n  -webkit-transform: rotate(180deg);\n  /* Chrome, Safari, Opera */\n  -moz-transform: rotate(180deg);\n  transform: rotate(180deg);\n  filter: saturate(2) !important; }\n\nsvg {\n  height: 0px;\n  width: 0px; }\n\n.sevenCards {\n  cursor: pointer;\n  max-width: 400px;\n  opacity: 0.7; }\n\n.sevenCards:hover {\n  opacity: 1;\n  transition: 0.3s; }\n\n.full_card {\n  cursor: pointer;\n  opacity: .7;\n  width: 60px;\n  margin: 2px; }\n\n.full_card:hover {\n  opacity: 1; }\n\n.fcr_container {\n  margin-bottom: 100px; }\n\n.main-content {\n  padding: 1em 1em; }\n\n.selected {\n  opacity: 1;\n  pointer-events: none;\n  border: 1px solid #ccc; }\n\n.group:after {\n  content: \"\";\n  display: table;\n  clear: both; }\n\n.course {\n  margin-bottom: 1em; }\n\n.type {\n  color: #ccc; }\n\n.course-img {\n  width: 70px; }\n\n.teacher-img {\n  width: 100%;\n  /* border-radius: .3em; */ }\n\n.not-found {\n  text-align: center; }\n\n/* MAIN NAV -------- */\n.main-nav a {\n  font-size: .95em;\n  text-transform: uppercase;\n  display: block;\n  padding: 1em;\n  transition: .2s; }\n\n.main-nav .active {\n  color: #fff;\n  background: #455cef; }\n\n.main-nav a:hover {\n  background-color: #455cef;\n  opacity: 0.7;\n  color: #fff; }\n\n.main-nav li {\n  width: 100%;\n  border-bottom: 1px solid #333;\n  background-color: #222;\n  cursor: pointer; }\n\n.darkMode {\n  background-color: #222; }\n\n.lightMode {\n  background-color: #fff; }\n  .lightMode .main-content, .lightMode .cards p {\n    color: #444; }\n    .lightMode .main-content .title, .lightMode .main-content .type, .lightMode .cards p .title, .lightMode .cards p .type {\n      color: #222; }\n\n.pentacle {\n  width: 100px;\n  animation: spin linear 4s;\n  animation-iteration-count: infinite;\n  filter: invert(1); }\n\n@-moz-keyframes spin {\n  100% {\n    -moz-transform: rotate(360deg);\n    transform: rotate(360deg); } }\n\n@-webkit-keyframes spin {\n  100% {\n    -webkit-transform: rotate(360deg);\n    transform: rotate(360deg); } }\n\n@keyframes spin {\n  100% {\n    -webkit-transform: rotate(360deg);\n    transform: rotate(360deg); } }\n\n/* COURSE NAV -------- */\n.course-nav li {\n  display: inline-block; }\n\n.course-nav li + li {\n  margin-left: .6em; }\n\n.course-nav a {\n  font-size: .85em;\n  color: #7d7d7d;\n  padding: .2em .8em;\n  background: #eaebeb;\n  transition: .2s; }\n\n.course-nav a:hover,\n.course-nav a.active {\n  color: #fff;\n  background: #39add1; }\n\n/* ICONS -------- */\n.icn-logo {\n  background: #54606b;\n  color: #fff; }\n\n.icn-logo i {\n  font-size: 2.45em;\n  line-height: 0;\n  margin-top: 30px; }\n\n.icn-error {\n  font-size: 3.2em;\n  margin-bottom: .25em; }\n\n@media (min-width: 0) and (max-width: 885px) {\n  .card_image {\n    width: 243px; } }\n\n/* ===== MEDIA QUERIES ===== */\n@media (min-width: 0) and (max-width: 768px) {\n  body {\n    padding-top: .8em; }\n  .home a {\n    border-color: transparent; }\n  .left {\n    border-right: none !important; }\n  .center {\n    border: none; }\n  .right {\n    display: none; }\n  .icn-logo {\n    display: block;\n    width: 100%;\n    text-align: center;\n    padding-bottom: 4px; }\n  .main-nav a:hover {\n    border-color: rgba(0, 0, 0, 0.1); }\n  .courses h2 {\n    margin-bottom: 0; }\n  .course-nav {\n    display: block;\n    margin: 1.5em 0 3.2em; }\n  .home a,\n  input,\n  button {\n    display: block;\n    width: 140px;\n    margin-bottom: 1em; }\n  .left {\n    position: relative;\n    height: 251px;\n    width: 100%;\n    top: 0;\n    left: 0;\n    float: left;\n    background-color: #111; }\n  .center {\n    width: 100%;\n    position: relative;\n    right: 0;\n    top: 1px;\n    overflow-y: hidden;\n    padding-bottom: 150px; }\n  .card_image, .card_image_reversed {\n    width: 203px;\n    margin-right: 30px;\n    float: right; }\n  .upright_description {\n    padding-bottom: 40px; }\n  .upright_description:last-of-type {\n    padding-bottom: 50px; }\n  .single_card_reading {\n    clear: both; }\n  .fcr_container {\n    margin-bottom: 0; } }\n\n@media (min-width: 769px) {\n  body {\n    padding-top: 3em; }\n  .home a {\n    border-color: #455cef; }\n  .home {\n    background-color: #222; }\n  .media img,\n  .media > div,\n  .teacher {\n    float: left; }\n  .media > div {\n    width: 85.1%;\n    margin-left: 1.5em; }\n  .teacher {\n    width: 48.73%;\n    margin-bottom: 1.5em; }\n  .teacher + .teacher {\n    margin-left: 2.54%; }\n  .teacher:nth-child(2n+3) {\n    clear: left;\n    margin-left: 0; }\n  /* MAIN NAV -------- */\n  .icn-logo {\n    margin-right: auto;\n    padding: 0 2em; }\n  header,\n  .main-nav {\n    display: flex;\n    flex-wrap: wrap; }\n  .main-nav a {\n    padding: 1.25em 1.5em; }\n  .main-nav a:hover {\n    border-color: rgba(0, 0, 0, 0.1); }\n  /* COURSE NAV -------- */\n  .course-nav {\n    float: right; }\n  .courses h2 {\n    float: left; } }\n\n@media only screen and (max-width: 680px) {\n  .card_image {\n    margin-bottom: 30px;\n    margin-right: 30px; } }\n", ""]);
+	exports.push([module.id, "/* ================================= \n   ELEMENT STYLES\n==================================== */\n* {\n  box-sizing: border-box;\n  font-family: 'Abel', sans-serif; }\n\nhtml {\n  height: 100%; }\n\nbody {\n  margin: 0;\n  background-color: #222;\n  color: #fff;\n  margin: 0;\n  height: 100%;\n  font-family: 'Roboto', sans-serif; }\n\nh1, h2, ul {\n  margin: 0;\n  padding: 0; }\n\nh2 {\n  color: #404040;\n  font-size: 1.6em;\n  margin-bottom: 1.25em; }\n\nh3 {\n  margin-bottom: 1.5em; }\n\nul {\n  list-style-type: none; }\n\na {\n  text-decoration: none;\n  color: #455cef; }\n\nhr {\n  border: 0;\n  height: 0;\n  margin: 2.3em 0 2em 0;\n  border-top: 1px solid rgba(0, 0, 0, 0.1); }\n\n/* FORM & BUTTON STYLES -------- */\na {\n  color: #9fb9ff; }\n\n.home a,\ninput,\nbutton {\n  padding: .5em;\n  font-size: .9em;\n  margin-right: 10px;\n  border: none;\n  border: solid 1px #ccc;\n  outline: none; }\n\nbutton {\n  color: white;\n  background: #455cef;\n  padding-left: 1em;\n  padding-right: 1em;\n  cursor: pointer;\n  border-color: rgba(0, 0, 0, 0.1); }\n\nbutton:hover {\n  filter: saturate(2); }\n\n.break-image {\n  filter: invert(1);\n  margin-top: 20px;\n  height: 30px;\n  background-size: contain; }\n\n.back-button {\n  margin-bottom: 10px;\n  float: right;\n  right: 20px;\n  position: relative; }\n\n.learnSection {\n  cursor: pointer;\n  border-top: 1px solid #555;\n  padding: 20px;\n  height: 80px;\n  width: 100%;\n  position: fixed;\n  bottom: 0px; }\n\n.learnSection:hover {\n  background-color: #344ef2;\n  color: #fff !important; }\n\n.title {\n  color: #fff; }\n\n.home_content {\n  padding-bottom: 100px;\n  border-bottom: 1px solid #555; }\n\n.container {\n  width: 100%;\n  height: 100% !important;\n  max-width: 100%;\n  position: absolute;\n  top: 0;\n  left: 0;\n  overflow-x: hidden;\n  background: #222;\n  box-shadow: 0 3px rgba(0, 0, 0, 0.1); }\n  .container .pent {\n    position: fixed;\n    bottom: 30px;\n    width: 40px;\n    right: 20px;\n    z-index: 300; }\n  .container .mode-btn {\n    width: 40px;\n    height: 40px;\n    position: fixed;\n    display: none;\n    bottom: 10px;\n    right: 10px;\n    cursor: pointer; }\n  .container .titleBar .bar {\n    position: fixed;\n    bottom: 0;\n    right: 0;\n    height: 20px;\n    color: #fff;\n    width: 100%;\n    background-color: #455cef;\n    text-align: center;\n    z-index: 100;\n    cursor: pointer;\n    box-shadow: 0px -10px 23px 5px rgba(0, 0, 0, 0.33); }\n\n.icon_strip {\n  height: 32px;\n  width: 100%;\n  background-size: contain;\n  position: absolute;\n  bottom: 0; }\n\n.iconDarkMode {\n  filter: invert(0.5); }\n\n.iconLightMode {\n  filter: invert(0.3); }\n\n.left {\n  position: relative;\n  height: 100%;\n  width: 22%;\n  top: 0;\n  z-index: 3;\n  left: 0;\n  float: left; }\n\n.right {\n  position: fixed;\n  height: 100%;\n  width: 22%;\n  top: 0;\n  padding: 20px;\n  right: 0;\n  color: #777;\n  float: right; }\n\n.top {\n  position: relative;\n  width: 100%;\n  z-index: 5;\n  background-color: #222;\n  border-bottom: 1px solid #555; }\n\n.center {\n  width: 56%;\n  float: left;\n  position: relative;\n  box-shadow: 9px 0px 15px rgba(0, 0, 0, 0.4);\n  border-left: 1px solid #555;\n  min-height: 100vh;\n  padding-left: 25px;\n  padding-bottom: 100px;\n  top: 0;\n  right: 0;\n  overflow-y: hidden; }\n\n.reading_container {\n  margin-top: 20px; }\n\n.home .single_card_reading {\n  border-bottom: none; }\n\n.single_card_reading {\n  padding-right: 30px;\n  border-bottom: 1px solid #555;\n  padding-bottom: 10px; }\n\n.SCR .reading_container {\n  padding-bottom: 40px;\n  border-bottom: 1px solid #555; }\n\n.card_image {\n  margin-bottom: 30px;\n  margin-left: 30px;\n  float: right;\n  pointer-events: none;\n  border: 2px solid #ccc;\n  position: relative;\n  top: 10px;\n  width: 303px;\n  filter: saturate(2) !important; }\n\n.card_image_reversed {\n  -ms-transform: rotate(180deg);\n  /* IE 9 */\n  -webkit-transform: rotate(180deg);\n  /* Chrome, Safari, Opera */\n  -moz-transform: rotate(180deg);\n  transform: rotate(180deg);\n  filter: saturate(2) !important; }\n\nsvg {\n  height: 0px;\n  width: 0px; }\n\n.sevenCards {\n  cursor: pointer;\n  max-width: 400px;\n  opacity: 0.7; }\n\n.sevenCards:hover {\n  opacity: 1;\n  transition: 0.3s; }\n\n.full_card {\n  cursor: pointer;\n  opacity: .7;\n  width: 60px;\n  margin: 2px; }\n\n.full_card:hover {\n  opacity: 1; }\n\n.fcr_container {\n  margin-bottom: 100px; }\n\n.main-content {\n  padding: 1em 1em; }\n\n.selected {\n  opacity: 1;\n  pointer-events: none;\n  border: 1px solid #ccc; }\n\n.group:after {\n  content: \"\";\n  display: table;\n  clear: both; }\n\n.course {\n  margin-bottom: 1em; }\n\n.type {\n  color: #ccc; }\n\n.course-img {\n  width: 70px; }\n\n.teacher-img {\n  width: 100%;\n  /* border-radius: .3em; */ }\n\n.not-found {\n  text-align: center; }\n\n/* MAIN NAV -------- */\n.main-nav a {\n  font-size: .95em;\n  text-transform: uppercase;\n  display: block;\n  padding: 1em;\n  transition: .2s; }\n\n.main-nav .active {\n  color: #fff;\n  background: #455cef; }\n\n.main-nav a:hover {\n  background-color: #455cef;\n  filter: saturate(2);\n  color: #fff !important; }\n\n.main-nav li {\n  width: 100%;\n  border-bottom: 1px solid #333;\n  background-color: #222;\n  cursor: pointer; }\n\n.bottom-nav ul {\n  display: inline-block; }\n\n.bottom-nav li {\n  background-color: none;\n  display: inline-block;\n  width: 20% !important;\n  border-right: 1px solid #999; }\n  .bottom-nav li a {\n    color: #fff !important; }\n\n.bottom-nav li:hover {\n  background-color: #455cef;\n  color: #fff;\n  filter: saturate(2); }\n\n.darkMode {\n  background-color: #222; }\n\n.lightMode {\n  background-color: #fff; }\n  .lightMode .main-content, .lightMode .cards p {\n    color: #444; }\n    .lightMode .main-content .title, .lightMode .main-content .type, .lightMode .cards p .title, .lightMode .cards p .type {\n      color: #222; }\n\n.pentacle {\n  width: 100px;\n  animation: spin linear 4s;\n  animation-iteration-count: infinite;\n  filter: invert(1); }\n\n@-moz-keyframes spin {\n  100% {\n    -moz-transform: rotate(360deg);\n    transform: rotate(360deg); } }\n\n@-webkit-keyframes spin {\n  100% {\n    -webkit-transform: rotate(360deg);\n    transform: rotate(360deg); } }\n\n@keyframes spin {\n  100% {\n    -webkit-transform: rotate(360deg);\n    transform: rotate(360deg); } }\n\n/* COURSE NAV -------- */\n.course-nav li {\n  display: inline-block; }\n\n.course-nav li + li {\n  margin-left: .6em; }\n\n.course-nav a {\n  font-size: .85em;\n  color: #7d7d7d;\n  padding: .2em .8em;\n  background: #eaebeb;\n  transition: .2s; }\n\n.course-nav a:hover,\n.course-nav a.active {\n  color: #fff;\n  background: #39add1; }\n\n/* ICONS -------- */\n.icn-logo {\n  background: #54606b;\n  color: #fff; }\n\n.icn-logo i {\n  font-size: 2.45em;\n  line-height: 0;\n  margin-top: 30px; }\n\n.icn-error {\n  font-size: 3.2em;\n  margin-bottom: .25em; }\n\n@media (min-width: 0) and (max-width: 885px) {\n  .card_image {\n    width: 243px; } }\n\n/* ===== MEDIA QUERIES ===== */\n@media (min-width: 0) and (max-width: 768px) {\n  body {\n    padding-top: .8em; }\n  .home a {\n    border-color: transparent; }\n  .pent {\n    display: none; }\n  .sevenCards {\n    max-width: 300px; }\n  .left {\n    border-right: none !important; }\n  .center {\n    border: none; }\n  .right {\n    display: none; }\n  .icn-logo {\n    display: block;\n    width: 100%;\n    text-align: center;\n    padding-bottom: 4px; }\n  .main-nav a:hover {\n    border-color: rgba(0, 0, 0, 0.1); }\n  .courses h2 {\n    margin-bottom: 0; }\n  .course-nav {\n    display: block;\n    margin: 1.5em 0 3.2em; }\n  .home a,\n  input,\n  button {\n    display: block;\n    width: 140px;\n    margin-bottom: 1em; }\n  .left {\n    position: relative;\n    height: 251px;\n    width: 100%;\n    top: 0;\n    left: 0;\n    float: left;\n    background-color: #111; }\n  .center {\n    width: 100%;\n    position: relative;\n    right: 0;\n    top: 1px;\n    overflow: hidden;\n    padding-bottom: 150px; }\n  .card_image, .card_image_reversed {\n    width: 203px;\n    margin-right: 30px;\n    float: right; }\n  .home .card_image {\n    float: left; }\n  .upright_description {\n    padding-bottom: 40px; }\n  .upright_description:last-of-type {\n    padding-bottom: 50px; }\n  .single_card_reading {\n    clear: both; }\n  .fcr_container {\n    margin-bottom: 0; } }\n\n@media (min-width: 769px) {\n  body {\n    padding-top: 3em; }\n  .home a {\n    border-color: #455cef; }\n  .home {\n    background-color: #222; }\n  .media img,\n  .media > div,\n  .teacher {\n    float: left; }\n  .media > div {\n    width: 85.1%;\n    margin-left: 1.5em; }\n  .teacher {\n    width: 48.73%;\n    margin-bottom: 1.5em; }\n  .teacher + .teacher {\n    margin-left: 2.54%; }\n  .teacher:nth-child(2n+3) {\n    clear: left;\n    margin-left: 0; }\n  /* MAIN NAV -------- */\n  .icn-logo {\n    margin-right: auto;\n    padding: 0 2em; }\n  header,\n  .main-nav {\n    display: flex;\n    flex-wrap: wrap; }\n  .main-nav a {\n    padding: 1.25em 1.5em; }\n  .main-nav a:hover {\n    border-color: rgba(0, 0, 0, 0.1); }\n  /* COURSE NAV -------- */\n  .course-nav {\n    float: right; }\n  .courses h2 {\n    float: left; } }\n\n@media only screen and (max-width: 680px) {\n  .titleBar .bar {\n    display: none; }\n  .card_image {\n    margin-bottom: 30px;\n    margin-right: 30px; } }\n", ""]);
 
 	// exports
 
@@ -22653,17 +22653,13 @@
 
 	var _App2 = _interopRequireDefault(_App);
 
-	var _Home = __webpack_require__(254);
+	var _Home = __webpack_require__(255);
 
 	var _Home2 = _interopRequireDefault(_Home);
 
-	var _SCR = __webpack_require__(257);
+	var _SCR = __webpack_require__(258);
 
 	var _SCR2 = _interopRequireDefault(_SCR);
-
-	var _About = __webpack_require__(258);
-
-	var _About2 = _interopRequireDefault(_About);
 
 	var _Links = __webpack_require__(259);
 
@@ -22681,9 +22677,13 @@
 
 	var _NotFound2 = _interopRequireDefault(_NotFound);
 
-	var _jquery = __webpack_require__(256);
+	var _jquery = __webpack_require__(257);
 
 	var _jquery2 = _interopRequireDefault(_jquery);
+
+	var _Privacy = __webpack_require__(263);
+
+	var _Privacy2 = _interopRequireDefault(_Privacy);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -22696,10 +22696,10 @@
 	    { component: _App2.default },
 	    _react2.default.createElement(_reactRouter.Route, { path: '/', component: _Home2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: '/instructions', component: _Instructions2.default }),
-	    _react2.default.createElement(_reactRouter.Route, { path: '/about', component: _About2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: '/links', component: _Links2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: '/single-card-reading', component: _SCR2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: '/full-reading', component: _FullReading2.default }),
+	    _react2.default.createElement(_reactRouter.Route, { path: '/privacy', component: _Privacy2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: '*', component: _NotFound2.default })
 	  )
 	);
@@ -27963,6 +27963,10 @@
 
 	var _TitleBar2 = _interopRequireDefault(_TitleBar);
 
+	var _Pent = __webpack_require__(254);
+
+	var _Pent2 = _interopRequireDefault(_Pent);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -28038,7 +28042,12 @@
 	                    to: '/',
 	                    className: _this.state.darkMode ? "darkMode" : "lightMode"
 	                  },
-	                  'Tarot.lol'
+	                  _react2.default.createElement(
+	                    'span',
+	                    { className: 'material-symbols-outlined' },
+	                    'auto_awesome'
+	                  ),
+	                  '\xA0 Tarot.lol'
 	                )
 	              ),
 	              _react2.default.createElement(
@@ -28086,7 +28095,7 @@
 	                    to: '/links',
 	                    className: _this.state.darkMode ? "darkMode" : "lightMode"
 	                  },
-	                  'Links'
+	                  'Learn More'
 	                )
 	              )
 	            )
@@ -28102,6 +28111,26 @@
 	        _react2.default.createElement(
 	          'div',
 	          { className: 'right' },
+	          _react2.default.createElement(
+	            'p',
+	            { className: '' },
+	            'The tarot is a pack of playing cards that\'s been used since at least the mid-15th century.'
+	          ),
+	          _react2.default.createElement(
+	            'p',
+	            null,
+	            'Tarot cards are one of many forms of divination.'
+	          ),
+	          _react2.default.createElement(
+	            'p',
+	            null,
+	            'They are commonly used to measure potential outcomes and evaluate influences surrounding a person, event, or both.'
+	          ),
+	          _react2.default.createElement(
+	            'p',
+	            null,
+	            'Using Tarot cards one can examine all the different aspects of a given situation for a true analysis of any event.'
+	          ),
 	          _react2.default.createElement('script', {
 	            async: true,
 	            src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6248178765033726',
@@ -28120,6 +28149,23 @@
 	            null,
 	            '(adsbygoogle = window.adsbygoogle || []).push(',
 	            ');'
+	          ),
+	          _react2.default.createElement(
+	            _Navlink2.default,
+	            {
+	              to: '/privacy'
+	              // className={this.state.darkMode ? "darkMode" : "lightMode"}
+	            },
+	            _react2.default.createElement(
+	              'ul',
+	              { className: 'learnSection' },
+	              _react2.default.createElement(
+	                'li',
+	                null,
+	                'Privacy & Cookies'
+	              ),
+	              _react2.default.createElement(_Pent2.default, null)
+	            )
 	          )
 	        ),
 	        _react2.default.createElement(
@@ -28175,7 +28221,7 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	var Navlink = function Navlink(props) {
-	   return _react2.default.createElement(_reactRouter.Link, _extends({}, props, { activeClassName: 'active' }));
+	   return _react2.default.createElement(_reactRouter.Link, _extends({ clasName: 'navlink' }, props, { activeClassName: 'active' }));
 	};
 
 	exports.default = Navlink;
@@ -28202,16 +28248,68 @@
 
 	var _reactRouter = __webpack_require__(193);
 
+	var _Navlink = __webpack_require__(252);
+
+	var _Navlink2 = _interopRequireDefault(_Navlink);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	var TitleBar = function TitleBar(props) {
 	  return _react2.default.createElement(
-	    _reactRouter.Link,
-	    { to: "/", className: 'titleBar' },
+	    'div',
+	    _extends({ className: ' titleBar ' }, props),
 	    _react2.default.createElement(
 	      'div',
-	      _extends({ className: 'bar' }, props),
-	      'tarot.lol 2022 \uD83D\uDD2E'
+	      { className: 'bar' },
+	      _react2.default.createElement(
+	        'ul',
+	        { className: 'bottom-nav' },
+	        _react2.default.createElement(
+	          _Navlink2.default,
+	          { to: '/' },
+	          _react2.default.createElement(
+	            'li',
+	            null,
+	            'Tarot.lol'
+	          )
+	        ),
+	        _react2.default.createElement(
+	          _Navlink2.default,
+	          { to: '/instructions' },
+	          _react2.default.createElement(
+	            'li',
+	            null,
+	            'Instructions'
+	          )
+	        ),
+	        _react2.default.createElement(
+	          _Navlink2.default,
+	          { to: '/full-reading' },
+	          _react2.default.createElement(
+	            'li',
+	            null,
+	            'Full Reading'
+	          )
+	        ),
+	        _react2.default.createElement(
+	          _Navlink2.default,
+	          { to: '/single-card-reading' },
+	          _react2.default.createElement(
+	            'li',
+	            null,
+	            'Single Card Reading'
+	          )
+	        ),
+	        _react2.default.createElement(
+	          _Navlink2.default,
+	          { to: '/links' },
+	          _react2.default.createElement(
+	            'li',
+	            null,
+	            'Learn More'
+	          )
+	        )
+	      )
 	    )
 	  );
 	};
@@ -28236,11 +28334,46 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _cardData = __webpack_require__(255);
+	var _reactRouter = __webpack_require__(193);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var Pent = function Pent(props) {
+	  return _react2.default.createElement(
+	    _reactRouter.Link,
+	    { to: "/links", className: "" },
+	    _react2.default.createElement("img", {
+	      className: "pent",
+	      src: "https://s3.amazonaws.com/tarot.lol/assets/pent.png"
+	    })
+	  );
+	};
+
+	exports.default = Pent;
+
+	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/home/ncal/Documents/Tarot/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "Pent.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+
+/***/ }),
+/* 255 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/home/ncal/Documents/Tarot/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/home/ncal/Documents/Tarot/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _cardData = __webpack_require__(256);
 
 	var _cardData2 = _interopRequireDefault(_cardData);
 
-	var _jquery = __webpack_require__(256);
+	var _jquery = __webpack_require__(257);
 
 	var _jquery2 = _interopRequireDefault(_jquery);
 
@@ -28323,66 +28456,47 @@
 	    _this.render = function () {
 	      return _react2.default.createElement(
 	        "div",
-	        { className: "main-content SCR" },
+	        { className: "main-content" },
+	        _react2.default.createElement("br", null),
 	        _react2.default.createElement(
 	          "h2",
 	          { className: "title" },
-	          "Tarot.lol \uD83D\uDD2E"
+	          "\uD83D\uDD2E Tarot.lol"
 	        ),
+	        _react2.default.createElement("img", {
+	          className: "card_image",
+	          src: "https://s3.amazonaws.com/tarot.lol/assets/59_Cups10.jpg",
+	          alt: ""
+	        }),
 	        _react2.default.createElement(
 	          "div",
-	          { className: "reading_container" },
+	          { className: "home_content" },
 	          _react2.default.createElement(
-	            "div",
-	            { className: "single_card_reading" },
-	            _react2.default.createElement("img", {
-	              className: "card_image",
-	              src: _this.state.random_card_src,
-	              alt: ""
-	            }),
-	            _react2.default.createElement(
-	              "p",
-	              { className: "title" },
-	              "The tarot is a pack of playing cards used from at least the mid-15th century.",
-	              _react2.default.createElement("br", null)
-	            ),
-	            _react2.default.createElement(
-	              "p",
-	              null,
-	              "Tarot cards are one of many forms of divination."
-	            ),
-	            _react2.default.createElement(
-	              "p",
-	              null,
-	              "They are commonly used to measure potential outcomes and evaluate influences surrounding a person, event, or both."
-	            ),
-	            _react2.default.createElement(
-	              "p",
-	              null,
-	              "One can examine all the different aspects of a given situation for a true analysis of any event."
-	            ),
-	            _react2.default.createElement(
-	              "p",
-	              null,
-	              "The thought behind Tarot.lol is simple."
-	            ),
-	            _react2.default.createElement(
-	              "p",
-	              null,
-	              "With this app anyone can get a complete tarot reading with in-depth situational alaysis in seconds."
-	            ),
-	            _react2.default.createElement(
-	              "p",
-	              null,
-	              "Say you don't have access to a deck of cards, but still want to able to consult the tarot. As long as there is a computer, tablet, or smart-phone nearby, you can."
-	            ),
-	            _react2.default.createElement(
-	              "p",
-	              null,
-	              "No matter one's feelings about the capacity of Tarot to solve any problems, the advice within the readings is often universal - and due the the sheer amount of card combinations, whether you choose to do a reading once a month or every day, the readings are always interesting."
-	            )
+	            "p",
+	            null,
+	            "Welcome to Tarot.lol "
+	          ),
+	          _react2.default.createElement(
+	            "p",
+	            null,
+	            "With this site anyone can get a complete tarot reading with in-depth situational alaysis in seconds."
+	          ),
+	          _react2.default.createElement(
+	            "p",
+	            null,
+	            "Say you don't have access to a deck of cards, but still want to able to consult the tarot. As long as there is a computer, tablet, or smart-phone nearby, you can."
+	          ),
+	          _react2.default.createElement(
+	            "p",
+	            null,
+	            "The advice within the readings is often universal - and due the the sheer amount of card combinations, whether you choose to do a reading once a month or every day, the readings are always interesting."
 	          )
-	        )
+	        ),
+	        _react2.default.createElement("img", {
+	          className: "break-image",
+	          src: "https://s3.amazonaws.com/tarot.lol/assets/2.png",
+	          alt: ""
+	        })
 	      );
 	    };
 
@@ -28422,7 +28536,7 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/home/ncal/Documents/Tarot/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "Home.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ }),
-/* 255 */
+/* 256 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/home/ncal/Documents/Tarot/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/home/ncal/Documents/Tarot/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -29377,7 +29491,7 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/home/ncal/Documents/Tarot/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "cardData.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ }),
-/* 256 */
+/* 257 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -40264,7 +40378,7 @@
 
 
 /***/ }),
-/* 257 */
+/* 258 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/home/ncal/Documents/Tarot/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/home/ncal/Documents/Tarot/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -40279,11 +40393,11 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _cardData = __webpack_require__(255);
+	var _cardData = __webpack_require__(256);
 
 	var _cardData2 = _interopRequireDefault(_cardData);
 
-	var _jquery = __webpack_require__(256);
+	var _jquery = __webpack_require__(257);
 
 	var _jquery2 = _interopRequireDefault(_jquery);
 
@@ -40356,7 +40470,7 @@
 	        setTimeout(function () {
 	          self.setState({ loading: false }, function () {
 	            if (this.state.random_card_flipped) {
-	              (0, _jquery2.default)('img').addClass('card_image_reversed');
+	              (0, _jquery2.default)("img.card_image").addClass("card_image_reversed");
 	            } else {
 	              (0, _jquery2.default)('img.card_image').removeClass('card_image_reversed');
 	            }
@@ -40381,6 +40495,7 @@
 	        return _react2.default.createElement(
 	          'div',
 	          { className: 'main-content SCR' },
+	          _react2.default.createElement('br', null),
 	          _react2.default.createElement(
 	            'div',
 	            { className: 'main-content ' },
@@ -40395,10 +40510,16 @@
 	        return _react2.default.createElement(
 	          'div',
 	          { className: 'main-content SCR' },
+	          _react2.default.createElement('br', null),
 	          _react2.default.createElement(
 	            'h2',
 	            { className: 'title' },
 	            'Single Card Reading'
+	          ),
+	          _react2.default.createElement(
+	            'p',
+	            null,
+	            'The single card reading is a short reading resulting from drawing one card.'
 	          ),
 	          _react2.default.createElement(
 	            'button',
@@ -40413,16 +40534,22 @@
 	            src: " https://s3.amazonaws.com/tarot.lol/assets/seven_small.jpg",
 	            alt: ''
 	          }),
-	          _react2.default.createElement('div', { className: 'reading_container' })
+	          _react2.default.createElement('div', { className: 'reading_container' }),
+	          _react2.default.createElement('img', {
+	            className: 'break-image',
+	            src: "https://s3.amazonaws.com/tarot.lol/assets/2.png",
+	            alt: ''
+	          })
 	        );
 	      }
 	      if (!_this.state.random_card_flipped && !_this.state.loading && !_this.state.new) {
 	        return _react2.default.createElement(
 	          'div',
 	          { className: 'main-content SCR' },
+	          _react2.default.createElement('br', null),
 	          _react2.default.createElement(
 	            'button',
-	            { style: { float: 'right' }, onClick: _this.back },
+	            { style: { float: "right" }, onClick: _this.back },
 	            'Back'
 	          ),
 	          _react2.default.createElement(
@@ -40472,12 +40599,18 @@
 	                _this.state.random_card_upright
 	              )
 	            )
-	          )
+	          ),
+	          _react2.default.createElement('img', {
+	            className: 'break-image',
+	            src: "https://s3.amazonaws.com/tarot.lol/assets/2.png",
+	            alt: ''
+	          })
 	        );
 	      }if (_this.state.random_card_flipped && !_this.state.loading && !_this.state.new) {
 	        return _react2.default.createElement(
 	          'div',
 	          { className: 'main-content SCR' },
+	          _react2.default.createElement('br', null),
 	          _react2.default.createElement(
 	            'button',
 	            { style: { float: "right" }, onClick: _this.back },
@@ -40530,7 +40663,12 @@
 	                _this.state.random_card_reversed
 	              )
 	            )
-	          )
+	          ),
+	          _react2.default.createElement('img', {
+	            className: 'break-image',
+	            src: "https://s3.amazonaws.com/tarot.lol/assets/2.png",
+	            alt: ''
+	          })
 	        );
 	      }
 	    };
@@ -40571,70 +40709,6 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/home/ncal/Documents/Tarot/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "SCR.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ }),
-/* 258 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/home/ncal/Documents/Tarot/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/home/ncal/Documents/Tarot/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
-
-	"use strict";
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	var About = function About(props) {
-	  return _react2.default.createElement(
-	    "div",
-	    { className: "main-content" },
-	    _react2.default.createElement(
-	      "h2",
-	      { className: "title" },
-	      "About"
-	    ),
-	    _react2.default.createElement(
-	      "p",
-	      null,
-	      "The thought behind Tarot.lol is simple."
-	    ),
-	    _react2.default.createElement("img", {
-	      className: "card_image",
-	      src: "https://s3.amazonaws.com/tarot.lol/assets/23_Wands02.jpg",
-	      alt: ""
-	    }),
-	    _react2.default.createElement(
-	      "p",
-	      null,
-	      "Say you don't have access to a deck of cards, but still want to able to consult the tarot. As long as there is a computer, tablet, or smart-phone nearby, you can."
-	    ),
-	    _react2.default.createElement(
-	      "p",
-	      null,
-	      "With this app anyone can get a complete tarot reading with in-depth situational alaysis in seconds."
-	    ),
-	    _react2.default.createElement(
-	      "p",
-	      null,
-	      "No matter one's feelings about the capacity of Tarot to solve any problems, the advice within the readings is often universal - and due the the sheer amount of card combinations, whether you choose to do a reading once a month or every day, the readings are always interesting."
-	    ),
-	    _react2.default.createElement("img", {
-	      className: "break-image",
-	      src: " https://s3.amazonaws.com/tarot.lol/assets/2.png",
-	      alt: ""
-	    })
-	  );
-	};
-
-	exports.default = About;
-
-	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/home/ncal/Documents/Tarot/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "About.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
-
-/***/ }),
 /* 259 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -40656,6 +40730,7 @@
 	  return _react2.default.createElement(
 	    "div",
 	    { className: "main-content" },
+	    _react2.default.createElement("br", null),
 	    _react2.default.createElement(
 	      "h2",
 	      { className: "title" },
@@ -40664,7 +40739,12 @@
 	    _react2.default.createElement(
 	      "p",
 	      null,
-	      "Often the Tarot is attributed magical qualities, able to predict the future. Though, there is a lot one can find out about Tarot on the internet, it is really hard to find honest information."
+	      "Though there is a lot one can find out about Tarot on the internet, it can be difficult to find unbiased information."
+	    ),
+	    _react2.default.createElement(
+	      "p",
+	      null,
+	      "Here are some links to get started."
 	    ),
 	    _react2.default.createElement(
 	      "a",
@@ -40706,7 +40786,7 @@
 	    ),
 	    _react2.default.createElement(
 	      "p",
-	      null,
+	      { style: { borderBottom: "1px solid #555", paddingBottom: "20px" } },
 	      "Divination is the attempt to gain insight into a question or situation by way of standardized process or ritual."
 	    ),
 	    _react2.default.createElement("img", {
@@ -40737,11 +40817,11 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _cardData = __webpack_require__(255);
+	var _cardData = __webpack_require__(256);
 
 	var _cardData2 = _interopRequireDefault(_cardData);
 
-	var _jquery = __webpack_require__(256);
+	var _jquery = __webpack_require__(257);
 
 	var _jquery2 = _interopRequireDefault(_jquery);
 
@@ -40895,6 +40975,7 @@
 	      return _react2.default.createElement(
 	        'div',
 	        { className: 'main-content ' },
+	        _react2.default.createElement('br', null),
 	        _react2.default.createElement(
 	          'h2',
 	          { className: 'title' },
@@ -40902,11 +40983,22 @@
 	        ),
 	        _react2.default.createElement(
 	          'div',
-	          { className: 'cards' },
+	          {
+	            className: 'cards',
+	            style: { borderBottom: "1px solid #555", paddingBottom: "20px" }
+	          },
 	          _react2.default.createElement(
 	            'p',
 	            null,
-	            'Select 10 cards'
+	            'The full reading is more in-depth. ',
+	            _react2.default.createElement('br', null),
+	            _react2.default.createElement('br', null),
+	            'The reading returns 10 sections which correspond directly to the question at hand.'
+	          ),
+	          _react2.default.createElement(
+	            'p',
+	            null,
+	            'Select 10 cards:'
 	          ),
 	          _cardData2.default[0].Cards.map(function (card, i) {
 	            return _react2.default.createElement('img', {
@@ -40917,6 +41009,11 @@
 	            });
 	          }.bind(_this2))
 	        ),
+	        _react2.default.createElement('img', {
+	          className: 'break-image',
+	          src: "https://s3.amazonaws.com/tarot.lol/assets/2.png",
+	          alt: ''
+	        }),
 	        _react2.default.createElement('div', { className: 'reading_container' })
 	      );
 	    }
@@ -40924,13 +41021,18 @@
 	      return _react2.default.createElement(
 	        'div',
 	        { className: 'main-content ' },
-	        _react2.default.createElement('img', { className: 'pentacle', src: 'https://upload.wikimedia.org/wikipedia/commons/9/97/Pentacle_2.svg' })
+	        _react2.default.createElement('br', null),
+	        _react2.default.createElement('img', {
+	          className: 'pentacle',
+	          src: 'https://upload.wikimedia.org/wikipedia/commons/9/97/Pentacle_2.svg'
+	        })
 	      );
 	    }
 	    if (_this2.state.reading) {
 	      return _react2.default.createElement(
 	        'div',
 	        { className: 'main-content ' },
+	        _react2.default.createElement('br', null),
 	        _react2.default.createElement(
 	          'div',
 	          { className: 'reading_container' },
@@ -40957,11 +41059,7 @@
 	                    { className: 'title' },
 	                    card.name
 	                  ),
-	                  _react2.default.createElement('img', {
-	                    className: 'card_image',
-	                    src: card.src,
-	                    alt: ''
-	                  }),
+	                  _react2.default.createElement('img', { className: 'card_image', src: card.src, alt: '' }),
 	                  _react2.default.createElement(
 	                    'h4',
 	                    { className: 'title' },
@@ -41103,6 +41201,7 @@
 	  return _react2.default.createElement(
 	    "div",
 	    { className: "main-content" },
+	    _react2.default.createElement("br", null),
 	    _react2.default.createElement(
 	      "h2",
 	      { className: "title" },
@@ -41138,6 +41237,7 @@
 	      null,
 	      "However, the more detailed the question, the more accurate the answer. A vague question will invite a vague answer."
 	    ),
+	    _react2.default.createElement("br", null),
 	    _react2.default.createElement(
 	      "h3",
 	      null,
@@ -41170,7 +41270,7 @@
 	    ),
 	    _react2.default.createElement(
 	      "h4",
-	      null,
+	      { style: { borderBottom: "1px solid #555", paddingBottom: "20px", marginBottom: 0 } },
 	      _react2.default.createElement(
 	        _reactRouter.Link,
 	        { to: "/single-card-reading" },
@@ -41180,7 +41280,7 @@
 	    ),
 	    _react2.default.createElement("img", {
 	      className: "break-image",
-	      src: " https://s3.amazonaws.com/tarot.lol/assets/tarot_icons_m/2.png",
+	      src: "https://s3.amazonaws.com/tarot.lol/assets/2.png",
 	      alt: ""
 	    })
 	  );
@@ -41228,6 +41328,77 @@
 	exports.default = NotFound;
 
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/home/ncal/Documents/Tarot/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "NotFound.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+
+/***/ }),
+/* 263 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("/home/ncal/Documents/Tarot/node_modules/react-hot-api/modules/index.js"), RootInstanceProvider = require("/home/ncal/Documents/Tarot/node_modules/react-hot-loader/RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var Privacy = function Privacy(props) {
+	  return _react2.default.createElement(
+	    "div",
+	    { className: "main-content" },
+	    _react2.default.createElement("br", null),
+	    _react2.default.createElement(
+	      "h2",
+	      { className: "title" },
+	      "Privacy & Cookies"
+	    ),
+	    _react2.default.createElement("img", {
+	      className: "card_image",
+	      src: "https://s3.amazonaws.com/tarot.lol/assets/23_Wands02.jpg",
+	      alt: ""
+	    }),
+	    _react2.default.createElement(
+	      "p",
+	      null,
+	      "We use technologies, such as cookies, to customise content and advertising, to provide social media features and to analyze traffic to the site. We also share information about your use of our site with our trusted social media, advertising and analytics partners."
+	    ),
+	    _react2.default.createElement(
+	      "p",
+	      null,
+	      "We use third-party advertising companies to serve ads when you visit our website. These companies may use information about your visits to this and other websites in order to provide advertisements about goods and services of interest to you."
+	    ),
+	    _react2.default.createElement(
+	      "p",
+	      null,
+	      "If you would like more information about this practice and to know your choices about not having this information used by these companies, read ",
+	      _react2.default.createElement(
+	        "a",
+	        { href: "https://policies.google.com/technologies/partner-sites?hl=en", target: "-blank" },
+	        "How Google uses information from sites or apps that use Google services"
+	      ),
+	      ". We, at Tarot.lol and our advertising partners collect personal information (such as the cookies stored on your browser, or the IP address of your device) when you visit our site. We, and our partners, use this information to tailor and deliver ads to you on our site, or to help tailor ads to you when you visit others' sites. To tailor ads that may be more relevant to you, we and/or our partners may share the information we collect with third parties."
+	    ),
+	    _react2.default.createElement(
+	      "p",
+	      null,
+	      "Note that although we will not sell your personal information we will continue to share some personal information with our partners (who will function as our service providers in such instance) to help us perform advertising-related functions such as, but not limited to, measuring the effectiveness of our ads, managing how many times you may see an ad, reporting on the performance of our ads, ensuring services are working correctly and securely, providing aggregate statistics and analytics, improving when and where you may see ads and/or reducing ad fraud."
+	    ),
+	    _react2.default.createElement("img", {
+	      className: "break-image",
+	      src: " https://s3.amazonaws.com/tarot.lol/assets/2.png",
+	      alt: ""
+	    })
+	  );
+	};
+
+	exports.default = Privacy;
+
+	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/home/ncal/Documents/Tarot/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "Privacy.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ })
 /******/ ]);

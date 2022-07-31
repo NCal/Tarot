@@ -168,11 +168,11 @@ class App extends Component {
                 (adsbygoogle = window.adsbygoogle || []).push({});
               </script>
               <Navlink
-                to="/links"
+                to="/privacy"
                 // className={this.state.darkMode ? "darkMode" : "lightMode"}
               >
                 <ul className="learnSection">
-                  <li>Learn More</li>
+                  <li>Privacy & Cookies</li>
                   <Pent />
                 </ul>
               </Navlink>
