@@ -25,8 +25,8 @@ const TitleBar = (props) => (
                       About
                     </Navlink>
                   </li> */}
-        <Navlink to="/links">
-          <li>Learn More</li>
+        <Navlink to="/privacy">
+          <li>Privacy & Cookies</li>
         </Navlink>
       </ul>
     </div>

@@ -176,12 +176,21 @@ button:hover {
    box-shadow: 0 3px rgba(0,0,0, .1);
    // overflow-y: scroll;
 
-   .pent {
+   .nav-pent {
+
+   }
+
+   .lower-pent {
       position: fixed;
       bottom: 30px;
       width: 40px;
       right: 20px;
       z-index: 300;
+   }
+
+   .home-pent, .nav-pent {
+      width: 20px;
+      display: inline-block;
    }
 
    .mode-btn {
@@ -250,7 +259,7 @@ button:hover {
    right: 0;
    color: #777;
    // border-left: 1px solid #555;
-   float: right;
+   // float: right;
 }
 
 .top {
@@ -556,7 +565,7 @@ header {
    }
 
 
-.pent {
+.lower-pent {
    display: none;
 }
 .sevenCards {

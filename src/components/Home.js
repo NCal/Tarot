@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import cardData from "../data/cardData.js";
 import $ from "jquery";
+import Pent from './Pent';
 
 class Home extends Component {
   constructor(props, context) {
@@ -84,22 +85,23 @@ class Home extends Component {
   render = () => {
       return (
         <div className="main-content">
-          <br />
-          <h2 className="title">
+
+          <Pent className='home-pent' />
+          &nbsp;
+          <h2 className="title" style={{display: 'inline-block', marginBottom: '0px'}}>
             {/* <span className="material-symbols-outlined">
                   sentiment_satisfied
                 </span> */}
-            🔮 Tarot.lol
+            Tarot.lol
           </h2>
           {/* <div className="reading_container home"> */}
-            <img
-              className="card_image"
-              src={"https://s3.amazonaws.com/tarot.lol/assets/59_Cups10.jpg"}
-              alt=""
-            />
-            <div className="home_content">
-
-              {/* <p className="">
+          <img
+            className="card_image"
+            src={"https://s3.amazonaws.com/tarot.lol/assets/59_Cups10.jpg"}
+            alt=""
+          />
+          <div className="home_content">
+            {/* <p className="">
                 The tarot is a pack of playing cards used from at least the
                 mid-15th century.
               </p>
@@ -112,26 +114,26 @@ class Home extends Component {
                 One can examine all the different aspects of a given situation
                 for a true analysis of any event.
               </p> */}
-              <p>Welcome to Tarot.lol </p>
-              {/* <p>The thought behind this site is simple.</p> */}
+            <p>Welcome to Tarot.lol </p>
+            {/* <p>The thought behind this site is simple.</p> */}
 
-              <p>
-                With this site anyone can get a complete tarot reading with
-                in-depth situational alaysis in seconds.
-              </p>
+            <p>
+              With this site anyone can get a complete tarot reading with
+              in-depth situational alaysis in seconds.
+            </p>
 
-              <p>
-                Say you don't have access to a deck of cards, but still want to
-                able to consult the tarot. As long as there is a computer,
-                tablet, or smart-phone nearby, you can.
-              </p>
-              <p>
-                The advice within the readings is often universal
-                - and due the the sheer amount of card combinations, whether you
-                choose to do a reading once a month or every day, the readings
-                are always interesting.
-              </p>
-            </div>
+            <p>
+              Say you don't have access to a deck of cards, but still want to
+              able to consult the tarot. As long as there is a computer, tablet,
+              or smart-phone nearby, you can.
+            </p>
+            <p>
+              The advice within the readings is often universal - and due the
+              the sheer amount of card combinations, whether you choose to do a
+              reading once a month or every day, the readings are always
+              interesting.
+            </p>
+          </div>
           {/* </div> */}
           <img
             className="break-image"

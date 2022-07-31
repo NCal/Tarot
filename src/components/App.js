@@ -56,15 +56,17 @@ class App extends Component {
             <div className="left">
               <header>
                 <ul className="main-nav">
-                  <li>
+                  <li style={{ display: "inline-block" }}>
                     <Navlink
                       to="/"
                       className={this.state.darkMode ? "darkMode" : "lightMode"}
                     >
-                      <span className="material-symbols-outlined">
+                      {/* <Pent className="nav-pent" /> */}
+                      {/* <span className="material-symbols-outlined">
                         auto_awesome
-                      </span>
-                      &nbsp; Tarot.lol
+                      </span> */}
+                      &nbsp;
+                      <span style={{ display: "inline-block" }}>Tarot.lol</span>
                     </Navlink>
                   </li>
                   <li>
@@ -119,8 +121,8 @@ class App extends Component {
             </div>
             <div className="right">
               <p className="">
-                The tarot is a pack of playing cards that's been used since at least the
-                mid-15th century.
+                The tarot is a pack of playing cards that's been used since at
+                least the mid-15th century.
               </p>
               {/* <br /> */}
               <p>Tarot cards are one of many forms of divination.</p>
@@ -129,27 +131,9 @@ class App extends Component {
                 evaluate influences surrounding a person, event, or both.
               </p>
               <p>
-                Using Tarot cards one can examine all the different aspects of a given situation
-                for a true analysis of any event.
+                Using Tarot cards one can examine all the different aspects of a
+                given situation for a true analysis of any event.
               </p>
-              {/* <p>The thought behind Tarot.lol is simple.</p>
-
-              <p>
-                With this site anyone can get a complete tarot reading with
-                in-depth situational alaysis in seconds.
-              </p>
-
-              <p>
-                Say you don't have access to a deck of cards, but still want to
-                able to consult the tarot. As long as there is a computer,
-                tablet, or smart-phone nearby, you can.
-              </p>
-              <p>
-                The advice within the readings is often universal - and due the
-                the sheer amount of card combinations, whether you choose to do
-                a reading once a month or every day, the readings are always
-                interesting.
-              </p> */}
               <script
                 async
                 src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6248178765033726"
@@ -168,12 +152,13 @@ class App extends Component {
                 (adsbygoogle = window.adsbygoogle || []).push({});
               </script>
               <Navlink
-                to="/privacy"
+                className="learnSection"
+                to="/links"
                 // className={this.state.darkMode ? "darkMode" : "lightMode"}
               >
-                <ul className="learnSection">
-                  <li>Privacy & Cookies</li>
-                  <Pent />
+                <ul>
+                  <li>Learn More</li>
+                  <Pent className={"lower-pent"} />
                 </ul>
               </Navlink>
             </div>
