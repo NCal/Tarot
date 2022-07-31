@@ -141,7 +141,7 @@ class SCR extends Component {
             Back
           </button>
           <div className="reading_container">
-            <div className="single_card_reading">
+            <div className="single_card_reading" style={{borderBottom: 'none'}}>
               <h2 className="title">{this.state.random_card_name}</h2>
               <img
                 className="card_image"
@@ -175,7 +175,10 @@ class SCR extends Component {
             Back
           </button>
           <div className="reading_container">
-            <div className="single_card_reading">
+            <div
+              className="single_card_reading"
+              style={{ borderBottom: "none" }}
+            >
               <h2 className="title">
                 {this.state.random_card_name + " Reversed"}
               </h2>
