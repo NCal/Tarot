@@ -19,6 +19,10 @@ class SCR extends Component {
          };
    }
 
+  componentDidMount(){
+    document.title = "Single Card Reading"
+  }
+
    back = () => {
     this.setState({
 

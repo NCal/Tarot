@@ -1,7 +1,16 @@
 import React, {Component} from 'react';
 import { Link } from "react-router";
 
-const Instructions = (props) => {
+class Instructions extends Component {
+    constructor(props, context) {
+      super(props, context);
+   }
+
+   componentDidMount(){
+    document.title = "Instructions"
+   }
+
+  render(){
     return (
       <div className="main-content">
         <br />
@@ -18,8 +27,8 @@ const Instructions = (props) => {
         </p>
 
         <p>
-          If you decide to, you can ask a question silently in your mind or
-          out loud.
+          If you decide to, you can ask a question silently in your mind or out
+          loud.
         </p>
         <p>
           If you don’t have a specific question, you may simply ask “what do I
@@ -71,6 +80,7 @@ const Instructions = (props) => {
         />
       </div>
     );
+   }
 }
 
 export default Instructions;

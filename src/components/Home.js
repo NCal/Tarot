@@ -23,6 +23,7 @@ class Home extends Component {
 
   componentDidMount = () => {
     this.getRandomCard();
+    document.title = "Home"
   }
 
   getRandomCard = () => {

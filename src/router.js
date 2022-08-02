@@ -17,14 +17,14 @@ import Privacy from './components/Privacy';
 const routes = (
   <Router history={browserHistory}>
     <Route component={App}>
-      <Route path="/" component={Home}></Route>
-      <Route path="/instructions" component={Instructions}></Route>
-      <Route path="/links" component={Links}></Route>
-      <Route path="/single-card-reading" component={SCR}></Route>
-      <Route path="/full-reading" component={FullReading}></Route>
-      <Route path="/privacy" component={Privacy}></Route>
+      <Route path="/" component={Home} title="Home"></Route>
+      <Route path="/instructions" component={Instructions} title="Instructions"></Route>
+      <Route path="/links" component={Links} title="Links"></Route>
+      <Route path="/single-card-reading" component={SCR} title="Single Card Reading"></Route>
+      <Route path="/full-reading" component={FullReading} title="Full Reading"></Route>
+      <Route path="/privacy" component={Privacy} title="Privacy"></Route>
 
-      <Route path="*" component={NotFound}></Route>
+      <Route path="*" component={NotFound} title="404: Not Found"></Route>
     </Route>
   </Router>
 );

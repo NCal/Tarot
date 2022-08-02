@@ -1,6 +1,15 @@
 import React, {Component} from 'react';
 
-const Privacy = (props) => {
+class Privacy extends Component {
+    constructor(props, context) {
+      super(props, context);
+   }
+
+   componentDidMount(){
+    document.title = "Privacy"
+   }
+
+  render(){
     return (
       <div className="main-content">
         <div
@@ -64,6 +73,7 @@ const Privacy = (props) => {
         />
       </div>
     );
+}
 }
 
 export default Privacy;

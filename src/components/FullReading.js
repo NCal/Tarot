@@ -24,6 +24,10 @@ class FullReading extends Component {
    };
 }
 
+  componentDidMount(){
+    document.title = "Full Reading"
+  }
+
    componentWillMount = () => {
       console.log('COMP WILL MOUNT', this.props);
       chosen_cards = [];

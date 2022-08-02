@@ -1,6 +1,15 @@
 import React, { Component } from "react";
 
-const Links = (props) => {
+class Links extends Component {
+    constructor(props, context) {
+      super(props, context);
+   }
+
+   componentDidMount(){
+    document.title = "Learn More"
+   }
+   render(){
+
   return (
     <div className="main-content">
       <br />
@@ -42,6 +51,7 @@ const Links = (props) => {
       />
     </div>
   );
+   }
 };
 
 export default Links;
