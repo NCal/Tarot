@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import cardData from "../data/cardData.js";
 import $ from "jquery";
 import Pent from './Pent';
+import { Link } from "react-router";
 
 class Home extends Component {
   constructor(props, context) {
@@ -85,7 +86,7 @@ class Home extends Component {
   render = () => {
       return (
         <div className="main-content">
-          <br/>
+          <br />
           <Pent className="home-pent" />
           &nbsp;
           <h2
@@ -104,19 +105,25 @@ class Home extends Component {
 
             <p>
               With this site anyone can get a complete tarot reading with
-              in-depth situational alaysis in seconds.
+              in-depth situational analysis in seconds.
             </p>
 
-            <p>
-              Say you don't have access to a deck of cards, but still want to
-              able to consult the tarot. As long as there is a computer, tablet,
+            {/* <p>
+              Say you don't have access to a deck of cards, but want to
+              able get a quick tarot reading. As long as there is a computer, tablet,
               or smart-phone nearby, you can.
-            </p>
+            </p> */}
             <p>
               The advice within the readings is often universal - and due the
               the sheer amount of card combinations, whether you choose to do a
               reading once a month or every day, the readings are always
-              interesting.
+              interesting and applicable.
+            </p>
+            <p>Check out the <Link to="/instructions">Instructions</Link> if you're new.</p>
+            <p>
+              Already know how it works? Head over to the{" "}
+              <Link to="/full-reading">Full Reading</Link> page to draw your
+              cards.
             </p>
           </div>
           <img

@@ -18,7 +18,7 @@ const Instructions = (props) => {
         </p>
 
         <p>
-          If you decide to, you can ask your question silently in your mind or
+          If you decide to, you can ask a question silently in your mind or
           out loud.
         </p>
         <p>

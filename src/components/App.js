@@ -120,7 +120,7 @@ class App extends Component {
               </p>
               <p>
                 Using Tarot cards one can examine all the different aspects of a
-                given situation for a true analysis of any event.
+                given situation for a true analysis of any circumstance.
               </p>
               <script
                 async
