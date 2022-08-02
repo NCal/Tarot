@@ -87,12 +87,14 @@ class Home extends Component {
       return (
         <div className="main-content">
           <br />
-          <Pent className="home-pent" />
-          &nbsp;
+
           <h2
             className="title"
-            style={{ display: "inline-block", marginBottom: "0px" }}
           >
+            <span>
+              <Pent className="home-pent" />
+              &nbsp;
+            </span>
             Tarot.lol
           </h2>
           <img
@@ -119,7 +121,10 @@ class Home extends Component {
               reading once a month or every day, the readings are always
               interesting and applicable.
             </p>
-            <p>Check out the <Link to="/instructions">Instructions</Link> if you're new.</p>
+            <p>
+              Check out the <Link to="/instructions">Instructions</Link> if
+              you're new.
+            </p>
             <p>
               Already know how it works? Head over to the{" "}
               <Link to="/full-reading">Full Reading</Link> page to draw your
