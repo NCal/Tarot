@@ -85,37 +85,22 @@ class Home extends Component {
   render = () => {
       return (
         <div className="main-content">
-
-          <Pent className='home-pent' />
+          <br/>
+          <Pent className="home-pent" />
           &nbsp;
-          <h2 className="title" style={{display: 'inline-block', marginBottom: '0px'}}>
-            {/* <span className="material-symbols-outlined">
-                  sentiment_satisfied
-                </span> */}
+          <h2
+            className="title"
+            style={{ display: "inline-block", marginBottom: "0px" }}
+          >
             Tarot.lol
           </h2>
-          {/* <div className="reading_container home"> */}
           <img
             className="card_image"
             src={"https://s3.amazonaws.com/tarot.lol/assets/59_Cups10.jpg"}
-            alt=""
+            alt="Welcome Image, 10 of Cups Tarot Card"
           />
           <div className="home_content">
-            {/* <p className="">
-                The tarot is a pack of playing cards used from at least the
-                mid-15th century.
-              </p>
-              <p>Tarot cards are one of many forms of divination.</p>
-              <p>
-                They are commonly used to measure potential outcomes and
-                evaluate influences surrounding a person, event, or both.
-              </p>
-              <p>
-                One can examine all the different aspects of a given situation
-                for a true analysis of any event.
-              </p> */}
             <p>Welcome to Tarot.lol </p>
-            {/* <p>The thought behind this site is simple.</p> */}
 
             <p>
               With this site anyone can get a complete tarot reading with
@@ -134,11 +119,10 @@ class Home extends Component {
               interesting.
             </p>
           </div>
-          {/* </div> */}
           <img
             className="break-image"
             src={"https://s3.amazonaws.com/tarot.lol/assets/2.png"}
-            alt=""
+            alt="Two interwoven rings, a design element denoting the end of page content"
           />
         </div>
       );

@@ -61,10 +61,6 @@ class App extends Component {
                       to="/"
                       className={this.state.darkMode ? "darkMode" : "lightMode"}
                     >
-                      {/* <Pent className="nav-pent" /> */}
-                      {/* <span className="material-symbols-outlined">
-                        auto_awesome
-                      </span> */}
                       &nbsp;
                       <span style={{ display: "inline-block" }}>Tarot.lol</span>
                     </Navlink>
@@ -93,14 +89,6 @@ class App extends Component {
                       Single Card Reading
                     </Navlink>
                   </li>
-                  {/* <li>
-                    <Navlink
-                      to="/about"
-                      className={this.state.darkMode ? "darkMode" : "lightMode"}
-                    >
-                      About
-                    </Navlink>
-                  </li> */}
                   <li>
                     <Navlink
                       to="/links"
@@ -162,14 +150,15 @@ class App extends Component {
                 </ul>
               </Navlink>
             </div>
-            <div
+            {/* <div
               className="mode-btn"
               onClick={() => {
                 this.changeMode();
               }}
-            >
+            > 
               <span className="material-symbols-outlined">wb_sunny</span>
             </div>
+            */}
           </div>
         );
    }

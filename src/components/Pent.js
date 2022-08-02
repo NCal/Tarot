@@ -6,6 +6,7 @@ const Pent = (props) => (
   <img
     className={props.className}
     src="https://s3.amazonaws.com/tarot.lol/assets/pent.png"
+    alt="Pentacle Icon, design element"
   />
 );
 

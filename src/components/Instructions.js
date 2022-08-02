@@ -9,7 +9,7 @@ const Instructions = (props) => {
         <img
           className="card_image"
           src={"https://s3.amazonaws.com/tarot.lol/assets/45_Pents10.jpg"}
-          alt=""
+          alt="Instructions page image, the 10 of Pentacles Tarot Card"
         />
         <h3>Step 1</h3>
         <p>
@@ -41,7 +41,13 @@ const Instructions = (props) => {
           much more detail)
         </h4>
         <i>Or</i>
-        <h4 style={{ borderBottom: "1px solid #555", paddingBottom: "20px", marginBottom:0 }}>
+        <h4
+          style={{
+            borderBottom: "1px solid #555",
+            paddingBottom: "20px",
+            marginBottom: 0,
+          }}
+        >
           <Link to={"/single-card-reading"}> Single Card Reading </Link>
           (which returns one card only).
         </h4>
@@ -61,7 +67,7 @@ const Instructions = (props) => {
         <img
           className="break-image"
           src={"https://s3.amazonaws.com/tarot.lol/assets/2.png"}
-          alt=""
+          alt="Two interwoven rings, a design element denoting the end of page content"
         />
       </div>
     );

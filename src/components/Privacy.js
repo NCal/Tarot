@@ -5,14 +5,14 @@ const Privacy = (props) => {
       <div className="main-content">
         <div
           className="reading_container"
-          style={{ borderBottom: "1px solid #555", paddingBottom: '20px' }}
+          style={{ borderBottom: "1px solid #555", paddingBottom: "20px" }}
         >
           <br />
           <h2 className="title">Privacy & Cookies</h2>
           <img
             className="card_image"
             src={"https://s3.amazonaws.com/tarot.lol/assets/23_Wands02.jpg"}
-            alt=""
+            alt="Privacy page image, Two of Wands Tarot Card"
           />
           <p>
             We use technologies, such as cookies, to customise content and
@@ -56,12 +56,11 @@ const Privacy = (props) => {
             aggregate statistics and analytics, improving when and where you may
             see ads and/or reducing ad fraud.
           </p>
-          {/* <p>App by <a href="http://www.nbroaddus.com">N Broaddus </a></p> */}
         </div>
         <img
           className="break-image"
           src={" https://s3.amazonaws.com/tarot.lol/assets/2.png"}
-          alt=""
+          alt="Two interwoven rings, a design element denoting the end of page content"
         />
       </div>
     );

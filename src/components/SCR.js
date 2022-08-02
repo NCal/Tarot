@@ -101,6 +101,7 @@ class SCR extends Component {
             <img
               className="pentacle"
               src="https://upload.wikimedia.org/wikipedia/commons/9/97/Pentacle_2.svg"
+              alt="Loading Icon, Pentacle"
             />
           </div>
         </div>
@@ -122,13 +123,13 @@ class SCR extends Component {
             onClick={this.getRandomCard}
             className="sevenCards"
             src={" https://s3.amazonaws.com/tarot.lol/assets/seven_small.jpg"}
-            alt=""
+            alt="Group of shuffled tarot cards"
           />
           <div className="reading_container"></div>
           <img
             className="break-image"
             src={"https://s3.amazonaws.com/tarot.lol/assets/2.png"}
-            alt=""
+            alt="Two interwoven rings, a design element denoting the end of section content"
           />
         </div>
       );
@@ -141,12 +142,15 @@ class SCR extends Component {
             Back
           </button>
           <div className="reading_container">
-            <div className="single_card_reading" style={{borderBottom: 'none'}}>
+            <div
+              className="single_card_reading"
+              style={{ borderBottom: "none" }}
+            >
               <h2 className="title">{this.state.random_card_name}</h2>
               <img
                 className="card_image"
                 src={this.state.random_card_src}
-                alt=""
+                alt={`${this.state.random_card_src} Tarot Card`}
               />
               <h4 className="title">Keywords:</h4>
               <p>{this.state.random_card_keys_up}</p>
@@ -163,7 +167,7 @@ class SCR extends Component {
           <img
             className="break-image"
             src={"https://s3.amazonaws.com/tarot.lol/assets/2.png"}
-            alt=""
+            alt="Two interwoven rings, a design element denoting the end of section content"
           />
         </div>
       );
@@ -185,7 +189,7 @@ class SCR extends Component {
               <img
                 className="card_image"
                 src={this.state.random_card_src}
-                alt=""
+                alt={`${this.state.random_card_name} reversed Tarot Card`}
               />
               <h4 className="title">Keywords:</h4>
               <p>{this.state.random_card_keys_rev}</p>
@@ -202,7 +206,7 @@ class SCR extends Component {
           <img
             className="break-image"
             src={"https://s3.amazonaws.com/tarot.lol/assets/2.png"}
-            alt=""
+            alt="Two interwoven rings, a design element denoting the end of section content"
           />
         </div>
       );

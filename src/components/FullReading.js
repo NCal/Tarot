@@ -134,12 +134,18 @@ class FullReading extends Component {
                className="cards"
                style={{ borderBottom: "1px solid #555", paddingBottom: "20px" }}
              >
-             <p>The full reading is more in-depth. <br/><br/>The reading returns 10 sections which correspond directly to the question at hand.</p>
+               <p>
+                 The full reading is more in-depth. <br />
+                 <br />
+                 The reading returns 10 sections which correspond directly to
+                 the question at hand.
+               </p>
                <p>Select 10 cards:</p>
                {cardData[0].Cards.map(
                  function (card, i) {
                    return (
                      <img
+                       alt={`Tarot Card Face Down`}
                        className="full_card"
                        key={"card" + i}
                        src={card.back}
@@ -152,7 +158,7 @@ class FullReading extends Component {
              <img
                className="break-image"
                src={"https://s3.amazonaws.com/tarot.lol/assets/2.png"}
-               alt=""
+               alt="Two interwoven rings, a design element denoting the end of page content"
              />
              <div className="reading_container"></div>
            </div>
@@ -163,6 +169,7 @@ class FullReading extends Component {
         <div className="main-content ">
           <br />
           <img
+            alt="loading icon, pentacle"
             className="pentacle"
             src="https://upload.wikimedia.org/wikipedia/commons/9/97/Pentacle_2.svg"
           />
@@ -184,7 +191,7 @@ class FullReading extends Component {
                     <div className="single_card_reading">
                       <h2 className="type">{card.type}</h2>
                       <h3 className="title">{card.name}</h3>
-                      <img className="card_image" src={card.src} alt="" />
+                      <img className="card_image" src={card.src} alt={`${card.name}, Tarot Card`} />
                       <h4 className="title">Keywords:</h4>
                       <p>{card.keywords.upright}</p>
                       <h3 className="title">Summary</h3>
@@ -206,7 +213,7 @@ class FullReading extends Component {
                       <img
                         className="card_image card_image_reversed"
                         src={card.src}
-                        alt=""
+                        alt={`${card.name} Reversed, Tarot Card`}
                       />
                       <h4 className="title">Keywords:</h4>
                       <p>{card.keywords.reversed}</p>

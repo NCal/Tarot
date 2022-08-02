@@ -162,6 +162,7 @@ button:hover {
       position: fixed;
       bottom: 0;
       right: 0;
+      z-index: 10;
       height: 20px;
       color: #fff;
       width: 100%;
@@ -269,6 +270,7 @@ button:hover {
    margin-bottom: 30px;
    margin-left: 30px;
    float: right;
+   z-index: 9;
    pointer-events: none;
    // mode
    border: 2px solid #ccc;
