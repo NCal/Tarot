@@ -156,13 +156,13 @@ class SCR extends Component {
                 src={this.state.random_card_src}
                 alt={`${this.state.random_card_src} Tarot Card`}
               />
-              <h4 className="title">Keywords:</h4>
+              <h4 className="title card-keywords">Keywords:</h4>
               <p>{this.state.random_card_keys_up}</p>
-              <h3 className="title">Summary</h3>
+              <h3 className="title card-summary">Summary</h3>
               <p className="description">
                 {this.state.random_card_description}
               </p>
-              <h3 className="title">Upright</h3>
+              <h3 className="title card-direction">Upright</h3>
               <p className="upright_description">
                 {this.state.random_card_upright}
               </p>
@@ -187,7 +187,7 @@ class SCR extends Component {
               className="single_card_reading"
               style={{ borderBottom: "none" }}
             >
-              <h2 className="title">
+              <h2 className="title card-name">
                 {this.state.random_card_name + " Reversed"}
               </h2>
               <img
@@ -195,13 +195,13 @@ class SCR extends Component {
                 src={this.state.random_card_src}
                 alt={`${this.state.random_card_name} reversed Tarot Card`}
               />
-              <h4 className="title">Keywords:</h4>
+              <h4 className=" card-keywords">Keywords:</h4>
               <p>{this.state.random_card_keys_rev}</p>
-              <h3 className="title">Summary</h3>
+              <h3 className="title card-summary">Summary</h3>
               <p className="description">
                 {this.state.random_card_description}
               </p>
-              <h3 className="title">Reversed</h3>
+              <h3 className="title card-direction">Reversed</h3>
               <p className="upright_description">
                 {this.state.random_card_reversed}
               </p>
