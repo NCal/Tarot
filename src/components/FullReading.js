@@ -142,7 +142,7 @@ class FullReading extends Component {
                  The full reading is more in-depth. <br />
                  <br />
                  The reading returns 10 sections which correspond directly to
-                 the question at hand.
+                 a given situation.
                </p>
                <p>Select 10 cards:</p>
                {cardData[0].Cards.map(
