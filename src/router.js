@@ -15,7 +15,7 @@ import Privacy from './components/Privacy';
 
 // Routes
 const routes = (
-  <Router history={browserHistory}>
+  <Router history={browserHistory} forceRefresh={true}>
     <Route component={App}>
       <Route path="/" component={Home} title="Home"></Route>
       <Route path="/instructions" component={Instructions} title="Instructions"></Route>

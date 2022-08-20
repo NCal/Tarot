@@ -3,6 +3,9 @@ import cardData from "../data/cardData.js";
 import $ from "jquery";
 import Pent from './Pent';
 import { Link } from "react-router";
+// import {createHistory} from 'react-router'
+// const history = createHistory();
+
 
 class Home extends Component {
   constructor(props, context) {
@@ -22,8 +25,11 @@ class Home extends Component {
   }
 
   componentDidMount = () => {
-    this.getRandomCard();
-    document.title = "Home"
+    // this.getRandomCard();
+    // history.go(0);
+
+
+    document.title = "Tarot.Lol | Free Tarot Readings"
   }
 
   getRandomCard = () => {
@@ -88,10 +94,7 @@ class Home extends Component {
       return (
         <div className="main-content">
           <br />
-
-          <h2
-            className="title"
-          >
+          <h2 className="title">
             <span>
               <Pent className="home-pent" />
               &nbsp;

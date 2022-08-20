@@ -26,6 +26,12 @@ class FullReading extends Component {
 
   componentDidMount(){
     document.title = "Full Reading"
+
+    // this.topAd.prepend(leaderboard);
+    // this.bottomAd.appendChild(footerBanner);
+    // this.right.appendChild(square);
+
+    // this.full_read_banner_7.append();
   }
 
    componentWillMount = () => {
@@ -85,6 +91,54 @@ class FullReading extends Component {
                self.replace_break(paras);
                
                console.log(globalCards);
+                const full_read_banner_5 = document.createElement("script");
+                const full_read_banner_6 = document.createElement("script");
+                const full_read_banner_7 = document.createElement("script");
+                const full_read_banner_8 = document.createElement("script");
+                const full_read_banner_9 = document.createElement("script");
+                const full_read_banner_10 = document.createElement("script");
+                const full_read_banner_11 = document.createElement("script");
+                const full_read_banner_12 = document.createElement("script");
+                const full_read_banner_13 = document.createElement("script");
+
+                full_read_banner_5.setAttribute("data-cfasync", "false");
+                full_read_banner_6.setAttribute("data-cfasync", "false");
+                full_read_banner_7.setAttribute("data-cfasync", "false");
+                full_read_banner_8.setAttribute("data-cfasync", "false");
+                full_read_banner_9.setAttribute("data-cfasync", "false");
+                full_read_banner_10.setAttribute("data-cfasync", "false");
+                full_read_banner_11.setAttribute("data-cfasync", "false");
+                full_read_banner_12.setAttribute("data-cfasync", "false");
+                full_read_banner_13.setAttribute("data-cfasync", "false");
+
+                // full_read_banner.type = "text/javascript";
+                full_read_banner_5.src =
+                  "//p449766.clksite.com/adServe/banners?tid=449766_880472_5";
+                full_read_banner_6.src =
+                  "//p449766.clksite.com/adServe/banners?tid=449766_880472_6";
+                full_read_banner_7.src =
+                  "//p449766.clksite.com/adServe/banners?tid=449766_880472_7";
+                full_read_banner_8.src =
+                  "//p449766.clksite.com/adServe/banners?tid=449766_880472_8";
+                full_read_banner_9.src =
+                  "//p449766.clksite.com/adServe/banners?tid=449766_880472_9";
+                full_read_banner_10.src =
+                  "//p449766.clksite.com/adServe/banners?tid=449766_880472_10";
+                full_read_banner_11.src =
+                  "//p449766.clksite.com/adServe/banners?tid=449766_880472_11";
+                full_read_banner_12.src =
+                  "//p449766.clksite.com/adServe/banners?tid=449766_880472_12";
+                full_read_banner_13.src =
+                  "//p449766.clksite.com/adServe/banners?tid=449766_880472_13";
+                self.full_read_banner_5.append(full_read_banner_5);
+                self.full_read_banner_6.append(full_read_banner_6);
+                self.full_read_banner_7.append(full_read_banner_7);
+                self.full_read_banner_8.append(full_read_banner_8);
+                self.full_read_banner_9.append(full_read_banner_9);
+                self.full_read_banner_10.append(full_read_banner_10);
+                self.full_read_banner_11.append(full_read_banner_11);
+                self.full_read_banner_12.append(full_read_banner_12);
+                self.full_read_banner_13.append(full_read_banner_13);
             },2000);
          });
       }
@@ -119,15 +173,17 @@ class FullReading extends Component {
    }
 
    back = () => {
+    window.location.reload();
       console.log('back');
-      this.setState({
-         loading: false,
-         reading: false
-      });
-      chosen_cards = [];
+      // this.setState({
+      //    loading: false,
+      //    reading: false
+      // });
+      // chosen_cards = [];
    }
 
    render = () => {
+    let self = this;
     if (!this.state.loading && !this.state.reading){
          return (
            <div className="main-content ">
@@ -195,7 +251,11 @@ class FullReading extends Component {
                     <div className="single_card_reading">
                       <h2 className="type">{card.type}</h2>
                       <h3 className="title card-name">{card.name}</h3>
-                      <img className="card_image" src={card.src} alt={`${card.name}, Tarot Card`} />
+                      <img
+                        className="card_image"
+                        src={card.src}
+                        alt={`${card.name}, Tarot Card`}
+                      />
                       <h4 className="title card-keywords">Keywords:</h4>
                       <p>{card.keywords.upright}</p>
                       <h3 className="title card-summary">Summary</h3>
@@ -204,6 +264,22 @@ class FullReading extends Component {
                       <p className="upright_description">
                         {card.description.upright}
                       </p>
+                      {/*  */}
+                      <div
+                        className={`full_read_banner_${i}`}
+                        ref={(el) => {
+                          let num = i+5;
+                          if (num === 5){ self.full_read_banner_5 = el}
+                          if (num === 6){ self.full_read_banner_6 = el}
+                          if (num === 7){ self.full_read_banner_7 = el}
+                          if (num === 8){ self.full_read_banner_8 = el}
+                          if (num === 9){ self.full_read_banner_9 = el}
+                          if (num === 10){ self.full_read_banner_10 = el}
+                          if (num === 11){ self.full_read_banner_11 = el}
+                          if (num === 12){ self.full_read_banner_12 = el}
+                          if (num === 13){ self.full_read_banner_13 = el}
+                        }}
+                      ></div>
                     </div>
                     <br />
                   </div>
@@ -213,7 +289,9 @@ class FullReading extends Component {
                   <div key={i} className="fcr_container">
                     <div className="single_card_reading">
                       <h2 className="type">{card.type}</h2>
-                      <h3 className="title card-name">{card.name + " Reversed"}</h3>
+                      <h3 className="title card-name">
+                        {card.name + " Reversed"}
+                      </h3>
                       <img
                         className="card_image card_image_reversed"
                         src={card.src}
@@ -227,6 +305,22 @@ class FullReading extends Component {
                       <p className="upright_description">
                         {card.description.reversed}
                       </p>
+                      {/*  */}
+                      <div
+                        className={`full_read_banner_${i}`}
+                        ref={(el) => {
+                          let num = i+5;
+                          if (num === 5){ self.full_read_banner_5 = el}
+                          if (num === 6){ self.full_read_banner_6 = el}
+                          if (num === 7){ self.full_read_banner_7 = el}
+                          if (num === 8){ self.full_read_banner_8 = el}
+                          if (num === 9){ self.full_read_banner_9 = el}
+                          if (num === 10){ self.full_read_banner_10 = el}
+                          if (num === 11){ self.full_read_banner_11 = el}
+                          if (num === 12){ self.full_read_banner_12 = el}
+                          if (num === 13){ self.full_read_banner_13 = el}
+                        }}
+                      ></div>
                     </div>
                     <br />
                   </div>

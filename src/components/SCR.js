@@ -24,19 +24,20 @@ class SCR extends Component {
   }
 
    back = () => {
-    this.setState({
+    window.location.reload();
+    // this.setState({
 
-            new: true,
-            loading: false,
-            name: 'Card',
-            src: null,
-            random_card_flipped: null,
-            random_card_name: null,
-            random_card_description: null,
-            random_card_upright: null,
-            random_card_reversed: null
+    //         new: true,
+    //         loading: false,
+    //         name: 'Card',
+    //         src: null,
+    //         random_card_flipped: null,
+    //         random_card_name: null,
+    //         random_card_description: null,
+    //         random_card_upright: null,
+    //         random_card_reversed: null
 
-    })
+    // })
    }
       
    getRandomCard = () => {

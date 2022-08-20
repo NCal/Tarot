@@ -11,6 +11,33 @@ class App extends Component {
          };
    }
 
+  componentDidMount=()=>{
+
+    const leaderboard = document.createElement("script");  
+    const square = document.createElement("script");  
+    const footerBanner = document.createElement("script");  
+
+    footerBanner.setAttribute("data-cfasync", "false");
+    footerBanner.type = "text/javascript";
+    footerBanner.src = "//p449766.clksite.com/adServe/banners?tid=449766_880472_4";
+
+    square.setAttribute("data-cfasync", "false");
+    square.type="text/javascript"
+    square.src="//p449766.clksite.com/adServe/banners?tid=449766_880472_0"
+    // square.src = "//pulseadnetwork.com/a/display.php?r=6179130";
+
+    leaderboard.type="text/javascript";
+    leaderboard.setAttribute("data-cfasync", "false");
+    leaderboard.src="//p449766.clksite.com/adServe/banners?tid=449766_880472_3";
+ 
+    console.log('this.center', this.center);  
+    console.log('this.right', this.right)
+    this.topAd.prepend(leaderboard);  
+    this.bottomAd.appendChild(footerBanner);  
+    this.right.appendChild(square);
+  }
+
+
    changeMode = () => {
     console.log('change mode');
     this.setState({darkMode: !this.state.darkMode})
@@ -35,23 +62,6 @@ class App extends Component {
                   this.state.darkMode ? "iconDarkMode" : "iconLightMode"
                 }`}
               ></div>
-              <script
-                async
-                src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6248178765033726"
-                crossOrigin="anonymous"
-              ></script>
-              {/* <!-- horizontal-top --> */}
-              <ins
-                className="adsbygoogle"
-                style={{ display: "block" }}
-                data-ad-client="ca-pub-6248178765033726"
-                data-ad-slot="9286392459"
-                data-ad-format="auto"
-                data-full-width-responsive="true"
-              ></ins>
-              <script>
-                (adsbygoogle = window.adsbygoogle || []).push({});
-              </script>
             </div>
             <div className="left">
               <header>
@@ -105,9 +115,11 @@ class App extends Component {
                 this.state.darkMode ? "darkMode" : "lightMode"
               }`}
             >
+              <div className="topAd" ref={(el) => (this.topAd = el)}></div>
               {this.props.children}
+              <div className="bottomAd" ref={(el) => (this.bottomAd = el)}></div>
             </div>
-            <div className="right">
+            <div className="right" ref={(el) => (this.right = el)}>
               <p className="">
                 The tarot is a pack of playing cards that's been used since at
                 least the mid-15th century.
@@ -122,13 +134,9 @@ class App extends Component {
                 Using Tarot cards one can examine all the different aspects of a
                 given situation for a true analysis of any circumstance.
               </p>
-              <script
-                async
-                src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6248178765033726"
-                crossOrigin="anonymous"
-              ></script>
+
               {/* <!-- rail-long --> */}
-              <ins
+              {/* <ins
                 className="adsbygoogle"
                 style={{ display: "block" }}
                 data-ad-client="ca-pub-6248178765033726"
@@ -138,7 +146,7 @@ class App extends Component {
               ></ins>
               <script>
                 (adsbygoogle = window.adsbygoogle || []).push({});
-              </script>
+              </script> */}
               <Navlink
                 className="learnSection"
                 to="/links"
